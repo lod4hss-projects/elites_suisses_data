@@ -1,2 +1,7 @@
 # elites_suisses
-Reporitory devoted to the LESHH project
+
+Repository devoted to the LESHH project
+
+
+
+[Documentation](documentation/index.md)
