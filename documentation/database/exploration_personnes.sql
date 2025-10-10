@@ -53,6 +53,24 @@ order by id
 LIMIT 10;
 
 
+--create view for former query
+CREATE view elites_suisses.v_persons as
+with tw1 as (
+select iv.id, max(iv.versionDate) as date_version,  max(iv.sysid) as sysid
+from identite_versions iv
+group by iv.id
+)
+select distinct iv.*
+from identite_versions iv, tw1
+where iv.id = tw1.id
+and iv.versionDate = tw1.date_version
+and iv.sysid = tw1.sysid 
+order by id;
+
+
+
+
+
 -- nombre personnes : 48221
 with tw1 as (
 select iv.id, max(iv.versionDate) as date_version,  max(iv.sysid) as sysid
@@ -68,5 +86,6 @@ and iv.sysid = tw1.sysid
 select count(*) as effectif
 from tw2;
 
-Maturité
+
+
 
