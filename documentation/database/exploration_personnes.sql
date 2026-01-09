@@ -3,14 +3,28 @@
 -- nombre de personnes
 -- 182458 en septembre 2025
 
+
+select count(*) as effectif
+from elites_suisses_fdw.identite i ;
+
+
 select count(*) as effectif
 from elites_suisses.identite_versions iv  ;
+
+
 
 
 select iv.*
 from elites_suisses.identite_versions iv
 order by id 
 LIMIT 50;
+
+
+select i.*
+from elites_suisses_fdw.identite i 
+order by i.id 
+limit 100;
+
 
 
 
