@@ -1,21 +1,17 @@
 
+# Semantic Analysis and Mapping of Tables 
 
 
+## "identite" - Persons
 
-# Schema: elites_suisses
+
+Rows in this table represent persons.
+
+They correspond to instances of the CIDOC CRM E21 Person class.
+
+Available information about them:
 
 
-### identifier
-| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| zkf_ID_linked | integer |   |   |   |
-| Identifier_code | character varying |   |   |   |
-| Identifier | character varying |   |   |   |
-| 
-
-&nbsp;
-
-### identite
 | Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
 |-------------|-----------|------|------|------|
 | sysid | integer |   |   |   |
@@ -37,7 +33,7 @@
 | nationalite | character varying |   |   |   |
 | profession | character varying |   |   |   |
 | saisie | character varying |   |   |   |
-| sexe | character |   |   |   |
+| sexe | character | ssssssssssssssssssssssssssssssssssssssssssssGender  |   |   |
 | sourcesBio | text |   |   |   |
 | sourcesFormations | text |   |   |   |
 | creation | character varying |   |   |   |
@@ -45,6 +41,16 @@
 
 &nbsp;
 
+
+### identifier
+| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
+|-------------|-----------|------|------|------|
+| zkf_ID_linked | integer |   |   |   |
+| Identifier_code | character varying |   |   |   |
+| Identifier | character varying |   |   |   |
+| 
+
+&nbsp;
 
 ### education
 | Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
