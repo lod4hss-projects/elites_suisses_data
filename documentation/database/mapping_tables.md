@@ -33,7 +33,7 @@ Available information about them:
 | nationalite | character varying |   |   |   |
 | profession | character varying |   |   |   |
 | saisie | character varying |   |   |   |
-| sexe | character | ssssssssssssssssssssssssssssssssssssssssssssGender  |   |   |
+| sexe | character | Gender  |   |   |
 | sourcesBio | text |   |   |   |
 | sourcesFormations | text |   |   |   |
 | creation | character varying |   |   |   |

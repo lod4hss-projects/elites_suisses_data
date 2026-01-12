@@ -3,7 +3,7 @@
 
 ## Original database
 
-* [Database structure](database/database_structure.md)
+* [Database structure](database/mapping_tables.md)
 
 
 * [Mandats (SQL)](database/mandats_entites_exploration.sql)
