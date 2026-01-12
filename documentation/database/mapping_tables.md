@@ -1,6 +1,7 @@
 
-# Semantic Analysis and Mapping of Tables 
+# Semantic Analysis and Mapping of Tables 
 
+&nbsp;
 
 ## "identite" - Persons
 
