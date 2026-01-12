@@ -3,6 +3,33 @@ SELECT *
 FROM elites_suisses.mandat
 LIMIT 100;
 
+SELECT count(*) number
+FROM elites_suisses.mandat
+LIMIT 100;
+
+
+
+-- mandats sans entité
+select m.*
+from elites_suisses.mandat m 
+left join elites_suisses.entites e on e.id = m.entite_id 
+where e.id is null;
+
+select count(*) as n
+from elites_suisses.mandat m 
+left join elites_suisses.entites e on e.id = m.entite_id 
+where e.id is null;
+
+
+-- entités manquantes
+select m.entite_id, m.entite, count(*) as n, m."idEntite"
+from elites_suisses.mandat m 
+left join elites_suisses.entites e on e.id = m.entite_id 
+where e.id is null
+group by m.entite_id, m."idEntite", m.entite
+order by n desc;
+
+
 
 --- distribution of functions
 SELECT fonction, organe, "typeEntite", COUNT(*) as number
