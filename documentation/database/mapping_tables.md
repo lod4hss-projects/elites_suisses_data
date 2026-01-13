@@ -19,7 +19,7 @@ Available information about them:
 | id | integer |   |   |   |
 | nom | character varying |   |   |   |
 | prenom | character varying |   |   |   |
-| naissance | character varying |   |   |   |
+| naissance | character varying | [Birth Dates](../information_analysis/persons.md#birth-dates)  |   |   |
 | mort | character varying |   |   |   |
 | nbrMandats | character varying |   |   |   |
 | cantonNaissance | character varying |   |   |   |
@@ -34,7 +34,7 @@ Available information about them:
 | nationalite | character varying |   |   |   |
 | profession | character varying |   |   |   |
 | saisie | character varying |   |   |   |
-| sexe | character | Gender  |   |   |
+| sexe | character | [Gender](../information_analysis/persons.md#gender)  |   |   |
 | sourcesBio | text |   |   |   |
 | sourcesFormations | text |   |   |   |
 | creation | character varying |   |   |   |
