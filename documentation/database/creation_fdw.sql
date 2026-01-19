@@ -1,3 +1,18 @@
+
+/*
+ * January 2026
+ * This page documents the creation of a foreign data wrapper (FDW) in the
+ * PostgreSQL database that connects to the MySQL tables in order to let them 
+ * appear as a part of the Postgres database.
+ * The tables are then copied to Postgres tables in a 'elites_suisses' schema 
+ * and primary and foreign keys added. These are not managed by the FDW.
+ * 
+ * Finally, the tables structures is written in Markdown and copy-pasted to the documentation 
+ * pages: elites_suisses/documentation/database/mapping_tables.md
+ *  
+ */
+
+
 SELECT * 
 FROM pg_extension;
 
@@ -9,28 +24,32 @@ from pg_available_extensions;
 
 
 /*
- * Dans le container de PostgreSQL, importer l'extension pour le mysql-fdw
 
+You need to have the mysql-fdw Postgres extension installed 
+on the computer where you have the database server.
 
--- mettre à jour la liste des paquets
+-- Receipt on Ubuntu
 
 $ apt-get update
 $ apt-get install postgresql-18-mysql-fdw
 
--- pour tester la connexion avec la BD MySQL
+-- Test the connection to the MySQL database
 $ apt-get install -y dnsutils telnet
 $ nslookup mariadb
 
 
-Noter que les deux applications, donc les deux containers doivent se trouver sur le même réseau interne docker.
-D'où le fait que on ajoute au docker run pour créer les deux conteneurs (postgresl et mariadb) le paramètre:
-  --network myapp-net
-pour disposer du même réseau commun myapp-net.
+Please note that both server must be on the same network, notably the 
+same internal docker network.
+When you create the two containers (postgresl et mariadb) add therefore:
+  --network servers-net
+so that both servers run in the internal network servers-net.
 
-Pour les ports bien ajouter par ex. -p 5432:5432 et ajouter plusieurs -p pour même docker avec différentes applications:
+Also the ports to be connected to the host network must be provided of course
+e.g.  -p 5432:5432 
+In the same container you can add several ports for different web applications :
 docker run -p <host_port1>:<container_port1> -p <host_port2>:<container_port2>
- * 
- */
+ 
+*/
 
 
 CREATE EXTENSION mysql_fdw;
@@ -130,7 +149,7 @@ ALTER TABLE elites_suisses.entites ADD CONSTRAINT pk_entite_id PRIMARY KEY (id);
 
 
 /*
- * Manquent un certain nombre 
+ * The foreign key constraint cannot be added to entities, many values are missing
  * 
  * SQL Error [23503]: ERROR: insert or update on table "mandat" violates foreign key constraint "fk_mandat_entite_id"
   Detail: Key (entite_id)=(650) is not present in table "entites".

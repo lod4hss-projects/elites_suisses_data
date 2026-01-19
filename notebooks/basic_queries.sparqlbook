@@ -1,0 +1,8 @@
+[
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\nprefix esr: <http://elites_suisses/resource/>\nprefix eso: <http://elites_suisses/ontology/>\nselect * where {\n    ?s a eso:Person;\n       eso:name ?name;\n       eso:forename ?forename;\n       eso:birthDate ?db.\n} \norder by ?s\noffset 300\nlimit 100",
+    "metadata": {}
+  }
+]

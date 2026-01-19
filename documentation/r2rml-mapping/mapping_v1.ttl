@@ -1,0 +1,66 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix esr: <http://elites_suisses/resource/>.
+@prefix eso: <http://elites_suisses/ontology/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+<#identite1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.identite" ];
+    rr:subjectMap [
+        rr:template "http://elites_suisses/resource/{id}";
+        rr:termType rr:IRI;
+        rr:class eso:Person;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate eso:name;
+        rr:objectMap [ rr:column "nom" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate eso:forename;
+        rr:objectMap [ rr:column "prenom" ];
+    ];    
+    rr:predicateObjectMap [
+        rr:predicate eso:birthDate;
+        rr:objectMap [ rr:column "naissance" ];
+    ].
+   
+
+<#identifier1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
+    rr:subjectMap [
+        rr:template "http://elites_suisses/resource/{\"zkf_ID_linked\"}";
+        rr:termType rr:IRI;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ rr:column "\"URL\"" ;
+                        rr:termType rr:IRI ];
+    ]
+    .
+
+
+    <#identifier2> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
+    rr:subjectMap [
+        rr:column "\"URL\"" ;
+        rr:termType rr:IRI 
+    ];
+        rr:predicateObjectMap [
+        rr:predicate eso:identifier_code;
+        rr:objectMap [ rr:column "\"Identifier_code\"" ];
+    ].
+
+
+
+<#education1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.education" ];
+    rr:subjectMap [
+        rr:template "http://elites_suisses/resource/{\"ID_IDENTITE\"}";
+        rr:termType rr:IRI;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate eso:has_as_doctoral_advisor;
+        rr:objectMap [ 
+            rr:template "http://elites_suisses/resource/{\"THÈSE_Directeur_IdIdentité\"}";
+            rr:termType rr:IRI;];
+    ]
+    .

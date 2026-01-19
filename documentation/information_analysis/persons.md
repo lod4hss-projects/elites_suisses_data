@@ -5,6 +5,11 @@
 Persons are listed in the *identite* table.
 
 
+## Some examples
+
+* [Cavadini-Bauer, Jean](https://elitessuisses.unil.ch/p/50039)
+
+
 ## Birth Dates
 
 Inconsistent data:
