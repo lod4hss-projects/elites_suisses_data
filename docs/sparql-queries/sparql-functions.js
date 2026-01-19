@@ -1,3 +1,7 @@
+// NOT IN USE
+
+
+
 // Function to send SPARQL query and display results
 export function sendSparqlQuery(endpoint, query) {
     // Create a new XMLHttpRequest object

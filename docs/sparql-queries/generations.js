@@ -78,7 +78,7 @@ fetch(sparqlEndpoint + '?query=' + encodeURIComponent(sparqlQuery), {
  // Set up the dimensions and margins for the chart
  const margin = { top: 20, right: 20, bottom: 150, left: 40 };
  const width = 600 - margin.left - margin.right;
- const height = 400 - margin.top - margin.bottom;
+ const height = 450 - margin.top - margin.bottom;
 
  // Create the SVG container
  const svg = d3.select('#chart')
