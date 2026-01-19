@@ -2,7 +2,19 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\nprefix esr: <http://elites_suisses/resource/>\nprefix eso: <http://elites_suisses/ontology/>\nselect * where {\n    ?s a eso:Person;\n       eso:name ?name;\n       eso:forename ?forename;\n       eso:birthDate ?db.\n} \norder by ?s\noffset 300\nlimit 100",
+    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\nprefix esr: <http://elites_suisses/resource/>\nprefix eso: <http://elites_suisses/ontology/>\nselect * where {\n    ?s a eso:Person;\n       eso:nameForename ?name;\n       eso:birthYear ?birthYear.\n} \norder by ?s\noffset 300\nlimit 100",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\nprefix esr: <http://elites_suisses/resource/>\nprefix eso: <http://elites_suisses/ontology/>\nprefix xsd: <http://www.w3.org/2001/XMLSchema#>\n\nselect ?period (count(*) as ?number)\nwhere {\n    ?s a eso:Person;\n       eso:birthYear ?birth.\n    FILTER (?birth != 0)   \n    BIND ( \n        IF (?birth < 1801, '1800_et_ante', \n            IF (?birth < 1826, '1801-1925',\n                IF (?birth < 1851, '1826-1850',\n                    IF (?birth < 1876, '1851-1875', \n                        IF (?birth < 1901, '1876-1900', \n                        IF (?birth < 1926, '1901-1925', \n                        IF (?birth < 1951, '1926-1950', \n                        IF (?birth < 1976, '1951-1975', \n                        IF (?birth > 1975, '1976-...', 'none'))))))))\n                ) AS ?period\n    )\n} \ngroup by ?period\norder by ?period",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\n        prefix esr: <http://elites_suisses/resource/>\n        prefix eso: <http://elites_suisses/ontology/>\n        prefix xsd: <http://www.w3.org/2001/XMLSchema#>\n\n        select ?name ?birthYear ?url\n        where {\n            ?s a eso:Person;\n               eso:nameForename ?name;\n               eso:birthYear ?birthYear.\n            FILTER(CONTAINS(?name, 'Ogi') )  \n            BIND(\n                URI(REPLACE(str(?s), 'http://elites_suisses/resource/','https://elitessuisses.unil.ch/p/'))\n                AS ?url\n            )\n        }\n        LIMIT 100",
     "metadata": {}
   }
 ]

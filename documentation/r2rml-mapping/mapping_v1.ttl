@@ -2,6 +2,7 @@
 @prefix esr: <http://elites_suisses/resource/>.
 @prefix eso: <http://elites_suisses/ontology/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 <#identite1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.identite" ];
@@ -11,16 +12,13 @@
         rr:class eso:Person;
     ];
     rr:predicateObjectMap [
-        rr:predicate eso:name;
-        rr:objectMap [ rr:column "nom" ];
+        rr:predicate eso:nameForename;
+        rr:objectMap [ rr:column "name_forename" ];
     ];
     rr:predicateObjectMap [
-        rr:predicate eso:forename;
-        rr:objectMap [ rr:column "prenom" ];
-    ];    
-    rr:predicateObjectMap [
-        rr:predicate eso:birthDate;
-        rr:objectMap [ rr:column "naissance" ];
+        rr:predicate eso:birthYear;
+        rr:objectMap [ rr:column "birth_year" ;
+                rr:dataType xsd:integer];
     ].
    
 
