@@ -1,7 +1,6 @@
-# elites_suisses
+# Elites Suisses Data
 
 Repository devoted to the LESHH project
-
 
 
 * [Documentation](documentation/index.md)
