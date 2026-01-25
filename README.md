@@ -3,5 +3,5 @@
 Repository devoted to the LESHH project
 
 
-* [Documentation](docs/index.html)
+* [Documentation](documentation/index.md)
 * [Experimental website](https://elites-suisses.lod4hss.org/)
