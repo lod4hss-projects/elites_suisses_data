@@ -10,148 +10,73 @@ Rows in this table represent persons.
 
 They correspond to instances of the CIDOC CRM E21 Person class.
 
-More about data inspection and structure of the table [to be found here](information_analysis/persons.md).
-
-&nbsp;
-
-### education
-| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| sysid | integer |   |   |   |
-| zkp_edu | character varying |   |   |   |
-| ID_IDENTITE | integer |   |   |   |
-| Formation niveau | character varying |   |   |   |
-| Titre_stxt | character varying |   |   |   |
-| TITRE_Codé | character varying |   |   |   |
-| Catégorie | character varying |   |   |   |
-| Ordre | integer |   |   |   |
-| Institution | character varying |   |   |   |
-| Lieu | character varying |   |   |   |
-| Canton | character varying |   |   |   |
-| Pays | character varying |   |   |   |
-| Date | character varying |   |   |   |
-| THÈSE_Titre | character varying |   |   |   |
-| THÈSE_NomDirecteur | character varying |   |   |   |
-| THÈSE_Directeur_IdIdentité | integer |   |   |   |
-| zlg_Creation | timestamp without time zone |   |   |   |
-| zlg_CreationNom | character varying |   |   |   |
-| zlg_Modif | timestamp without time zone |   |   |   |
-| zlg_ModifNom | character varying |   |   |   |
-| principal_annexe | character varying |   |   |   |
-| séjour_étranger | character varying |   |   |   |
-| versionDate | date |   |   |   |
+Data inspection and structure of the table [to be found here](information_analysis/persons.md).
 
 &nbsp;
 
 
-### filiations
-| Column Name | Data Type |   Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| sysid | integer |   |   |   |
-| idFiliation | integer |   |   |   |
-| idFils | integer |   |   |   |
-| idParent | integer |   |   |   |
-| sexeParent | character |   |   |   |
-| creation | character varying |   |   |   |
-| saisie | character varying |   |   |   |
-| auteurModif | character varying |   |   |   |
-| zkp_filiation | character varying |   |   |   |
-| versionDate | date |   |   |   |
+## Links (table *identifier*)
 
+Rows in this table represent relations to other identifiers or to webpages about the same persons.
 
-&nbsp;
-
-### mariage
-| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| sysid | integer |   |   |   |
-| id | integer |   |   |   |
-| idMariage | character varying |   |   |   |
-| idFemme | integer |   |   |   |
-| idMari | integer |   |   |   |
-| anneeMariage_Utilisee | character varying |   |   |   |
-| anneeDivorce_Utilisee | character varying |   |   |   |
-| auteurModif | character varying |   |   |   |
-| creation | character varying |   |   |   |
-| dateExacte_divorce | character varying |   |   |   |
-| dateExacte_mariage | character varying |   |   |   |
-| saisie | character varying |   |   |   |
-| sources | text |   |   |   |
-| debut_EnToutCas | character varying |   |   |   |
-| dureeAffichee | character varying |   |   |   |
-| fin_EnToutCas | character varying |   |   |   |
-| zkp_Mariage | character varying |   |   |   |
-| versionDate | date |   |   |   |
-
-&nbsp;
-
-### entites
-| Column Name | Data Type |   Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| sysid | integer |   |   |   |
-| id | integer |   |   |   |
-| idEntite | character varying |   |   |   |
-| sphere | character varying |   |   |   |
-| typeEntite | character varying |   |   |   |
-| nom | character varying |   |   |   |
-| siege | character varying |   |   |   |
-| siegeCanton | character varying |   |   |   |
-| pays | character varying |   |   |   |
-| dateCreation | character varying |   |   |   |
-| dateDisparition | character varying |   |   |   |
-| choixLogo | character varying |   |   |   |
-| DHS | character varying |   |   |   |
-| DHS_versionAuteur | character varying |   |   |   |
-| affiliationSecteurType | character varying |   |   |   |
-| echelle | character varying |   |   |   |
-| creationLieu | character varying |   |   |   |
-| creationCanton | character varying |   |   |   |
-| nbrMandats | integer |   |   |   |
-| nbrMandatsZH | integer |   |   |   |
-| nbrMandatsGE | integer |   |   |   |
-| nbrMandatsBS | integer |   |   |   |
-| versionDate | date |   |   |   |
-
-&nbsp;
-
-### autresNomsEntites
-| Column Name | Data Type | Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| id | integer |   |   |   |
-| autreNom | character varying |   |   |   |
-| idEntite | character varying |   |   |   |
-| zkp | character varying |   |   |   |
-| modif | timestamp without time zone |   |   |   |
-| entite_id | integer |   |   |   |
+Data inspection and structure of the table [to be found here](information_analysis/same_as_relations.md).
 
 &nbsp;
 
 
-### mandat
-| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| sysid | integer |   |   |   |
-| id | integer |   |   |   |
-| idMandat | character varying |   |   |   |
-| idIdentite | integer |   |   |   |
-| fonction | character varying |   |   |   |
-| entite | character varying |   |   |   |
-| typeEntite | character varying |   |   |   |
-| organe | character varying |   |   |   |
-| partiAffiliationOfficeSecteur | character varying |   |   |   |
-| sphere | character varying |   |   |   |
-| annexePrincipale | character varying |   |   |   |
-| dateEntree | character varying |   |   |   |
-| dateSortie | character varying |   |   |   |
-| dureeAffichee | character varying |   |   |   |
-| anneeEntreeUtilisee | character varying |   |   |   |
-| anneeSortieUtilisee | character varying |   |   |   |
-| idEntite | character varying |   |   |   |
-| sinergiaEchantillon | character varying |   |   |   |
-| sinergiaCanton | character varying |   |   |   |
-| creation | character varying |   |   |   |
-| saisie | character varying |   |   |   |
-| auteurModif | character varying |   |   |   |
-| sourcesMandat | text |   |   |   |
-| versionDate | date |   |   |   |
-| entite_id | integer |   |   |   |
+
+## Parents (table *filiations*)
+
+Rows in this table represent relations to parents.
+
+Data inspection and structure of the table [to be found here](information_analysis/filiations.md).
+
+&nbsp;
+
+
+## Education (table *education*)
+
+Rows in this table represent educational phases, studies and degrees.
+
+Data inspection and structure of the table [to be found here](information_analysis/education.md).
+
+&nbsp;
+
+
+
+## Marriage (table *mariage*)
+
+Rows in this table represent marriages.
+
+
+
+Data inspection and structure of the table [to be found here](information_analysis/marriage.md).
+
+&nbsp;
+
+
+## Organisations (tables *entites*, *autresNomsEntites*)
+
+Rows in the *entites* table represent organisations of different kinds.
+
+They correspond to instances of the CIDOC CRM E74 Group class.
+
+
+Furthermore, an additional table *autresNomsEntites* provides additional labels for the same organisations.
+
+
+Data inspection and structure of the table [to be found here](information_analysis/organisations.md).
+
+&nbsp;
+
+
+## Roles, Memberships, Prizes (table *mandat*)
+
+Rows in this table represent a bundle of different informations, mainly instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data
+
+Data inspection and structure of the table [to be found here](information_analysis/roles_mandates.md).
+
+&nbsp;
+
+
+

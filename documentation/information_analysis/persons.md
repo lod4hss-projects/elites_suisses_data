@@ -37,16 +37,6 @@ Available information about them:
 &nbsp;
 
 
-### identifier
-| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
-| zkf_ID_linked | integer |   |   |   |
-| Identifier_code | character varying |   |   |   |
-| Identifier | character varying |   |   |   |
-| 
-
-
-
 ## Some examples
 
 * [Cavadini-Bauer, Jean](https://elitessuisses.unil.ch/p/50039)

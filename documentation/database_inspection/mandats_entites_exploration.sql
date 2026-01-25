@@ -29,12 +29,46 @@ where e.id is null
 group by m.entite_id, m."idEntite", m.entite
 order by n desc;
 
+/*
+ * Inspection of 'mandates'
+ */
+
 
 
 --- distribution of functions
-SELECT fonction, organe, "typeEntite", COUNT(*) as number
-FROM elites_suisses.mandat
-GROUP BY fonction, organe, "typeEntite"
+with tw1 as (
+select trim(m.fonction) fonction
+from mandat m )
+SELECT fonction, COUNT(*) as number
+FROM tw1
+-- inconsistency of the data
+-- add column and clean up
+-- where fonction ~* 'prof'
+GROUP BY fonction
+ORDER BY number DESC;
+
+
+
+--- distribution of functions
+with tw1 as (
+select trim(m."typeEntite" ) type_entite
+from mandat m )
+SELECT type_entite, COUNT(*) as number
+FROM tw1
+-- inconsistency of the data
+-- add column and clean up
+-- where fonction ~* 'prof'
+GROUP BY type_entite
+ORDER BY number DESC;
+
+
+--- distribution of functions
+with tw1 as (
+select trim(m.fonction) fonction, trim(m.organe ) organe, trim(m."typeEntite" ) type_entite
+from mandat m )
+SELECT fonction, organe, type_entite, COUNT(*) as number
+FROM tw1
+GROUP BY fonction, organe, type_entite
 ORDER BY number DESC;
 
 select *
