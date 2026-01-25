@@ -4,6 +4,48 @@
 
 Persons are listed in the *identite* table.
 
+Available information about them:
+
+
+| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
+|-------------|-----------|------|------|------|
+| sysid | integer |   |   |   |
+| id | integer |   |   |   |
+| nom | character varying |   |   |   |
+| prenom | character varying |   |   |   |
+| naissance | character varying | [Birth Dates](../information_analysis/persons.md#birth-dates)  |   |   |
+| mort | character varying |   |   |   |
+| nbrMandats | character varying |   |   |   |
+| cantonNaissance | character varying |   |   |   |
+| confidentiel | character varying |   |   |   |
+| confidentiel_naissance | character varying |   |   |   |
+| DHS | character varying |   |   |   |
+| choixPhoto | character varying |   |   |   |
+| formationDoctorat | character varying |   |   |   |
+| formationUniversitaire | character varying |   |   |   |
+| gradeMilitaireMax | character varying |   |   |   |
+| lieuNaissance | character varying |   |   |   |
+| nationalite | character varying |   |   |   |
+| profession | character varying |   |   |   |
+| saisie | character varying |   |   |   |
+| sexe | character | [Gender](../information_analysis/persons.md#gender)  |   |   |
+| sourcesBio | text |   |   |   |
+| sourcesFormations | text |   |   |   |
+| creation | character varying |   |   |   |
+| versionDate | date |   |   |   |
+
+&nbsp;
+
+
+### identifier
+| Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
+|-------------|-----------|------|------|------|
+| zkf_ID_linked | integer |   |   |   |
+| Identifier_code | character varying |   |   |   |
+| Identifier | character varying |   |   |   |
+| 
+
+
 
 ## Some examples
 
