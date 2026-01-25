@@ -1,7 +1,9 @@
 
 
--- nombre de personnes
--- 3990 en octobre 2025
+/*
+ * inspection
+ */
+
 
 select count(*) as effectif
 from elites_suisses.entites e   ;
@@ -13,6 +15,17 @@ from  elites_suisses.entites t1
 order by id 
 LIMIT 50;
 
+
+/*
+ * First data cleaning, replace trailing spaces in names,
+ * in view of simplifying queries
+ */
+
+update elites_suisses.entites e set sphere =trim(sphere);
+
+update elites_suisses.entites e set nom =trim(nom);
+
+update elites_suisses.entites e set "typeEntite" =trim("typeEntite");
 
 
 -- pas de doubons, apparemment
