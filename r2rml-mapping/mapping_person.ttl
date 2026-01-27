@@ -3,16 +3,18 @@
 @prefix eso: <http://elites_suisses/ontology/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sdh-short: <https://sdhss.org/ontology/shortcuts/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 
 <#identite1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.identite" ];
     rr:subjectMap [
-        rr:template "http://elites_suisses/resource/{id}";
+        rr:template "http://elites_suisses/resource/p{id}";
         rr:termType rr:IRI;
-        rr:class eso:Person;
+        rr:class crm:E21;
     ];
     rr:predicateObjectMap [
-        rr:predicate eso:nameForename;
+        rr:predicate sdh-short:P9;
         rr:objectMap [ rr:column "name_forename" ];
     ];
     rr:predicateObjectMap [
@@ -25,7 +27,7 @@
 <#identifier1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
     rr:subjectMap [
-        rr:template "http://elites_suisses/resource/{\"zkf_ID_linked\"}";
+        rr:template "http://elites_suisses/resource/p{\"zkf_ID_linked\"}";
         rr:termType rr:IRI;
     ];
     rr:predicateObjectMap [
@@ -52,13 +54,45 @@
 <#education1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.education" ];
     rr:subjectMap [
-        rr:template "http://elites_suisses/resource/{\"ID_IDENTITE\"}";
+        rr:template "http://elites_suisses/resource/p{\"ID_IDENTITE\"}";
         rr:termType rr:IRI;
     ];
     rr:predicateObjectMap [
         rr:predicate eso:has_as_doctoral_advisor;
         rr:objectMap [ 
-            rr:template "http://elites_suisses/resource/{\"THÈSE_Directeur_IdIdentité\"}";
+            rr:template "http://elites_suisses/resource/p{\"THÈSE_Directeur_IdIdentité\"}";
             rr:termType rr:IRI;];
     ]
     .
+
+
+<#entite1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.entites" ];
+    rr:subjectMap [
+        rr:template "http://elites_suisses/resource/g{entity_id}";
+        rr:termType rr:IRI;
+        rr:class crm:E74;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P9;
+        rr:objectMap [ rr:column "nom" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate eso:entityType;
+        rr:objectMap [ rr:column "\"typeEntite\""];
+    ].
+
+<#membership1>  a rr:TriplesMap;
+    rr:logicalTable [ rr:sqlQuery """
+        select m."idIdentite", m.entite_id  
+        from elites_suisses.mandat m 
+        where m.fonction = 'Membre'
+        and m.entite_id > 0
+        """ ];
+    rr:subjectMap [
+        rr:template "http://elites_suisses/resource/p{\"idIdentite\"}";
+    ];
+    rr:predicateObjectMap [
+        rr:predicate eso:memberOf;
+        rr:objectMap [ rr:template "http://elites_suisses/resource/g{entite_id}" ];
+    ].

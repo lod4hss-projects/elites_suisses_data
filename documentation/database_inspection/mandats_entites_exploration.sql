@@ -158,5 +158,13 @@ order by tw1."number" desc;
 
 
 
+-- filtered query for R2RML test
 
+select m."idIdentite", m.entite, e.entity_id, e.nom  
+from elites_suisses.mandat m 
+    join elites_suisses.entites e on e.entity_id = m.entite_id 
+where m.fonction = 'Membre'
+and m.entite_id > 0
+offset 50
+limit 10;
 
