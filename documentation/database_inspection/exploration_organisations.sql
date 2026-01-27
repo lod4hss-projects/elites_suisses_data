@@ -134,7 +134,11 @@ from elites_suisses.entites e
 where e.nom = 'TI'
 limit 100;
 
-
+/* 
+ * in fact there are at least two groups: legislative, executive, sometimes judiciary
+ * 
+ * the kind of group is availabel in the 'organe' field of the _mandat_ table
+ */
 select e."idEntite", e.nom, m.organe, count(*) as number
 from elites_suisses.entites e 
     join elites_suisses.mandat m on m."idEntite" = e."idEntite" 
