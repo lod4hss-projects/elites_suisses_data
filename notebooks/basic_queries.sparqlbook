@@ -2,7 +2,25 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\nprefix esr: <http://elites_suisses/resource/>\nprefix eso: <http://elites_suisses/ontology/>\nselect * where {\n    ?s a eso:Person;\n       eso:nameForename ?name;\n       eso:birthYear ?birthYear.\n} \norder by ?s\noffset 300\nlimit 100",
+    "value": "SELECT ?g (count(*) as ?n)\nWHERE { graph ?g {?s ?p ?o} }\nGROUP BY ?g\norder by desc(?n)",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "SELECT ?s ?p ?o\nWHERE { graph <https://swiss-elites.lod4hss.cloud/resource/>\n {?s ?p ?o} }\nLIMIT 5",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "SELECT ?s ?p ?o\nWHERE { graph <https://swiss-elites.lod4hss.cloud/resource/originatesFrom>\n {?s ?p ?o} }\nLIMIT 25",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "prefix owl: <http://www.w3.org/2002/07/owl#>\nprefix esr: <http://elites_suisses/resource/>\nprefix eso: <http://elites_suisses/ontology/>\nprefix crm: <http://www.cidoc-crm.org/cidoc-crm/>\nprefix swel: <https://swiss-elites.lod4hss.cloud/resource/>\nprefix sdh-short: <https://sdhss.org/ontology/shortcuts/>\n\n\n\n\nselect * where {\n    ?s a crm:E21;\n             ?p ?o.\n} \norder by ?s\noffset 300\nlimit 100",
     "metadata": {}
   },
   {

@@ -18,7 +18,7 @@
         rr:objectMap [ rr:column "name_forename" ];
     ];
     rr:predicateObjectMap [
-        rr:predicate eso:birthYear;
+        rr:predicate sdh-short:P2;
         rr:objectMap [ rr:column "birth_year" ;
                 rr:dataType xsd:integer];
     ].
@@ -42,7 +42,7 @@
     rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
     rr:subjectMap [
         rr:column "\"URL\"" ;
-        rr:termType rr:IRI 
+        rr:termType rr:IRI; 
     ];
         rr:predicateObjectMap [
         rr:predicate eso:identifier_code;

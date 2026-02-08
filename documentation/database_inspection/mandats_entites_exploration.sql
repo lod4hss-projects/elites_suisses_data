@@ -74,7 +74,7 @@ SELECT type_entite, COUNT(*) as number
 FROM tw1
 -- inconsistency of the data
 -- add column and clean up
---where type_entite~* 'Féd'
+where type_entite~* 'Féd'
 GROUP BY type_entite
 ORDER BY number DESC;
 

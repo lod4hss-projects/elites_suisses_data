@@ -152,7 +152,7 @@ from elites_suisses.entites e
 where e.nom = 'ZH'
 group by e."idEntite", e.nom, lower(m.organe);
 
-
+--
 select e."idEntite", e.nom, lower(m.organe) organe, count(*) as number
 from elites_suisses.entites e 
     join elites_suisses.mandat m on m."idEntite" = e."idEntite" 
