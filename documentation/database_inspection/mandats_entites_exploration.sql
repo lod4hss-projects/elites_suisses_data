@@ -56,10 +56,11 @@ order by n desc;
 
 --- distribution of functions
 SELECT fonction, COUNT(*) as number
-FROM mandat m 
+FROM elites_suisses.mandat m 
 -- inconsistency of the data
 -- add column and clean up
-where fonction ~* 'prof'
+--where fonction ~* 'prof'
+where fonction ~* 'avoc'
 GROUP BY fonction
 ORDER BY number DESC;
 
@@ -69,7 +70,7 @@ ORDER BY number DESC;
 --- distribution of entitites' types
 with tw1 as (
 select m."typeEntite" AS type_entite
-from mandat m )
+from elites_suisses.mandat m )
 SELECT type_entite, COUNT(*) as number
 FROM tw1
 -- inconsistency of the data
@@ -86,7 +87,7 @@ SELECT organe, COUNT(*) as number
 FROM mandat
 -- inconsistency of the data
 -- add column and clean up
-where organe ~* 'comi'
+--where organe ~* 'comi'
 GROUP BY organe
 ORDER BY number DESC;
 
@@ -103,7 +104,7 @@ end available_id
 from mandat m )
 SELECT fonction, organe, type_entite, available_id, COUNT(*) as number
 FROM tw1
--- identification d'entités qui manquent
+-- identification of missing entities
 where available_id !~ 'sans'
 GROUP BY fonction, organe, type_entite, available_id
 ORDER BY number DESC;
@@ -128,6 +129,28 @@ GROUP BY fonction, organe, type_entite, available_id
 ORDER BY number DESC;
 
 
+
+
+
+--- distribution of entities, types, organs
+with tw1 as (
+select entite, organe,"typeEntite" AS type_entite,
+case 
+	when entite_id > 0 then 'avec_id_org'
+	else 'sans_id_org'
+end available_id,
+m."idEntite" 
+from elites_suisses.mandat m )
+SELECT entite,  type_entite, organe, available_id, COUNT(*) as number, string_agg(distinct e.nom, '|') entities
+FROM tw1
+   left join elites_suisses.entites e on e."idEntite" =  tw1."idEntite" 
+-- only identified entities
+where available_id !~ 'sans'
+GROUP BY entite, organe, type_entite, available_id
+ORDER BY number DESC;
+
+
+-- inspection with filter on values
 select *
 from elites_suisses.mandat m
 where m.fonction = 'Membre'
@@ -149,9 +172,9 @@ select m."partiAffiliationOfficeSecteur" nom, COUNT(*) as number
 FROM elites_suisses.mandat m
 GROUP BY m."partiAffiliationOfficeSecteur"
 )
-select tw1.nom, tw1."number", e."idEntite", e."typeEntite"
+select tw1.nom, tw1."number", e.nom, e."idEntite", e."typeEntite"
 from tw1
-    left join entites e on e.nom = tw1.nom
+    left join elites_suisses.entites e on e.nom = tw1.nom
 order by tw1."number" desc;
 
 

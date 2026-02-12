@@ -237,4 +237,6 @@ SELECT occupation, count(*) as number
 FROM t_person_occupation
 group by occupation 
 --having occupation like 'Photo%'
+--'Prof%'
+having occupation ilike 'avoc%'
 order by number desc;

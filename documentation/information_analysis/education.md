@@ -11,7 +11,7 @@
 | Titre_stxt | character varying |   |   |   |
 | TITRE_Codé | character varying |   |   |   |
 | Catégorie | character varying |   |   |   |
-| Ordre | integer |   |   |   |
+| Ordre | integer |   | propriétés de Allen? |   |
 | Institution | character varying |   |   |   |
 | Lieu | character varying |   |   |   |
 | Canton | character varying |   |   |   |
