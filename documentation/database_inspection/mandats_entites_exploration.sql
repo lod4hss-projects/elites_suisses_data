@@ -26,8 +26,8 @@ update mandat m set "partiAffiliationOfficeSecteur" =trim("partiAffiliationOffic
 
 
 
--- mandats sans entité
-select m.*
+-- mandats sans entité correspondante dans la table entites
+select e."idEntite", m.*
 from elites_suisses.mandat m 
 left join elites_suisses.entites e on e.id = m.entite_id 
 where e.id is null;
@@ -38,7 +38,7 @@ left join elites_suisses.entites e on e.id = m.entite_id
 where e.id is null;
 
 
--- entités manquantes
+-- entities without corresponding row in the 'entities' table
 select m.entite_id, m.entite, count(*) as n, m."idEntite"
 from elites_suisses.mandat m 
 left join elites_suisses.entites e on e.id = m.entite_id 
@@ -96,12 +96,12 @@ ORDER BY number DESC;
 
 --- distribution of functions, types, organs
 with tw1 as (
-select fonction, organe,"typeEntite" AS type_entite,
+select fonction,organe,"typeEntite" AS type_entite,
 case 
 	when entite_id > 0 then 'avec_id_org'
 	else 'sans_id_org'
 end available_id
-from mandat m )
+from elites_suisses.mandat m )
 SELECT fonction, organe, type_entite, available_id, COUNT(*) as number
 FROM tw1
 -- identification of missing entities
@@ -119,10 +119,10 @@ case
 	else 'sans_id_org'
 end available_id,
 m."idEntite" 
-from mandat m )
+from elites_suisses.mandat m )
 SELECT fonction, organe, type_entite, available_id, COUNT(*) as number, string_agg(distinct e.nom, '|') entities
 FROM tw1
-   left join entites e on e."idEntite" =  tw1."idEntite" 
+   left join elites_suisses.entites e on e."idEntite" =  tw1."idEntite" 
 -- identification d'entités qui manquent
 where available_id !~ 'sans'
 GROUP BY fonction, organe, type_entite, available_id
@@ -130,24 +130,6 @@ ORDER BY number DESC;
 
 
 
-
-
---- distribution of entities, types, organs
-with tw1 as (
-select entite, organe,"typeEntite" AS type_entite,
-case 
-	when entite_id > 0 then 'avec_id_org'
-	else 'sans_id_org'
-end available_id,
-m."idEntite" 
-from elites_suisses.mandat m )
-SELECT entite,  type_entite, organe, available_id, COUNT(*) as number, string_agg(distinct e.nom, '|') entities
-FROM tw1
-   left join elites_suisses.entites e on e."idEntite" =  tw1."idEntite" 
--- only identified entities
-where available_id !~ 'sans'
-GROUP BY entite, organe, type_entite, available_id
-ORDER BY number DESC;
 
 
 -- inspection with filter on values
@@ -190,4 +172,98 @@ where m.fonction = 'Membre'
 and m.entite_id > 0
 offset 50
 limit 10;
+
+
+
+
+
+
+/*
+ * Identification of new organisations
+ * 
+ * There are several organisations that are only implicit defined, 
+ * notably as 'organs' of other
+ * 
+ */
+
+
+--- distribution of entities, types, organs
+with tw1 as (
+select entite, organe,"typeEntite" AS type_entite,
+case 
+	when entite_id > 0 then 'avec_id_org'
+	else 'sans_id_org'
+end available_id,
+m."idEntite" 
+from elites_suisses.mandat m )
+SELECT e.nom, e."idEntite", tw1.entite,  type_entite, organe, COUNT(*) as number
+FROM tw1
+   left join elites_suisses.entites e on e."idEntite" =  tw1."idEntite" 
+-- only identified entities
+where available_id !~ 'sans'
+GROUP BY nom, e."idEntite", entite, organe, type_entite, available_id
+ORDER BY number DESC;
+
+
+
+-- this view represents organisations implicitly present in mandates
+drop view elites_suisses.v_groups_from_mandates;
+create view elites_suisses.v_groups_from_mandates AS 
+with tw1 as (
+select entite, organe,"typeEntite" AS type_entite,
+case 
+	when entite_id > 0 then 'avec_id_org'
+	else 'sans_id_org'
+end available_id,
+m."idEntite" 
+from elites_suisses.mandat m )
+SELECT e.nom, e."idEntite", tw1.entite,  type_entite, organe, COUNT(*) as number
+FROM tw1
+   left join elites_suisses.entites e on e."idEntite" =  tw1."idEntite" 
+-- only identified entities
+where available_id !~ 'sans'
+GROUP BY nom, e."idEntite", entite, organe, type_entite, available_id
+ORDER BY number DESC;
+
+-- canton parliaments
+select *
+from elites_suisses.v_groups_from_mandates
+where organe ~* 'légis' 
+and type_entite ~* 'can';
+
+-- canton governments
+select *
+from elites_suisses.v_groups_from_mandates
+where 
+organe ~* 'cutif' and 
+type_entite ~* 'can';
+
+
+
+select *
+from elites_suisses.v_groups_from_mandates
+where type_entite ~* 'féd' ;
+
+
+-- observe this data about
+SELECT m.*
+FROM elites_suisses.mandat AS m
+WHERE "idIdentite"=50352;
+
+SELECT m."idIdentite", count(*) as number
+FROM elites_suisses.mandat AS m
+group by "idIdentite" 
+order by number desc;
+
+SELECT m.*
+FROM elites_suisses.mandat AS m
+WHERE "idIdentite" in (SELECT m."idIdentite"
+FROM elites_suisses.mandat AS m
+group by "idIdentite" 
+having count(*) > 30)
+order by "idIdentite", m.sphere  ;
+
+
+
+
 

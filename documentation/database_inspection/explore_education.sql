@@ -100,8 +100,9 @@ order by ed."ID_IDENTITE"
 offset 1000
 limit 50;
 
--- insert ids
-update elites_suisses.education ed set id_institution = ent.id 
+
+-- insert ids of aligned educational institutions
+--update elites_suisses.education ed set id_institution = ent.id 
 from elites_suisses.entites ent 
 where trim(lower(ent.nom)) = trim(lower(ed."Institution")) ;
 
@@ -121,7 +122,7 @@ where e.id_institution is null;
 
 with tw1 as (
 select e.id_institution, count(*) as number
-from education e 
+from elites_suisses.education e 
 group by e.id_institution 
 )
 select e.id, e.nom, tw1."number" 
