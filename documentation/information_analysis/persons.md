@@ -15,14 +15,14 @@ Available information about them:
 | prenom | character varying |   |   |   |
 | naissance | character varying | [Birth Dates](../information_analysis/persons.md#birth-dates)  |   |   |
 | mort | character varying |   |   |   |
-| nbrMandats | character varying |   |   |   |
+| nbrMandats | character varying |  Obtenu par calcul, ne pas traiter pour le moment |   |   |
 | cantonNaissance | character varying |   |   |   |
 | confidentiel | character varying |   |   |   |
 | confidentiel_naissance | character varying |   |   |   |
 | DHS | character varying |   |   |   |
 | choixPhoto | character varying |   |   |   |
 | formationDoctorat | character varying |   |   |   |
-| formationUniversitaire | character varying |   |   |   |
+| formationUniversitaire | character varying |  Valeurs: OUI, NON, ne pas traiter pour l'instant  |   |   |
 | gradeMilitaireMax | character varying |   |   |   |
 | lieuNaissance | character varying |   |   |   |
 | nationalite | character varying |   |   |   |
