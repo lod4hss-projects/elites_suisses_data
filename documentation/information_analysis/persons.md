@@ -9,30 +9,30 @@ Available information about them:
 
 | Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
 |-------------|-----------|------|------|------|
-| sysid | integer |   |   |   |
-| id | integer |   |   |   |
-| nom | character varying |   |   |   |
-| prenom | character varying |   |   |   |
+| sysid | integer | Id not needed?  |   |   |
+| id | integer | Base for the URI (with a p in front)?  |   |   |
+| nom | character varying | Should we have nom + prenom together or keep th distinction?  |   |   |
+| prenom | character varying | cf. nom  |   |   |
 | naissance | character varying | [Birth Dates](../information_analysis/persons.md#birth-dates)  |   |   |
-| mort | character varying |   |   |   |
+| mort | character varying | cf. Birth Dates  |   |   |
 | nbrMandats | character varying |  Obtenu par calcul, ne pas traiter pour le moment |   |   |
-| cantonNaissance | character varying |   |   |   |
-| confidentiel | character varying |   |   |   |
+| cantonNaissance | character varying | We should priorize the Birth Place, but if not documented, use the Canton  |   |   |
+| confidentiel | character varying | Not sure what to do here  |   |   |
 | confidentiel_naissance | character varying |   |   |   |
-| DHS | character varying |   |   |   |
-| choixPhoto | character varying |   |   |   |
-| formationDoctorat | character varying |   |   |   |
-| formationUniversitaire | character varying |  Valeurs: OUI, NON, ne pas traiter pour l'instant  |   |   |
-| gradeMilitaireMax | character varying |   |   |   |
-| lieuNaissance | character varying |   |   |   |
-| nationalite | character varying |   |   |   |
-| profession | character varying |   |   |   |
+| DHS | character varying | Use sdh-sup:P20 same as external identifier  |   |   |
+| choixPhoto | character varying | Do not use (not sure what this is about)  |   |   |
+| formationDoctorat | character varying | Do not use, can be documented with education table  |   |   |
+| formationUniversitaire | character varying |  Do not use, can be documented with education table  |   |   |
+| gradeMilitaireMax | character varying | Do not use? This SHOULD be documented in the mandat table, but to verify  |   |   |
+| lieuNaissance | character varying | Create a Place table  |   |   |
+| nationalite | character varying | Yes, to document (create a Nationality table)  |   |   |
+| profession | character varying | [Occupation](../information_analysis/persons.md#occupation)  |   |   |
 | saisie | character varying |   |   |   |
 | sexe | character | [Gender](../information_analysis/persons.md#gender)  |   |   |
-| sourcesBio | text |   |   |   |
-| sourcesFormations | text |   |   |   |
-| creation | character varying |   |   |   |
-| versionDate | date |   |   |   |
+| sourcesBio | text |  To document (mentioned in?) |   |   |
+| sourcesFormations | text | To document, but linked to the Person or to the Education?  |   |   |
+| creation | character varying | To document in the graph?  |   |   |
+| versionDate | date |  To document in the graph? |   |   |
 
 &nbsp;
 
@@ -144,6 +144,9 @@ Similar to birth dates
 |BS?|1|
 |SZ?|1|
 
+### Treatment
+
+When "Etranger", do not document.
 
 ## PhD
 

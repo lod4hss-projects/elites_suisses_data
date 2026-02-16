@@ -6,11 +6,11 @@
 |-------------|-----------|------|------|------|
 | sysid | integer |   |   |   |
 | id | integer |   |   |   |
-| idMariage | character varying |   |   |   |
-| idFemme | integer |   |   |   |
-| idMari | integer |   |   |   |
-| anneeMariage_Utilisee | character varying |   |   |   |
-| anneeDivorce_Utilisee | character varying |   |   |   |
+| idMariage | character varying | Use for the URI of the sdh-slc:C3 Social Relationship?  |   |   |
+| idFemme | integer | Add Actor's Social Quality "Wife"  |   |   |
+| idMari | integer | Add Actor's Social Quality "Husband"  |   |   |
+| anneeMariage_Utilisee | character varying | begin date of the sdh-slc:C3 Social Relationship  |   |   |
+| anneeDivorce_Utilisee | character varying | end date of the sdh-slc:C3 Social Relationship  |   |   |
 | auteurModif | character varying |   |   |   |
 | creation | character varying |   |   |   |
 | dateExacte_divorce | character varying |   |   |   |
