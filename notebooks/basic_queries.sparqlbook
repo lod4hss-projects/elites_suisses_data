@@ -14,7 +14,19 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "SELECT ?s ?p ?o\nWHERE { graph <https://swiss-elites.lod4hss.cloud/resource/originatesFrom>\n {?s ?p ?o} }\nLIMIT 25",
+    "value": "### Classes and number of their instances\nSELECT ?class (COUNT(*) AS ?number)\n WHERE { graph <https://swiss-elites.lod4hss.cloud/resource/>\n {?s a ?class} }\nGROUP BY ?class\nORDER BY DESC(?number)",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "SELECT ?s ?p ?o\nWHERE { graph <https://swiss-elites.lod4hss.cloud/resource/originatesFrom>\n {?s ?p ?o} }\nLIMIT 10",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "### How many triples in the Wisski metadata graph \nSELECT (COUNT(*) AS ?number)\nWHERE { graph <https://swiss-elites.lod4hss.cloud/resource/originatesFrom>\n {?s ?p ?o} }",
     "metadata": {}
   },
   {

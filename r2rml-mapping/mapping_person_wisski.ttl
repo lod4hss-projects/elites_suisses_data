@@ -40,7 +40,7 @@
     .
 
 
-    <#identifier2> a rr:TriplesMap;
+<#identifier2> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
     rr:subjectMap [
         rr:column "\"URL\"" ;

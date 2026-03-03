@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF8" ?><error code="500" message="Error: An exception occurred while executing 'SELECT result::text FROM api.get_owl_classes_and_properties_for_profiles(:lang, 0, :project) as result;' with params ["en", 269]:
+
+SQLSTATE[42883]: Undefined function: 7 ERREUR:  l'opérateur n'existe pas : character varying = integer
+LINE 3:        WHERE lbl.language_iso_code = $1 AND fk_profile  = $2
+                                           ^
+HINT:  Aucun opérateur ne correspond au nom donné et aux types d'arguments.
+Vous devez ajouter des conversions explicites de type.
+QUERY:  SELECT pk_label
+							FROM che.label lbl
+							WHERE lbl.language_iso_code = $1 AND fk_profile  = $2
+							LIMIT 1
+CONTEXT:  fonction PL/pgsql api.get_label(text,integer,text), ligne 42 à instruction EXECUTE
+instruction SQL « SELECT array_append(ontology_label, (SELECT t.label
+            FROM api.get_label ('profile', profile,lang) 
+            AS t(pk_label INTEGER,label TEXT,language_iso_code TEXT,is_standard_label_for_language BOOLEAN))::text) »
+fonction PL/pgsql api.get_owl_classes_and_properties_for_profiles(text,integer,integer), ligne 84 à affectation"/>
