@@ -2,7 +2,7 @@ Here is the folder for the database and your code, Nico :-)
 
 
 Tasks:
-* create a sqlite database and import the table of the persons
+* create a sqlite database in this same directory and import the table of the persons
 * create a table for the birthplaces (the places, with geocoordinates and wikidata URI)
 * add a foreign key column to the person table pointing to the place table for the birthplace
 * add a table for citizenships and a join n to n table between persons and citizenships
