@@ -1,3 +1,13 @@
+select * 
+from elites_suisses.identifier i
+limit 10;
+
+
+select * 
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'wikida'
+limit 10;
+
 
 SELECT *
 FROM elites_suisses.identifier i 
