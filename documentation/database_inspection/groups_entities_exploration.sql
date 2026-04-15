@@ -17,7 +17,7 @@ where e.nom is null or e.nom = '' or length(e.nom)< 3;
 select e.*
 from  elites_suisses.entites e
 where e.nom is null or e.nom = '' or length(e.nom)< 3
-order by id 
+order by nom
 LIMIT 50;
 
 select e.entity_id, e."typeEntite", e.nom 
@@ -45,30 +45,86 @@ update elites_suisses.entites e set nom =trim(nom);
 
 update elites_suisses.entites e set "typeEntite" =trim("typeEntite");
 
+/*
+ * Issue of having a primary key 
+ * for foreign key references from other tables
+ * 
+ * Note that the education table refers to the 'id' column
+ * while the mandates table refers to the "idEntite" column
+ * 
+ */
 
--- add column with entity ids as integers
--- all
-
-alter table elites_suisses.entites add column entity_id integer;
-
-update elites_suisses.entites
-set entity_id =(replace("idEntite", 'entite', ''))::integer
-where length("idEntite" ) > 6 ;
-
-select entity_id
-from elites_suisses.entites
-limit 10;
-
-
-
-
--- pas de doubons, apparemment
+-- pas de doubons
 select t1.id, count(*) as effectif
 from elites_suisses.entites t1
 group by t1.id
 HAVING count(*) > 1
 order by effectif desc
+limit 5;
+
+select *
+from elites_suisses.entites t1
+where t1.id is null or t1.id = 0;
+
+-- the column 'id' is therefore used as the primary key of the entities tables
+
+
+
+
+-- trois sans idEntité : Worb, trois versions
+-- sinon pas de entités multiples
+select t1."idEntite", count(*) as effectif
+from elites_suisses.entites t1
+group by t1."idEntite"
+HAVING count(*) > 1
+order by effectif desc
 limit 50;
+
+select *
+from elites_suisses.entites t1
+where t1.nom = 'Worb';
+
+
+-- max:3937
+select max(e.entity_id )
+from elites_suisses.entites e 
+
+-- new identifiers from 10001
+
+update elites_suisses.entites t1
+set entity_id = 10001
+where t1."idEntite" = '';
+
+select *
+from elites_suisses.entites t1
+where entity_id = 10001;
+
+
+select *
+-- delete 
+from elites_suisses.entites t1
+where entity_id = 10001
+and t1."versionDate"::text < '2024';
+
+-- Create the sequence starting at 10002
+CREATE SEQUENCE elites_suisses.entites_entity_id_seq START WITH 10002;
+
+-- Set the column default to the next value from the sequence
+ALTER TABLE elites_suisses.entites 
+ALTER COLUMN entity_id SET DEFAULT nextval('elites_suisses.entites_entity_id_seq');
+
+-- Add the primary key constraint
+ALTER TABLE elites_suisses.entites  
+ADD PRIMARY KEY (entity_id);
+
+-- Optional: Link the sequence to the column so it drops automatically if the column is dropped
+ALTER SEQUENCE table_name_column_name_seq OWNED BY table_name.column_name;
+
+
+/*
+ * inspect entities types
+ */
+
 
 
 -- inspect entities types
@@ -93,7 +149,8 @@ order by n desc;
 
 
 -- sphere and type
-select e.sphere, e."typeEntite", count(*) as n
+-- requête important pour inspection
+select e.sphere, e."typeEntite", count(*) as n, string_agg(distinct nom, '; ')
 from elites_suisses.entites e 
 group by e.sphere, e."typeEntite" 
 order by e.sphere, n desc;
