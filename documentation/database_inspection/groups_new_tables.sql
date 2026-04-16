@@ -78,6 +78,11 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE elites_suisses.crm_group TO "hgb_e
 
 ALTER TABLE elites_suisses.crm_group OWNER TO "hgb_editor";
 
+-- FOREIGN KEY 
+alter table elites_suisses.crm_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
+	references elites_suisses.entites(id);
+
+
 
 ALTER TABLE elites_suisses.mandat ADD COLUMN fk_crm_group_organe INTEGER;
 
@@ -86,9 +91,6 @@ alter table elites_suisses.mandat add constraint fk_crm_group_organe_fk foreign 
 	references elites_suisses.crm_group(pk_crm_group);
 
 
--- FOREIGN KEY 
-alter table elites_suisses.crm_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
-	references elites_suisses.entites(id);
 
 
 
