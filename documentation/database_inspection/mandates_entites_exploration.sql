@@ -126,7 +126,7 @@ ORDER BY number DESC;
 --- distribution of organs
 
 SELECT organe, COUNT(*) as number
-FROM mandat
+FROM elites_suisses.mandat
 -- inconsistency of the data
 -- add column and clean up
 --where organe ~* 'comi'
