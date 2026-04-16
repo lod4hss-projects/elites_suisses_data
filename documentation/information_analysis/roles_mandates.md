@@ -1,13 +1,20 @@
 
 
 
+Rows in this table represent a bundle of different informations, mainly instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data
 
 
 &nbsp;
 
+### Different kinds of mandates / memberships
+
+* Federal and cantonal Swiss authorities
 
 
-### mandat
+
+### Table: *mandat* - structure
+
+
 | Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
 |-------------|-----------|------|------|------|
 | sysid | integer |   |   |   |
