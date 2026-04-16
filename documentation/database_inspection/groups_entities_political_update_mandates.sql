@@ -9,6 +9,12 @@ from elites_suisses.mandat m
 where m.fk_crm_group_organe is not null;
 
 
+SELECT *
+from elites_suisses.mandat m 
+where m.fk_crm_group_organe is not NULL
+LIMIT 50;
+
+
 /*
  * entités et organes / organes dans les entités
  * crm:74 Group
@@ -73,9 +79,28 @@ where cg.pk_crm_group = m.fk_crm_group_organe
 group by  m.fk_crm_group_organe, cg."name"
 order by m.fk_crm_group_organe;
 
+-- inspect social role
+select m.id, m.entite, m.organe, m."partiAffiliationOfficeSecteur", cg."name", m.fk_crm_group_organe, cg.fk_group_type, sr."name", sr.pk_social_role 
+from elites_suisses.mandat m 
+  left join elites_suisses.crm_group cg on cg.pk_crm_group = m.fk_crm_group_organe 
+  left join elites_suisses.social_role sr on sr.fk_group_type = cg.fk_group_type 
+where cg.fk_group_type = 1;
 
+-- update social role
+--update elites_suisses.mandat m set fk_social_role_fonction = 3
+from elites_suisses.crm_group cg
+where cg.pk_crm_group = m.fk_crm_group_organe 
+and cg.fk_group_type = 1;
 
+select m.*
+from elites_suisses.mandat m, elites_suisses.crm_group cg
+where cg.pk_crm_group = m.fk_crm_group_organe 
+and cg.fk_group_type = 1;
 
+select m.*
+from elites_suisses.mandat m
+where  m.fk_social_role_fonction =3
+limit 1000;
 /*
  * canton parlaments
  */
@@ -199,6 +224,9 @@ where entities_id = 74
 group by fonction
 order by num desc;
 
+
+
+
 /*
  * Association aux partis
  */
@@ -246,10 +274,13 @@ order by e.nom ;
 
 
 
-select m.fk_crm_group_organe, cg."name", count(*) as num
-from elites_suisses.mandat m , elites_suisses.crm_group cg 
+select m.fk_crm_group_organe, cg."name", count(*) as num, gt."name" 
+from elites_suisses.mandat m , 
+		elites_suisses.crm_group cg,
+		elites_suisses.group_type gt 
 where cg.pk_crm_group = m.fk_crm_group_organe 
-group by  m.fk_crm_group_organe, cg."name"
+and gt.pk_group_type = cg.fk_group_type 
+group by  m.fk_crm_group_organe, cg."name", gt."name" 
 order by num desc;
 order by m.fk_crm_group_organe;
 
