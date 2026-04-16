@@ -8,7 +8,7 @@ Rows in this table represent a bundle of different informations, mainly instance
 
 ### Different kinds of mandates / memberships
 
-* Federal and cantonal Swiss authorities
+* [Federal and cantonal Swiss authorities](mandates_federal_cantonal_Swiss_authorities.md)
 
 
 

@@ -1,18 +1,58 @@
 
--- tous
+/*
+ * Exploration de l'ensemble
+ */
+
+
+-- Nombre de mandats
 select count(*) as num
 from elites_suisses.mandat m ;
 
--- alignés
+
+-- Nombre de mandats avec organisation d'exercice identifiée
 select count(*) as num
 from elites_suisses.mandat m 
 where m.fk_crm_group_organe is not null;
 
+-- Organisations identifiées
+select m.fk_crm_group_organe, cg."name", count(*) as num, gt."name" 
+from elites_suisses.mandat m , 
+		elites_suisses.crm_group cg,
+		elites_suisses.group_type gt 
+where cg.pk_crm_group = m.fk_crm_group_organe 
+and gt.pk_group_type = cg.fk_group_type 
+group by  m.fk_crm_group_organe, cg."name", gt."name" 
+order by num desc
+limit 10;
 
+--- Exemples
 SELECT *
 from elites_suisses.mandat m 
 where m.fk_crm_group_organe is not NULL
+and m."typeEntite" ~* 'féd'
 LIMIT 50;
+
+
+
+-- Nombre de mandats avec role identifié
+select count(*) as num
+from elites_suisses.mandat m 
+where m.fk_social_role_fonction is not null;
+
+
+-- Roles et organes identifiées
+select count(*) as frequency, m.fk_social_role_fonction::integer, sr."name", m.fk_crm_group_organe::integer, cg."name",  gt."name" 
+from elites_suisses.mandat m
+	join elites_suisses.social_role sr on sr.pk_social_role = m.fk_social_role_fonction 
+	left join elites_suisses.crm_group cg on cg.pk_crm_group = m.fk_crm_group_organe 
+	left join elites_suisses.group_type gt on gt.pk_group_type = cg.fk_group_type 
+group by m.fk_social_role_fonction, sr."name", m.fk_crm_group_organe, cg."name", gt."name" 
+order by cg."name", sr."name" desc;
+
+
+
+
+
 
 
 /*
@@ -101,6 +141,9 @@ select m.*
 from elites_suisses.mandat m
 where  m.fk_social_role_fonction =3
 limit 1000;
+
+
+
 /*
  * canton parlaments
  */
@@ -166,65 +209,23 @@ order by m.fk_crm_group_organe;
 
 
 
-
-/*
- * Conseil national
- */
-
-select count(*) as num
-from elites_suisses.v_groups_from_mandates;
-
-select *
-from elites_suisses.v_groups_from_mandates
-where m_nom ~* 'conseil.*ational'
-and length(m_nom) < 30;
-
-select *
-from elites_suisses.v_groups_from_mandates
-where e_id = 74;
-
-
-select * 
+-- inspect social role
+select m.id, m.entite, m.organe, m."partiAffiliationOfficeSecteur", cg."name", m.fk_crm_group_organe, cg.fk_group_type, sr."name", m.fk_social_role_fonction, sr.pk_social_role 
 from elites_suisses.mandat m 
-where entities_id = 74
-limit 10;
+  left join elites_suisses.crm_group cg on cg.pk_crm_group = m.fk_crm_group_organe 
+  left join elites_suisses.social_role sr on sr.fk_group_type = cg.fk_group_type 
+where cg.fk_group_type = 3;
 
--- ajouté les conseillers nationaux
---update elites_suisses.mandat m set fk_crm_group_organe = 79
-where entities_id = 74;
+-- update social role
+--update elites_suisses.mandat m set fk_social_role_fonction = 2
+from elites_suisses.crm_group cg
+where cg.pk_crm_group = m.fk_crm_group_organe 
+and cg.fk_group_type = 3;
 
-
-
-
-
-/*
- * Conseil fédéral
- */
-
-
-select *
-from elites_suisses.v_groups_from_mandates
-where m_nom ~* 'conseil.*ational'
-and length(m_nom) < 30;
-
-select *
-from elites_suisses.v_groups_from_mandates
-where e_id = 74;
-
-
-select * 
-from elites_suisses.mandat m 
-where entities_id = 74
-limit 100;
-
-
-select fonction, count(*) as num
-from elites_suisses.mandat m 
-where entities_id = 74
-group by fonction
-order by num desc;
-
-
+select m.*
+from elites_suisses.mandat m, elites_suisses.crm_group cg
+where cg.pk_crm_group = m.fk_crm_group_organe 
+and cg.fk_group_type = 1;
 
 
 /*
