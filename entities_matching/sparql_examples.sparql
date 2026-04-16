@@ -1,0 +1,15 @@
+SELECT ?item ?itemLabel ?type ?typeLabel
+WHERE {
+  ?item rdfs:label "commandant de corps" @fr .
+  ?item wdt:P31 ?type .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}
+
+SELECT ?place ?placeLabel ?type ?typeLabel
+WHERE {
+  ?place rdfs:label "Kölliken"@fr .  # Match the place by its French label
+  ?place wdt:P31 ?type .          # P31 is the "instance of" property, which defines the entity type
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en" . # Request labels in French and English
+  }
+}
