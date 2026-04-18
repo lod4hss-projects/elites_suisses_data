@@ -81,7 +81,11 @@ where m.entite ~* 'Worb';
 -- mandats sans entité correspondante dans la table entites
 select m.*
 from elites_suisses.mandat m 
-where m.entities_id is null;
+where 
+--m.entities_id is null
+--and 
+fonction ~* 'Administrateur-délégué et président'
+;
 
 -- 7558
 select count(*)
@@ -143,7 +147,9 @@ case
 	when entities_id > 0 then 'avec_id_org'
 	else 'sans_id_org'
 end available_id
-from elites_suisses.mandat m )
+from elites_suisses.mandat m 
+where m."typeEntite" ~* 'Entreprise'
+)
 SELECT fonction, organe, type_entite, available_id, COUNT(*) as number
 FROM tw1
 -- identification of missing entities

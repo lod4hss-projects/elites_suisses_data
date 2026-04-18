@@ -1,7 +1,8 @@
 
 -- tous
 select count(*) as num
-from elites_suisses.mandat m ;
+from elites_suisses.mandat m 
+where m_type_entite = 'Entreprise';
 
 -- alignés
 select count(*) as num
@@ -58,7 +59,7 @@ select m_type_entite, m_organe , sum(number) as sum_mandates
 from elites_suisses.v_groups_from_mandates
 where m_type_entite = 'Entreprise'
 group by m_type_entite,m_organe 
-order by m_type_entite, m_organe;
+--order by m_type_entite, m_organe;
 order by sum_mandates desc;
 
 
