@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>                                             
+                        <rdf:RDF 
+                              xml:base="https://ontome.net/"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                            xmlns:owl="http://www.w3.org/2002/07/owl#"
+                            xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                            xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+                            xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+                            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                          >
+                          <owl:Ontology rdf:about="https://ontome.net/">
+                            <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exported from OntoME: Profile or Profiles in Project. The ontological consistency is not granted per se and must be checked</owl:versionInfo><rdfs:comment xml:lang="en">pr-208: Person - Social Relationship  – This profile describes the social relationship that can exists between people in the mental and social sphere, in opposition to the physical interaction between individuals. Those social relationships can be of any kind, from simple and short period to long lasting.
+The physical interaction between persons is documented in the profile Person - Physical Intercation, while the biological lineage between parents and children is documented in the Person - Biological Family profile.
+What can be described in this profile:
+
+The time-span of the social relationship
+The kind of social relationship
+The role of the person in this relationship (especially if the relationship is assymetrical)
+
+Examples:
+
+Jean-Joseph Pasteur and Jeanne-Etiennette Roqui (the parents of Louis Pasteur) had a social relationship of the type mariage from August 27th 1816 to the death of Jeanne-Etiennette in 1848, Jean-Joseph with the role "Husband" and Jeanne-Etiennette with the role "Wife".
+</rdfs:comment><rdfs:label xml:lang="en">Profile(s): Person - Social Relationship </rdfs:label>
+                            </owl:Ontology><owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crm:E21</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c21"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class comprises real persons who live or are assumed to have lived. Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CRM does not propose a specific form to support reasoning about possible identity.</rdfs:comment>
+                        <rdfs:label xml:lang="en">Person</rdfs:label></owl:Class>   <owl:Class rdf:about="https://sdhss.org/ontology/social-life-core/C3">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:C3</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c334"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class comprises phenomenons of a social relation between people, groups or countries as it is perceived in the context of shared intention. In other words, this class does not model a physical interaction of actors in space and time (for persons this interaction is modelled with the C18 Persons' Interaction class) but the perception of a phenomenon like friendship, marriage, apprenticeship, etc. that happens in the minds and the social space.
+Each relationship generally involves only two instances of one or more classes. If more then two instances are involved (e.g. multilateral political relationships) the unity of time and social space must be given. If different persons or groups are socially interreladed at different times, or perceived as such in different social contexts, several instances of this class must be produced and provided with appropriate types.
+If the relationship is symmetrical, the sdh-so:P15 involves partner property has to be used in order to associate the partners of the relationship. If the relationship is asymmetrical, the different roles actors can have in the relationship would be described through the intentional Actor's Role in a Social Relationship (a sub-class of crm:E89 Propositional Object).
+Deprecated
+If the relationship is oriented from a source to a target (the partners having a different position in the relationship), the properties sdh-so:P17 has relationship source and sdh-so:P18 has relationship target will be used. This generic treatment allows to express a direction of the relationship. The meaning of the direction will be explicitly defined in the controlled vocabulary of relationship types.
+Given their different meanings, it is absolutely necessary to avoid mixing the two types of relationships: either use the sdh-so:P15 property or the sdh-so:P17 / sdh-so:P18 – they are disjoint.</rdfs:comment>
+                        <rdfs:label xml:lang="en">Social Relationship</rdfs:label></owl:Class>   <owl:Class rdf:about="https://sdhss.org/ontology/social-life-core/C2">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:C2</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c444"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professional, political, religious or whatever generic social quality of an actor, be it a person or a group, as it is perceived from the point of view of the representations of a human community. A social quality is a socially constructed concept (in the sense of the connotation of an entity with a crm:E55 Type) and it is used to socially classify individuals in the perspective of the community. 
+This class is not to be confused with the sdh-so:C12 Actor's Social Role class which models legally defined social roles and functions of actors and should be exclusively used for this kind of concepts. Social roles are formalisations of social qualities in relation to specific groups and custom or legal contexts.</rdfs:comment>
+                        <rdfs:label xml:lang="en">Actor's Social Quality</rdfs:label></owl:Class>   <owl:Class rdf:about="https://sdhss.org/ontology/social-life-core/C4">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:C4</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c632"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of the histC6 Relationship class.
+If the relationship is oriented from a source to a target (the partners having a different position in the relationship), the properties histP49 has relationship source and histP50 has relationship target will be used. This generic treatment allows to express a direction of the relationship. The meaning of the direction will be explicitly defined in the definition of the terms in the controlled vocabulary of social relationship types.</rdfs:comment>
+                        <rdfs:label xml:lang="en">Social Relationship Type</rdfs:label></owl:Class>   <owl:Class rdf:about="https://sdhss.org/ontology/social-life-core/C43">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:C43</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c1714"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class expresses the intentional role of an Actor within a Social Relationship. This class is not a temporal phenomenon such as the class sdh:C1 Entity Quality or its subclasses, but a propositional object related to the temporal and intentional phenomenon of the Social Relationship.</rdfs:comment>
+                        <rdfs:label xml:lang="en">Actor's Role in a Social Relationship</rdfs:label></owl:Class><owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P73">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                <rdfs:comment xml:lang="en">This property associates an actor to the role it has within a social relationship.</rdfs:comment>
+                <rdfs:label xml:lang="en">is social relationship role of</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P73</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2897"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P73">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                <rdfs:comment xml:lang="en">This property associates an actor to the role it has within a social relationship.</rdfs:comment>
+                <rdfs:label xml:lang="en">is social relationship role of</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P73</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2897"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P73">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                <rdfs:comment xml:lang="en">This property associates an actor to the role it has within a social relationship.</rdfs:comment>
+                <rdfs:label xml:lang="en">is social relationship role of</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P73</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2897"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P73">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                <rdfs:comment xml:lang="en">This property associates an actor to the role it has within a social relationship.</rdfs:comment>
+                <rdfs:label xml:lang="en">is social relationship role of</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P73</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2897"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P73">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                <rdfs:comment xml:lang="en">This property associates an actor to the role it has within a social relationship.</rdfs:comment>
+                <rdfs:label xml:lang="en">is social relationship role of</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P73</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2897"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P73">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                <rdfs:comment xml:lang="en">This property associates an actor to the role it has within a social relationship.</rdfs:comment>
+                <rdfs:label xml:lang="en">is social relationship role of</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P73</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2897"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P72">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C2"/>
+                <rdfs:comment xml:lang="en">This property links the Actor''s Role in a Social Relationship to the role itself, documented with a controlled vocabulary.</rdfs:comment>
+                <rdfs:label xml:lang="en">has role quality</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P72</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2896"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P72">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C2"/>
+                <rdfs:comment xml:lang="en">This property links the Actor''s Role in a Social Relationship to the role itself, documented with a controlled vocabulary.</rdfs:comment>
+                <rdfs:label xml:lang="en">has role quality</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P72</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2896"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P72">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C2"/>
+                <rdfs:comment xml:lang="en">This property links the Actor''s Role in a Social Relationship to the role itself, documented with a controlled vocabulary.</rdfs:comment>
+                <rdfs:label xml:lang="en">has role quality</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P72</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2896"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P72">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C2"/>
+                <rdfs:comment xml:lang="en">This property links the Actor''s Role in a Social Relationship to the role itself, documented with a controlled vocabulary.</rdfs:comment>
+                <rdfs:label xml:lang="en">has role quality</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P72</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2896"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P16">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C4"/>
+                <rdfs:comment xml:lang="en">Associates a social relationship with the type which defines its identity</rdfs:comment>
+                <rdfs:label xml:lang="en">has relationship type</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P16</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p1434"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P16">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C4"/>
+                <rdfs:comment xml:lang="en">Associates a social relationship with the type which defines its identity</rdfs:comment>
+                <rdfs:label xml:lang="en">has relationship type</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P16</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p1434"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P16">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C4"/>
+                <rdfs:comment xml:lang="en">Associates a social relationship with the type which defines its identity</rdfs:comment>
+                <rdfs:label xml:lang="en">has relationship type</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P16</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p1434"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P16">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C4"/>
+                <rdfs:comment xml:lang="en">Associates a social relationship with the type which defines its identity</rdfs:comment>
+                <rdfs:label xml:lang="en">has relationship type</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P16</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p1434"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P74">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                <rdfs:comment xml:lang="en">This property associates an Actor''s Role in a Social Relation with the specific social relationship it has as context.</rdfs:comment>
+                <rdfs:label xml:lang="en">is role within</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P74</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2898"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P74">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                <rdfs:comment xml:lang="en">This property associates an Actor''s Role in a Social Relation with the specific social relationship it has as context.</rdfs:comment>
+                <rdfs:label xml:lang="en">is role within</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P74</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2898"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P74">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                <rdfs:comment xml:lang="en">This property associates an Actor''s Role in a Social Relation with the specific social relationship it has as context.</rdfs:comment>
+                <rdfs:label xml:lang="en">is role within</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P74</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2898"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/social-life-core/P74">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/social-life-core/C3"/>
+                <rdfs:comment xml:lang="en">This property associates an Actor''s Role in a Social Relation with the specific social relationship it has as context.</rdfs:comment>
+                <rdfs:label xml:lang="en">is role within</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-slc:P74</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p2898"/>
+                <rdfs:domain rdf:resource="https://sdhss.org/ontology/social-life-core/C43"/>
+                </owl:ObjectProperty></rdf:RDF>

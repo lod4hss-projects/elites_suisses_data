@@ -77,3 +77,45 @@
         rr:objectMap [ rr:column "birth_year" ;
                 rr:dataType xsd:integer];
     ].
+
+
+
+<#soc_relation_type1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.social_relationship_type" ];
+    rr:subjectMap [
+        # rr:constant swel: ; does not work,
+        # keep the full URI for the template
+        rr:template "https://swiss-elites.lod4hss.cloud/resource/srt{pk_social_relationship_type}";
+        rr:class sdh-slc:C4;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P9;
+        rr:objectMap [ rr:column "name" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ rr:template "{wikidata_uri}"];
+    ] .
+
+
+<#marriage1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.v_mariage" ];
+    rr:subjectMap [
+        # rr:constant swel: ; does not work,
+        # keep the full URI for the template
+        rr:template "https://swiss-elites.lod4hss.cloud/resource/mar{id}";
+        # rr:termType rr:IRI;
+        rr:class sdh-slc:C9;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-slc:P20;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/p{femme}" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-slc:P20;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/p{homme}" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-slc:P16;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/srt{fk_social_relationship_type}" ];
+    ].

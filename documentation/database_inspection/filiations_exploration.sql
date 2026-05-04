@@ -78,24 +78,24 @@ select id_filiation, id_fils, birth_year,
 	-- P96
 	case
 		when upper("sexeParent") = 'F'
-		then concat('p',"idParent")
-		else ''
+		then "idParent"
+		else NULL
 	end mother,	
 	-- P97
 	case
 		when upper("sexeParent") = 'H'
-		then concat('p',"idParent")
-		else ''
+		then "idParent"
+		else NULL
 	end father	
 from tw1)
 --select * 
 --from tw2;
 select string_agg(id_filiation::text,'_'),
 		concat('bir_',id_fils::varchar) as id_birth,
-		concat('p',"id_fils") as child,
+		id_fils as child,
 		birth_year,
-		min(NULLIF(mother, '')) as mother,
-		min(NULLIF(father, '')) as father
+		min(NULLIF(mother, NULL)) as mother,
+		min(NULLIF(father, NULL)) as father
 from tw2
 group by id_fils, birth_year ;
 
