@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>                                             
+                        <rdf:RDF 
+                              xml:base="https://ontome.net/"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                            xmlns:owl="http://www.w3.org/2002/07/owl#"
+                            xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+                            xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+                            xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+                            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                          >
+                          <owl:Ontology rdf:about="https://ontome.net/">
+                            <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exported from OntoME: Profile or Profiles in Project. The ontological consistency is not granted per se and must be checked</owl:versionInfo><rdfs:comment xml:lang="en">pr-599: Person - Identification ongoing – This profile describes basic information needed for the identification of individuals, namely their name, short biography and the dates of birth and death.
+This profile is therefore different in purpose and form from the Person - Birth and Death and Person - Appellation profiles.
+See the latest version of the profile in the tab Versions.
+What can be described in this profile:
+
+The name of the person, in a string
+The short biography (definition) of the person, in a string
+The birth date of the person, following the standards of C39 Standard Date Time
+The death date of the person, following the standards of C39 Standard Date Time
+
+Examples:
+The person Archimedes of Syracuse, has as label "Archimedes", as definition "Ancient Greek mathematician, physicist, engineer, astronomer, and inventor from the city of Syracuse in Sicily", birth date "bce0287" and death date "bce0212". Those information can be used to clearly identify Archimedes from homonyms, such as Archimedes of Tralles, an Ancient Greek writer and grammarian.</rdfs:comment><rdfs:label xml:lang="en">Profile(s): Person - Identification ongoing</rdfs:label>
+                            </owl:Ontology><owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crm:E21</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c21"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class comprises real persons who live or are assumed to have lived. Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CRM does not propose a specific form to support reasoning about possible identity.</rdfs:comment>
+                        <rdfs:label xml:lang="en">Person</rdfs:label></owl:Class>   <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E62">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crm:E62</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c339"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class comprises the instances of E59 Primitive Values used for documentation such as free text strings, bitmaps, vector graphics, etc. E62 String is not further elaborated upon within the model</rdfs:comment>
+                        <rdfs:label xml:lang="en">String</rdfs:label></owl:Class>   <owl:Class rdf:about="https://sdhss.org/ontology/crm-supplement/C39">
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crm-sup:C39</skos:notation><owl:sameAs rdf:resource="https://ontome.net/ontology/c1888"/>
+            <rdfs:comment xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As a subclass of crm:E61 Time Primitive this class comprises strings expressing dates and times. Instances of this class should not be identified by IRIs.
+Standard Date-Time strings must follow specific rules.
+The time primitives must be expressed in the form of strings, based on the ISO and XSD format, e.g.: '2001-05-23T08:20:00+08:00'.
+The string may contain only a year, e.g. '0851', or a year and a month, e.g. '0851-05', etc. It must be built from left to right, and must be complete on the left side, even if truncated on the right.
+Years are defined in the Common or Christian Era (CE), they are ordinals starting from the first year of the CE, '0001'. There is therefore no zero year. For years before the Common Era (BCE) the string must always be prefixed with 'bce', e.g. 'bce0330'.
+Dates are defined in the Julian calendar until Thursday 4 October 1582 and continue in the Gregorian calendar from the next day, which was the Friday 15 October 1582. No Gregorian proleptic system is allowed before the 15 October 1582 and no Julian calendar dates are allowed after this date.
+To express other calendars and ways of definig time it is compulsory to use instances of the Temporal Locations class (cf. ???) .</rdfs:comment>
+                        <rdfs:label xml:lang="en">Standard Date-Time</rdfs:label></owl:Class><owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P13">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/crm-supplement/C39"/>
+                <rdfs:comment xml:lang="en">This property associates a person with their death date expressed as an instance of sdh-short:C1 Standard Date-Time, specifying a temporal position within which the phenomenon of the birth was located.
+It is a shortcut of the property path : crm:E21 Person → (inverse of) crm:P100 was death of → crm:E69 Death → crm:P4 has time-span → crm:E52 Time-Span → crm:P81 ongoing throughout → crm:E61 Time Primitive, but it imposes some specific rules regarding the possible values of the time primitive as defined by the target class sdh-short:C1 Standard Date-Time.
+It is equivalent to the DBpedia dbo:deathDate and Wikidata wdt:P570 Date of Death properties.</rdfs:comment>
+                <rdfs:label xml:lang="en">has death date</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P13</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3226"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P2">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/crm-supplement/C39"/>
+                <rdfs:comment xml:lang="en">This property associates a person with his/hers birthdate expressed as an instance of sdh-short:C1 Standard Date-Time, specifying a temporal position within which the phenomenon of the birth was located.
+It is a shortcut of the property path : crm:E21 Person → (inverse of) crm:P98 brought into life→ crm:E67 Birth → crm:P4 has time-span → crm:E52 Time-Span → crm:P81 ongoing throughout → crm:E61 Time Primitive but it imposes some specific rules regarding the possible values of the time primitive as defined by the target class sdh-short:C1 Standard Date-Time.
+It is an equivalent with the DBpedia dbo:birthDate and Wikidata wdt:P569 Date of Birth properties.</rdfs:comment>
+                <rdfs:label xml:lang="en">has birth date</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P2</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3087"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P13">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/crm-supplement/C39"/>
+                <rdfs:comment xml:lang="en">This property associates a person with their death date expressed as an instance of sdh-short:C1 Standard Date-Time, specifying a temporal position within which the phenomenon of the birth was located.
+It is a shortcut of the property path : crm:E21 Person → (inverse of) crm:P100 was death of → crm:E69 Death → crm:P4 has time-span → crm:E52 Time-Span → crm:P81 ongoing throughout → crm:E61 Time Primitive, but it imposes some specific rules regarding the possible values of the time primitive as defined by the target class sdh-short:C1 Standard Date-Time.
+It is equivalent to the DBpedia dbo:deathDate and Wikidata wdt:P570 Date of Death properties.</rdfs:comment>
+                <rdfs:label xml:lang="en">has death date</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P13</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3226"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P2">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/crm-supplement/C39"/>
+                <rdfs:comment xml:lang="en">This property associates a person with his/hers birthdate expressed as an instance of sdh-short:C1 Standard Date-Time, specifying a temporal position within which the phenomenon of the birth was located.
+It is a shortcut of the property path : crm:E21 Person → (inverse of) crm:P98 brought into life→ crm:E67 Birth → crm:P4 has time-span → crm:E52 Time-Span → crm:P81 ongoing throughout → crm:E61 Time Primitive but it imposes some specific rules regarding the possible values of the time primitive as defined by the target class sdh-short:C1 Standard Date-Time.
+It is an equivalent with the DBpedia dbo:birthDate and Wikidata wdt:P569 Date of Birth properties.</rdfs:comment>
+                <rdfs:label xml:lang="en">has birth date</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P2</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3087"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P13">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/crm-supplement/C39"/>
+                <rdfs:comment xml:lang="en">This property associates a person with their death date expressed as an instance of sdh-short:C1 Standard Date-Time, specifying a temporal position within which the phenomenon of the birth was located.
+It is a shortcut of the property path : crm:E21 Person → (inverse of) crm:P100 was death of → crm:E69 Death → crm:P4 has time-span → crm:E52 Time-Span → crm:P81 ongoing throughout → crm:E61 Time Primitive, but it imposes some specific rules regarding the possible values of the time primitive as defined by the target class sdh-short:C1 Standard Date-Time.
+It is equivalent to the DBpedia dbo:deathDate and Wikidata wdt:P570 Date of Death properties.</rdfs:comment>
+                <rdfs:label xml:lang="en">has death date</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P13</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3226"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P2">
+                <rdfs:range rdf:resource="https://sdhss.org/ontology/crm-supplement/C39"/>
+                <rdfs:comment xml:lang="en">This property associates a person with his/hers birthdate expressed as an instance of sdh-short:C1 Standard Date-Time, specifying a temporal position within which the phenomenon of the birth was located.
+It is a shortcut of the property path : crm:E21 Person → (inverse of) crm:P98 brought into life→ crm:E67 Birth → crm:P4 has time-span → crm:E52 Time-Span → crm:P81 ongoing throughout → crm:E61 Time Primitive but it imposes some specific rules regarding the possible values of the time primitive as defined by the target class sdh-short:C1 Standard Date-Time.
+It is an equivalent with the DBpedia dbo:birthDate and Wikidata wdt:P569 Date of Birth properties.</rdfs:comment>
+                <rdfs:label xml:lang="en">has birth date</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P2</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3087"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P11">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property associates any instance of crm:E1 CRM Entity with a literal string expressing a concise textual definition of the entity. The definition is intended to provide a short, explanatory description that supports understanding and identification of the entity by human users.
+This property enables the documentation of lightweight definitions without requiring explicit modelling of the definition as an instance of crm:E33 Linguistic Object. It is therefore intended primarily for documentation, display, and contextual clarification, rather than for detailed linguistic or discourse analysis.
+Semantically, this property is a shortcut for the following path: crm:E1 CRM Entity → crm:P129i is subject of → crm:E33 Linguistic Object → crm:P190 has symbolic content → crm:E62 String
+The value should be brief and descriptive rather than analytical or argumentative and should not be used for extensive scholarly commentary, interpretation, or argumentation; such content should be modelled explicitly using crm:E33 Linguistic Object where required.
+This property has no formal impact on classification or reasoning and must ot be used as a substitute for scholarly definitions.</rdfs:comment>
+                <rdfs:label xml:lang="en">has definition</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P11</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3203"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty>   <owl:ObjectProperty rdf:about="https://sdhss.org/ontology/shortcuts/P9">
+                <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E62"/>
+                <rdfs:comment xml:lang="en">This property assigns to any instance of crm:E1 CRM Entity a literal string representing the preferred human-readable label. This property''s value is intended to be the default label used for identification and display purposes in user interfaces, search results, and listings.
+This property is equivalent to skos:prefLabel.
+Semantically, it is a shortcut for the following path: crm:E1 CRM Entity → ^sdh:P11 has appellation for language → sdh:C11 Appellation in a Language → sdh:P13 refers to name → crm:E41 Appellation → crm:P190 has symbolic content → crm:E62 String, As a shortcut property, it simplifies access to the preferred appellation value without providing the full SDHSS naming pattern.
+This property does not replace the explicit modelling of appellations using sdh:C11 Appellation in a Language and crm:E41 Appellation, but provides a simplified access point for applications. It is intended purely for identification and presentation, not for analytical or classificatory reasoning. Full appellation modelling should be retained for detailed linguistic, historical, or contextual analysis.</rdfs:comment>
+                <rdfs:label xml:lang="en">has standard label</rdfs:label>
+                <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdh-short:P9</skos:notation>
+                <owl:sameAs rdf:resource="https://ontome.net/ontology/p3201"/>
+                <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+                </owl:ObjectProperty></rdf:RDF>

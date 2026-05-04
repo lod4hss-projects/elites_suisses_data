@@ -42,6 +42,3 @@ select count(*) number
 from elites_suisses.identite i 
 where birth_year != 0;
 
-
-
-

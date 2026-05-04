@@ -1,7 +1,6 @@
 # Elites Suisses Data
 
-Repository devoted to the LESHH project
-
+Repository devoted to the LESSH project
 
 * [Documentation](documentation/index.md)
 * [Experimental website](https://elites-suisses.lod4hss.org/)

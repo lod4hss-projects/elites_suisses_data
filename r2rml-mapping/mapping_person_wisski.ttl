@@ -5,6 +5,7 @@
 @prefix sdh-short: <https://sdhss.org/ontology/shortcuts/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix swel: <https://swiss-elites.lod4hss.cloud/resource/>.
+@prefix sdh-slc: <https://sdhss.org/ontology/social-life-core/>.
 
 <#identite1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.identite" ];
@@ -20,87 +21,59 @@
         rr:objectMap [ rr:column "name_forename" ];
     ];
     rr:predicateObjectMap [
+        rr:predicate sdh-slc:P23;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/gen{fk_gender}" ];
+    ];
+    rr:predicateObjectMap [
         rr:predicate sdh-short:P2;
         rr:objectMap [ rr:column "birth_year" ;
                 rr:dataType xsd:integer];
     ].
-   
 
-<#identifier1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
+
+<#gender1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.gender" ];
     rr:subjectMap [
-        rr:template "https://swiss-elites.lod4hss.cloud/resource/p{\"zkf_ID_linked\"}" ;
+        # rr:constant swel: ; does not work,
+        # keep the full URI for the template
+        rr:template "https://swiss-elites.lod4hss.cloud/resource/gen{pk_gender}";
         rr:termType rr:IRI;
-    ];
-    rr:predicateObjectMap [
-        rr:predicate owl:sameAs;
-        rr:objectMap [ rr:column "\"URL\"" ;
-                        rr:termType rr:IRI ];
-    ]
-    .
-
-
-<#identifier2> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.identifier" ];
-    rr:subjectMap [
-        rr:column "\"URL\"" ;
-        rr:termType rr:IRI 
-    ];
-        rr:predicateObjectMap [
-        rr:predicate eso:identifier_code;
-        rr:objectMap [ rr:column "\"Identifier_code\"" ];
-    ].
-
-
-
-<#education1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.education" ];
-    rr:subjectMap [
-        rr:template "https://swiss-elites.lod4hss.cloud/resource/p{\"ID_IDENTITE\"}";
-        rr:termType rr:IRI;
-    ];
-    rr:predicateObjectMap [
-        rr:predicate eso:has_as_doctoral_advisor;
-        rr:objectMap [
-            rr:template "https://swiss-elites.lod4hss.cloud/resource/p{\"THÈSE_Directeur_IdIdentité\"}";
-            rr:termType rr:IRI;
-        ];
-    ]
-    .
-
-
-<#entite1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.entites" ];
-    rr:subjectMap [
-        rr:template "https://swiss-elites.lod4hss.cloud/resource/g{entity_id}";
-        rr:termType rr:IRI;
-        rr:class crm:E74;
+        rr:class sdh-slc:C11;
     ];
     rr:predicateObjectMap [
         rr:predicate sdh-short:P9;
-        rr:objectMap [ rr:column "nom" ];
+        rr:objectMap [ rr:column "name" ];
     ];
-    rr:predicateObjectMap [
-        rr:predicate eso:entityType;
-        rr:objectMap [ rr:column "\"typeEntite\""];
+       rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ rr:template "{wikidata_uri}" ];
     ].
 
-<#membership1>  a rr:TriplesMap;
-    rr:logicalTable [ rr:sqlQuery """
-        select m."idIdentite", m.entite_id  
-        from elites_suisses.mandat m 
-        where m.fonction = 'Membre'
-        and m.entite_id > 0
-        """ ];
+
+
+<#birth1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.v_person_birth" ];
     rr:subjectMap [
-        rr:template "https://swiss-elites.lod4hss.cloud/resource/p{\"idIdentite\"}";
+        # rr:constant swel: ; does not work,
+        # keep the full URI for the template
+        rr:template "https://swiss-elites.lod4hss.cloud/resource/{id_birth}";
         rr:termType rr:IRI;
+        rr:class crm:E67;
     ];
     rr:predicateObjectMap [
-        rr:predicate eso:memberOf;
-        rr:objectMap [  
-            rr:template "https://swiss-elites.lod4hss.cloud/resource/g{entite_id}";
-            rr:termType rr:IRI; 
-        ];
-        
+        rr:predicate crm:P98;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/p{child}" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate crm:P96;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/p{mother}" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate crm:P97;
+        rr:objectMap [ rr:template "https://swiss-elites.lod4hss.cloud/resource/p{father}" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P1;
+        rr:objectMap [ rr:column "birth_year" ;
+                rr:dataType xsd:integer];
     ].
