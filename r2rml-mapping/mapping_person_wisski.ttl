@@ -46,7 +46,10 @@
     ];
        rr:predicateObjectMap [
         rr:predicate owl:sameAs;
-        rr:objectMap [ rr:template "{wikidata_uri}" ];
+        rr:objectMap [ 
+            rr:column "wikidata_uri";
+            rr:termType rr:IRI 
+        ];
     ].
 
 
@@ -94,7 +97,10 @@
     ];
     rr:predicateObjectMap [
         rr:predicate owl:sameAs;
-        rr:objectMap [ rr:template "{wikidata_uri}"];
+        rr:objectMap [ 
+            rr:column "wikidata_uri";
+            rr:termType rr:IRI 
+        ];
     ] .
 
 
