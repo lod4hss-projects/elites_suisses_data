@@ -1,0 +1,20 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "Query: get all the children and parents\n\nProfile used: Person - Family light ongoing ",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "select ?s ?sLabel ?o ?oLabel where {\n    {?s ^<http://www.cidoc-crm.org/cidoc-crm/P98> / <http://www.cidoc-crm.org/cidoc-crm/P96> ?o .}\n    union\n    {?s ^<http://www.cidoc-crm.org/cidoc-crm/P98> / <http://www.cidoc-crm.org/cidoc-crm/P97> ?o .}\n    \n    ?s <https://sdhss.org/ontology/shortcuts/P9> ?sLabel.\n    ?o <https://sdhss.org/ontology/shortcuts/P9> ?oLabel\n\n}\norder by ?s\nlimit 10",
+    "metadata": {}
+  }
+]

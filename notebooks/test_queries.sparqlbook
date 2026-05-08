@@ -1,0 +1,14 @@
+[
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "### Classes and number of their instances\nSELECT ?class (COUNT(*) AS ?number)\n WHERE { graph <https://swiss-elites.lod4hss.cloud/resource/>\n {?s a ?class} }\nGROUP BY ?class\nORDER BY DESC(?number)",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "### Classes and number of their instances\nINSERT DATA { graph <https://swiss-elites.lod4hss.cloud/resource/>\n{\n     <http://there.is> <http://nothing.to> <http://see.here> }\n\n }\n",
+    "metadata": {}
+  }
+]
