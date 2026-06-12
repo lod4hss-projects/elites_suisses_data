@@ -1,0 +1,146 @@
+@prefix sdh-shacl: <https://sdhss.org/shacl/profiles/>. 
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sdh-short: <https://sdhss.org/ontology/shortcuts/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix crm-sup: <https://sdhss.org/ontology/crm-supplement/>.
+@prefix sdh-short: <https://sdhss.org/ontology/shortcuts/>.
+
+sdh-shacl:crm_E21_Shape a sh:NodeShape ;
+        sh:targetClass crm:E21 ;
+        sh:name "Person";
+    
+        sh:property [
+            sh:path sdh-short:P9;
+            sh:name "Standard Label";
+            sh:datatype xsd:string;
+            sh:order 1; 
+            sh:minCount 1;
+            sh:maxCount 1;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P10;
+            sh:name "Alternative Label";
+            sh:datatype xsd:string;
+            sh:order 2;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P11;
+            sh:name "Definition";
+            sh:datatype xsd:string;
+            sh:order 3; 
+            sh:minCount 1;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P12;
+            sh:name "Additional Note";
+            sh:datatype xsd:string;
+            sh:order 4;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P9 ;
+            sh:name "has standard label" ;
+            sh:class crm:E62 ;
+            sh:maxCount 1 ;
+        ];
+    
+        sh:property [
+            sh:path sdh-short:P11 ;
+            sh:name "has definition" ;
+            sh:class crm:E62 ;
+        ];
+    
+        sh:property [
+            sh:path sdh-short:P2 ;
+            sh:name "has birth date" ;
+            sh:class crm-sup:C39 ;
+            sh:maxCount 1 ;
+        ];
+    
+        sh:property [
+            sh:path sdh-short:P13 ;
+            sh:name "has death date" ;
+            sh:class crm-sup:C39 ;
+            sh:maxCount 1 ;
+        ];
+    .
+
+sdh-shacl:crm-sup_C39_Shape a sh:NodeShape ;
+        sh:targetClass crm-sup:C39 ;
+        sh:name "Standard Date-Time";
+    
+        sh:property [
+            sh:path sdh-short:P9;
+            sh:name "Standard Label";
+            sh:datatype xsd:string;
+            sh:order 1; 
+            sh:minCount 1;
+            sh:maxCount 1;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P10;
+            sh:name "Alternative Label";
+            sh:datatype xsd:string;
+            sh:order 2;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P11;
+            sh:name "Definition";
+            sh:datatype xsd:string;
+            sh:order 3; 
+            sh:minCount 1;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P12;
+            sh:name "Additional Note";
+            sh:datatype xsd:string;
+            sh:order 4;
+            ];
+    
+    .
+
+sdh-shacl:crm_E62_Shape a sh:NodeShape ;
+        sh:targetClass crm:E62 ;
+        sh:name "String";
+    
+        sh:property [
+            sh:path sdh-short:P9;
+            sh:name "Standard Label";
+            sh:datatype xsd:string;
+            sh:order 1; 
+            sh:minCount 1;
+            sh:maxCount 1;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P10;
+            sh:name "Alternative Label";
+            sh:datatype xsd:string;
+            sh:order 2;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P11;
+            sh:name "Definition";
+            sh:datatype xsd:string;
+            sh:order 3; 
+            sh:minCount 1;
+            ];
+    
+        sh:property [
+            sh:path sdh-short:P12;
+            sh:name "Additional Note";
+            sh:datatype xsd:string;
+            sh:order 4;
+            ];
+    
+    .

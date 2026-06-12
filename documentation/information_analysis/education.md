@@ -1,6 +1,9 @@
 
+## Table 'education' exploration
 
+* [Base exploration](../database_inspection/education_exploration.sql)
 
+## Table 'education' columns and mapping
 
 | Column Name | Data Type |  Comments | Mapping  | Mapping Comments |
 |-------------|-----------|------|------|------|

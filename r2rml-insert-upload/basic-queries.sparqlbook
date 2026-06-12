@@ -1,0 +1,14 @@
+[
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "select *\nwhere {?s ?p ?o}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "select (count(*) as ?n)\nwhere {?s ?p ?o}",
+    "metadata": {}
+  }
+]

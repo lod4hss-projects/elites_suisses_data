@@ -25,6 +25,7 @@ update elites_suisses.mandat m set "typeEntite" =trim("typeEntite");
 
 update elites_suisses.mandat m set "partiAffiliationOfficeSecteur" =trim("partiAffiliationOfficeSecteur");
 
+
 /*
  * [March 2026, FB] I add the entity_id column as a column to be used as foreign key
  */
@@ -36,12 +37,13 @@ select *
 from elites_suisses.mandat m 
 limit 10;
 
-select m.*, e.*
+select  e.*
 from elites_suisses.mandat m 
 	left join elites_suisses.entites e on e."idEntite" = m."idEntite" 
-where e.nom != 'Worb'
+where e.nom !~* 'Worb'
 and m."idEntite" is not null and m."idEntite" != ''
---and e."idEntite" is null or e."idEntite" = ''
+-- missing entities
+and e."idEntite" is null or e."idEntite" = ''
 limit 100;
 
 -- added the values
@@ -50,6 +52,15 @@ from elites_suisses.entites e
 where e.nom != 'Worb'
 and e."idEntite" = m."idEntite" 
 and m."idEntite" is not null and m."idEntite" != '';
+
+
+
+select *
+from elites_suisses.entites e 
+where e.nom ='Worb'
+limit 10;
+
+
 
 
 -- FOREIGN KEY 

@@ -1,4 +1,35 @@
 
+/*
+ * Formations multiples
+ */
+
+select e."ID_IDENTITE", count(*) as num 
+from elites_suisses.education e 
+group by e."ID_IDENTITE" 
+order by num desc
+limit 20;
+
+select e."ID_IDENTITE", count(*) as num , string_agg(distinct e."Formation niveau", ',' order by e."Formation niveau")
+from elites_suisses.education e 
+group by e."ID_IDENTITE" 
+order by num desc;
+
+
+with tw1 as (select e."ID_IDENTITE", count(*) as num 
+from elites_suisses.education e 
+group by e."ID_IDENTITE" 
+)
+select num, count(*) as eff
+from tw1
+group by num
+order by num desc;
+
+
+
+
+
+
+
 
 /*
 * Education level
@@ -8,6 +39,14 @@ select trim(lower(e."Formation niveau")), count(*) as number
 FROM elites_suisses.education e 
 group by  trim(lower(e."Formation niveau")) 
 order by number desc;
+
+
+select trim(lower(e."TITRE_Codé")), count(*) as number
+FROM elites_suisses.education e 
+where trim(lower(e."Formation niveau")) = 'base'
+group by  trim(lower(e."TITRE_Codé")) 
+order by number desc;
+
 
 
 
