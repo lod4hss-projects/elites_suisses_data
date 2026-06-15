@@ -106,6 +106,8 @@ FROM elites_suisses.education e
 group by  trim(lower(e."Institution")) 
 order by number desc;
 
+select
+from eli
 
 -- alignment with organisations (table 'entités')
 
