@@ -7,6 +7,11 @@
 
 &nbsp;
 
+Cf. [the SQL code](../database_inspection/identifiers_data_wrangling.sql) for cleaning up and preparing the *elites_suisses.same_as* view
+
+
+&nbsp;
+
 Strictly speaking these are not owl:sameAs relation because the Elites Suisses identifiers are URLs and not URIs.
 
 We therefore have to:
