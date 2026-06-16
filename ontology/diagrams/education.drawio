@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="TW3kG0YR65UYji44Ityl" name="Page-1">
-        <mxGraphModel dx="336" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="559" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -24,7 +24,7 @@
                         <mxGeometry x="725" y="260" width="140" height="70" as="geometry"/>
                     </mxCell>
                 </object>
-                <object label="sdh-sls:C5 Academic Discipline" id="8">
+                <object label="sdh-sls:C9 Academic Discipline" id="8">
                     <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fddc34;fontSize=16;fontStyle=1" parent="1" vertex="1">
                         <mxGeometry x="885" y="410" width="140" height="70" as="geometry"/>
                     </mxCell>
@@ -34,13 +34,13 @@
                         <mxGeometry x="490" y="180" width="140" height="70" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="10" value="sdh-sls:P3 was obtained by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="17" target="7" edge="1">
+                <mxCell id="10" value="sdh-sls:P9 was obtained by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="17" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="sdh-sls:P4 is obtention of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="17" target="18" edge="1">
+                <mxCell id="11" value="sdh-sls:P10 is obtention of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="17" target="18" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="sdh-sls:P11 is delivered by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="17" target="9" edge="1">
+                <mxCell id="12" value="sdh-sls:P17 is delivered by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="17" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="545" y="330" as="sourcePoint"/>
                     </mxGeometry>
@@ -48,10 +48,12 @@
                 <mxCell id="13" value="sdh-sls:P25 is obtention in" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="17" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="sdh-sls:P13 is obtained at" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="17" target="19" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="14" value="sdh-sls:P19 is obtained at" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="17" target="19" edge="1">
+                    <mxGeometry x="-0.0013" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="15" value="sdh-sls:P5 has academic supervisor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="17" target="23" edge="1">
+                <mxCell id="15" value="sdh-sls:P11 has academic supervisor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="17" target="23" edge="1">
                     <mxGeometry x="-0.003" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
@@ -59,12 +61,12 @@
                 <mxCell id="16" value="sdh-short:P1 at some time within" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="17" target="32" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <object label="sdh-sls:C3 Obtaining a Study Title" URI="http://www.cidoc-crm.org/cidoc-crm/E7_Activity" linkTarget="_blank" en="Activity" de="Handlung" el="Δράση" fr="Activité" pt="Atividade" ru="Деятельность" zh="活动" id="17">
+                <object label="sdh-sls:C7 Obtaining a Study Title" URI="http://www.cidoc-crm.org/cidoc-crm/E7_Activity" linkTarget="_blank" en="Activity" de="Handlung" el="Δράση" fr="Activité" pt="Atividade" ru="Деятельность" zh="活动" id="17">
                     <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82ddff;fontSize=16;fontStyle=1" parent="1" vertex="1">
                         <mxGeometry x="490" y="446.5" width="140" height="70" as="geometry"/>
                     </mxCell>
                 </object>
-                <object label="sdh-sls:C4 Study Title" URI="http://www.cidoc-crm.org/cidoc-crm/E55_Type" linkTarget="_blank" en="Type" de="Typus" el="Τύπος" fr="Type" pt="Tipo" ru="Тип" zh="类型" id="18">
+                <object label="sdh-sls:C8 Study Title" URI="http://www.cidoc-crm.org/cidoc-crm/E55_Type" linkTarget="_blank" en="Type" de="Typus" el="Τύπος" fr="Type" pt="Tipo" ru="Тип" zh="类型" id="18">
                     <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fab565;fontSize=16;fontStyle=1" parent="1" vertex="1">
                         <mxGeometry x="780" y="530" width="140" height="70" as="geometry"/>
                     </mxCell>
