@@ -9,20 +9,34 @@ group by e."ID_IDENTITE"
 order by num desc
 limit 20;
 
+-- number of different segmets per person
 select e."ID_IDENTITE", count(*) as num , string_agg(distinct e."Formation niveau", ',' order by e."Formation niveau")
 from elites_suisses.education e 
 group by e."ID_IDENTITE" 
 order by num desc;
 
-
+-- distribution of counts
 with tw1 as (select e."ID_IDENTITE", count(*) as num 
 from elites_suisses.education e 
 group by e."ID_IDENTITE" 
 )
-select num, count(*) as eff
+select num, count(*) as freq
 from tw1
 group by num
 order by num desc;
+
+
+
+-- https://elitessuisses.unil.ch/p/52223
+
+-- example of multiple training
+select i.name_forename, e.*
+from elites_suisses.education e 
+	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
+-- where i.name_forename = 'Brenner, Ernst'
+where i.id = 52223	
+order by "ID_IDENTITE" 
+limit 10;	
 
 
 
@@ -32,7 +46,53 @@ order by num desc;
 
 
 /*
+ * VUE pour le R2RML
+ */
+
+-- toutes renseignées
+select e.zkp_edu 
+from elites_suisses.education e 
+where e.zkp_edu is null or length(e.zkp_edu) = 0
+limit 100;
+
+-- identifiant unique, aucun doublon
+select e.zkp_edu, count(*)
+from elites_suisses.education e 
+group by e.zkp_edu 
+having count(*) > 1
+limit 100;
+
+drop view elites_suisses.v_education ;
+create view elites_suisses.v_education as
+select e.zkp_edu as id_edu, e."ID_IDENTITE" as id_person, cg.pk_crm_group , 
+e."THÈSE_Directeur_IdIdentité" as id_directeur, e."Date" as grade_date,
+e.fk_study
+from elites_suisses.education e 
+		join elites_suisses.crm_group cg on cg.fk_source_entity = e.id_institution 
+where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
+-- only four years dates
+and length(e."Date") < 5 
+--and e."THÈSE_Directeur_IdIdentité" is not null
+--limit 100;
+;
+
+select *
+from elites_suisses.v_education 
+where id_directeur is not null
+--where id_person is null
+order by id_person
+limit 100;
+
+
+
+
+
+
+
+/*
 * Education level
+* 
+* Ceci serait un type de formation
 */
 
 select trim(lower(e."Formation niveau")), count(*) as number
@@ -48,16 +108,65 @@ group by  trim(lower(e."TITRE_Codé"))
 order by number desc;
 
 
+/*
+ * Date
+ */
+
+
+select trim(lower(e."Date")) _date, count(*) as number
+FROM elites_suisses.education e 
+--where trim(lower(e."Formation niveau")) = 'base'
+where length(e."Date") > 6
+group by trim(lower(e."Date")) 
+order by _date;
+
+order by number desc;
+
+with tw1 as (
+select trim(lower(e."Date")) _date, count(*) as number
+FROM elites_suisses.education e 
+where length(e."Date") > 6 -- > 6  / = 4
+group by trim(lower(e."Date")) 
+)
+select sum(number) total
+from tw1;
 
 
 /*
 * Degree code
 */
 
-select trim(lower(e."TITRE_Codé")), count(*) as number
+select row_number() OVER (ORDER BY 1)::INTEGER, trim(lower(replace(e."TITRE_Codé", '?',''))) titre, count(*) as number
 FROM elites_suisses.education e 
-group by  trim(lower(e."TITRE_Codé")) 
+-- filter provisoire
+join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu
+ where length(trim(lower(e."TITRE_Codé"))) > 2
+group by trim(lower(replace(e."TITRE_Codé", '?',''))) 
+having count(*) > 2
+order by titre;
 order by number desc;
+
+
+
+select i.name_forename, e.*
+from elites_suisses.education e 
+	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
+where e.id_institution is not null
+order by "ID_IDENTITE" 
+limit 10;	
+
+
+
+
+select trim(lower(e."TITRE_Codé")) titre, count(*) as number
+FROM elites_suisses.education e 
+	join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu 
+group by  trim(lower(e."TITRE_Codé")) 
+having count(*) > 5
+order by titre;
+order by number desc;
+
+
 
 
 
@@ -65,12 +174,108 @@ order by number desc;
 * Catégorie, i.e. topic or discipline
 */
 
-select trim(lower(e."Catégorie")) name, count(*) as number
+alter table elites_suisses.education add column categorie_norm text;
+
+update elites_suisses.education e set categorie_norm = "Catégorie" ;
+
+update elites_suisses.education e set categorie_norm = replace(trim(lower(e.categorie_norm)), '?', '')
+
+
+
+
+
+select row_number() OVER (ORDER BY 1)::INTEGER, categorie_norm, count(*) as number
 FROM elites_suisses.education e 
+	join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu
+where length(categorie_norm) > 2
 --where Trim( lower(e."Catégorie") ) ~ 'ingé'
-where Trim( lower(e."Catégorie") ) ~ 'scien'
-group by  trim(lower(e."Catégorie")) 
+--where Trim( lower(e."Catégorie") ) ~ 'scien'
+--and e.id_institution is not null
+group by categorie_norm
+having count(*) > 4
+order by categorie_norm;
 order by number desc;
+
+
+-- updates on tables 
+
+
+-- remplacer si de nouveau nécessaire par 'categorie_norm'
+update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'economie', 'économie')
+where e."Catégorie" like '%economie%';
+update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'Economie', 'Économie')
+where e."Catégorie" like '%Economie%';
+update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'Genie', 'Génie')
+where e."Catégorie" like '%Genie%';
+
+
+-- issue with ’ that is not '
+
+select *
+from elites_suisses.education e 
+where e."Catégorie" LIKE '%’%'
+limit 10;
+
+select count(*) as num
+from elites_suisses.education e 
+where e."Catégorie" LIKE '%’%';
+
+--update elites_suisses.education set "Catégorie" = REPLACE("Catégorie", '’', '''');
+
+
+
+select * 
+from elites_suisses.education e
+where e.categorie_norm ilike '%chemie%';
+
+
+drop table elites_suisses.t_study_discipline ;
+create table elites_suisses.t_study_discipline as
+select row_number() OVER (ORDER BY 1)::INTEGER as id, categorie_norm, count(*) as number
+FROM elites_suisses.education e 
+	join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu
+where length(categorie_norm) > 2
+--where Trim( lower(e."Catégorie") ) ~ 'ingé'
+--where Trim( lower(e."Catégorie") ) ~ 'scien'
+--and e.id_institution is not null
+group by categorie_norm
+having count(*) > 4
+order by categorie_norm;
+
+alter table elites_suisses.t_study_discipline add CONSTRAINT t_study_discipline_pk PRIMARY KEY (id);
+
+select * from elites_suisses.t_study_discipline ;
+
+
+
+select sd.*, e.*
+from elites_suisses.education e 
+	join elites_suisses.t_study_discipline sd on sd.categorie_norm = e.categorie_norm 
+limit 10;
+
+
+alter table elites_suisses.education add column fk_study_discipline integer;
+-- FOREIGN KEY 
+alter table elites_suisses.education add constraint fk_study_discipline_fk foreign key (fk_study_discipline) 
+	references elites_suisses.t_study_discipline(id);
+
+
+update elites_suisses.education e set fk_study_discipline = sd.id 
+from elites_suisses.t_study_discipline sd 
+where sd.categorie_norm = e.categorie_norm;
+
+
+select sd.categorie_norm, e.*
+from elites_suisses.education e
+	join elites_suisses.t_study_discipline sd on sd.id = e.fk_study_discipline 
+limit 10
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +310,10 @@ select trim(lower(e."Institution")), count(*) as number
 FROM elites_suisses.education e 
 group by  trim(lower(e."Institution")) 
 order by number desc;
+
+select *
+from elites_suisses.entites e 
+where e.nom ~* 'uni';
 
 
 -- alignment with organisations (table 'entités')
@@ -152,10 +361,6 @@ select count(*)
 from elites_suisses.education e 
 where e.id_institution is not null;
 
-select count(*)
-from elites_suisses.education e 
-where e.id_institution is null;
-
 
 -- most frequent entities
 
@@ -170,7 +375,95 @@ where e.id = tw1.id_institution
 order by number desc;
 
 
+/*
+ * Import to crm_group table
+ */
 
+-- verify if already present
+with tw1 as (
+select e.id_institution, count(*) as number
+from elites_suisses.education e 
+-- restriction pour une première opération
+where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
+group by e.id_institution 
+)
+select e.id, e.nom, tw1."number", cg."name" group_name
+from tw1 
+	join elites_suisses.entites e on e.id = tw1.id_institution 
+	left join elites_suisses.crm_group cg on cg.fk_source_entity = e.id 
+-- where cg."name" is not null	
+order by number desc;
+order by nom ;
+
+
+-- prepare insert
+with tw1 as (
+select e.id_institution, count(*) as number
+from elites_suisses.education e 
+where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
+group by e.id_institution 
+)
+select e.id, e.nom, e.nom
+from tw1 
+	join elites_suisses.entites e on e.id = tw1.id_institution 
+	left join elites_suisses.crm_group cg on cg.fk_source_entity = e.id 
+where cg."name" is null	
+order by number desc;
+order by nom ;
+
+-- insert
+with tw1 as (
+select e.id_institution, count(*) as number
+from elites_suisses.education e 
+where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
+group by e.id_institution 
+)
+insert into elites_suisses.crm_group ("name", description, fk_source_entity, fk_group_type, import_notes )
+select e.nom, e.nom, e.id, 6, '20260616_imp1'
+from tw1 
+	join elites_suisses.entites e on e.id = tw1.id_institution 
+	left join elites_suisses.crm_group cg on cg.fk_source_entity = e.id 
+where cg."name" is null	
+order by number desc;
+order by nom ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Institutions non reconnues par la jointure précédente
+ */
+
+select e.*
+FROM elites_suisses.education e 
+where e.id_institution is null
+and length(e."Institution") > 2
+limit 100;
+
+select count(*) as number
+FROM elites_suisses.education e 
+where e.id_institution is null
+and length(e."Institution") > 2;
+
+
+
+select e."Institution", count(*) as number
+FROM elites_suisses.education e 
+where e.id_institution is null
+and length(e."Institution") > 2
+group by e."Institution" 
+order by number DESC;
 
 
 
