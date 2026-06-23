@@ -1,0 +1,3265 @@
+id,name,birth_canton,frequency
+0,Frienisberg,BE,1.0
+1,Lichtensteig,SG,5.0
+2,Saint-Gall,SG,224.0
+3,Soleure,SO,88.0
+4,Isenfluh,BE,1.0
+5,La Chaux-de-Fonds,NE,151.0
+6,Bottens,VD,3.0
+7,Montreux,VD,24.0
+8,Meilen,ZH,16.0
+9,Viège,VS,11.0
+10,Zurich,ZH,1037.0
+11,Quinto,TI,2.0
+12,Gresso,TI,1.0
+13,Sorengo,TI,141.0
+14,Neuchâtel,NE,208.0
+15,Wädenswil,ZH,27.0
+16,Hambourg,Etranger,31.0
+17,Bâle,BS,797.0
+18,Bielefeld,Etranger,3.0
+19,Wil,SG,9.0
+20,Genève,GE,978.0
+21,Lucerne,LU,181.0
+22,Sissach,BL,6.0
+23,Alsace,Etranger,3.0
+24,Gerliswil,LU,1.0
+25,Nyon,VD,28.0
+26,Frauenfeld,TG,65.0
+27,Arbon (TG),TG,1.0
+28,Turin,Etranger,15.0
+29,Heerbrugg,SG,5.0
+30,Büren,SO,2.0
+31,Hütten,ZH,1.0
+32,Coire,GR,73.0
+33,Winterthour,ZH,136.0
+34,Laufen,BE,2.0
+35,Emmen,LU,4.0
+36,Olten,SO,43.0
+37,Petit-Saconnex,GE,13.0
+38,Sarnen,OW,8.0
+39,Schaffhouse,SH,97.0
+40,Aussersihl,ZH,4.0
+41,Montréal,Etranger,8.0
+42,Fluntern,ZH,3.0
+43,Frankfurt am Main,Etranger,15.0
+44,Francfort,Etranger,9.0
+45,Sainte-Croix,VD,24.0
+46,Rio de Janeiro,Etranger,2.0
+47,Seewis,GR,1.0
+48,Freiburg im Breisgau,Etranger,15.0
+49,Hauptwil,TG,2.0
+50,Berne,BE,514.0
+51,Füllinsdorf,BL,1.0
+52,Bulle,FR,13.0
+53,Clarens,VD,3.0
+54,Berlin,Etranger,71.0
+55,Schleitheim,SH,6.0
+56,Danzig,Etranger,2.0
+57,Thalwil,ZH,26.0
+58,Affoltern am Albis,ZH,5.0
+59,Wülflingen,ZH,2.0
+60,Savognin,GR,1.0
+61,Conches,GE,2.0
+62,Bienne,BE,107.0
+63,Plainpalais,GE,22.0
+64,Erlach,BE,2.0
+65,Sursee,LU,14.0
+66,Romont,FR,13.0
+67,Lausanne,VD,732.0
+68,Payerne,VD,22.0
+69,Saint-Aubin,NE,3.0
+70,Yverdon,VD,54.0
+71,Wohlen,AG,11.0
+72,Eaux-Vives,GE,30.0
+73,Vevey,VD,94.0
+74,Paris,Etranger,101.0
+75,Poschiavo,GR,9.0
+76,Lutry,VD,10.0
+77,Kölliken,AG,2.0
+78,Berthoud,BE,16.0
+79,Moscou,Etranger,14.0
+80,Maienfeld,GR,6.0
+81,Aarau,AG,84.0
+82,Emmenbrücke-Littau (LU),LU,1.0
+83,Witzwil,BE,1.0
+84,Rüschegg,BE,3.0
+85,Spiegel bei Bern,BE,1.0
+86,Crans-près-Céligny,VD,3.0
+87,Gênes,Etranger,8.0
+88,Berikon,AG,1.0
+89,Carouge,GE,20.0
+90,Kefikon,TG,1.0
+91,Winterthur,ZH,72.0
+92,Granges,SO,16.0
+93,Cologne,Etranger,17.0
+94,Niederuzwil,SG,5.0
+95,Cham,UR,14.0
+96,Varese,Etranger,1.0
+97,Liestal,BL,21.0
+98,Rüti,ZH,12.0
+99,Riehen,BS,12.0
+100,Pratteln,BL,6.0
+101,Le Locle,NE,44.0
+102,Zürich-Hottingen,ZH,1.0
+103,Aigle,VD,17.0
+104,Oberentfelden,AG,4.0
+105,Küsnacht,ZH,12.0
+106,Unterägeri,ZG,6.0
+107,Zwingen,BL,1.0
+108,Aubonne,VD,10.0
+109,Grindelwald,BE,8.0
+110,Neudorf,LU,1.0
+111,Liebefeld (Köniz),BE,1.0
+112,Agarn,VS,1.0
+113,Cresciano,TI,2.0
+114,Hauenstein-Ifenthal,SO,1.0
+115,Cham,ZG,
+116,Forel,VD,1.0
+117,Herisau,AR,44.0
+118,La Tour-de-Peilz,VD,11.0
+119,Seewen,SZ,1.0
+120,Erstfeld,UR,4.0
+121,Bassecourt,JU,4.0
+122,Wyssachen,BE,2.0
+123,Reichenbach,BE,2.0
+124,Scharnachtal,BE,1.0
+125,Caslano,TI,1.0
+126,Milan,Etranger,34.0
+127,Schübelbach,SZ,3.0
+128,Rieden (auj. Wallisellen),ZH,1.0
+129,Baar,ZG,16.0
+130,Appenzell,AI,37.0
+131,Buochs,NW,5.0
+132,Brienz,BE,2.0
+133,Stallikon,ZH,2.0
+134,Les Verrières,NE,8.0
+135,Heimiswil,BE,2.0
+136,Uster,ZH,25.0
+137,Homburg,TG,3.0
+138,Gelfingen (auj. comm. Hitzkirch),LU,2.0
+139,Riex,VD,2.0
+140,Lancy,GE,13.0
+141,Massongex,VS,1.0
+142,Eglisau,ZH,5.0
+143,Meiringen,BE,7.0
+144,Sankt Josefen,SG,2.0
+145,Schönenwerd,SO,9.0
+146,Mümliswil,SO,4.0
+147,Verbier,VS,1.0
+148,Cologny,GE,11.0
+149,Zurzach,AG,10.0
+150,Faido,TI,10.0
+151,Alexandrie,Etranger,8.0
+152,Samedan,GR,11.0
+153,Lyss,BE,8.0
+154,Konolfingen,BE,4.0
+155,Sion,VS,45.0
+156,Engelberg,OW,7.0
+157,Sierre,VS,30.0
+158,Cadiz,Etranger,1.0
+159,Stans,NW,16.0
+160,Le Sentier,VD,5.0
+161,Ottenbach,ZH,6.0
+162,Chêne-Bougeries,GE,16.0
+163,Oregon,Etranger,1.0
+164,Lugano,TI,182.0
+165,Herzogenbuchsee,BE,14.0
+166,Sachseln,OW,3.0
+167,Chancy,GE,9.0
+168,Nancy,Etranger,1.0
+169,Rüdlingen,SH,1.0
+170,Wettingen,AG,8.0
+171,Bellinzone,TI,47.0
+172,Petit-Veyrier,GE,1.0
+173,Perly-Certoux,GE,1.0
+174,New York,Etranger,28.0
+175,Landecy (comm. Bardonnex),GE,1.0
+176,Lyon,Etranger,24.0
+177,Mont-sur-Rolle,VD,1.0
+178,Bex,VD,8.0
+179,Peissy,GE,1.0
+180,Sécheron,GE,1.0
+181,Veytaux,VD,3.0
+182,Vernier,GE,9.0
+183,Genthod,GE,5.0
+184,Hombrechtikon,ZH,6.0
+185,Trogen,AR,8.0
+186,Niederweningen,ZH,4.0
+187,Monthey,VS,6.0
+188,Churwalden,GR,3.0
+189,Balgach (SG),SG,1.0
+190,Spiez,BE,3.0
+191,Andermatt,UR,5.0
+192,Turin,VS,
+193,Balgach,SG,8.0
+194,Niederglatt,ZH,2.0
+195,Horgen,ZH,23.0
+196,"Lori, Armenien, Osmanisches Reich",Etranger,1.0
+197,Lingen,Etranger,1.0
+198,La Haye,Etranger,9.0
+199,Pfäffikon,ZH,7.0
+200,Pontresina,GR,5.0
+201,Le Petit-Saconnex,GE,4.0
+202,Monte-Carlo,Etranger,2.0
+203,Bubikon,ZH,3.0
+204,Eaux-Vives (auj. comm. Genève),GE,1.0
+205,Courtételle,JU,1.0
+206,Auw,AG,1.0
+207,Zofingue,AG,38.0
+208,Binningen,BL,7.0
+209,Seebach,ZH,4.0
+210,Baden,AG,51.0
+211,Entlebuch,LU,4.0
+212,Fribourg,FR,124.0
+213,Mendrisio,TI,19.0
+214,Féchy,VD,2.0
+215,Niederhelfenschwil,SG,1.0
+216,Wäschenbeuren (Baden-Württemberg),Etranger,1.0
+217,Beyrouth,Etranger,9.0
+218,Wilderswil,BE,1.0
+219,La Sagne,NE,4.0
+220,Budapest,Etranger,32.0
+221,Cartigny,GE,2.0
+222,Avignon,Etranger,1.0
+223,Naples,Etranger,14.0
+224,Altstetten,ZH,6.0
+225,Satigny,GE,7.0
+226,Lyss (BE),BE,1.0
+227,Wetzikon,ZH,8.0
+228,Les Hauts-Geneveys,NE,1.0
+229,Trieste,Etranger,7.0
+230,Varsovie,Etranger,15.0
+231,Macerata Feltria,Etranger,1.0
+232,Elgg,ZH,4.0
+233,Sépey-près-Vulliens,VD,1.0
+234,Schwarzenegg,BE,2.0
+235,Vallorbe,VD,8.0
+236,Modène,Etranger,4.0
+237,Zollikon,ZH,8.0
+238,Grandchamp (comm. Boudry),NE,1.0
+239,"Dorpat (Russie, auj. Tartu en Estonie)",Etranger,1.0
+240,Elsau,ZH,1.0
+241,"Krzecin (Galicie, Autriche-Hongrie, auj. Pologne)",Etranger,1.0
+242,Stade près de l'Elbe,Etranger,1.0
+243,Wülflingen (auj. comm. Winterthour),ZH,5.0
+244,Fleurier,NE,21.0
+245,Illzach (Alsace),Etranger,1.0
+246,Kiel,Etranger,8.0
+247,Brülisau (comm. Rüte),AI,1.0
+248,Heiden,SG,6.0
+249,Rolle,VD,8.0
+250,Pully,VD,22.0
+251,Göttingen,Etranger,9.0
+252,Lauenen,BE,1.0
+253,Montpellier,Etranger,4.0
+254,Buchdorf (Bavière),Etranger,1.0
+255,Giessen,Etranger,6.0
+256,Francfort-sur-le-Main,Etranger,8.0
+257,Bonn,Etranger,10.0
+258,Delémont,BE,27.0
+259,Utrecht,Etranger,2.0
+260,Wünnewil,FR,1.0
+261,Strasbourg,Etranger,17.0
+262,Saint-Pargoire (Languedoc),Etranger,1.0
+263,Heilbronn (Wurtemberg),Etranger,2.0
+264,Amriswil,TG,6.0
+265,Walzenhausen (AR),AR,1.0
+266,Münchenbuchsee (BE),BE,1.0
+267,Trubschachen,BE,3.0
+268,Steffisburg,BE,11.0
+269,Lemberg,Etranger,3.0
+270,Oberburg (BE),BE,1.0
+271,Sonvilier (BE),BE,1.0
+272,Hirzel (ZH),ZH,1.0
+273,Orpund,BE,1.0
+274,Gossau (SG),SG,1.0
+275,Weinfelden (TG),TG,1.0
+276,Saint-Mihiel (Lorraine),Etranger,1.0
+277,Barcelone,Etranger,7.0
+278,Nuremberg,Etranger,6.0
+279,Walenstadt,SG,6.0
+280,Brest,Etranger,1.0
+281,Annemasse,Etranger,1.0
+282,Olten (SO),SO,1.0
+283,Sholapore,Etranger,1.0
+284,Nantes,Etranger,2.0
+285,Fully,VS,1.0
+286,"Grisolia Cipollina, Cosenza",Etranger,1.0
+287,Brigue,VS,25.0
+288,Karlsruhe,Etranger,18.0
+289,Suhl,Etranger,1.0
+290,Arnstadt,Etranger,1.0
+291,Nankin,Etranger,1.0
+292,Atzelsdorf,Etranger,1.0
+293,Bremerhaven,Etranger,4.0
+294,Marseille,Etranger,12.0
+295,Thoune,BE,51.0
+296,Athènes,Etranger,9.0
+297,Guggisberg,BE,1.0
+298,Gross Neukirch,Etranger,1.0
+299,Arosa,GR,4.0
+300,Aurich (Frise orientale),Etranger,1.0
+301,Altishofen,LU,3.0
+302,Moutier,BE,24.0
+303,Hasle bei Burgdorf,BE,4.0
+304,Wald,ZH,15.0
+305,Madrid,Etranger,5.0
+306,Hohenems,Etranger,6.0
+307,Wolfhalden,AR,4.0
+308,Schaffhausen,ZH,6.0
+309,Locarno,TI,32.0
+310,Stein,AG,8.0
+311,Trimbach,SO,7.0
+312,Stuttgart,Etranger,35.0
+313,Nordhausen,Etranger,1.0
+314,Saarbrücken,Etranger,3.0
+315,Saint-Imier,BE,32.0
+316,Dresde,Etranger,7.0
+317,Tobel,TG,1.0
+318,Köniz,BE,7.0
+319,Kloten,ZH,7.0
+320,Leon,Etranger,1.0
+321,"Prien, Bavière",Etranger,1.0
+322,Nepi,Etranger,1.0
+323,Orbe,VD,10.0
+324,Sulgen,TG,3.0
+325,Bordeaux,Etranger,4.0
+326,Echallens,VD,7.0
+327,Bellegarde,Etranger,2.0
+328,Iowa City,Etranger,2.0
+329,Toronto,Etranger,3.0
+330,Verrières,Etranger,1.0
+331,Treysa,Etranger,1.0
+332,Blaubeuren,Etranger,1.0
+333,Tübingen,Etranger,7.0
+334,Ilmenau,Etranger,1.0
+335,Radès,Etranger,1.0
+336,Neuchâtel,VD,
+337,Prague,Etranger,16.0
+338,Môtiers,NE,5.0
+339,Berleburg (Westphalie),Etranger,1.0
+340,Chemnitz,Etranger,3.0
+341,Darmstadt,Etranger,8.0
+342,Eschweiler,Etranger,1.0
+343,Cham (ZG),ZG,1.0
+344,Fällanden,ZH,3.0
+345,Kilchberg,ZH,6.0
+346,Kleinandelfingen,ZH,1.0
+347,Richterswil,ZH,12.0
+348,Morges,VD,38.0
+349,Granges-près-Marnand,VD,4.0
+350,Le Lieu,VD,1.0
+351,Begnins,VD,3.0
+352,Avenches,VD,9.0
+353,Arzier,VD,1.0
+354,Crissier,VD,1.0
+355,Vladimir,Etranger,1.0
+356,Chexbres,VD,4.0
+357,Jongny,VD,2.0
+358,Bière,VD,5.0
+359,Lucens,VD,6.0
+360,"Amillis, Seine-et-Marne",Etranger,1.0
+361,Cressier,NE,1.0
+362,Moudon,VD,11.0
+363,Château-d'Oex,VD,10.0
+364,Buenos Aires,Etranger,8.0
+365,Grasswil,BE,3.0
+366,Ennetbühl SG,SG,1.0
+367,Krompach,Etranger,1.0
+368,Zoug,ZG,53.0
+369,Breslau,Etranger,17.0
+370,Merksem-Antwerpen,Etranger,1.0
+371,Kirberg (Nassau),Etranger,1.0
+372,Poggio a Caiano,Etranger,1.0
+373,Providence,Etranger,1.0
+374,Teufen,AR,10.0
+375,Saint-Yrieix-la-Perche,Etranger,1.0
+376,Muri,AG,17.0
+377,Couvet,NE,17.0
+378,Rio Novo (Brésil),Etranger,1.0
+379,Arnsberg,Etranger,1.0
+380,Lauchhammer/Senftenberg,Etranger,1.0
+381,Lucerne,Lucerne,
+382,Viganello,TI,29.0
+383,Croglio,TI,4.0
+384,Heemstede,Etranger,1.0
+385,Istanbul,Etranger,9.0
+386,Sullens,VD,1.0
+387,Rorbas,ZH,2.0
+388,Männedorf,ZH,17.0
+389,Beggingen,SH,4.0
+390,Berg am Irchel,ZH,3.0
+391,Regensberg,ZH,2.0
+392,Glattfelden,ZH,3.0
+393,Wallikon,ZH,1.0
+394,Lienheim (Bade),Etranger,1.0
+395,Mümliswil-Ramiswil,SO,1.0
+396,Gamshurst (Bade),Etranger,1.0
+397,Dielsdorf,ZH,4.0
+398,Turbenthal,ZH,3.0
+399,Rapperswil,SG,20.0
+400,Bauma,ZH,7.0
+401,Stadel,ZH,3.0
+402,Rümlang,ZH,2.0
+403,Füssen,Etranger,1.0
+404,Seegräben,ZH,2.0
+405,Burgdorf,BE,17.0
+406,Glaris,GL,42.0
+407,Bonneville,Etranger,1.0
+408,Kappel,SO,3.0
+409,Andelfingen,ZH,7.0
+410,Reute,AR,2.0
+411,Auvernier,NE,9.0
+412,Champéry,VS,4.0
+413,Mettmenstetten,ZH,6.0
+414,Corbeyrier,VD,2.0
+415,Meyrin,GE,4.0
+416,Egelshofen,TG,2.0
+417,Oberuzwil,SG,4.0
+418,Münchenbuchsee,BE,6.0
+419,Volken,ZH,1.0
+420,Maschwanden,ZH,3.0
+421,Biglen,BE,5.0
+422,"Germersheim (Palatinat bavarois, auj. Rhénanie Palatinat)",Etranger,1.0
+423,Feuerthalen,ZH,4.0
+424,Affeltrangen,TG,1.0
+425,Uhwiesen,ZH,2.0
+426,Flaach,ZH,5.0
+427,Hottingen-Zurich,ZH,1.0
+428,Hirzel,ZH,3.0
+429,Waltalingen,ZH,1.0
+430,Hersfeld,Etranger,1.0
+431,Wasterkingen,ZH,2.0
+432,Braunwald,GL,1.0
+433,Osterfingen,SH,2.0
+434,Jussy,GE,10.0
+435,Lanzenmoos (comm. Fischenthal),ZH,1.0
+436,Vordemwald,AG,4.0
+437,Langnau,BE,9.0
+438,Wattenwil,ZH,5.0
+439,Porrentruy,JU (BE historique),38.0
+440,Altnau,TG,4.0
+441,Arlesheim,BL,5.0
+442,Copponex (Haute-Savoie),Etranger,1.0
+443,Troinex,GE,1.0
+444,Villars-Mendraz,VD,1.0
+445,Bülach,ZH,13.0
+446,Würzburg,Etranger,7.0
+447,Unterstrass,ZH,5.0
+448,Waldenburg (Saxe),Etranger,1.0
+449,Schaffhausen? Siblingen?,SH,1.0
+450,Saint-Julien-en-Genevois,Etranger,2.0
+451,Chicago,Etranger,4.0
+452,Oberhofen bei Kreuzlingen,TG,1.0
+453,Gross-Strehlitz (Silésie),Etranger,1.0
+454,Cannstatt (Wurtemberg),Etranger,2.0
+455,Frick,AG,1.0
+456,Altdorf,UR,30.0
+457,Anet,BE,2.0
+458,Feldbrunnen-Sankt Niklaus,SO,3.0
+459,Herrliberg,ZH,4.0
+460,Kyburg,ZH,2.0
+461,Stampa,GR,3.0
+462,Flawil,SG,15.0
+463,Wolfwil,SO,3.0
+464,Fahrwangen,AG,4.0
+465,Brugg,AG,15.0
+466,Ganterschwil,SG,3.0
+467,Bubendorf,BL,3.0
+468,Graz,Etranger,4.0
+469,L'Isle,VD,3.0
+470,Kulmbach,Etranger,1.0
+471,Caluire-et-Cuire,Etranger,2.0
+472,Londres,Etranger,26.0
+473,Annonay (Ardèche),Etranger,1.0
+474,Pforzheim,Etranger,4.0
+475,Hottingen (auj. Zurich),ZH,2.0
+476,Langenthal,BE,30.0
+477,Heidelberg,Etranger,13.0
+478,Courtelary,BE,4.0
+479,Wattwil,SG,18.0
+480,Einsiedeln,SZ,17.0
+481,Murten,BE,1.0
+482,Mels,SG,2.0
+483,Hinwil,ZH,5.0
+484,Kehl-Kork,Etranger,1.0
+485,Oberägeri,ZG,3.0
+486,Binzhou,Etranger,1.0
+487,Schönenberg,ZH,2.0
+488,Schwytz,SZ,28.0
+489,Alvaneu,GR,1.0
+490,Casablanca,Etranger,5.0
+491,Munich,Etranger,35.0
+492,Třinec,Etranger,1.0
+493,Mitlödi,GL,2.0
+494,Eriswil,BE,2.0
+495,Zernez,GR,2.0
+496,"Emmendingen, Breisgau, Baden",Etranger,1.0
+497,Lennep,Etranger,1.0
+498,Münchenstein,BL,4.0
+499,Presinge,GE,1.0
+500,Kerzers,FR,4.0
+501,Langenbruck,BL,4.0
+502,Kriens,LU,8.0
+503,Thoune,ZH,
+504,Wollishofen (auj. comm. Zurich),ZH,2.0
+505,Galaţi,Etranger,1.0
+506,Grandvaux,VD,1.0
+507,Froideville,VD,3.0
+508,Le Fuet,BE,3.0
+509,Schwanden,GL,7.0
+510,Pfäfers,SG,1.0
+511,Mulhouse,Etranger,20.0
+512,Croy,VD,2.0
+513,Goumoëns,VD,1.0
+514,Bursins,VD,3.0
+515,Ouchy,VD,6.0
+516,Montheron,VD,1.0
+517,L'Abbaye,VD,1.0
+518,Amsterdam,Etranger,9.0
+519,Versailles,Etranger,6.0
+520,Jassy,Etranger,1.0
+521,Edimbourg,Etranger,1.0
+522,Quakenbrück,Etranger,1.0
+523,Osterode,Etranger,1.0
+524,Rothenfluh,BL,5.0
+525,Münster,Etranger,9.0
+526,Frenkendorf,BL,2.0
+527,Grandval,BE,1.0
+528,Lons-le-Saunier,Etranger,1.0
+529,Davos,GR,18.0
+530,Coinsins,VD,1.0
+531,Neuilly-sur-Seine,Etranger,5.0
+532,Copenhague,Etranger,4.0
+533,Yverdon-les-Bains,VD,11.0
+534,Stockholm,Etranger,5.0
+535,Spreitenbach,AG,1.0
+536,Onex,GE,2.0
+537,Neydens,Etranger,1.0
+538,Corcelles-près-Payerne,VD,3.0
+539,Wallisellen,ZH,6.0
+540,Frankfurt (Oder),Etranger,1.0
+541,Uerikon Stäfa,ZH,1.0
+542,Unterhallau,SH,3.0
+543,Herrenhof,TG,1.0
+544,Vandoeuvres,GE,6.0
+545,Tannay,VD,3.0
+546,Avully,GE,5.0
+547,Gingins,VD,2.0
+548,Enge,ZH,2.0
+549,Koppigen,BE,4.0
+550,Diessenhofen,TG,3.0
+551,Le Grand-Saconnex,GE,5.0
+552,"Schwarzenegg, Unterlangenegg",BE,1.0
+553,Törbel,VS,2.0
+554,Münster,VS,
+555,Chamoson,VS,5.0
+556,Bramois,VS,2.0
+557,Oron,VD,4.0
+558,Bolligen,BE,3.0
+559,Eptingen,BL,1.0
+560,Heiligenschwendi,BE,2.0
+561,Villars-Bozon,VD,1.0
+562,Thun,BE,11.0
+563,Porrentruy,JU,
+564,Hasle,LU,2.0
+565,Wittenbach,SG,4.0
+566,Boudry,NE,7.0
+567,Luchsingen,GL,3.0
+568,Fontainemelon,NE,2.0
+569,Saint-Aubin-Sauges,NE,1.0
+570,Perroy,VD,1.0
+571,Versoix,GE,7.0
+572,Collonge-Bellerive,GE,3.0
+573,Chéserex,VD,3.0
+574,Saint-Livres,VD,2.0
+575,Ellikon an der Thur,ZH,2.0
+576,Udine,Etranger,2.0
+577,Los Angeles,Etranger,3.0
+578,Filderstadt,Etranger,1.0
+579,Cortaillod,NE,6.0
+580,"Baumgartenhof, comm. Bernardvillé (Alsace)",Etranger,1.0
+581,Heidenheim,Etranger,1.0
+582,Wittenwil,TG,1.0
+583,Silvaplana,GR,1.0
+584,Islikon,TG,4.0
+585,Azmoos,SG,3.0
+586,Tavannes,BE,2.0
+587,Düsseldorf,Etranger,13.0
+588,Tramelan,BE,9.0
+589,Bützberg,BE,1.0
+590,Bochum,Etranger,1.0
+591,Wartau,SG,2.0
+592,Ittigen,BE,2.0
+593,Brittnau,AG,3.0
+594,Biasca,TI,9.0
+595,Kloster Serneus,GR,1.0
+596,Andiast,GR,1.0
+597,Meikirch,BE,2.0
+598,Romanshorn,TG,15.0
+599,Palazzuolo di Romagna,Etranger,1.0
+600,Le Châble,VS,1.0
+601,Lengnau bei Biel,BE,4.0
+602,Wagenhausen,TG,1.0
+603,Dessau,Etranger,1.0
+604,Wipkingen,ZH,2.0
+605,Uettligen,BE,2.0
+606,Aesch (LU),LU,1.0
+607,Bossonnens,FR,1.0
+608,Eschenbach (LU),LU,1.0
+609,Aurigeno,TI,1.0
+610,Weimar,Etranger,3.0
+611,Glarisegg,TG,1.0
+612,Krauchtal,BE,1.0
+613,Bernrain,TG,1.0
+614,Castelrotto,TI,2.0
+615,Ambrì,TI,3.0
+616,Contra,TI,1.0
+617,Muralto,TI,6.0
+618,Le Châtelard,VD,3.0
+619,Brenles,VD,1.0
+620,Sumiswald,BE,5.0
+621,Courroux,BE,1.0
+622,Roggwil BE,BE,4.0
+623,Dättlikon,ZH,1.0
+624,Altstätten,SG,13.0
+625,Reckingen,VS,1.0
+626,"Borken, Westfalen",Etranger,1.0
+627,Chieti,Etranger,2.0
+628,Lanciano,Etranger,1.0
+629,Villach,Etranger,2.0
+630,Eisenharz (comm. Argenbühl dans l'Allgäu),Etranger,1.0
+631,Stellenbosch (Cap),Etranger,1.0
+632,Huttwil,BE,7.0
+633,Bremen,Etranger,3.0
+634,Gansingen,AG,2.0
+635,Pompaples,VD,14.0
+636,Vaduz,Etranger,2.0
+637,Derby,Etranger,1.0
+638,Möhlin,AG,3.0
+639,Buhl,Etranger,2.0
+640,Zell (Bade),Etranger,1.0
+641,Töss,ZH,2.0
+642,Lutzenberg,AR,5.0
+643,Morat,FR,7.0
+644,St Huberts,Etranger,1.0
+645,Provence,VD,3.0
+646,Saint-Pétersbourg,Etranger,16.0
+647,Colmar,Etranger,6.0
+648,Pregny,GE,5.0
+649,Bachs,ZH,2.0
+650,Schwanden bei Schüpfen,BE,1.0
+651,San Francisco,Etranger,3.0
+652,Lenzburg,AG,6.0
+653,Töss (auj. comm. Winterthour),ZH,5.0
+654,Mollis,GL,5.0
+655,Montricher,VD,4.0
+656,Allahabad,Etranger,1.0
+657,Ilsenburg am Harz,Etranger,1.0
+658,Cannes,Etranger,5.0
+659,Territet,VD,4.0
+660,Porrentruy,BE (aujourd'hui JU),
+661,Dottikon,AG,1.0
+662,Wiesbaden,Etranger,5.0
+663,Argenteuil,Etranger,1.0
+664,Les Bois,BE (aujourd'hui JU),2.0
+665,Manille,Etranger,4.0
+666,Essen,Etranger,8.0
+667,Sempach,LU,2.0
+668,Bussnang,TG,1.0
+669,Dresden,Etranger,7.0
+670,Frankfurt,Etranger,6.0
+671,Latterbach,BE,3.0
+672,Neustadt an der Weinstraße,Etranger,2.0
+673,Münchwilen,TG,5.0
+674,Pockau,Etranger,1.0
+675,Dübendorf,ZH,2.0
+676,Täuffelen,BE,2.0
+677,Le Creusot,Etranger,1.0
+678,Sagogn,GR,2.0
+679,Hamburg,Etranger,3.0
+680,S-chanf,GR,2.0
+681,Bresse (Ain),Etranger,1.0
+682,Oberwichtrach,BE,2.0
+683,Foëcy,Etranger,1.0
+684,Münchenstein,BS,
+685,La Lance,VD,1.0
+686,Rome,Etranger,25.0
+687,Breitenbach,SO,3.0
+688,Kreuzlingen,TG,16.0
+689,Ermatingen,TG,5.0
+690,Arona,Etranger,1.0
+691,Bargen,BE,4.0
+692,Pernambouc,Etranger,1.0
+693,Birsfelden,BL,4.0
+694,Steinach,SG,1.0
+695,Sent,GR,3.0
+696,Grellingen,BE,3.0
+697,Odessa,Etranger,6.0
+698,Buch,ZH,2.0
+699,Bucarest,Etranger,3.0
+700,Frutigen,BE,8.0
+701,Lonigo,Etranger,1.0
+702,Gand,Etranger,3.0
+703,Klingnau,AG,2.0
+704,Le Landeron,NE,2.0
+705,Aesch (BL),BL,1.0
+706,Laufon,BE (aujourd'hui BL),4.0
+707,Hätzingen,GL,2.0
+708,Bolken,SO,3.0
+709,Rheinfelden,AG,7.0
+710,Gonobitz,Etranger,1.0
+711,Farningham,Etranger,1.0
+712,Bruxelles,Etranger,17.0
+713,Waldenburg,BL,3.0
+714,Arrufo,Etranger,1.0
+715,Wangen ZH,ZH,1.0
+716,Kaiseraugst,AG,1.0
+717,Gümligen ?,BE,2.0
+718,Saint-Prex,VD,3.0
+719,Rothenthurm,SZ,3.0
+720,Courfaivre,BE (aujourd'hui JU),1.0
+721,Catane (Sicile),Etranger,5.0
+722,La Croix-sur-Lutry ?,VD,1.0
+723,Vuarrens,VD,3.0
+724,Canton,Etranger,1.0
+725,La Neuveville,BE,7.0
+726,Erlenbach,ZH,7.0
+727,Kleindietwil,BE,1.0
+728,Dornbirn,Etranger,3.0
+729,Soubey,BE,2.0
+730,Charleroi,Etranger,3.0
+731,Haifa,Etranger,2.0
+732,Singen am Hohentwiel,Etranger,1.0
+733,"Lansing, (Michigan)",Etranger,1.0
+734,Boston,Etranger,6.0
+735,Choindez,BE,1.0
+736,Reno (Nevada),Etranger,1.0
+737,Wuppertal,Etranger,6.0
+738,Alger,Etranger,6.0
+739,Westhofen,Etranger,1.0
+740,Boulogne-Billancourt,Etranger,4.0
+741,Calestano,Etranger,1.0
+742,Mörfelden,Etranger,1.0
+743,Ravensburg,Etranger,4.0
+744,Klagenfurt,Etranger,3.0
+745,Petit-Lancy,GE,1.0
+746,Mussoorie,Etranger,1.0
+747,Randogne,VS,2.0
+748,Chevrilles,FR,1.0
+749,Maputo,Etranger,1.0
+750,Nidau,BE,6.0
+751,Wiler (Lötschen),VS,2.0
+752,Karlsbad,Etranger,2.0
+753,Bonfol,BE (aujourd'hui JU),3.0
+754,Schwarzenburg,BE,5.0
+755,Horn,TG,4.0
+756,Kienberg,SO,1.0
+757,Novazzano,TI,2.0
+758,Niedererlinsbach,SO,2.0
+759,Wangen an der Aare,BE,3.0
+760,Vicenza,Etranger,2.0
+761,Gossau,SG,12.0
+762,Jaun,FR,3.0
+763,Berg (SG),SG,1.0
+764,Châtel-Saint-Denis,FR,6.0
+765,Soubey,BE (aujourd'hui JU),
+766,Henau,SG,2.0
+767,Bassecourt,BE (aujourd'hui JU),
+768,Moukden,Etranger,1.0
+769,Pfaffenhofen,Etranger,1.0
+770,Lengnau (AG),AG,2.0
+771,Busswil bei Melchnau,BE,1.0
+772,Saignelégier,BE,7.0
+773,Reinach,BL,8.0
+774,Rorschach,SG,16.0
+775,Niederurnen,GL,2.0
+776,Busswil bei Büren,BE,1.0
+777,Epesses,VD,3.0
+778,Missy,VD,4.0
+779,Courrendlin,BE,1.0
+780,Le Sentier (comm. du Chenit),VD,1.0
+781,Lumino,TI,2.0
+782,Sils im Domleschg,GR,1.0
+783,Varna,Etranger,1.0
+784,Göschenen,UR,1.0
+785,Vernayaz,VS,1.0
+786,Oberhof,AG,2.0
+787,Nilvange (Lorraine),Etranger,1.0
+788,Saint-Moritz,GR,4.0
+789,Kleinhüningen (auj. Bâle),BS,1.0
+790,Mühledorf SO,SO,2.0
+791,Juriens,VD,1.0
+792,Farnern,BE,1.0
+793,Muolen,SG,2.0
+794,Buchs,SG,11.0
+795,Muri bei Bern,BE,5.0
+796,Uttiwil,FR,1.0
+797,Nutenwil,SG,1.0
+798,Albeuve,FR,1.0
+799,Fiesch,VS,2.0
+800,Les Posses-Dessus,VD,1.0
+801,Lörrach,Etranger,7.0
+802,Khotine,Etranger,1.0
+803,Seedorf BE,BE,1.0
+804,Oberhallau,SH,1.0
+805,Augst,BL,1.0
+806,Saint-Brais,BE,2.0
+807,Storzeln bei Binningen,Etranger,1.0
+808,Mettendorf,SG,1.0
+809,Balsthal,SO,8.0
+810,Bôle,NE,2.0
+811,Besenbüren,AG,1.0
+812,Tourtemagne,VS,1.0
+813,Kurzdorf (auj. Frauenfeld),TG,1.0
+814,Pont d'Ain,Etranger,1.0
+815,Travers,NE,4.0
+816,Magdala,Etranger,1.0
+817,Barbengo,TI,1.0
+818,Poissy (Ile-de-France),Etranger,1.0
+819,Walkringen,BE,1.0
+820,Oberhofen am Thunersee,BE,1.0
+821,Ragaz,SG,3.0
+822,Risch,ZG,1.0
+823,Ebikon,LU,1.0
+824,Hallau,SH,6.0
+825,"château de Sclassin (auj. comm. Pepinster, Belgique)",Etranger,1.0
+826,"Hub (comm. Busswil, auj. comm. Sirnach)",TG,1.0
+827,Altikon,ZH,1.0
+828,Portsmouth (New Hampshire),Etranger,1.0
+829,Sonnenberg (Hefenhofen),TG,1.0
+830,Hefenhofen,TG,1.0
+831,Lieli (auj. com. Hohenrain),LU,1.0
+832,Hottingen (auj. comm. Zurich),ZH,5.0
+833,Birmenstorf,AG,3.0
+834,Ennenda,GL,6.0
+835,Court,BE,1.0
+836,Sagno,TI,1.0
+837,Leipzig,Etranger,17.0
+838,Eisenach (Thuringe),Etranger,1.0
+839,Martigny-Bourg,VS,4.0
+840,Steinmaur,ZH,2.0
+841,Anzin (Nord-Pas-de-Calais),Etranger,2.0
+842,Breitenwang (Tyrol),Etranger,1.0
+843,Colombier,NE,3.0
+844,Lons-le-Saunier (Jura),Etranger,1.0
+845,Fontaines,NE,1.0
+846,Steinegg (comm. Rüte),AI,1.0
+847,Rheineck,SG,4.0
+848,Jonen,AG,2.0
+849,Brombach (Bade),Etranger,2.0
+850,Nottwil,LU,2.0
+851,Jegenstorf,BE,5.0
+852,Merishausen,SH,4.0
+853,Gwatt (auj. comm. Thoune),BE,1.0
+854,Witebsk,Etranger,2.0
+855,Bischofszell,TG,8.0
+856,Murgenthal,AG,1.0
+857,Uttigen,BE,1.0
+858,Ardon,VS,3.0
+859,L'Orient,VD,1.0
+860,Roche (VD),VD,1.0
+861,Achalkalaki,Etranger,1.0
+862,Jouxtens,VD,1.0
+863,Utzenstorf,BE,1.0
+864,Vuibroye,VD,1.0
+865,Adliswil,ZH,6.0
+866,Ecublens (VD),VD,2.0
+867,Hennens (auj. comm. Billens-Hennens),FR,1.0
+868,Linthal,GL,4.0
+869,Bagnes/Champsec,VS,1.0
+870,Netstal,GL,4.0
+871,Disentis,GR,2.0
+872,Lutterbach,Etranger,1.0
+873,Bedretto,TI,1.0
+874,Neunkirch,SH,3.0
+875,Deitingen,SO,4.0
+876,Kamenz,Etranger,1.0
+877,Belp,BE,4.0
+878,Eschenbach (SG),SG,1.0
+879,Reichenburg,SZ,1.0
+880,Uzwil,SG,12.0
+881,Niederscherli,BE,1.0
+882,Confignon,GE,2.0
+883,Wangen SZ,SZ,1.0
+884,Saint-Ursanne,JU,3.0
+885,Schwyz,SZ,2.0
+886,Osogna,TI,2.0
+887,Gilly,VD,3.0
+888,Aarburg,AG,5.0
+889,Menzingen,ZG,7.0
+890,"Gleiwitz (Silésie, aujourd'hui Pologne)",Etranger,1.0
+891,Greifswald,Etranger,1.0
+892,Lachen,SZ,7.0
+893,Caravaggio,Etranger,1.0
+894,Zollbrück,BE,1.0
+895,Bandung,Etranger,1.0
+896,Téhéran,Etranger,9.0
+897,Baltimore,Etranger,1.0
+898,Hong Kong,Etranger,2.0
+899,Kleinsteinlohe (Bavière),Etranger,1.0
+900,Daillens,VD,1.0
+901,Buchs,AG,
+902,Metz,Etranger,4.0
+903,Freudenstadt,Etranger,2.0
+904,Brest (Finistère),Etranger,1.0
+905,"Görz (A, auj. I)",Etranger,1.0
+906,Bade,Etranger,1.0
+907,Eschenz,TG,2.0
+908,Santa Maria del Molise,Etranger,1.0
+909,Kirchberg TG,TG,1.0
+910,Brooklyn,Etranger,2.0
+911,Wynau,BE,2.0
+912,Offenburg (Bade),Etranger,1.0
+913,Mannheim,Etranger,8.0
+914,Wengen,BE,2.0
+915,Porrentruy,BE,
+916,Seewis im Prättigau,GR,1.0
+917,Sèvres,Etranger,1.0
+918,Celerina,GR,2.0
+919,Vienne,Etranger,55.0
+920,Newstead,Etranger,1.0
+921,Fürstenau,GR,1.0
+922,Florence,Etranger,7.0
+923,Asuel,JU,1.0
+924,Hauteville,FR,1.0
+925,Bennwil,BL,3.0
+926,Hanau (Hesse),Etranger,1.0
+927,Constance,Etranger,8.0
+928,Le Havre,Etranger,6.0
+929,Gualeguaychú,Etranger,1.0
+930,Vlissingen,Etranger,2.0
+931,Sâles (Gruyère),FR,1.0
+932,Basadingen,TG,2.0
+933,Morrens,VD,1.0
+934,Saanen,BE,4.0
+935,Hergiswil,NW,8.0
+936,Saint-Gall,SO,
+937,Chougny Vandoeuvres,GE,1.0
+938,La Vernaz (Haute-Savoie),Etranger,1.0
+939,Besazio,TI,1.0
+940,Wesserling (Alsace),Etranger,1.0
+941,Thônex,GE,2.0
+942,Vufflens,VD,1.0
+943,Pest,Etranger,1.0
+944,Allaman,VD,1.0
+945,Prarustin (Piémont),Etranger,1.0
+946,Sierne,GE,1.0
+947,Wesserling,Etranger,1.0
+948,Montauban (Tarn et Garonne),Etranger,1.0
+949,Ipswich,Etranger,1.0
+950,Dully,VD,2.0
+951,Mauriac (Auvergne),Etranger,1.0
+952,Lüdenscheid,Etranger,1.0
+953,Riva San Vitale,TI,2.0
+954,Schönenbuch,BL,1.0
+955,Malix (auj. comm. Churwalden),GR,1.0
+956,Venise,Etranger,5.0
+957,Schleumen,BE,1.0
+958,Ettlingen bei Karlsruhe,Etranger,1.0
+959,Saint-Maurice,VS,10.0
+960,Paradiso,TI,2.0
+961,Gelfingen,LU,1.0
+962,Buttes,NE,2.0
+963,Windig,FR,2.0
+964,Rarogne,VS,5.0
+965,Corcelles,BE,2.0
+966,Uznach,SG,11.0
+967,Veringendorf,Etranger,1.0
+968,Interlaken,BE,17.0
+969,Wil bei Rafz,ZH,1.0
+970,Uppsala,Etranger,1.0
+971,Rafz,ZH,4.0
+972,Diesse,BE,1.0
+973,Sils-Baselgia,GR,1.0
+974,Corgémont,BE,3.0
+975,Martigny,VS,12.0
+976,Palmyra (Illinois),Etranger,1.0
+977,Magden,AG,2.0
+978,Boncourt,BE,2.0
+979,Stäfa,ZH,9.0
+980,Dägerlen,ZH,1.0
+981,Reconvilier,BE,3.0
+982,Courtedoux,BE,1.0
+983,Riken (auj. comm. Murgenthal),AG,1.0
+984,Treyvaux,FR,3.0
+985,Aadorferfeld-Elgg,ZH,2.0
+986,Domdidier,FR,2.0
+987,Büren (NW),NW,1.0
+988,Ibach,SZ,2.0
+989,Cheiry,FR,2.0
+990,Alterswil,FR,3.0
+991,Estavayer-le-Lac,FR,11.0
+992,Guin,FR,3.0
+993,Näfels,GL,10.0
+994,Schlatt AI,AI,1.0
+995,Herblingen,SH,1.0
+996,Ingenbohl,SZ,2.0
+997,Arth,SZ,7.0
+998,Nunningen,SO,2.0
+999,Neuhausen am Rheinfall,SH,4.0
+1000,Losheim,Etranger,1.0
+1001,Bratislava,Etranger,2.0
+1002,Tour-de-Trême,FR,1.0
+1003,Lussenga,Etranger,1.0
+1004,San Nazzaro,TI,1.0
+1005,St-Blasien,Etranger,1.0
+1006,Edimbourg (Ecosse),Etranger,2.0
+1007,Gontenschwil,AG,3.0
+1008,Roveredo,GR,4.0
+1009,Ljubljana,Etranger,1.0
+1010,Sulz am Neckar,Etranger,1.0
+1011,Scuol,GR,6.0
+1012,Wolfenschiessen,NW,5.0
+1013,Rastatt,Etranger,1.0
+1014,Johannesburg,Etranger,4.0
+1015,Bad Homburg,Etranger,2.0
+1016,Degersheim,SG,3.0
+1017,Rorschacherberg,SG,1.0
+1018,Jestetten,Etranger,1.0
+1019,Pfaffnau,LU,1.0
+1020,Trondheim,Etranger,2.0
+1021,Buffalo,Etranger,1.0
+1022,Cuijk,Etranger,1.0
+1023,Tiaret,Etranger,1.0
+1024,Urbana,Etranger,1.0
+1025,Harsefeld,Etranger,1.0
+1026,Libourne,Etranger,1.0
+1027,"Washington, D.C.",Etranger,3.0
+1028,Riga,Etranger,2.0
+1029,"Swinemünde, Usedom",Etranger,1.0
+1030,Surbiton,Etranger,1.0
+1031,"Walnut Creek, California",Etranger,1.0
+1032,Zermatt,VS,1.0
+1033,Bergisch Gladbach,Etranger,1.0
+1034,Delhi,Etranger,1.0
+1035,Windsor (Ontario),Etranger,1.0
+1036,Seattle,Etranger,2.0
+1037,Detroit (Michigan),Etranger,1.0
+1038,Pau,Etranger,1.0
+1039,Fürstenwalde/Spree,Etranger,1.0
+1040,Pescara,Etranger,1.0
+1041,Menziken,AG,12.0
+1042,Pennsylvania,Etranger,2.0
+1043,Erlenbach am Main,Etranger,1.0
+1044,Guildford,Etranger,1.0
+1045,Rehau,Etranger,1.0
+1046,Wilhelmshaven,Etranger,2.0
+1047,Nedroma,Etranger,1.0
+1048,Mainz,Etranger,9.0
+1049,São João de Loure,Etranger,1.0
+1050,Gliwice,Etranger,2.0
+1051,Niederlandisch,BE,1.0
+1052,Bregenz,Etranger,3.0
+1053,Kaufbeuren,Etranger,1.0
+1054,Schaan,Etranger,2.0
+1055,Luxembourg,Etranger,4.0
+1056,Cheseaux-sur-Lausanne,VD,4.0
+1057,Bennwil,Etranger,
+1058,Charmey,FR,3.0
+1059,"Büdingen, (Hesse)",Etranger,1.0
+1060,Mérida,Etranger,1.0
+1061,Silésie,Etranger,3.0
+1062,Divonne,Etranger,1.0
+1063,Soultz (Haut-Rhin),Etranger,1.0
+1064,Rouen,Etranger,2.0
+1065,Hirschberg (Basse-Silésie),Etranger,1.0
+1066,Wilchingen,SH,1.0
+1067,Oberfischach (Württemberg),Etranger,1.0
+1068,Cali,Etranger,1.0
+1069,Schaffhausen,SO,
+1070,Saint-Raphaël,Etranger,1.0
+1071,Winterberg,ZH,1.0
+1072,Tertre,Etranger,1.0
+1073,Meissen,Etranger,2.0
+1074,Bergame,Etranger,6.0
+1075,Kassel,Etranger,3.0
+1076,Dorpat,Etranger,3.0
+1077,Toulouse,Etranger,7.0
+1078,Schwäbisch Gmünd,Etranger,1.0
+1079,Hanovre,Etranger,9.0
+1080,Tobolsk (Sibérie),Etranger,1.0
+1081,Stallupoenen,Etranger,1.0
+1082,Frascati,Etranger,1.0
+1083,Léogeats (Aquitaine),Etranger,1.0
+1084,Duillier,VD,1.0
+1085,Quintin (Côtes-d'Armor),Etranger,1.0
+1086,Angers (Maine-et-Loire),Etranger,1.0
+1087,Lombeek-Notre-Dame,Etranger,1.0
+1088,Königsberg (auj. Kaliningrad),Etranger,8.0
+1089,Märwil (auj. comm. Affeltrangen),TG,1.0
+1090,Les Brenets,NE,4.0
+1091,Renan,BE,1.0
+1092,Berndorf,Etranger,1.0
+1093,Bunziwil,FR,1.0
+1094,"Brandenburg, Schleswig",Etranger,1.0
+1095,Liegnitz,Etranger,2.0
+1096,Fulda,Etranger,1.0
+1097,Pöllau (Steiermark),Etranger,1.0
+1098,Holzheim (Bavière),Etranger,1.0
+1099,Drahan,Etranger,1.0
+1100,Milie (Bukowina) (auj. Ukraine),Etranger,1.0
+1101,Pörtschach am Wörthersee,Etranger,1.0
+1102,Moguilev,Etranger,1.0
+1103,(New Orleans),Etranger,1.0
+1104,Oppeln,Etranger,1.0
+1105,Reichenbach im Vogtland,Etranger,1.0
+1106,Telsze,Etranger,1.0
+1107,Heilsberg (auj. Lidzbark Warmiński),Etranger,1.0
+1108,Zaukerode,Etranger,1.0
+1109,Jätzdorf,Etranger,1.0
+1110,Uerzig sur la Moselle,Etranger,1.0
+1111,Erdobénye,Etranger,1.0
+1112,Liptószentmiklós,Etranger,1.0
+1113,Pettau,Etranger,1.0
+1114,Kaldenkirchen (Rhénanie-du-Nord-Westphalie),Etranger,1.0
+1115,Dubrovna,Etranger,1.0
+1116,L'Aquila (Abruzzes),Etranger,1.0
+1117,Vilémov,Etranger,1.0
+1118,Neunkirchen (Trier),Etranger,1.0
+1119,Buchs (LU),LU,1.0
+1120,Sisseln,AG,1.0
+1121,Técső,Etranger,1.0
+1122,Linz,Etranger,6.0
+1123,Geislingen an der Steige (Baden-Würtenberg),Etranger,2.0
+1124,Attelwil,AG,1.0
+1125,Bibersfeld,Etranger,1.0
+1126,Barmen,Etranger,2.0
+1127,Bruneck,Etranger,1.0
+1128,Piovene,Etranger,1.0
+1129,Reising / Bayer,Etranger,1.0
+1130,Rovigo,Etranger,1.0
+1131,Samiano (Burgos),Etranger,1.0
+1132,Lobberich (Rhénanie-du-Nord-Westphalie),Etranger,1.0
+1133,Beckenried,NW,6.0
+1134,Walldürn,Etranger,1.0
+1135,L'Etivaz,VD,1.0
+1136,Sonvilier,BE,9.0
+1137,La Brévine,NE,4.0
+1138,Sigriswil,BE,2.0
+1139,Marin,NE,2.0
+1140,Jüterbog,Etranger,1.0
+1141,Kemptthal,ZH,1.0
+1142,Burg,AG,5.0
+1143,Strättligen,BE,3.0
+1144,Riesbach,ZH,8.0
+1145,Stadtlauringen (Bavière),Etranger,1.0
+1146,Wloclawek,Etranger,1.0
+1147,Oberriet,SG,1.0
+1148,Vukovar,Etranger,1.0
+1149,Broglio,TI,2.0
+1150,Trier,Etranger,7.0
+1151,Le Solliat,VD,1.0
+1152,Tiflis,Etranger,2.0
+1153,Waldau,Etranger,1.0
+1154,Bogota,Etranger,2.0
+1155,Münster (Westphalie),Etranger,1.0
+1156,Gleiwitz,Etranger,1.0
+1157,Czuszów,Etranger,1.0
+1158,Salon-de-Provence (Bouches du Rhône),Etranger,1.0
+1159,Sankt Chrischona,BS,2.0
+1160,Peseux,NE,6.0
+1161,Weiningen TG,TG,1.0
+1162,Weinheim,Etranger,1.0
+1163,Pfullendorf (Baden),Etranger,1.0
+1164,Beuthen,Etranger,1.0
+1165,Dorville (Guadeloupe),Etranger,1.0
+1166,Oldenburg (Basse-Saxe),Etranger,2.0
+1167,Guntur (Andhra),Etranger,1.0
+1168,Magdeburg,Etranger,4.0
+1169,Kaltenbach,TG,1.0
+1170,Neuravensburg,Etranger,1.0
+1171,Coligny,Etranger,1.0
+1172,Torhout,Etranger,1.0
+1173,Frankenstein,Etranger,1.0
+1174,Nysa,Etranger,1.0
+1175,Santiago de Chile,Etranger,1.0
+1176,Thielle-Wavre,NE,1.0
+1177,Thusis,GR,2.0
+1178,Verviers,Etranger,2.0
+1179,Bussum,Etranger,1.0
+1180,Weisslingen,ZH,3.0
+1181,Surakarta (Java),Etranger,1.0
+1182,Gyéres,Etranger,1.0
+1183,Mascara,Etranger,1.0
+1184,Söderhamn,Etranger,1.0
+1185,Gelterkinden,BL,5.0
+1186,Mazatenango,Etranger,1.0
+1187,Steckborn,TG,5.0
+1188,Lindau,ZH,3.0
+1189,Hove Sussex,Etranger,1.0
+1190,Anvers,Etranger,6.0
+1191,Fritzlar (Hesse),Etranger,1.0
+1192,Perrefitte,BE,1.0
+1193,Oviedo,Etranger,1.0
+1194,Lisieux,Etranger,1.0
+1195,Marbach SG,SG,1.0
+1196,Bruxelles-Schærbeek,Etranger,1.0
+1197,Romanel-sur-Lausanne,VD,4.0
+1198,Lübbecke,Etranger,1.0
+1199,Gottesberg,Etranger,1.0
+1200,Mons-en-Baroeul (Nord-Pas-de-Calais),Etranger,1.0
+1201,Rovio,TI,3.0
+1202,"Ciudad de Rio, Cordoba",Etranger,1.0
+1203,Masulipatam,Etranger,1.0
+1204,"Montceau-les-Mines, Saône-et-Loire",Etranger,1.0
+1205,Ecoteaux,VD,1.0
+1206,"Chrzanów, Oberschlesien",Etranger,1.0
+1207,Abadan,Etranger,1.0
+1208,Glasgow,Etranger,1.0
+1209,Mesocco,GR,1.0
+1210,Sankt Margrethen,SG,1.0
+1211,Affoltern,ZH,3.0
+1212,Bronschhofen,SG,1.0
+1213,Genolier,VD,2.0
+1214,Vieux-Thann (Alsace),Etranger,1.0
+1215,Villefranche-sur-Mer,Etranger,1.0
+1216,Brno,Etranger,2.0
+1217,Develier,BE,1.0
+1218,Douanne-Twann,BE,1.0
+1219,Megève (Haute-Savoie),Etranger,1.0
+1220,Quedlinburg,Etranger,1.0
+1221,Thayngen,SH,1.0
+1222,Banjarmasin,Etranger,1.0
+1223,Mülheim an der Ruhr,Etranger,3.0
+1224,Oldenburg,Etranger,2.0
+1225,Pezinok,Etranger,1.0
+1226,Friedrichshafen,Etranger,4.0
+1227,Mardin,Etranger,1.0
+1228,Lviv,Etranger,1.0
+1229,Mogelsberg,SG,3.0
+1230,"Birchanger, Essex",Etranger,1.0
+1231,Czestochowa,Etranger,1.0
+1232,Gruyères,FR,2.0
+1233,Münstertal,Etranger,1.0
+1234,Königsberg,Etranger,5.0
+1235,Renens,VD,7.0
+1236,Dumyat,Etranger,1.0
+1237,Oberleutensdorf,Etranger,1.0
+1238,Grünenmatt,BE,1.0
+1239,Münsingen,BE,6.0
+1240,Sünikon,ZH,1.0
+1241,Oberdiessbach,BE,5.0
+1242,San Giovanni Incarico,Etranger,1.0
+1243,Rivoli (Turin),Etranger,1.0
+1244,Liège,Etranger,10.0
+1245,Abaeté,Etranger,1.0
+1246,Le Cerneux-Péquignot,NE,1.0
+1247,Chiasso,TI,13.0
+1248,Kecskemét,Etranger,1.0
+1249,Egg,ZH,3.0
+1250,Buix,BE,1.0
+1251,Kirchdorf an der Krems,Etranger,1.0
+1252,Strem,Etranger,1.0
+1253,Reichenberg (Liberec),Etranger,1.0
+1254,Hamm,Etranger,1.0
+1255,Vlastislav,Etranger,1.0
+1256,Offenbach am Main,Etranger,4.0
+1257,Brême,Etranger,9.0
+1258,Raettvik,Etranger,1.0
+1259,Teplitz-Schönau,Etranger,1.0
+1260,Nittenau,Etranger,1.0
+1261,Bordighera,Etranger,1.0
+1262,Böhmisch Budweis,Etranger,1.0
+1263,Rostock,Etranger,1.0
+1264,Newcastle upon Tyne,Etranger,1.0
+1265,Augsburg,Etranger,4.0
+1266,Cardiff,Etranger,1.0
+1267,Clarens-sur-Montreux,VD,1.0
+1268,"Epinal, Vosges",Etranger,1.0
+1269,Bremgarten,AG,7.0
+1270,Tarente,Etranger,1.0
+1271,Bezau (Vorarlberg),Etranger,1.0
+1272,Oberkirch,LU,3.0
+1273,Bagnères de Bigorre,Etranger,1.0
+1274,Bad Säckingen,Etranger,1.0
+1275,Corleone,Etranger,1.0
+1276,Sofia,Etranger,5.0
+1277,Poitiers,Etranger,1.0
+1278,Ulm,Etranger,4.0
+1279,Le Cap,Etranger,3.0
+1280,Münsterlingen,TG,4.0
+1281,Rain,LU,1.0
+1282,Forbach,Etranger,1.0
+1283,Sittard,Etranger,1.0
+1284,Limbus,Etranger,1.0
+1285,Lahore,Etranger,1.0
+1286,Weissenbach an der Enns,Etranger,1.0
+1287,Dettwiller,Etranger,1.0
+1288,Donatyre,VD,1.0
+1289,Lund,Etranger,3.0
+1290,Deesen/Westerwald,Etranger,1.0
+1291,Paris,VD,
+1292,Chercenay,BE,1.0
+1293,Abiada,Etranger,1.0
+1294,Willisau,LU,3.0
+1295,Weidenau (Siegen),Etranger,1.0
+1296,Stondon,Etranger,1.0
+1297,Rendsburg (Schleswig-Holstein),Etranger,1.0
+1298,Quesitz bei Leipzig,Etranger,1.0
+1299,Horb-Nordstetten,Etranger,1.0
+1300,Jablonec/Gablonz,Etranger,1.0
+1301,Helsinki,Etranger,2.0
+1302,Pötzling (Landkreis Nürnberg),Etranger,1.0
+1303,"Wilmington, Delaware",Etranger,1.0
+1304,Berchtesgaden (Bavière),Etranger,1.0
+1305,Bombay,Etranger,4.0
+1306,Liebenwalde (Kreis Niederbarnim),Etranger,1.0
+1307,Easton (Pennsylvanie),Etranger,1.0
+1308,Pittsburgh,Etranger,3.0
+1309,Taormina,Etranger,1.0
+1310,Saint Louis,Etranger,1.0
+1311,Courgenay,BE,3.0
+1312,Schwerzenbach,ZH,1.0
+1313,Naumburg,Etranger,2.0
+1314,Hannoversch Münden (Niedersachsen),Etranger,1.0
+1315,Domodossola,Etranger,2.0
+1316,Västeras,Etranger,1.0
+1317,Havane,Etranger,2.0
+1318,Köthen (Anhalt),Etranger,1.0
+1319,Penzance,Etranger,2.0
+1320,Godesberg,Etranger,1.0
+1321,Hirschberg,Etranger,2.0
+1322,Bamberg,Etranger,4.0
+1323,Corvallis (Oregon),Etranger,1.0
+1324,Leuggern,AG,5.0
+1325,Zagreb,Etranger,6.0
+1326,Vrin,GR,1.0
+1327,Lobenstein Thüringen,Etranger,1.0
+1328,Potsdam,Etranger,1.0
+1329,North Olmsted,Etranger,1.0
+1330,Goldach,SG,3.0
+1331,Tschierv,GR,1.0
+1332,Stettin,Etranger,1.0
+1333,Bari,Etranger,4.0
+1334,Bonfol,BE,
+1335,Clermont-Ferrand,Etranger,5.0
+1336,"Long Branch, N.J.",Etranger,1.0
+1337,Poiana Maggiore (Veneto),Etranger,1.0
+1338,Moscice,Etranger,1.0
+1339,"Royan, Charente-Maritime",Etranger,1.0
+1340,Perugia,Etranger,1.0
+1341,Rinteln,Etranger,1.0
+1342,Giswil,OW,2.0
+1343,Bielitz,Etranger,1.0
+1344,Bingen am Rhein,Etranger,1.0
+1345,Brunswick,Etranger,4.0
+1346,Cuxhaven,Etranger,2.0
+1347,Hermsdorf,Etranger,1.0
+1348,Klein-Eichstedt (Sachsen),Etranger,1.0
+1349,Laukischken,Etranger,1.0
+1350,Ludwigsburg (Württemberg),Etranger,1.0
+1351,Elmshorn,Etranger,1.0
+1352,Ernstthal,Etranger,1.0
+1353,Reutlingen (Württemberg),Etranger,2.0
+1354,Schreiberhau,Etranger,1.0
+1355,Hauerz,Etranger,1.0
+1356,Hohenrechberg,Etranger,1.0
+1357,Homburg vor der Höhe,Etranger,1.0
+1358,Kirch-Beerfurth,Etranger,1.0
+1359,Köslin,Etranger,1.0
+1360,Coquimbo,Etranger,1.0
+1361,Halle,Etranger,3.0
+1362,Marienwerder,Etranger,1.0
+1363,Montjoie,Etranger,1.0
+1364,Schwerin,Etranger,2.0
+1365,Stralsund,Etranger,2.0
+1366,Wertheim am Main,Etranger,1.0
+1367,Bath,Etranger,2.0
+1368,Mödling,Etranger,1.0
+1369,Vöcklabruck,Etranger,1.0
+1370,Avranches,Etranger,1.0
+1371,Gasny,Etranger,1.0
+1372,Ribérac,Etranger,1.0
+1373,Salins,VS,2.0
+1374,Wasselheim (Alsace),Etranger,1.0
+1375,Messina,Etranger,1.0
+1376,Morra De Sanctis,Etranger,1.0
+1377,Strassburg,Etranger,1.0
+1378,Oslo,Etranger,3.0
+1379,Alexoten,Etranger,1.0
+1380,Le Caire,Etranger,4.0
+1381,Neuhof,AG,1.0
+1382,Knonau,ZH,1.0
+1383,Laibach,Etranger,1.0
+1384,Grandson,VD,7.0
+1385,Nods,BE,2.0
+1386,Oberstrass-Zürich,ZH,1.0
+1387,Odrau,Etranger,1.0
+1388,Ormont-Dessus,VD,2.0
+1389,Rapperswil-Dieterswil,BE,1.0
+1390,Sargans,SG,4.0
+1391,Brünn,Etranger,2.0
+1392,Seen-Winterthur,ZH,1.0
+1393,Töss-Winterthur,ZH,1.0
+1394,Triengen,LU,3.0
+1395,Pápa,Etranger,1.0
+1396,Montabaur,Etranger,1.0
+1397,Parme,Etranger,1.0
+1398,Carthaus,Etranger,1.0
+1399,Katwijk,Etranger,1.0
+1400,Evreux,Etranger,1.0
+1401,Praz (Vully),FR,1.0
+1402,"Mazet-Saint-Voy, Haute-Loire",Etranger,1.0
+1403,Courchavon,BE,1.0
+1404,"Carpentras, Vaucluse",Etranger,1.0
+1405,Breslau / Schlesien,Etranger,1.0
+1406,"Pranles, Ardèche",Etranger,1.0
+1407,"Aubagne, Bouches-du-Rhône",Etranger,1.0
+1408,Osnabrück,Etranger,3.0
+1409,Bourges,Etranger,1.0
+1410,Port-Saïd,Etranger,1.0
+1411,Corban,BE,1.0
+1412,Kaboul,Etranger,2.0
+1413,Tortona,Etranger,1.0
+1414,Tlemçen,Etranger,1.0
+1415,Mostaganem,Etranger,1.0
+1416,"Helmstedt, Niedersachsen",Etranger,1.0
+1417,"Seltmans, Bavière",Etranger,1.0
+1418,Köln,Etranger,3.0
+1419,Ahaus,Etranger,1.0
+1420,Guben,Etranger,1.0
+1421,Neuss,Etranger,1.0
+1422,Weil am Rhein,Etranger,1.0
+1423,Haslach im Kinzigtal,Etranger,1.0
+1424,Mährisch Schönberg,Etranger,1.0
+1425,Tüllingen,Etranger,1.0
+1426,Celle,Etranger,1.0
+1427,Waldbröl,Etranger,1.0
+1428,Wasserburg am Inn,Etranger,1.0
+1429,Moenchengladbach,Etranger,1.0
+1430,Dunedoo,Etranger,1.0
+1431,Uccle,Etranger,1.0
+1432,Aubange,Etranger,1.0
+1433,Namur,Etranger,4.0
+1434,Zottegem,Etranger,1.0
+1435,Batak,Etranger,1.0
+1436,Ouagadougou,Etranger,1.0
+1437,LaSalle QC,Etranger,1.0
+1438,Seoul,Etranger,1.0
+1439,Valladolid,Etranger,1.0
+1440,Hoboken (New Jersey),Etranger,1.0
+1441,(Ohio),Etranger,1.0
+1442,Espoo,Etranger,2.0
+1443,Vantaa,Etranger,1.0
+1444,Rovaniemi,Etranger,1.0
+1445,"Chaux, Haute-Saône",Etranger,1.0
+1446,"Ambilly, Haute-Savoie",Etranger,1.0
+1447,Oyonnax,Etranger,1.0
+1448,Perpignan,Etranger,2.0
+1449,Thionville,Etranger,1.0
+1450,Carcassonne,Etranger,1.0
+1451,Pierrecourt,Etranger,1.0
+1452,Pont-à-Mousson,Etranger,1.0
+1453,"Neuvic sur Isle, Dordogne",Etranger,1.0
+1454,Rennes,Etranger,2.0
+1455,Scarborough,Etranger,1.0
+1456,Nelson,Etranger,1.0
+1457,Thessalonique,Etranger,2.0
+1458,Debrecen,Etranger,2.0
+1459,Padoue,Etranger,3.0
+1460,Trento,Etranger,1.0
+1461,Camino,Etranger,1.0
+1462,Bologne,Etranger,5.0
+1463,Viareggio,Etranger,1.0
+1464,Boujad,Etranger,1.0
+1465,Dortmund,Etranger,3.0
+1466,Haarlem,Etranger,2.0
+1467,Lima,Etranger,1.0
+1468,Belgrade,Etranger,5.0
+1469,Hsin-Chu,Etranger,1.0
+1470,Cerna,Etranger,1.0
+1471,Kante,Etranger,1.0
+1472,Bizerte,Etranger,1.0
+1473,Ksar-Hellal,Etranger,1.0
+1474,Da Nang,Etranger,1.0
+1475,Mexico City,Etranger,1.0
+1476,"New Haven, Connecticut",Etranger,1.0
+1477,Ruhengeri,Etranger,1.0
+1478,Annecy,Etranger,1.0
+1479,Pfeffikon,LU,1.0
+1480,Vésenex-Crassy (Ain),Etranger,1.0
+1481,Gühlitz près Perleberg (Prusse),Etranger,1.0
+1482,Mühledorf BE,BE,1.0
+1483,Evian-les-Bains,Etranger,1.0
+1484,Beinwil am See,AG,2.0
+1485,Ramsen,SH,2.0
+1486,Jena,Etranger,4.0
+1487,Maastricht,Etranger,1.0
+1488,Meran,Etranger,2.0
+1489,Gronau,Etranger,1.0
+1490,Laufenburg,AG,5.0
+1491,Altenkirchen (Bayern),Etranger,1.0
+1492,Civitella del Tronto bei Ascoli Piceno,Etranger,1.0
+1493,Bergzabern,Etranger,1.0
+1494,Minneapolis,Etranger,2.0
+1495,Oberkassel,Etranger,1.0
+1496,Wischau,Etranger,1.0
+1497,Agon,Etranger,1.0
+1498,Samolenz (Posen),Etranger,1.0
+1499,Düren,Etranger,1.0
+1500,Zimmerwald,BE,1.0
+1501,Brody,Etranger,1.0
+1502,Grimisuat,VS,2.0
+1503,Guadeloupe,Etranger,1.0
+1504,Wangen am Untersee,Etranger,1.0
+1505,Ràbacsécsény,Etranger,1.0
+1506,Solothurn,SO,9.0
+1507,Mstislaw,Etranger,1.0
+1508,Felben,TG,2.0
+1509,Wrocław,Etranger,1.0
+1510,Sochi,Etranger,1.0
+1511,Nicosia,Etranger,1.0
+1512,Ancône,Etranger,1.0
+1513,San Daniele del Friuli,Etranger,1.0
+1514,Bačko Petrovo Selo,Etranger,1.0
+1515,Gretzenbach,SO,1.0
+1516,Illhart,TG,1.0
+1517,Tokyo,Etranger,4.0
+1518,Bernkastel-Kues,Etranger,1.0
+1519,Novara,Etranger,2.0
+1520,Sora,Etranger,1.0
+1521,Charleston (West Virginia),Etranger,1.0
+1522,Ottawa,Etranger,1.0
+1523,Hangzhou,Etranger,1.0
+1524,Wölflinswil,AG,3.0
+1525,Porrentruy,Berne,
+1526,Hettlingen,ZH,3.0
+1527,Loèche-Les-Bains,VS,1.0
+1528,Wiliberg,AG,1.0
+1529,Vufflens-le-Château,VD,1.0
+1530,Singapour,Etranger,4.0
+1531,Santiago,Etranger,3.0
+1532,Neu-Ulm,Etranger,1.0
+1533,Modesto,Etranger,1.0
+1534,Alahärmä,Etranger,1.0
+1535,Pont-Sainte-Maxence,Etranger,1.0
+1536,Bangalore,Etranger,1.0
+1537,Nidda,Etranger,1.0
+1538,Quito,Etranger,1.0
+1539,Newark,Etranger,1.0
+1540,Meknes,Etranger,2.0
+1541,Lisbonne,Etranger,2.0
+1542,Nashville,Etranger,1.0
+1543,Addis-Abeba,Etranger,1.0
+1544,Aalen,Etranger,1.0
+1545,King's Lynn,Etranger,1.0
+1546,Solingen,Etranger,1.0
+1547,Grabs,SG,10.0
+1548,Trutnov,Etranger,1.0
+1549,Hazaribagh,Etranger,1.0
+1550,Bussigny-sur-Oron,VD,1.0
+1551,Zumikon,ZH,2.0
+1552,Zullwil,SO,1.0
+1553,Gloucestershire,Etranger,1.0
+1554,Windisch,AG,2.0
+1555,Donauwörth,Etranger,1.0
+1556,Koblenz,Etranger,3.0
+1557,Sarajevo,Etranger,2.0
+1558,Ennetbaden,AG,3.0
+1559,Les Pâquis,GE,1.0
+1560,Aarberg,BE,8.0
+1561,Prilly,VD,4.0
+1562,Riaz,Etranger,3.0
+1563,Penthalaz,VD,2.0
+1564,Wiedikon,ZH,1.0
+1565,Hochheim am Main,Etranger,1.0
+1566,Tailfingen,Etranger,2.0
+1567,Carinthia,Etranger,1.0
+1568,Salzbourg,Etranger,4.0
+1569,Innsbruck,Etranger,2.0
+1570,Hudiksvall,Etranger,1.0
+1571,Le Chenit,VD,4.0
+1572,Marburg,Etranger,1.0
+1573,Bois-Colombes,Etranger,1.0
+1574,Chessel,VD,1.0
+1575,Pozzuolo,Etranger,1.0
+1576,Bagheria,Etranger,1.0
+1577,Belfaux,FR,2.0
+1578,St-Cergue,VD,1.0
+1579,Neuhausen,SH,7.0
+1580,Yens sur Morges,VD,1.0
+1581,Vucherens,VD,1.0
+1582,Les Sciernes d'Albeuve,FR,1.0
+1583,Saint-Quentin,Etranger,2.0
+1584,Chavannes-le-Veyron,VD,1.0
+1585,Yvonand,VD,3.0
+1586,Meyriez,FR,2.0
+1587,Ballens,VD,1.0
+1588,Gersau,SZ,2.0
+1589,Salquenen,VS,1.0
+1590,Fontainebrux,Etranger,1.0
+1591,Hefenhausen,TG,1.0
+1592,Chesalles-sur-Oron,VD,2.0
+1593,Thierrens,VD,3.0
+1594,Avry-sur-Matran,FR,1.0
+1595,Ollon,VD,5.0
+1596,Esmonts,FR,1.0
+1597,Ferrières sur Annecy,Etranger,1.0
+1598,Cossonay,VD,6.0
+1599,Chaves,Etranger,1.0
+1600,Leysin,VD,3.0
+1601,Charrat,VS,1.0
+1602,Vernand-Dessous,VD,1.0
+1603,Vernand-Dessus,VD,1.0
+1604,Zell,LU,6.0
+1605,St-Andrew,Etranger,1.0
+1606,Lavey,VD,1.0
+1607,Le Brassus,VD,4.0
+1608,Créteil,Etranger,1.0
+1609,Ecublens (FR),FR,1.0
+1610,Peyres-Possens,VD,1.0
+1611,Syens,VD,1.0
+1612,Les Charbonnières,VD,1.0
+1613,Washington,Etranger,3.0
+1614,Varennes-lès-Nevers,Etranger,1.0
+1615,Baulmes,VD,2.0
+1616,Lille,Etranger,2.0
+1617,Oron-le-Châtel,VD,1.0
+1618,Medellin,Etranger,1.0
+1619,Hanoi,Etranger,1.0
+1620,Châteauroux,Etranger,1.0
+1621,Bâle-Ville,BS,3.0
+1622,Le Sépey,VD,2.0
+1623,Villeneuve,VD,6.0
+1624,Epalinges,VD,8.0
+1625,Saint-Aubin FR,FR,2.0
+1626,Martigny-Ville,VS,1.0
+1627,Fiez,VD,5.0
+1628,Montana-Village,VS,1.0
+1629,Bougy-Villars,VD,1.0
+1630,Rougemont,VD,3.0
+1631,Bujumo-Murambi,Etranger,1.0
+1632,Gams,SG,5.0
+1633,Mantova,Etranger,1.0
+1634,Mamborê,Etranger,1.0
+1635,Lourtier,VS,1.0
+1636,Lugaggia,TI,1.0
+1637,Cortébert,BE,2.0
+1638,Montagnola,TI,2.0
+1639,Bedano,TI,1.0
+1640,Lopagno,TI,1.0
+1641,Valsolda (Como),Etranger,1.0
+1642,Cureglia,TI,1.0
+1643,Imperia,Etranger,1.0
+1644,Arzo,TI,2.0
+1645,Corzoneso,TI,1.0
+1646,Corticiasca,TI,3.0
+1647,Cesena/Forlì,Etranger,1.0
+1648,Schattdorf,UR,6.0
+1649,Ligornetto,TI,1.0
+1650,Bironico,TI,1.0
+1651,Sementina,TI,1.0
+1652,Novaggio,TI,2.0
+1653,Massagno,TI,3.0
+1654,Madras,Etranger,1.0
+1655,Gentilino,TI,3.0
+1656,Meisterschwanden,AG,1.0
+1657,Monteggio,TI,3.0
+1658,Grono,GR,1.0
+1659,Grenoble,Etranger,4.0
+1660,Stabio,TI,5.0
+1661,Carabietta,TI,1.0
+1662,Brissago,TI,1.0
+1663,Joroinen (Mikkeli),Etranger,1.0
+1664,Muzzano,TI,2.0
+1665,Vico Morcote,TI,1.0
+1666,Capodistria (Trieste),Etranger,1.0
+1667,Lecco,Etranger,1.0
+1668,Buerglen,TG,1.0
+1669,Brusino Arsizio,TI,1.0
+1670,Cremona,Etranger,1.0
+1671,Kandersteg,BE,3.0
+1672,Cadro,TI,1.0
+1673,Cimadera,TI,1.0
+1674,Cevio,TI,3.0
+1675,Champdepraz (Aosta),Etranger,1.0
+1676,Loco,TI,1.0
+1677,Olivone,TI,4.0
+1678,Brè sopra Lugano,TI,1.0
+1679,Sarnico (Bergamo),Etranger,1.0
+1680,Ostiglia (Mantova),Etranger,1.0
+1681,Prizren,Etranger,2.0
+1682,Auenstein,AG,1.0
+1683,Asnières-sur-Seine,Etranger,1.0
+1684,Sao Paulo,Etranger,4.0
+1685,Essertes,VD,1.0
+1686,"Malsch, Kreiz Karlsruhe",Etranger,1.0
+1687,Boveresse,NE,1.0
+1688,Noflen,BE,1.0
+1689,Etagnières,VD,1.0
+1690,Belmont-sur-Pully,VD,1.0
+1691,Vitznau,LU,1.0
+1692,Therwil,BL,3.0
+1693,Däniken,SO,2.0
+1694,Marthalen,ZH,2.0
+1695,Bussenhausen,ZH,1.0
+1696,Leutkirch (Wurttemberg),Etranger,1.0
+1697,Wädenswilerberg,ZH,1.0
+1698,Oberhelfenschwil,SG,2.0
+1699,Kollbrunn,ZH,1.0
+1700,Villars-sur-Glâne,FR,2.0
+1701,Dardagny,GE,2.0
+1702,Choulex,GE,2.0
+1703,Regensdorf,ZH,1.0
+1704,Lissa,Etranger,1.0
+1705,Neidenburg (Ostpreussen),Etranger,1.0
+1706,Heslach,Etranger,1.0
+1707,Mindersdorf,Etranger,1.0
+1708,Krummenau,SG,1.0
+1709,Madretsch,BE,2.0
+1710,Santa Maria,GR,1.0
+1711,(Royaume de Wurtemberg),Etranger,1.0
+1712,Burzweiler (Alsace),Etranger,1.0
+1713,Regensburg,Etranger,1.0
+1714,Aachen,Etranger,3.0
+1715,Cagliari,Etranger,1.0
+1716,Irun,Etranger,1.0
+1717,Cottbus,Etranger,1.0
+1718,Oakville,Etranger,1.0
+1719,Nice,Etranger,2.0
+1720,Piacenza,Etranger,1.0
+1721,Nembro,Etranger,1.0
+1722,Corme,Etranger,1.0
+1723,Maracaibo,Etranger,1.0
+1724,Maccio,Etranger,1.0
+1725,Hégenheim,Etranger,1.0
+1726,Göteborg,Etranger,1.0
+1727,Niédens,VD,1.0
+1728,Rehetobel,AR,6.0
+1729,Le Lac-Noir,FR,1.0
+1730,Nérac (Lot-et-Garonne),Etranger,1.0
+1731,Dietwil,AG,1.0
+1732,Saint-Germain-sur-Talloires (Haute-Savoie),Etranger,1.0
+1733,Werden an der Ruhr,Etranger,1.0
+1734,Neuwied,Etranger,2.0
+1735,Waregem,Etranger,1.0
+1736,Vizag,Etranger,1.0
+1737,Escholzmatt-Marbach,LU,2.0
+1738,Vérone,Etranger,2.0
+1739,Hagen,Etranger,2.0
+1740,Fulenbach,SO,2.0
+1741,Hohenems (Vorarlberg),Etranger,2.0
+1742,Langnau im Emmental,BE,3.0
+1743,Curtilles,VD,1.0
+1744,Kirchberg (BE),BE,2.0
+1745,Egolzwil,LU,3.0
+1746,Les Agettes,VS,1.0
+1747,Biberist,SO,6.0
+1748,Wengi,BE,1.0
+1749,Beromünster,LU,1.0
+1750,Réclère,BE,1.0
+1751,Grossandelfingen,ZH,1.0
+1752,Schlosswil,BE,2.0
+1753,Zutphen,Etranger,1.0
+1754,Estrun,Etranger,1.0
+1755,Watford,Etranger,1.0
+1756,Flawil,SO,
+1757,Muotathal,SZ,4.0
+1758,Valendas,GR,1.0
+1759,Drei Höfe,SO,1.0
+1760,Elberfeld,Etranger,2.0
+1761,Güttingen,TG,2.0
+1762,Möriken-Wildegg,AG,1.0
+1763,Siebnen,SZ,3.0
+1764,Olot,Etranger,1.0
+1765,Timisoara,Etranger,3.0
+1766,Kuopio,Etranger,1.0
+1767,Ravenne,Etranger,1.0
+1768,Biberach,Etranger,1.0
+1769,Heiligenstadt,Etranger,2.0
+1770,Obfelden,ZH,2.0
+1771,Zollikofen,ZH,2.0
+1772,Villette,VD,2.0
+1773,Hemberg,SG,5.0
+1774,Niedereggenen,Etranger,1.0
+1775,Muttenz,BL,3.0
+1776,Lindau,Etranger,
+1777,Wiedlisbach,BE,2.0
+1778,Moncófar (Castellón),Etranger,1.0
+1779,Le Dézaley,VD,1.0
+1780,Semsales,FR,1.0
+1781,Savigny,VD,3.0
+1782,Vouvry,VS,2.0
+1783,Torgau,Etranger,1.0
+1784,Nidfurn,GL,1.0
+1785,Wohlenschwil,AG,1.0
+1786,Speicher,AR,2.0
+1787,Saint-Cierges,VD,2.0
+1788,Gondiswil,BE,2.0
+1789,Lindau (Bavière),Etranger,1.0
+1790,Oberwil bei Büren,BE,1.0
+1791,Wollerau,SZ,3.0
+1792,Manchester,Etranger,1.0
+1793,Guebwiller (Alsace),Etranger,1.0
+1794,Halifax,Etranger,1.0
+1795,Boudevilliers,NE,2.0
+1796,Neubrunn,ZH,1.0
+1797,Reinach,AG,
+1798,Weiningen,ZH,1.0
+1799,Stein,AR,
+1800,Seedorf,UR,1.0
+1801,Chézard-Saint-Martin,NE,1.0
+1802,Trasadingen,SH,1.0
+1803,Beringen,SH,4.0
+1804,Rüegsau,BE,3.0
+1805,Straubenzell,SG,1.0
+1806,Büsserach,SO,2.0
+1807,Hesse,Etranger,1.0
+1808,Thunstetten,BE,1.0
+1809,Tecuci,Etranger,1.0
+1810,Kleinhüningen,BS,1.0
+1811,Mengestorf,BE,1.0
+1812,Kempten,ZH,1.0
+1813,Worben,BE,1.0
+1814,Liebewil,BE,1.0
+1815,Bärau,BE,1.0
+1816,Bürerwald,SG,1.0
+1817,Laupen,BE,3.0
+1818,Boningen,SO,1.0
+1819,Aeschi bei Spiez,BE,1.0
+1820,Schangnau,BE,1.0
+1821,Wynigen,BE,1.0
+1822,Bütschwil,SG,4.0
+1823,Toggenburg,SG,1.0
+1824,Paspels,GR,1.0
+1825,Hitzkirch,LU,3.0
+1826,Leuzigen,BE,1.0
+1827,Günzburg,Etranger,1.0
+1828,Alpnach,OW,4.0
+1829,Säckingen,Etranger,1.0
+1830,Wattenwil,BE,
+1831,Oberengstringen,ZH,1.0
+1832,Echandens,VD,1.0
+1833,Commentry,Etranger,1.0
+1834,Piémont,Etranger,1.0
+1835,Aarhus,Etranger,1.0
+1836,Bardonnex,GE,2.0
+1837,Macon,Etranger,2.0
+1838,Vallée de Joux,VD,1.0
+1839,Heilbronn,Etranger,3.0
+1840,Niederschwarzbach,Etranger,1.0
+1841,Embrach,ZH,4.0
+1842,Dillingen,Etranger,1.0
+1843,Colombe,Etranger,1.0
+1844,Bayeux,Etranger,1.0
+1845,Garches,Etranger,1.0
+1846,Friedrichsdorf,Etranger,1.0
+1847,Aclens,VD,1.0
+1848,Kehrsatz,BE,1.0
+1849,Völkermarkt,Etranger,1.0
+1850,Poméranie,Etranger,1.0
+1851,Galgenen,SZ,5.0
+1852,Unterseen,BE,8.0
+1853,Mackenzie (Guyane brittanique),Etranger,1.0
+1854,Pollegio,TI,2.0
+1855,Erlangen,Etranger,4.0
+1856,Wiesendangen,ZH,2.0
+1857,Bisaccia (Avellino),Etranger,1.0
+1858,Campolongo sul Brenta,Etranger,1.0
+1859,Bossuet,Etranger,1.0
+1860,Madretsch (Bienne),BE,1.0
+1861,Fischenthal,ZH,2.0
+1862,Zuchwil,SO,1.0
+1863,Guttet,VS,1.0
+1864,Welschenrohr,SO,3.0
+1865,Lengnau,BE,2.0
+1866,Bingen (Hesse rhénane),Etranger,1.0
+1867,Riedt,TG,3.0
+1868,Borex,VD,1.0
+1869,Signau,BE,4.0
+1870,Avry devant-Pont,FR,1.0
+1871,Saint-Gingolph,Etranger,2.0
+1872,Chavannes-près-Renens,VD,2.0
+1873,Menden DE,Etranger,1.0
+1874,Dagmersellen,LU,3.0
+1875,Anduze,Etranger,2.0
+1876,Birmingham,Etranger,2.0
+1877,Pontaix (Drôme),Etranger,1.0
+1878,Valence,Etranger,1.0
+1879,Bourg-en-Bresse,Etranger,1.0
+1880,Deudehom,Etranger,1.0
+1881,Bourdigny,GE,1.0
+1882,Amiens,Etranger,1.0
+1883,Mariastein,SO,1.0
+1884,Lenzbourg,AG,2.0
+1885,Villmergen,AG,2.0
+1886,Alost (Flandre orientale),Etranger,1.0
+1887,Safenwil,AG,2.0
+1888,Kirchberg,Etranger,6.0
+1889,Elbistan,Etranger,1.0
+1890,Poebene,Etranger,1.0
+1891,Tarcento,Etranger,1.0
+1892,Wohlen,BE,
+1893,Sankt Stephan,BE,1.0
+1894,Märstetten,TG,3.0
+1895,Genève,Suisse,
+1896,Tenero,TI,1.0
+1897,Niederhallwil,AG,1.0
+1898,Au,SG,2.0
+1899,Oberägeri,SZ,
+1900,Oftringen,AG,4.0
+1901,Stein am Rhein,SH,9.0
+1902,Corcelles-près-Concise,VD,2.0
+1903,Chur,GR,4.0
+1904,Cernier,NE,2.0
+1905,Malans,GR,3.0
+1906,Vauderens,FR,2.0
+1907,Gstaad,BE,2.0
+1908,Schüpfheim,LU,4.0
+1909,Hohenrain,LU,2.0
+1910,Cormoret,BE,2.0
+1911,Dürnten,ZH,2.0
+1912,St-Imier,BE,4.0
+1913,Kirchlindach,BE,1.0
+1914,Saxeten,BE,1.0
+1915,Bévilard,BE,3.0
+1916,Châlons-en-Champagne,Etranger,1.0
+1917,Villnachern,AG,1.0
+1918,Dättwil,AG,1.0
+1919,Zollikon et Affoltern?,ZH,1.0
+1920,Veltheim,AG,2.0
+1921,Ramosch,GR,1.0
+1922,Hölstein,BL,1.0
+1923,Transvaal,Etranger,1.0
+1924,Oberburg,BE,3.0
+1925,Lausen,BL,1.0
+1926,Ettiswil,LU,2.0
+1927,Arbon,TG,12.0
+1928,Weissenburg,BE,1.0
+1929,Breil/Brigels,GR,2.0
+1930,Schocherswil,TG,1.0
+1931,Dietikon,ZH,6.0
+1932,Libingen (Mosnang),SG,1.0
+1933,Kräiligen,BE,1.0
+1934,Illnau-Effretikon,ZH,1.0
+1935,Rothrist,AG,4.0
+1936,Eysins,VD,1.0
+1937,Schübelbach (Siebnen),SZ,1.0
+1938,Málaga,Etranger,1.0
+1939,Krillberg,TG,1.0
+1940,Uman,Etranger,1.0
+1941,Schinznach-Dorf,AG,2.0
+1942,Oberstammheim,ZH,1.0
+1943,La Jonchère,NE,1.0
+1944,Cully,VD,4.0
+1945,Morbio Inferiore,TI,1.0
+1946,Willisdorf,TG,1.0
+1947,Eichberg,SG,2.0
+1948,Vira,TI,1.0
+1949,Les Bayards,NE,1.0
+1950,Chaluet (Court),BE,1.0
+1951,Sonceboz,BE,1.0
+1952,Zauggenried,BE,2.0
+1953,Lyssach,BE,1.0
+1954,Corsier-sur-Vevey,VD,1.0
+1955,Vuippens,FR,1.0
+1956,Mur,VD,1.0
+1957,Montana,VS,1.0
+1958,Campli,Etranger,1.0
+1959,Schönholzerswilen,TG,1.0
+1960,Abtwil,AG,2.0
+1961,Nürtingen,Etranger,1.0
+1962,Moosaffoltern,BE,1.0
+1963,L'Auberson,VD,1.0
+1964,Montpreveyres,VD,1.0
+1965,Berlingen,TG,1.0
+1966,Roggwil,TG,4.0
+1967,Faoug,VD,1.0
+1968,Grosswangen,LU,4.0
+1969,Erschwil,SO,1.0
+1970,Ilanz,GR,7.0
+1971,Täsch,VS,2.0
+1972,Udligenswil,LU,2.0
+1973,Thal,SG,8.0
+1974,Saint-Antoine,FR,1.0
+1975,Sins,AG,2.0
+1976,Stockton,Etranger,1.0
+1977,Basel,BS,34.0
+1978,Człuchów,Etranger,1.0
+1979,Dulliken,SO,2.0
+1980,Rotkreuz,ZG,1.0
+1981,Siviriez,FR,1.0
+1982,Seigneux,VD,1.0
+1983,Saar-Union,Etranger,1.0
+1984,Nîmes,Etranger,2.0
+1985,Mazamet (Tarn),Etranger,1.0
+1986,Mont-la-Ville,VD,5.0
+1987,Feldbrunnen,SO,1.0
+1988,Tesserete,TI,3.0
+1989,Eggiwil,BE,3.0
+1990,Airolo,TI,6.0
+1991,Zwickau,Etranger,1.0
+1992,Étampes,Etranger,1.0
+1993,Wilno,Etranger,1.0
+1994,Neumarkt in Steiermark,Etranger,1.0
+1995,Savièse,VS,4.0
+1996,Lodi,Etranger,1.0
+1997,Miami,Etranger,1.0
+1998,Alexandria,Etranger,1.0
+1999,Wilster,Etranger,1.0
+2000,Caen,Etranger,1.0
+2001,Katowice,Etranger,2.0
+2002,Wipperfürth,Etranger,1.0
+2003,Mannheim-Neckarau,Etranger,1.0
+2004,Montandon,Etranger,1.0
+2005,Wittenberge,Etranger,1.0
+2006,"Reddemitz, Westpreussen",Etranger,1.0
+2007,Tuttlingen,Etranger,2.0
+2008,Höngg-Zürich,ZH,1.0
+2009,Glovelier,BE,1.0
+2010,Diemtigen,BE,2.0
+2011,Duisburg,Etranger,5.0
+2012,Karachi,Etranger,1.0
+2013,Haslen,GL,2.0
+2014,Dijon,Etranger,2.0
+2015,Groningen,Etranger,1.0
+2016,Eupen,Etranger,1.0
+2017,Cinuos-chel,GR,1.0
+2018,Gampel,VS,2.0
+2019,Le Mans,Etranger,1.0
+2020,Condrieu,Etranger,1.0
+2021,The Bronx,Etranger,1.0
+2022,Riggisberg,BE,1.0
+2023,Seeberg,BE,2.0
+2024,Littau,LU,1.0
+2025,Saint-Loup,VD,1.0
+2026,Stans,LU,
+2027,Vilters-Wangs,SG,3.0
+2028,Obstalden,GL,2.0
+2029,Unterkulm,AG,1.0
+2030,Schwändi,GL,1.0
+2031,Ankara,Etranger,2.0
+2032,Weinfelden,TG,4.0
+2033,Wildberg,ZH,2.0
+2034,Bruggen,SG,1.0
+2035,Seuzach,ZH,2.0
+2036,Grossbartloff (Erfurt),Etranger,1.0
+2037,Recherswil,SO,3.0
+2038,Ziegelbrücke,GL,3.0
+2039,Balterswil,TG,1.0
+2040,Yerevan,Etranger,1.0
+2041,(West Virginia),Etranger,1.0
+2042,Montagny,VD,2.0
+2043,Merseburg,Etranger,1.0
+2044,Apples,VD,2.0
+2045,Rennaz,VD,1.0
+2046,Wörgl,Etranger,1.0
+2047,Saint Petersburg,Etranger,1.0
+2048,Töss (auj. Winterthour),ZH,1.0
+2049,Oberrieden,ZH,1.0
+2050,Riddes,VS,2.0
+2051,Gossau,ZH,
+2052,Urdorf,ZH,2.0
+2053,Ottiswil,BE,1.0
+2054,Prévonloup,VD,1.0
+2055,Leimbach,AG,2.0
+2056,Egringen,Etranger,1.0
+2057,Schüpfen,BE,4.0
+2058,Baselaugst,BL,1.0
+2059,Chavornay,VD,3.0
+2060,Montfaucon,BE,2.0
+2061,Vesin,FR,1.0
+2062,Fiorano,Etranger,1.0
+2063,Lüsslingen,SO,2.0
+2064,Bailén,Etranger,1.0
+2065,Schlierbach,LU,1.0
+2066,Ostiano,Etranger,1.0
+2067,Grub,SG,1.0
+2068,Igis,GR,1.0
+2069,Gränichen,AG,8.0
+2070,Därligen,BE,1.0
+2071,Pedrinate,TI,1.0
+2072,Neuenegg,BE,3.0
+2073,Kriegstetten,SO,2.0
+2074,Schaplava,Etranger,1.0
+2075,Berneck,SG,2.0
+2076,Allschwil,BL,3.0
+2077,Bramstedt,Etranger,1.0
+2078,Zihlschlacht,TG,3.0
+2079,Tamins,GR,5.0
+2080,Oberegg,AI,4.0
+2081,Schänis,SG,4.0
+2082,Obersteckholz,BE,1.0
+2083,Buchrain,LU,1.0
+2084,Seissen,Etranger,1.0
+2085,Hasle-Rüegsau,BE,1.0
+2086,Rüeggisberg,BE,3.0
+2087,Torny-le-Grand,FR,1.0
+2088,Le Cateau,Etranger,1.0
+2089,Brusino,TI,1.0
+2090,Porza,TI,1.0
+2091,Les Petits-Ponts,NE,1.0
+2092,Brugg,BE,
+2093,Pampigny,VD,1.0
+2094,Agriswil,FR,2.0
+2095,Matten,BE,1.0
+2096,Miesbach,Etranger,1.0
+2097,Villars-d'Avry,FR,1.0
+2098,Oberhofen,BE,2.0
+2099,Reichenbach im Kandertal,BE,1.0
+2100,Les Geneveys-sur-Coffrane,NE,1.0
+2101,Autigny,FR,1.0
+2102,Dietlikon,ZH,1.0
+2103,Bümpliz,BE,2.0
+2104,Rust,Etranger,1.0
+2105,Russikon,ZH,1.0
+2106,Kempttal,ZH,1.0
+2107,Rüschlikon,ZH,2.0
+2108,Zeiningen,AG,1.0
+2109,Wangen,BE,2.0
+2110,Walzenhausen,AR,3.0
+2111,Nottingham,Etranger,1.0
+2112,Niederbüren,SG,1.0
+2113,Wigoltingen,TG,2.0
+2114,Kaltbrunn,SG,1.0
+2115,Oberbach,FR,1.0
+2116,Derendingen,SO,3.0
+2117,Hochfelden,ZH,1.0
+2118,Bettwiesen,TG,1.0
+2119,Recklinghauser,Etranger,1.0
+2120,Horw,LU,4.0
+2121,Päwesin,Etranger,1.0
+2122,Kleinhandelfingen,ZH,1.0
+2123,Othmarsingen,AG,2.0
+2124,Widnau,SG,2.0
+2125,Gerlafingen,SO,5.0
+2126,Niederhünigen,BE,1.0
+2127,Saint-Ursanne,BE,
+2128,Péry,BE,2.0
+2129,Buchs b. Aarau,AG,2.0
+2130,Kirchberg,SG,
+2131,S. Vito al Tagliamento (Pordenone),Etranger,1.0
+2132,Titterten,BL,2.0
+2133,Romainmôtier,VD,3.0
+2134,Promasens,FR,1.0
+2135,Giubiasco,TI,2.0
+2136,Treycovagnes,VD,1.0
+2137,Nendaz,VS,1.0
+2138,Châtel-St-Denis,FR,2.0
+2139,Brescia,Etranger,1.0
+2140,Comologno,TI,1.0
+2141,Grüningen,ZH,1.0
+2142,Bollingen,SG,1.0
+2143,Strengelbach,AG,1.0
+2144,Canobbio,TI,1.0
+2145,Engi,GL,1.0
+2146,Saas-Balen,VS,1.0
+2147,Grenchen,SO,2.0
+2148,Sovramonte - Belluno,Etranger,1.0
+2149,Reggio Emilia,Etranger,1.0
+2150,Villeurbanne,Etranger,1.0
+2151,Altensteigdorf (Baden-Württemberg),Etranger,1.0
+2152,Lotzwil,BE,1.0
+2153,Rickenbach,LU,2.0
+2154,Rupperswil,AG,1.0
+2155,Ammerswil,AG,1.0
+2156,Röthenbach,BE,1.0
+2157,Rothenburg,LU,2.0
+2158,Uerkheim,AG,3.0
+2159,Suhr,AG,2.0
+2160,Mastrils,GR,1.0
+2161,Grächen,VS,1.0
+2162,Saint-Léonard,VS,2.0
+2163,Verviers-Hodimont,Etranger,1.0
+2164,Saint Blaise,NE,1.0
+2165,Chermignon,VS,2.0
+2166,Niederbipp,BE,2.0
+2167,Oerlikon,ZH,2.0
+2168,Lengwil,TG,1.0
+2169,Niederrohrdorf,AG,1.0
+2170,Sondrio,Etranger,1.0
+2171,Fregiécourt,BE,1.0
+2172,Alt Wallmoden/Goslar,Etranger,1.0
+2173,Matzendorf,SO,1.0
+2174,Montignez,BE,1.0
+2175,Bollion,FR,1.0
+2176,Champoz,BE,1.0
+2177,Riniken,AG,1.0
+2178,Collombey,VS,1.0
+2179,Coffrane,NE,1.0
+2180,Langwiesen,ZH,1.0
+2181,Selzach,SO,2.0
+2182,Oltigen,BE,1.0
+2183,Bofflens,VD,1.0
+2184,Fraubrunnen,BE,2.0
+2185,Römerswil,LU,1.0
+2186,Uetikon am See,ZH,1.0
+2187,Collebeato,Etranger,1.0
+2188,Bercher,VD,3.0
+2189,Malleray,BE,2.0
+2190,Obergesteln,VS,1.0
+2191,Coppet,VD,3.0
+2192,Velký Osek (Gross Wossek),Etranger,1.0
+2193,Staad (commune de Thal),SG,1.0
+2194,Altona (Hambourg),Etranger,1.0
+2195,Neuburg am Inn,Etranger,1.0
+2196,Nürnberg,Etranger,1.0
+2197,Unterhallau (auj. Hallau),SH,1.0
+2198,Piancastagnaio (Toscane),Etranger,1.0
+2199,Erzurum,Etranger,1.0
+2200,Wald,AR,
+2201,Sorvilier,BE,1.0
+2202,Müswangen (auj. comm. Hitzkirch),LU,1.0
+2203,Klein-Sangerberg (auj. Prameny),Etranger,1.0
+2204,Veltheim (auj. comm. Winterthour),ZH,1.0
+2205,Marly ?,FR,1.0
+2206,Buus,BL,2.0
+2207,Bassecourt,BE,
+2208,Mézières,VD,1.0
+2209,Ennetbürgen,NW,3.0
+2210,La Bosse,BE,1.0
+2211,Puidoux,VD,1.0
+2212,Laconnex,GE,1.0
+2213,Niedergösgen,SO,1.0
+2214,Reiden,LU,3.0
+2215,Mülchi,BE,2.0
+2216,Rivaz,VD,2.0
+2217,Walchwil,ZG,2.0
+2218,Felsberg,GR,1.0
+2219,Unterengstringen,ZH,2.0
+2220,Ennetmoos,NW,1.0
+2221,Landquart,GR,2.0
+2222,Schwadernau,BE,2.0
+2223,Engelburg,SG,1.0
+2224,Wila,ZH,2.0
+2225,Mörigen,BE,1.0
+2226,Cadenazzo,TI,4.0
+2227,Krattigen,BE,1.0
+2228,Goldiwil (Thun),BE,1.0
+2229,Simrishamn,Etranger,1.0
+2230,Umeå,Etranger,1.0
+2231,Flüelen,UR,4.0
+2232,Grosshöchstetten,BE,4.0
+2233,Kappel,SG,
+2234,Balerna,TI,2.0
+2235,Bevaix,NE,1.0
+2236,Ballaigues,VD,3.0
+2237,Yvorne,VD,2.0
+2238,Hofen,SH,3.0
+2239,Schinznach,AG,1.0
+2240,Montilier,FR,1.0
+2241,Bätterkinden,BE,1.0
+2242,Zizers,GR,3.0
+2243,Auswil,BE,1.0
+2244,Neggio,TI,1.0
+2245,Ueken,AG,1.0
+2246,Bachenbülach,ZH,2.0
+2247,Masein,GR,1.0
+2248,Merenschwand,AG,3.0
+2249,Gléresse,BE,1.0
+2250,Gähwil,SG,1.0
+2251,La Chaux-du-Milieu,NE,2.0
+2252,Chevilly,VD,1.0
+2253,Giornico,TI,3.0
+2254,Villarzel,VD,2.0
+2255,Wabern,BE,2.0
+2256,Veysonnaz,VS,1.0
+2257,Forel-sur-Lucens,VD,1.0
+2258,Oberrohrdorf,AG,1.0
+2259,Lützelflüh,BE,3.0
+2260,Reverolle (Savigny),VD,1.0
+2261,Hauterive,NE,2.0
+2262,Le Pâquier,NE,1.0
+2263,Suberg,BE,1.0
+2264,Trun,GR,3.0
+2265,Küssnacht am Rigi,SZ,2.0
+2266,Neuendorf,SO,1.0
+2267,Romoos,LU,1.0
+2268,Kühlewil,BE,1.0
+2269,Binn,VS,1.0
+2270,Mörel,VS,1.0
+2271,Häggenschwil,SG,2.0
+2272,Schlieren,ZH,2.0
+2273,Billens,FR,4.0
+2274,Bâle,BL,
+2275,Ebnat-Kappel,SG,1.0
+2276,Rheinklingen,TG,1.0
+2277,Pratval,GR,1.0
+2278,Stalden,VS,1.0
+2279,Lauperswil,BE,2.0
+2280,Vilters,SG,1.0
+2281,Vnà,GR,1.0
+2282,Donat,GR,1.0
+2283,Attiswil,BE,1.0
+2284,Séville,Etranger,1.0
+2285,Waldkirch,SG,5.0
+2286,Lossy,FR,1.0
+2287,Baldingen,AG,1.0
+2288,Vaz/Obervaz,GR,1.0
+2289,Schluein,GR,1.0
+2290,Bourg-Saint-Pierre,VS,1.0
+2291,Neuheim,ZG,1.0
+2292,Kerns,OW,5.0
+2293,Heiden,AR,
+2294,Flühli,LU,3.0
+2295,Uesslingen,TG,1.0
+2296,Cabbio,TI,1.0
+2297,Mathod,VD,1.0
+2298,Läufelfingen,BL,1.0
+2299,Bühler,AR,1.0
+2300,Wassen,UR,1.0
+2301,Neuenkirch,LU,2.0
+2302,Chapelle-sur-Moudon,VD,1.0
+2303,Untersiggenthal,AG,3.0
+2304,Rüttenen,SO,1.0
+2305,Dornach,SO,2.0
+2306,Erlinsbach,AG,1.0
+2307,Thalheim an der Thur,ZH,1.0
+2308,Hägglingen,AG,1.0
+2309,Bösingen,FR,1.0
+2310,Gachnang,TG,2.0
+2311,Rechthalten,FR,1.0
+2312,Laupersdorf,SO,2.0
+2313,Icogne,VS,1.0
+2314,Falera,GR,1.0
+2315,Rossrüti (comm. Bronschhofen),SG,1.0
+2316,Alberswil,LU,1.0
+2317,Vollèges,VS,1.0
+2318,Ruswil,LU,4.0
+2319,Mägenwil,AG,2.0
+2320,Neu Sankt-Johann (Henau),SG,1.0
+2321,Boswil,AG,1.0
+2322,Visperterminen,VS,1.0
+2323,Escholzmatt,LU,1.0
+2324,Laax,GR,1.0
+2325,Bissone,TI,1.0
+2326,Quarten,SG,1.0
+2327,Trimmis,GR,2.0
+2328,Saint-Blaise,NE,4.0
+2329,Dizy,VD,1.0
+2330,Villars-Lussery,VD,1.0
+2331,Vetroz,VS,1.0
+2332,Capolago,TI,1.0
+2333,Sugnens,VD,1.0
+2334,Burinaux (comm. Chavannes-sur-Moudon),VD,1.0
+2335,Malix,GR,1.0
+2336,Merzligen,BE,1.0
+2337,Montreux-Vieux (Alsace),Etranger,1.0
+2338,Staffelbach,AG,3.0
+2339,Oensingen,SO,2.0
+2340,Oppligen,BE,1.0
+2341,Oberkulm,AG,1.0
+2342,Mammern,TG,2.0
+2343,Griesenberg,TG,1.0
+2344,Simplon-Village,VS,1.0
+2345,Bussigny-près-Lausanne,VD,1.0
+2346,Räuchlisberg (auj. comm. Amriswil),TG,1.0
+2347,Thalkirch (comm. Safien),GR,1.0
+2348,Grossaffoltern,BE,1.0
+2349,Grasswil b. Seeberg,BE,1.0
+2350,Benken,ZH,2.0
+2351,Suscévaz,VD,2.0
+2352,La Sarraz,VD,6.0
+2353,Bözingen (auj. Bienne),BE,1.0
+2354,Grub (comm. Eggersriet),SG,1.0
+2355,Neuhaus (Baden),Etranger,1.0
+2356,Cham,LU,
+2357,Hundwil,AR,1.0
+2358,Königsfelden bei Brugg,AG,1.0
+2359,Coglio (Maggia),TI,1.0
+2360,Céphalonie,Etranger,1.0
+2361,St. Antoni,FR,1.0
+2362,Combremont-le-Grand,VD,1.0
+2363,Dompierre,FR,1.0
+2364,Brigue-Glis,VS,1.0
+2365,Tilsit,étranger,1.0
+2366,Wald (comm. Sankt Peterzell),AR,1.0
+2367,Champvent,VD,3.0
+2368,Forst,BE,1.0
+2369,Guntmadingen,SH,2.0
+2370,Wettswil,ZH,2.0
+2371,Schlarigna/Celerina,GR,1.0
+2372,Brigels,GR,2.0
+2373,Rüderswil,BE,2.0
+2374,Aristau,AG,1.0
+2375,Havelange (Namur),Etranger,1.0
+2376,Itzehoe,Etranger,1.0
+2377,Pasadena,Etranger,1.0
+2378,Bendorf (Rhénanie-Palatinat),Etranger,1.0
+2379,Campo Vallemaggia,TI,1.0
+2380,Sumatra,Etranger,1.0
+2381,Bingum (Ostfriesland),Etranger,1.0
+2382,Pekin,Etranger,1.0
+2383,Champex,VS,1.0
+2384,Thonon-les-Bains,Etranger,1.0
+2385,Dorfchemnitz,Etranger,1.0
+2386,Baden bei Wien,Etranger,1.0
+2387,Oberwart,Etranger,1.0
+2388,Kirchheim/Teck,Etranger,1.0
+2389,Newmachar,Etranger,1.0
+2390,Lerida,Etranger,1.0
+2391,Lauchheim,Etranger,1.0
+2392,Dussnang,TG,1.0
+2393,Gelsenkirchen,Etranger,2.0
+2394,Leverkusen,Etranger,1.0
+2395,Lausanne,VS,
+2396,Geesthacht,Etranger,1.0
+2397,Tel Aviv,Etranger,1.0
+2398,Saint-Brieuc,Etranger,1.0
+2399,La Paz,Etranger,1.0
+2400,Örkelljunga,Etranger,1.0
+2401,Bayonne,Etranger,1.0
+2402,Ehingen,Etranger,1.0
+2403,Altdorf,Uri,
+2404,Combremont-le-Petit,VD,1.0
+2405,Bassersdorf,ZH,1.0
+2406,Etat de New-York,Etranger,1.0
+2407,Farsala,Etranger,1.0
+2408,Duffel (Anvers),Etranger,1.0
+2409,Tremessen (Posnanie),Etranger,1.0
+2410,Gevelsberg,Etranger,1.0
+2411,Troyes,Etranger,1.0
+2412,Hoensbroek,Etranger,1.0
+2413,Edlibach,ZG,1.0
+2414,Neuenhof,AG,1.0
+2415,Saint-Gingolph,VS,
+2416,Savagnier,NE,2.0
+2417,Blumenau,Etranger,1.0
+2418,Près de Francfort,Etranger,1.0
+2419,Salgesch,VS,1.0
+2420,Hochdorf,LU,2.0
+2421,Liddes,VS,1.0
+2422,Giez,VD,2.0
+2423,Vals,GR,4.0
+2424,Perlen,LU,1.0
+2425,Sessa,TI,2.0
+2426,Genève,Ge,
+2427,Corseaux-sur-Vevey,VD,1.0
+2428,Rekingen,AG,1.0
+2429,Valeyres-sous-Rances,VD,3.0
+2430,"Bülach, Rafz (ZH)",ZH,1.0
+2431,Dürrenroth,BE,5.0
+2432,Endingen am Kaiserstuhl,Etranger,1.0
+2433,Sydney,Etranger,2.0
+2434,Ermensee,LU,1.0
+2435,Glaris Sud,GL,1.0
+2436,Lignerolle,VD,2.0
+2437,Riaz,FR,
+2438,Gurtendorf bei Wabern,BE,1.0
+2439,Volketswil,ZH,1.0
+2440,Versam,GR,1.0
+2441,Erlenbach,ZG,
+2442,Berne,LU,
+2443,Comano,TI,1.0
+2444,Erlenbach im Simmental,BE,1.0
+2445,Udupi,Etranger,1.0
+2446,Saillon,VS,1.0
+2447,Hagenbuch,ZH,1.0
+2448,Gordola,TI,1.0
+2449,Gossliwil,SO,1.0
+2450,Rüfenach,AG,1.0
+2451,Stettlen,BE,1.0
+2452,Rohren-Toos,TG,1.0
+2453,Flims,GR,2.0
+2454,Trub,BE,2.0
+2455,Wildhaus,SG,3.0
+2456,Bünzen,AG,5.0
+2457,Wavre,NE,1.0
+2458,Wauwil,LU,2.0
+2459,Beinwil (Freiamt),AG,1.0
+2460,Sonogno,TI,1.0
+2461,Bosco Gurin,TI,1.0
+2462,Founex,VD,1.0
+2463,Prangins,VD,2.0
+2464,Mittelhäusern,BE,1.0
+2465,Bettswil,ZH,1.0
+2466,Bäretswil,ZH,2.0
+2467,Feusisberg,SZ,2.0
+2468,Pfungen,ZH,1.0
+2469,Badenweiler,Etranger,1.0
+2470,Brügglen,SO,1.0
+2471,Bleiken,TG,1.0
+2472,Achern,Etranger,1.0
+2473,Bodenfelde an der Weser (Basse-Saxe),Etranger,1.0
+2474,Bärschwil,SO,1.0
+2475,Nänikon,ZH,2.0
+2476,Schloss Reichenau,GR,1.0
+2477,Köln am Rhein,Etranger,1.0
+2478,Salonique,Etranger,1.0
+2479,Agiez,VD,1.0
+2480,Klosters,GR,3.0
+2481,Chingford,Etranger,1.0
+2482,Wyden,AG,1.0
+2483,Noiraigue,NE,2.0
+2484,Veyrier,GE,3.0
+2485,Emmenweid,LU,1.0
+2486,Berlin,ZH,
+2487,Broc,FR,3.0
+2488,Sâles,FR,4.0
+2489,Worb,BE,4.0
+2490,Trüllikon,ZH,1.0
+2491,Golaten,BE,1.0
+2492,Toledo,Etranger,1.0
+2493,Lungern,OW,2.0
+2494,Schafisheim,AG,1.0
+2495,Hammern,Etranger,1.0
+2496,Irgenhausen,ZH,2.0
+2497,Winznau,SO,2.0
+2498,Doncaster,Etranger,1.0
+2499,Vendlincourt,BE,1.0
+2500,Oberendingen,AG,1.0
+2501,Arni bei Biglen,BE,1.0
+2502,Wollishofen,ZH,1.0
+2503,Constantinople,Etranger,1.0
+2504,Heidelsheim,Etranger,1.0
+2505,Céligny,GE,1.0
+2506,Davos-Glaris,GR,1.0
+2507,Blonay,VD,2.0
+2508,Ursenbach,BE,1.0
+2509,Menzberg,LU,1.0
+2510,Bâle,BS?,
+2511,Müswangen,LU,1.0
+2512,Kämmoos/Bübikon,ZH,1.0
+2513,Oron-la-Ville,VD,1.0
+2514,Mosnang,SG,1.0
+2515,Enge (auj. Zurich),ZH,1.0
+2516,Ostermundigen,BE,1.0
+2517,Somvix (Sumvigt),GR,1.0
+2518,Mühleberg,BE,2.0
+2519,Zoug,Zg,
+2520,Pise,Etranger,1.0
+2521,Splügen,GR,1.0
+2522,Filisur,GR,1.0
+2523,Ormalingen,BL,1.0
+2524,Daucher-Alfermée,BE,1.0
+2525,Oberbuchsiten,SO,1.0
+2526,Schmitten,FR,3.0
+2527,Hilterfingen,BE,1.0
+2528,Gais,AR,2.0
+2529,Rickenbach bei Wil,TG,1.0
+2530,Muri,BE,
+2531,Metzerlen-Mariastein,SO,1.0
+2532,Bournemouth,Etranger,1.0
+2533,Aesch bei Birmensdorf,ZH,1.0
+2534,Angoulème,Etranger,1.0
+2535,Wildegg,AG,2.0
+2536,Padang,Etranger,1.0
+2537,Flums,SG,5.0
+2538,Endingen,AG,1.0
+2539,Urnäsch,AR,1.0
+2540,Hottingen,ZH,2.0
+2541,Cernobbio (Lombardie),Etranger,1.0
+2542,Lommis,TG,1.0
+2543,Euseigne,VS,1.0
+2544,Bodio,TI,1.0
+2545,Kradolf,TG,1.0
+2546,Ringgenberg,BE,1.0
+2547,Givisiez,FR,1.0
+2548,Guemligen,BE,1.0
+2549,Sudbury,Etranger,1.0
+2550,Brandenburg an der Havel,Etranger,1.0
+2551,Wattwil,SO,
+2552,Weggis,LU,1.0
+2553,Vacallo,TI,1.0
+2554,Mauensee,LU,1.0
+2555,Schöftland,AG,1.0
+2556,Kappelen,BE,2.0
+2557,Kobe,Etranger,2.0
+2558,Zollikofen,BE,
+2559,Senarclens,VD,1.0
+2560,Soral,GE,1.0
+2561,Reust,BE,1.0
+2562,Götighofen,TG,1.0
+2563,Daviaz,VS,1.0
+2564,Salvenach,FR,1.0
+2565,Wolhusen,LU,3.0
+2566,Conthey,VS,1.0
+2567,Vignogn,GR,1.0
+2568,Granges,VS,
+2569,Anrath,Etranger,1.0
+2570,Lauterbrunnen,BE,1.0
+2571,Nebikon,LU,1.0
+2572,Schongau,LU,2.0
+2573,Sumvitg,GR,2.0
+2574,Sarn,GR,1.0
+2575,Reitnau,AG,1.0
+2576,Malters,LU,1.0
+2577,Epsach,BE,1.0
+2578,Sennwald,SG,1.0
+2579,Gebenstorf,AG,1.0
+2580,Montcherand,VD,1.0
+2581,Kesswil,TG,3.0
+2582,Altstätten,ZH,
+2583,Neuegg (comm. Rüegsau),BE,1.0
+2584,Steinenbrünnen (comm. Wahlern),BE,1.0
+2585,Dinhard,ZH,1.0
+2586,Adlikon,ZH,1.0
+2587,Müllheim,TG,1.0
+2588,Niedermuhlern,BE,1.0
+2589,Courgevaux,FR,1.0
+2590,Silenen,UR,2.0
+2591,Beinwil,AG,2.0
+2592,Anchettes,VS,1.0
+2593,Portalban,FR,1.0
+2594,Gretschins,SG,1.0
+2595,Rüti,GL,
+2596,Itaslen,TG,1.0
+2597,Schwellbrunn,AR,1.0
+2598,Schmiedrued,AG,1.0
+2599,Bangerten,BE,1.0
+2600,Flerden,GR,2.0
+2601,Wattwiller (Alsace),Etranger,1.0
+2602,Seengen,AG,1.0
+2603,Wängi,TG,2.0
+2604,Spengelried (comm. Mühleberg),BE,1.0
+2605,Reppischmühle (comm. Dietikon),ZH,1.0
+2606,Russo,TI,1.0
+2607,Neunforn,TG,1.0
+2608,Collombey-Muraz,VS,1.0
+2609,Arogno,TI,2.0
+2610,Hemmerswil (auj. comm. Amriswil),TG,1.0
+2611,Chêne-Bourg,GE,4.0
+2612,Altendorf,SZ,1.0
+2613,Lampenberg,BL,1.0
+2614,Ebnat,SG,1.0
+2615,Loèche,VS,2.0
+2616,Enggistein,BE,1.0
+2617,Nesslau,SG,1.0
+2618,Bärenwil bei Langenbruck,BL,1.0
+2619,Tablat,SG,1.0
+2620,Bovenden bei Göttingen,Etranger,1.0
+2621,Untervaz,GR,1.0
+2622,Les Echerins (Lutry),VD,1.0
+2623,Hellsau,BE,1.0
+2624,Signy-Avenex,VD,1.0
+2625,Böblingen (Wurtemberg),Etranger,1.0
+2626,Castiel,GR,1.0
+2627,Bussy,FR,1.0
+2628,Saint-Martin,VS,1.0
+2629,Aetingen,SO,1.0
+2630,Schlatt,ZH,1.0
+2631,Lisora (comm. Monteggio),TI,1.0
+2632,Plan-les-Ouates,GE,1.0
+2633,Tägerwilen,TG,1.0
+2634,San Vittore,GR,1.0
+2635,Busslingen,AG,1.0
+2636,Obergösgen,SO,1.0
+2637,Egerkingen,SO,1.0
+2638,Naters,VS,2.0
+2639,Brig-Glis,VS,1.0
+2640,Mariahilf (comm. Guin),FR,1.0
+2641,Chalais,VS,1.0
+2642,Saint-Pierre-de-Clages (comm. Chamoson),VS,1.0
+2643,Grand-Lancy,GE,1.0
+2644,Hendschiken,AG,1.0
+2645,Gonten,AI,2.0
+2646,Starrkirch,SO,1.0
+2647,Winkeln (comm. Saint-Gall),SG,1.0
+2648,Jouxtens-Mézery,VD,2.0
+2649,Ascona,TI,1.0
+2650,L'Haÿ-les-Roses,Etranger,1.0
+2651,Andernach/Rhein,Etranger,1.0
+2652,Cambrai,Etranger,1.0
+2653,"Cincinnati, Ohio",Etranger,1.0
+2654,Schleswig,Etranger,1.0
+2655,Donzhausen,TG,1.0
+2656,Küssnacht,SZ,1.0
+2657,Wuppenau ou Wil,TG ou SG,1.0
+2658,Rebstein,SG,2.0
+2659,Sandgrub-Liebenau,Etranger,1.0
+2660,Gauselfingen,Etranger,1.0
+2661,Sankt-Fiden,SG,1.0
+2662,Crest (Drôme),Etranger,1.0
+2663,Bruzella,TI,1.0
+2664,Nuolen,SZ,1.0
+2665,Ems-Domat,GR,1.0
+2666,Villeret,BE,1.0
+2667,Aschaffenburg,Etranger,2.0
+2668,Olten,AG,
+2669,Luino,Etranger,1.0
+2670,Malagny,GE,1.0
+2671,"Liepaja, (Russie, aujourd'hui Lettonie)",Etranger,1.0
+2672,Witikon (auj. comm. Zurich),ZH,1.0
+2673,Etoy,VD,1.0
+2674,Corsier,GE,1.0
+2675,Verscio,TI,1.0
+2676,Trogen,AI,
+2677,Dongio (Acquarossa),TI,1.0
+2678,Bioggio (Massagno),TI,1.0
+2679,Camorino,TI,1.0
+2680,Melano,TI,1.0
+2681,Wittwil (Staffelbach),AG,1.0
+2682,Morschwiller-le-Bas (Alsace),Etranger,1.0
+2683,Vernand-près-Lausanne,VD,1.0
+2684,Sézegnin (comm. Avusy),GE,1.0
+2685,Cugy,FR,1.0
+2686,Vailly-sur-Aisne,Etranger,1.0
+2687,Ensisheim (Alsace),Etranger,1.0
+2688,Bürglen,UR,1.0
+2689,"Poissy, Seine-et-Oise",Etranger,1.0
+2690,Berg (TG),TG,1.0
+2691,Göppingen (Bade),Etranger,1.0
+2692,Rottenschwil,AG,1.0
+2693,Frontenex (comm. Cologny),GE,1.0
+2694,Matt,GL,2.0
+2695,Möriken,AG,1.0
+2696,Steinegg,AI,1.0
+2697,Schötz,LU,1.0
+2698,Gontenbad,AI,1.0
+2699,Eschlikon,TG,1.0
+2700,Rünenberg,BL,1.0
+2701,Schiltigheim (Basse-Alsace),Etranger,1.0
+2702,Böckten,BL,1.0
+2703,Tuggen,SZ,1.0
+2704,Einsiedeln,SZ?,
+2705,Dallenwil,NW,1.0
+2706,Oberdorf,NW,1.0
+2707,Näfels,OW,
+2708,Engelberg,NW,
+2709,Saxon,VS,2.0
+2710,Oberstrass,ZH,1.0
+2711,Aadorf,TG,1.0
+2712,Hemmental,SH,1.0
+2713,Ründeroth b Köln,Etranger,1.0
+2714,Horn,Etranger,
+2715,Fez,Etranger,1.0
+2716,Ruschein,GR,1.0
+2717,Port Elizabeth,Etranger,1.0
+2718,Belfort,Etranger,2.0
+2719,San Salvador,Etranger,1.0
+2720,Oehringen,Etranger,1.0
+2721,Hall (Tirol),Etranger,1.0
+2722,Burnley (Lancashire),Etranger,1.0
+2723,Buchholterberg,BE,2.0
+2724,Québec,Etranger,4.0
+2725,Gilly,Etranger,
+2726,Vinzel,VD,1.0
+2727,Berlin,étranger,
+2728,Coutance,GE,1.0
+2729,Liebwalde (Prusse orientale),Etranger,1.0
+2730,Maur,ZH,1.0
+2731,Bassins,VD,1.0
+2732,Tier,Etranger,1.0
+2733,Lignières,NE,2.0
+2734,Colombo,Etranger,2.0
+2735,Bahia,Etranger,1.0
+2736,Hessen,Etranger,1.0
+2737,Acquarossa,TI,1.0
+2738,Wales,Etranger,1.0
+2739,Thörigen,BE,2.0
+2740,Honnef,Etranger,1.0
+2741,Friedrich-Wilhelms-Hütte (auj. Troisdorf),Etranger,1.0
+2742,Laufen-Uhwiesen,ZH,1.0
+2743,Fourneaux près de Modane,Etranger,1.0
+2744,Hüttwilen,TG,1.0
+2745,Zwochau (Saxe),Etranger,1.0
+2746,Poznan,Etranger,1.0
+2747,Rimini (Forli),Etranger,1.0
+2748,Asnières-sur-Seine (Ile-de-France),Etranger,1.0
+2749,Nimègue,Etranger,1.0
+2750,Chatillens,VD,2.0
+2751,Les Planches-sur-Montreux,VD,1.0
+2752,Cracovie,Etranger,5.0
+2753,Jessenetz bei Konitz,Etranger,1.0
+2754,Rombach (comm. Küttigen),AG,1.0
+2755,Lecco (Come),Etranger,1.0
+2756,Stockach (Bade),Etranger,1.0
+2757,Lerbach (Hannover),Etranger,1.0
+2758,Paderborn,Etranger,2.0
+2759,Grünstadt,Etranger,1.0
+2760,"Fiesole, Florence",Etranger,1.0
+2761,Hildesheim,Etranger,2.0
+2762,Fiaugères,FR,1.0
+2763,Dippach (Luxembourg),Etranger,1.0
+2764,"Myszków, près de Poznań (Prusse, auj. Pologne)",Etranger,2.0
+2765,Puławy (Pologne autrichienne),Etranger,1.0
+2766,Ersigen,BE,1.0
+2767,Usingen (Hesse),Etranger,1.0
+2768,Grosshockenheim,Etranger,1.0
+2769,Beaumont (Auvergne),Etranger,1.0
+2770,Horn (auj. quartier de Brême),Etranger,1.0
+2771,Wesel (Rhénanie),Etranger,1.0
+2772,Pouilly-sur-Saône,Etranger,1.0
+2773,"Bobrezowo (gouvernement de Vologda, Russie)",Etranger,1.0
+2774,Praz,FR,1.0
+2775,Pfeffingen,BL,1.0
+2776,Elberfeld (auj. Wuppertal),Etranger,3.0
+2777,Kastelruth (Tirol),Etranger,1.0
+2778,Radkersburg (Styrie),Etranger,1.0
+2779,"Kremenets (Russie, auj. Ukraine)",Etranger,1.0
+2780,Hechtsberg (Bade),Etranger,1.0
+2781,Tschugg,BE,1.0
+2782,Bowil,BE,1.0
+2783,St Veit an der Glan (Kärnten),Etranger,1.0
+2784,Esslingen am Neckar (Württemberg),Etranger,1.0
+2785,Pohlern bei Thoune,BE,1.0
+2786,Ham bei Hamburg,Etranger,1.0
+2787,"Saint-Ay, Loiret",Etranger,1.0
+2788,Arnhem,Etranger,1.0
+2789,Voerde in Westfalen,Etranger,1.0
+2790,Hittnau,ZH,1.0
+2791,Guben (Basse-Lusace),Etranger,1.0
+2792,Kürenz (auj. quartier de Trèves),Etranger,1.0
+2793,Indersdorf (Bavière),Etranger,1.0
+2794,Brilon (Westphalie),Etranger,1.0
+2795,Beiersdorf,Etranger,1.0
+2796,Allondans (Franche-Comté),Etranger,1.0
+2797,Gernsbach (Bade),Etranger,1.0
+2798,Oetwil am See,ZH,1.0
+2799,Berneck (Haute-Franconie),Etranger,1.0
+2800,Kiev,Etranger,3.0
+2801,Charlottenburg,Etranger,1.0
+2802,Montevideo,Etranger,3.0
+2803,Breckerfeld (Westphalie),Etranger,1.0
+2804,Illnau,ZH,1.0
+2805,Unterlangenegg,BE,1.0
+2806,Chomutov,Etranger,1.0
+2807,Halberstadt,Etranger,2.0
+2808,Forchheim (Saxe),Etranger,1.0
+2809,Flamatt,FR,1.0
+2810,Phyangtong,Etranger,1.0
+2811,La Joux,FR,1.0
+2812,Sarrebourg (Moselle),Etranger,1.0
+2813,Chavannes-sous-Orsonnens,FR,1.0
+2814,Bannes,Etranger,1.0
+2815,Rheinland,Etranger,1.0
+2816,Lambach (Haute-Autriche),Etranger,1.0
+2817,Hochheim am Main (Hesse),Etranger,1.0
+2818,Mühlehorn,GL,1.0
+2819,Hauterive,FR,
+2820,Lecce,Etranger,1.0
+2821,Saint-Légier/La Chiésaz,VD,1.0
+2822,Nalliers (Vendée),Etranger,1.0
+2823,Bullet,VD,1.0
+2824,Rose-Hill,Etranger,1.0
+2825,"Sancoins, Cher",Etranger,1.0
+2826,Suchy,VD,1.0
+2827,"Rjeshitza, Rezekne",Etranger,1.0
+2828,Dabovo,Etranger,1.0
+2829,Serrières,NE,1.0
+2830,Neukirch an der Thur,TG,2.0
+2831,Amsteg,UR,1.0
+2832,Pinneberg (Schleswig-Holstein),Etranger,1.0
+2833,Cremin,VD,1.0
+2834,Paudex,VD,1.0
+2835,Schussenried (Wurtemberg),Etranger,1.0
+2836,Gräbschen (près de Breslau),Etranger,1.0
+2837,Schiers,GR,2.0
+2838,Detmold (Westphalie),Etranger,1.0
+2839,"Stettin (Poméranie, auj. Szczecin, Pologne)",Etranger,1.0
+2840,Posen/Poznan,Etranger,1.0
+2841,Altenklingen,TG,1.0
+2842,Casale Monferrato (Piémont),Etranger,1.0
+2843,Gryon,VD,2.0
+2844,Cittadella (Padoue),Etranger,1.0
+2845,Castro,TI,1.0
+2846,Pertuis,Etranger,1.0
+2847,Beatenberg,BE,1.0
+2848,Kernenried,BE,1.0
+2849,Livourne,Etranger,1.0
+2850,Chamonix,Etranger,1.0
+2851,Jekaterinoslaw,Etranger,1.0
+2852,Boulogne-sur-Mer,Etranger,1.0
+2853,"Montargis, Loiret",Etranger,1.0
+2854,Kaiserslautern (Rhénanie-Palatinat),Etranger,1.0
+2855,Dantzig,Etranger,1.0
+2856,Auboranges,FR,1.0
+2857,"Gagnac, Lot",Etranger,1.0
+2858,Saarburg,Etranger,2.0
+2859,Striegau,Etranger,1.0
+2860,"Saint-Pierre-de-Trivizy, Tarn",Etranger,1.0
+2861,"Frameries, Hainaut",Etranger,1.0
+2862,Cherbourg,Etranger,1.0
+2863,La Neuveville,NE,
+2864,Saint-Pierre (Martinique),Etranger,1.0
+2865,Saint-Fort-sur-Gironde (Poitou-Charentes),Etranger,1.0
+2866,Capellades (Catalogne),Etranger,1.0
+2867,Riedholz,SO,1.0
+2868,Douanne,BE,1.0
+2869,"Rougemont-le-Château, Belfort",Etranger,1.0
+2870,Vic sur Seille,Etranger,1.0
+2871,Traiguen,Etranger,1.0
+2872,Romans (Drôme),Etranger,1.0
+2873,Schwarmstedt (Basse-Saxe),Etranger,1.0
+2874,Kalisz (Pologne russe),Etranger,1.0
+2875,Otelfingen,ZH,1.0
+2876,Plzeň,Etranger,1.0
+2877,Idaho,Etranger,1.0
+2878,Montlingen,SG,1.0
+2879,Oberthal,BE,1.0
+2880,Flensbourg,Etranger,1.0
+2881,Sasbach bei Achern (Forêt-Noire),Etranger,1.0
+2882,Buttisholz,LU,1.0
+2883,Brunstatt,Etranger,1.0
+2884,Yiyang,Etranger,1.0
+2885,Castelló de la Plana,Etranger,1.0
+2886,Buzau,Etranger,1.0
+2887,Losone,TI,2.0
+2888,Fontaines-sur-Grandson,VD,1.0
+2889,Zittau,Etranger,1.0
+2890,Lavey-Morcles,VD,1.0
+2891,Uetendorf,BE,2.0
+2892,Altenbögge,Etranger,1.0
+2893,Trachselwald,BE,1.0
+2894,Cauderan,Etranger,1.0
+2895,Bristol,Etranger,1.0
+2896,Eggenburg,Etranger,1.0
+2897,Jaegerndorf,Etranger,1.0
+2898,Bitche,Etranger,1.0
+2899,Lodz,Etranger,1.0
+2900,Bursinel,VD,1.0
+2901,Wittlich,Etranger,1.0
+2902,Schwenningen (Wurtemberg),Etranger,1.0
+2903,Ixelles,Etranger,2.0
+2904,Erfurt,Etranger,1.0
+2905,Rubigen,BE,1.0
+2906,Mexico,Etranger,3.0
+2907,Geuensee,LU,1.0
+2908,Kosice,Etranger,1.0
+2909,Jauer,Etranger,1.0
+2910,Seon,AG,1.0
+2911,Jhelum,Etranger,1.0
+2912,Ilford,Etranger,1.0
+2913,Krefeld,Etranger,3.0
+2914,Novi Sad,Etranger,1.0
+2915,nord de la france,Etranger,1.0
+2916,Kladno,Etranger,1.0
+2917,Villanueva de Cordoba,Etranger,2.0
+2918,"Meaux, Seine et Marne",Etranger,1.0
+2919,Naumburg (Saale),Etranger,1.0
+2920,Tarakan,Etranger,1.0
+2921,Nove Mesto nad Metuji,Etranger,1.0
+2922,Waltershausen (Thuringe),Etranger,1.0
+2923,Sari,Etranger,1.0
+2924,"Empoli, Florence",Etranger,1.0
+2925,Valentigney (Franche-Comté),Etranger,1.0
+2926,Luck,Etranger,1.0
+2927,Moutiers,Etranger,1.0
+2928,Kaunas,Etranger,1.0
+2929,Iseltwald,BE,1.0
+2930,Insterburg,Etranger,1.0
+2931,Leiden,Etranger,2.0
+2932,"Figline Valdarno, Florence",Etranger,1.0
+2933,"Pontarlier, Doubs",Etranger,1.0
+2934,Cysoing,Etranger,1.0
+2935,Selb (Bayern),Etranger,1.0
+2936,Bell (Eifel),Etranger,1.0
+2937,Retford,Etranger,1.0
+2938,Morlaix (Bretagne),Etranger,1.0
+2939,Kalima,Etranger,1.0
+2940,Neishabour,Etranger,1.0
+2941,Ludwigshafen,Etranger,1.0
+2942,Rodewisch,Etranger,1.0
+2943,Wernburg (Thuringe),Etranger,1.0
+2944,"Hammond, Indiana",Etranger,1.0
+2945,Fürth,Etranger,1.0
+2946,Pilsen,Etranger,1.0
+2947,St-Goarshausen,Etranger,1.0
+2948,Zrenjanin,Etranger,1.0
+2949,Burg (Süderdithmarschen),Etranger,1.0
+2950,Lommel,Etranger,1.0
+2951,Baarland,Etranger,1.0
+2952,Tinzen,GR,1.0
+2953,Nordhausen/ Thüringen,Etranger,1.0
+2954,"Lice (kurde Piran, province de Diyarbakir)",Etranger,1.0
+2955,Bischofshofen,Etranger,1.0
+2956,Pelmonostor,Etranger,1.0
+2957,Salavaux,VD,1.0
+2958,Peterborough,Etranger,1.0
+2959,Pavie,Etranger,1.0
+2960,"Raiatea (Uturoa, Iles sous le vent)",Etranger,1.0
+2961,Norfolk,Etranger,1.0
+2962,"Umanak, Groenland",Etranger,1.0
+2963,Kampen,Etranger,1.0
+2964,Burgsteinfurt,Etranger,1.0
+2965,Schiedam,Etranger,1.0
+2966,Mayen,Etranger,2.0
+2967,Charmoille,JU,1.0
+2968,"Neuwiller, Haut-Rhin",Etranger,1.0
+2969,Münchberg,Etranger,1.0
+2970,Lüdinghausen,étranger,1.0
+2971,Tarbes,Etranger,1.0
+2972,Sainte-Elisabeth/Joliette,Etranger,1.0
+2973,Rheinbach,Etranger,1.0
+2974,Wikon,LU,1.0
+2975,Hard,Etranger,1.0
+2976,Altötting,Etranger,1.0
+2977,"Casalmaggiore, Cremona",Etranger,1.0
+2978,Southampton,Etranger,1.0
+2979,Fachsenfeld,Etranger,1.0
+2980,Bözen,AG,1.0
+2981,Ornsköldsvik,Etranger,1.0
+2982,Blida,Etranger,1.0
+2983,Edesheim/Pfalz,Etranger,1.0
+2984,Wolfsburg,Etranger,1.0
+2985,Moers,Etranger,1.0
+2986,Esslingen am Neckar,Etranger,1.0
+2987,Puerto-Rico,Etranger,1.0
+2988,Oran,Etranger,1.0
+2989,"Brownsville, Pennsylvanie",Etranger,1.0
+2990,Neugersdorf in Sachsen,Etranger,1.0
+2991,Munich,étranger,
+2992,Kansas City,Etranger,1.0
+2993,Turtmann,VS,1.0
+2994,"Sallanches, Haute-Savoie",Etranger,1.0
+2995,Neumünster,Etranger,1.0
+2996,Gafsa,Etranger,1.0
+2997,Posen,Etranger,2.0
+2998,Palerme,Etranger,2.0
+2999,Bad Essen,Etranger,1.0
+3000,Varnsdorf,Etranger,1.0
+3001,Colombes,Etranger,1.0
+3002,Oberzeiring,Etranger,1.0
+3003,Baden,ZH,
+3004,Douala,Etranger,1.0
+3005,Cavergno,TI,1.0
+3006,Cambridge,Etranger,1.0
+3007,Aix-en-Provence,Etranger,1.0
+3008,Meldorf,Etranger,1.0
+3009,Anderlecht,Etranger,1.0
+3010,Betschkerek im Banat,Etranger,1.0
+3011,Offenburg,Etranger,1.0
+3012,St-Aubin,NE,1.0
+3013,Backnang,Etranger,1.0
+3014,Arnsdorf,Etranger,1.0
+3015,Eisenberg,Etranger,1.0
+3016,Preonzo,TI,1.0
+3017,Grandfontaine,JU,1.0
+3018,Louvain,Etranger,1.0
+3019,Pistoia,Etranger,1.0
+3020,Hillegom,Etranger,1.0
+3021,Leonberg,Etranger,1.0
+3022,Wohlen bei Bern,BE,1.0
+3023,Schweidnitz,Etranger,1.0
+3024,Minden,Etranger,1.0
+3025,Calw,Etranger,1.0
+3026,Battle Creek,Etranger,1.0
+3027,Mittweida,Etranger,1.0
+3028,Pont l'Evêque,Etranger,1.0
+3029,Hawai,Etranger,1.0
+3030,Eberbach,Etranger,1.0
+3031,Sulz,Etranger,2.0
+3032,Neustadt an der Waldnaab,Etranger,1.0
+3033,Norwich,Etranger,1.0
+3034,Zweisimmen,BE,1.0
+3035,Aurillac,Etranger,1.0
+3036,"Shawinigan, Québec",Etranger,1.0
+3037,Schottland,Etranger,1.0
+3038,Malines,Etranger,1.0
+3039,Avereest,Etranger,1.0
+3040,Helpsen,Etranger,1.0
+3041,Meiningen,Etranger,1.0
+3042,Vichy,étranger,1.0
+3043,Ile de Wight,Etranger,1.0
+3044,London (Ontario),Etranger,1.0
+3045,"Hittisau, Vorarlberg",Etranger,1.0
+3046,Durban,Etranger,1.0
+3047,Oulu,Etranger,1.0
+3048,Cincinnati,Etranger,1.0
+3049,Germersheim,Etranger,1.0
+3050,Detmold,Etranger,1.0
+3051,Elze,Etranger,1.0
+3052,Vorau,Etranger,1.0
+3053,Marburg an der Lahn,Etranger,1.0
+3054,Speyer a. Rh.,Etranger,1.0
+3055,Malmö,Etranger,1.0
+3056,Bludenz,Etranger,1.0
+3057,Wassenaar,Etranger,1.0
+3058,Autun,Etranger,1.0
+3059,Glogau,Etranger,1.0
+3060,Wahlern,BE,1.0
+3061,Pfronten-Heitlern,Etranger,1.0
+3062,Coblence,Etranger,1.0
+3063,St. Urban,LU,1.0
+3064,Heffingen,Etranger,1.0
+3065,Châteaudun,Etranger,1.0
+3066,Rocourt,Etranger,1.0
+3067,Kortrÿk,Etranger,1.0
+3068,Vernon,Etranger,1.0
+3069,Portici (Naples),Etranger,1.0
+3070,Rosario,étranger,1.0
+3071,"Momignies, Hainaut",Etranger,1.0
+3072,Merano,Etranger,1.0
+3073,Nenzing/Vorarlberg,Etranger,1.0
+3074,Putzleinsdorf,Etranger,1.0
+3075,Bazna,Etranger,1.0
+3076,Marl,Etranger,1.0
+3077,Biella,Etranger,1.0
+3078,Worms,Etranger,1.0
+3079,"Wauseon, Ohio",Etranger,1.0
+3080,Saint-Cloud,Etranger,1.0
+3081,Henniez,VD,1.0
+3082,Penthéréaz,VD,1.0
+3083,Bussigny,VD,1.0
+3084,Champagne,VD,1.0
+3085,La Côte-aux-Fées,NE,1.0
+3086,Gland,VD,1.0
+3087,Intragna,TI,1.0
+3088,Chamalières,Etranger,1.0
+3089,Colorado Springs,Etranger,1.0
+3090,Oberembrach,ZH,1.0
+3091,Holziken,AG,1.0
+3092,Lemgo,Etranger,1.0
+3093,Harare,Etranger,1.0
+3094,Genève,Etranger,
+3095,"Young America, Minnesota",Etranger,1.0
+3096,Mumpf,AG,1.0
+3097,Diepenbeek,Etranger,1.0
+3098,Zurich,Etranger,
+3099,Etterbeek,Etranger,1.0
+3100,Quierschied,Etranger,1.0
+3101,Flawil,Etranger,
+3102,Rabat,Etranger,1.0
+3103,Hoogezand-Sappemeer,Etranger,1.0
+3104,Neyruz,VD,1.0
+3105,Saigon,Etranger,1.0
+3106,Herzogenbuchsee,AG,
+3107,Arcachon,Etranger,1.0
+3108,Sindelfingen,Etranger,1.0
+3109,Herznach,AG,1.0
+3110,Inkwil,BE,2.0
+3111,Diesbach,GL,1.0
+3112,Tanger,Etranger,1.0
+3113,Oberbüren,SG,1.0
+3114,Monforte de Lemos,Etranger,1.0
+3115,Remscheid,Etranger,2.0
+3116,Redcar,Etranger,1.0
+3117,Pfullendorf,Etranger,1.0
+3118,Bioggio,TI,1.0
+3119,Diégo-Suarez (Madagascar),Etranger,1.0
+3120,Cleveland,Etranger,2.0
+3121,Lugano-Castagnola,TI,1.0
+3122,Bad Marienberg,Etranger,1.0
+3123,Entlebuch,Lucerne,
+3124,Caransebes,Etranger,1.0
+3125,Winden,TG,1.0
+3126,Boppelsen,ZH,1.0
+3127,Bernex,GE,1.0
+3128,Reinsberg,Etranger,1.0
+3129,Hanau,Etranger,1.0
+3130,Etziken,SO,1.0
+3131,Coburg,Etranger,2.0
+3132,Frischborn,Etranger,1.0
+3133,Neustadt,Etranger,1.0
+3134,Gmünd,Etranger,1.0
+3135,Landsberg am Lech,Etranger,1.0
+3136,Gottlieben,TG,1.0
+3137,Herisau,AI,
+3138,Uetikon,ZH,1.0
+3139,Timelkam,Etranger,1.0
+3140,Radolfzell,Etranger,1.0
+3141,Forch,ZH,1.0
+3142,Boenigen ?,BE,1.0
+3143,Montecatini Terme,Etranger,1.0
+3144,San Valentino in Abruzzo Citeriore,Etranger,1.0
+3145,Terni,Etranger,1.0
+3146,Kilinochchi,Etranger,1.0
+3147,Soglio,GR,1.0
+3148,Sicile,Etranger,1.0
+3149,Rieden (auj. comm. Wallisellen),ZH,1.0
+3150,Tägerig,AG,1.0
+3151,Lödingen,Etranger,1.0
+3152,Oleyres,VD,1.0
+3153,Oberschmitten bei Darmstadt,Etranger,1.0
+3154,Ménières,FR,1.0
+3155,Kappel am Albis,ZH,1.0
+3156,Ursins,VD,1.0
+3157,Vex,VS,1.0
+3158,Ayent,VS,1.0
+3159,Kempten (auj. Wetzikon),ZH,1.0
+3160,Mattwil,TG,1.0
+3161,(Fridolin) à Sedel (comm. Münchwilen),TG,1.0
+3162,Davos-Platz,GR,1.0
+3163,Hornussen,AG,1.0
+3164,Prague,étranger,
+3165,Hedingen,ZH,1.0
+3166,Le Fleix (Dordogne),Etranger,1.0
+3167,Tangermünde (Prusse),Etranger,1.0
+3168,Toluca,Etranger,1.0
+3169,Geilenkirchen-Hünshoven,Etranger,1.0
+3170,Reutlingen,Etranger,1.0
+3171,Bischwiller,Etranger,1.0
+3172,Toffen,BE,1.0
+3173,Colonie Alsen sur le Wannsee (Berlin),Etranger,1.0
+3174,Fréjus,Etranger,1.0
+3175,Vincennes,Etranger,1.0
+3176,Diepoldsau,SG,1.0
+3177,Nakel,Etranger,1.0
+3178,Essertines-sur-Yverdon,VD,1.0
+3179,Greiz,Etranger,2.0
+3180,Saint-Saphorin-sur-Morges,VD,1.0
+3181,Bottighofen,TG,1.0
+3182,Maloja,GR,1.0
+3183,Sulz,LU,
+3184,Torgon,VS,1.0
+3185,Mühlrüti (comm. Mosnang),SG,1.0
+3186,Swakopmund,Etranger,1.0
+3187,Fontenais,BE,1.0
+3188,Grüsch,GR,1.0
+3189,Buchs/Frauenfeld,TG,1.0
+3190,Plumieux,Etranger,1.0
+3191,Delémont,JU,
+3192,Origlio,TI,2.0
+3193,Kell am See,Etranger,1.0
+3194,Seen,ZH,1.0
+3195,Mettlen,TG,1.0
+3196,Gurzelen,BE,1.0
+3197,Vessy,GE,1.0
+3198,Dombresson,NE,1.0
+3199,Billens-Hennens,FR,1.0
+3200,Oulens-sous-Échallens,VD,1.0
+3201,Reichenau in Sachsen,Etranger,1.0
+3202,Pailly,VD,1.0
+3203,"Höllstein im Wiesental (auj. Steinen, Bade)",Etranger,1.0
+3204,Soulce,JU,1.0
+3205,Kiesen,BE,1.0
+3206,Kandergrund,BE,1.0
+3207,Adelboden,BE,1.0
+3208,Niederwald,VS,1.0
+3209,Fleurier (Val-de-Travers),NE,2.0
+3210,Schaffouse,SH,3.0
+3211,St. Gall,SG,4.0
+3212,Hereq (KOS),ZH,1.0
+3213,Valangin,NE,2.0
+3214,Le Pont-de-Beauvoisin,Etranger,1.0
+3215,Kappel (Toggenbourg),SO,1.0
+3216,Kirchenthurnen,BE,1.0
+3217,Sommeri,TG,1.0
+3218,Boltigen,BE,1.0
+3219,Büron,LU,1.0
+3220,Chaux-de-Fonds,NE,3.0
+3221,Allens (comm. Cossonay),VD,1.0
+3222,Ponts-de-Martel,NE,2.0
+3223,Eiken,AG,1.0
+3224,Mont-sur-Lausanne,VD,1.0
+3225,Bellano (Lecco),Etranger,1.0
+3226,Radelfingen,BE,1.0
+3227,La Ferrière,BE,1.0
+3228,Villars-sur-Marly (comm. Pierrafortscha),FR,1.0
+3229,La Roche,FR,1.0
+3230,Courtion,FR,1.0
+3231,Franenfeld,TG,1.0
+3232,Roeselare,Etranger,1.0
+3233,Bad Salzuflen,Etranger,1.0
+3234,Gächlingen,SH,1.0
+3235,Cava Manara,Etranger,1.0
+3236,Fétigny,FR,1.0
+3237,Hünenberg,ZG,1.0
+3238,Boczki,Etranger,1.0
+3239,Ramsberg,ZH,1.0
+3240,Tegerfelden,AG,1.0
+3241,Grolley,FR,1.0
+3242,Kamieniec Podolski,Etranger,1.0
+3243,Rapperswil,BE,
+3244,Rüti bei Büren,BE,1.0
+3245,La Magne,FR,1.0
+3246,Meggen,LU,1.0
+3247,La Chaux (comm. Sainte-Croix),VD,1.0
+3248,Langnau bei Reiden (auj. comm. Reiden),LU,1.0
+3249,Vira (auj. comm. Gambarogno),TI,1.0
+3250,Lottigna (auj. comm. Acquarossa),TI,1.0
+3251,Castelrotto (commun de Croglio),TI,1.0
+3252,Gimel,VD,1.0
+3253,Coppet,GE,
+3254,Wuppenau,TG,1.0
+3255,Montagny,FR,
+3256,Rütschelen,BE,1.0
+3257,Marsens,FR,1.0
+3258,Ladenburg,Etranger,1.0
+3259,Tscheppach,SO,1.0
+3260,Unterentfelden,AG,1.0
+3261,Cuarnens,VD,1.0
+3262,Locle,NE,1.0
+3263,Landeron,NE,1.0

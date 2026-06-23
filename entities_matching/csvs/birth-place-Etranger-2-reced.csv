@@ -1,0 +1,287 @@
+id,name,birth_canton,lat,long,wikidata_uri
+16,Hamburg,Etranger,53.55,10,https://www.wikidata.org/wiki/Q1055
+18,Bielefeld,Etranger,52.016666666667,8.5333333333333,https://www.wikidata.org/wiki/Q2112
+23,Alsace,Etranger,,,
+28,Turin,Etranger,45.079166666666666,7.676111111111111,https://www.wikidata.org/wiki/Q495
+41,Montreal,Etranger,45.5033426,-73.5868411,https://www.wikidata.org/wiki/Q340
+44,Frankfurt,Etranger,50.11055555555556,8.682222222222222,https://www.wikidata.org/wiki/Q1794
+45,Frankfurt,Etranger,50.11055555555556,8.682222222222222,https://www.wikidata.org/wiki/Q1794
+47,Rio de Janeiro,Etranger,-22.91111111111111,-43.205555555555556,https://www.wikidata.org/wiki/Q8678
+49,Freiburg im Breisgau,Etranger,47.995,7.85,https://www.wikidata.org/wiki/Q2833
+55,Berlin,Etranger,52.516666666667,13.383333333333,https://www.wikidata.org/wiki/Q64
+57,Free City of Danzig,Etranger,54.4,18.66,https://www.wikidata.org/wiki/Q216173
+75,Paris,Etranger,48.85666666666667,2.352222222222222,https://www.wikidata.org/wiki/Q90
+80,Moscow,Etranger,55.75055555555556,37.6175,https://www.wikidata.org/wiki/Q649
+88,Genoa,Etranger,44.407186111111,8.9339833333333,https://www.wikidata.org/wiki/Q1449
+94,Cologne,Etranger,50.942222222222,6.9577777777778,https://www.wikidata.org/wiki/Q365
+128,Milan,Etranger,45.466944444444,9.19,https://www.wikidata.org/wiki/Q490
+153,Alexandria,Etranger,31.1975,29.8925,https://www.wikidata.org/wiki/Q87
+176,New York City,Etranger,40.71277777777778,-74.00611111111111,https://www.wikidata.org/wiki/Q60
+178,Lyon,Etranger,45.7675,4.835,https://www.wikidata.org/wiki/Q456
+194,Turin,VS,45.079166666666666,7.676111111111111,https://www.wikidata.org/wiki/Q495
+199,The Hague,Etranger,52.08,4.31,https://www.wikidata.org/wiki/Q36600
+203,Monte Carlo,Etranger,43.738942,7.425237,https://www.wikidata.org/wiki/Q45240
+217,Beirut,Etranger,33.886944444444,35.513055555556,https://www.wikidata.org/wiki/Q3820
+220,Budapest,Etranger,47.498333333333,19.040833333333,https://www.wikidata.org/wiki/Q1781
+223,Naples,Etranger,40.83583333333333,14.248611111111112,https://www.wikidata.org/wiki/Q2634
+228,Trieste,Etranger,45.65027777777778,13.770277777777778,https://www.wikidata.org/wiki/Q546
+229,Warsaw,Etranger,52.23,21.011111111111113,https://www.wikidata.org/wiki/Q270
+235,Modena,Etranger,44.64582,10.92572,https://www.wikidata.org/wiki/Q279
+238,Tartu,Etranger,58.38,26.7225,https://www.wikidata.org/wiki/Q13972
+244,Kiel,Etranger,54.323333333333,10.139444444444,https://www.wikidata.org/wiki/Q1707
+249,Göttingen,Etranger,51.533888888889,9.9355555555556,https://www.wikidata.org/wiki/Q3033
+251,Montpellier,Etranger,43.610919444444,3.8772305555556,https://www.wikidata.org/wiki/Q6441
+253,Giessen,Etranger,50.583333333333336,8.666666666666666,https://www.wikidata.org/wiki/Q3874
+254,Frankfurt,Etranger,50.11055555555556,8.682222222222222,https://www.wikidata.org/wiki/Q1794
+255,Bonn,Etranger,50.735277777777775,7.102222222222222,https://www.wikidata.org/wiki/Q586
+257,Utrecht,Etranger,52.090833333333336,5.121666666666667,https://www.wikidata.org/wiki/Q803
+259,Strasbourg,Etranger,48.573333333333,7.7522222222222,https://www.wikidata.org/wiki/Q6602
+261,Heilbronn,Etranger,49.140428,9.217953,https://www.wikidata.org/wiki/Q715
+267,Lviv,Etranger,49.8425,24.032222222222224,https://www.wikidata.org/wiki/Q36036
+275,Barcelona,Etranger,41.3825,2.1769444444444,https://www.wikidata.org/wiki/Q1492
+276,Nuremberg,Etranger,49.45388888888889,11.0775,https://www.wikidata.org/wiki/Q2090
+278,Brest,Etranger,48.39,-4.4869444444444,https://www.wikidata.org/wiki/Q12193
+285,Karlsruhe,Etranger,49.016666666667,8.4,https://www.wikidata.org/wiki/Q1040
+290,Bremerhaven,Etranger,53.55,8.5833333333333,https://www.wikidata.org/wiki/Q2706
+291,Marseille,Etranger,43.296666666667,5.3763888888889,https://www.wikidata.org/wiki/Q23482
+293,Athens,Etranger,37.98416666666667,23.728055555555557,https://www.wikidata.org/wiki/Q1524
+302,Madrid,Etranger,40.41694444444445,-3.703333333333333,https://www.wikidata.org/wiki/Q2807
+303,Hohenems,Etranger,47.366666666667,9.6666666666667,https://www.wikidata.org/wiki/Q698591
+309,Stuttgart,Etranger,48.7775,9.18,https://www.wikidata.org/wiki/Q1022
+311,Saarbrücken,Etranger,49.233333333333,7,https://www.wikidata.org/wiki/Q1724
+313,Dresden,Etranger,51.0493286,13.7381437,https://www.wikidata.org/wiki/Q1731
+322,Bordeaux,Etranger,44.837777777778,-0.57944444444444,https://www.wikidata.org/wiki/Q1479
+324,Bellegarde,Etranger,47.98333,2.43333,https://www.wikidata.org/wiki/Q49345865
+325,Iowa City,Etranger,41.655833333333,-91.525,https://www.wikidata.org/wiki/Q487977
+326,Toronto,Etranger,43.670277777778,-79.386666666667,https://www.wikidata.org/wiki/Q172
+330,Tübingen,Etranger,48.52,9.0555555555556,https://www.wikidata.org/wiki/Q3806
+334,Prague,Etranger,50.0875,14.421388888888888,https://www.wikidata.org/wiki/Q1085
+337,Chemnitz,Etranger,50.833333333333,12.916666666667,https://www.wikidata.org/wiki/Q2795
+338,Darmstadt,Etranger,49.866666666667,8.65,https://www.wikidata.org/wiki/Q2973
+360,Buenos Aires,Etranger,-34.599722222222,-58.381944444444,https://www.wikidata.org/wiki/Q1486
+365,Wrocław,Etranger,51.11,17.0325,https://www.wikidata.org/wiki/Q1799
+380,Istanbul,Etranger,41.01,28.960277777778,https://www.wikidata.org/wiki/Q406
+416,Germersheim,Etranger,49.216666666667,8.3666666666667,https://www.wikidata.org/wiki/Q22629
+439,Würzburg,Etranger,49.794444444444,9.9294444444444,https://www.wikidata.org/wiki/Q2999
+443,Saint-Julien-en-Genevois,Etranger,,,
+444,Chicago,Etranger,41.88194444444444,-87.62777777777778,https://www.wikidata.org/wiki/Q1297
+447,Bad Cannstatt,Etranger,48.8056,9.2141,https://www.wikidata.org/wiki/Q656982
+461,Graz,Etranger,47.07083333333333,15.438611111111111,https://www.wikidata.org/wiki/Q13298
+464,Neighbourhood of Le Bourg de Caluire-et-Cuire,Etranger,45.7968,4.84268,https://www.wikidata.org/wiki/Q3220585
+465,London,Etranger,51.507222222222,-0.1275,https://www.wikidata.org/wiki/Q84
+467,Pforzheim,Etranger,48.89154,8.7156,https://www.wikidata.org/wiki/Q32223234
+470,Heidelberg,Etranger,49.412222222222,8.71,https://www.wikidata.org/wiki/Q2966
+484,Casablanca,Etranger,-33.316666666667,-71.416666666667,https://www.wikidata.org/wiki/Q3742
+485,Munich,Etranger,48.1375,11.575,https://www.wikidata.org/wiki/Q1726
+495,Nuremberg,Etranger,49.45388888888889,11.0775,https://www.wikidata.org/wiki/Q2090
+506,Mulhouse,Etranger,47.748611111111,7.3391666666667,https://www.wikidata.org/wiki/Q79815
+513,Amsterdam,Etranger,52.36666666666667,4.883333333333333,https://www.wikidata.org/wiki/Q727
+514,Versailles,Etranger,48.805,2.135,https://www.wikidata.org/wiki/Q621
+516,Edinburgh,Etranger,55.95333333333333,-3.1891666666666665,https://www.wikidata.org/wiki/Q23436
+523,Lons-le-Saunier,Etranger,,,
+526,Neuilly-sur-Seine,Etranger,,,
+527,Copenhagen,Etranger,55.676111111111,12.568888888889,https://www.wikidata.org/wiki/Q1748
+529,Stockholm,Etranger,59.329444444444,18.068611111111,https://www.wikidata.org/wiki/Q1754
+535,Frankfurt,Etranger,50.11055555555556,8.682222222222222,https://www.wikidata.org/wiki/Q1794
+550,Münster,VS,51.9625,7.6255555555556,https://www.wikidata.org/wiki/Q2742
+571,Udine,Etranger,46.066666666667,13.233333333333,https://www.wikidata.org/wiki/Q2790
+572,Los Angeles,Etranger,34.05223,-118.24368,https://www.wikidata.org/wiki/Q65
+582,Düsseldorf,Etranger,51.22555555555556,6.776666666666666,https://www.wikidata.org/wiki/Q1718
+605,Weimar,Etranger,50.98111111111111,11.329444444444444,https://www.wikidata.org/wiki/Q3955
+622,Chieti Scalo,Etranger,42.36247,14.14039,https://www.wikidata.org/wiki/Q27702581
+624,Villach,Etranger,46.616666666667,13.833333333333,https://www.wikidata.org/wiki/Q483522
+628,Bremen,Etranger,53.13333333333333,8.733333333333333,https://www.wikidata.org/wiki/Q1209
+631,Vaduz,Etranger,47.14055555555556,9.522222222222222,https://www.wikidata.org/wiki/Q1844
+634,Bühl,Etranger,48.4833,8.99694,https://www.wikidata.org/wiki/Q321103
+641,Saint Petersburg,Etranger,59.95,30.316666666667,https://www.wikidata.org/wiki/Q656
+642,Chodzież,Etranger,52.990091666667,16.912186111111,https://www.wikidata.org/wiki/Q51434
+646,San Francisco,Etranger,37.775,-122.41944444444445,https://www.wikidata.org/wiki/Q62
+652,Cannes,Etranger,43.5525,7.0213888888889,https://www.wikidata.org/wiki/Q39984
+656,Wiesbaden,Etranger,50.0825,8.24,https://www.wikidata.org/wiki/Q1721
+659,Manila,Etranger,14.595833333333333,120.97722222222222,https://www.wikidata.org/wiki/Q1461
+660,Essen,Etranger,51.450833333333,7.0130555555556,https://www.wikidata.org/wiki/Q2066
+663,Dresden,Etranger,51.0493286,13.7381437,https://www.wikidata.org/wiki/Q1731
+665,Neustadt an der Weinstraße,Etranger,49.353621,8.13607,https://www.wikidata.org/wiki/Q4149
+672,Hamburg,Etranger,53.55,10,https://www.wikidata.org/wiki/Q1055
+679,Rome,Etranger,41.893055555556,12.482777777778,https://www.wikidata.org/wiki/Q220
+690,Odesa,Etranger,46.47747,30.73262,https://www.wikidata.org/wiki/Q1874
+692,Bucharest,Etranger,44.41336111111111,26.09777777777778,https://www.wikidata.org/wiki/Q19660
+695,Gand,Etranger,,,
+705,Brussels,Etranger,50.846666666666664,4.351666666666667,https://www.wikidata.org/wiki/Q239
+714,Catania,Etranger,37.502669444444,15.087269444444,https://www.wikidata.org/wiki/Q1903
+721,Dornbirn,Etranger,47.416666666667,9.75,https://www.wikidata.org/wiki/Q171219
+723,Tchålerwè,Etranger,50.41136,4.44448,https://www.wikidata.org/wiki/Q18290864
+724,Haifa,Etranger,32.81916666666667,34.99916666666667,https://www.wikidata.org/wiki/Q41621
+727,Boston,Etranger,42.360277777777775,-71.05777777777777,https://www.wikidata.org/wiki/Q100
+730,Wuppertal,Etranger,51.266666666667,7.1833333333333,https://www.wikidata.org/wiki/Q2107
+731,Algiers,Etranger,36.776388888889,3.0586111111111,https://www.wikidata.org/wiki/Q3561
+733,Boulogne-Billancourt,Etranger,48.835277777778,2.2413888888889,https://www.wikidata.org/wiki/Q172455
+736,Ravensburg,Etranger,47.783055555556,9.6113888888889,https://www.wikidata.org/wiki/Q6832
+737,Klagenfurt am Wörthersee,Etranger,46.616666666667,14.3,https://www.wikidata.org/wiki/Q41753
+745,Karlovy Vary,Etranger,50.230555555556,12.8725,https://www.wikidata.org/wiki/Q384544
+748,Horn,TG,53.55406,10.08989,https://www.wikidata.org/wiki/Q1572
+753,Vicenza,Etranger,45.55,11.55,https://www.wikidata.org/wiki/Q6537
+791,Lörrach,Etranger,47.615555555556,7.6613888888889,https://www.wikidata.org/wiki/Q6855
+826,Leipzig,Etranger,51.3406321,12.3747329,https://www.wikidata.org/wiki/Q2079
+830,Anzin,Etranger,,,
+837,Brombach,Etranger,,,
+842,Vitebsk,Etranger,55.183333333333,30.166666666667,https://www.wikidata.org/wiki/Q102217
+879,Gliwice,Etranger,50.29416666666667,18.66583333333333,https://www.wikidata.org/wiki/Q105084
+885,Tehran,Etranger,35.68888888888889,51.389722222222225,https://www.wikidata.org/wiki/Q3616
+887,Hong Kong,Etranger,22.278333333333,114.15861111111,https://www.wikidata.org/wiki/Q8646
+891,Metz,Etranger,49.119722222222,6.1769444444444,https://www.wikidata.org/wiki/Q22690
+892,Freudenstadt,Etranger,48.463333333333,8.4111111111111,https://www.wikidata.org/wiki/Q82838
+898,Brooklyn,Etranger,40.65083333333333,-73.94972222222222,https://www.wikidata.org/wiki/Q18419
+900,Offenburg,Etranger,48.470833333333,7.9408333333333,https://www.wikidata.org/wiki/Q4044
+901,Mannheim,Etranger,49.48777777777778,8.466111111111111,https://www.wikidata.org/wiki/Q2119
+906,Vienna,Etranger,48.208333333333336,16.3725,https://www.wikidata.org/wiki/Q1741
+909,Florence,Etranger,43.771388888889,11.254166666667,https://www.wikidata.org/wiki/Q2044
+913,Hanau,Etranger,50.132777777777775,8.916944444444445,https://www.wikidata.org/wiki/Q3802
+914,Constance,Etranger,47.663333333333,9.1752777777778,https://www.wikidata.org/wiki/Q3834
+915,Le Havre,Etranger,49.494166666667,0.10805555555556,https://www.wikidata.org/wiki/Q42810
+917,Flushing,Etranger,51.4425,3.57361,https://www.wikidata.org/wiki/Q33512335
+927,Wesserling,Etranger,,,
+942,Venice,Etranger,45.439722222222,12.331944444444,https://www.wikidata.org/wiki/Q641
+986,Bratislava,Etranger,48.144722222222,17.112777777778,https://www.wikidata.org/wiki/Q1780
+999,Johannesburg,Etranger,-26.204361111111,28.041638888889,https://www.wikidata.org/wiki/Q34647
+1000,Bad Homburg vor der Höhe,Etranger,50.22923611111111,8.610486111111111,https://www.wikidata.org/wiki/Q4165
+1005,Trondheim,Etranger,63.44,10.4,https://www.wikidata.org/wiki/Q25804
+1012,"Washington, D.C.",Etranger,38.895,-77.036666666667,https://www.wikidata.org/wiki/Q61
+1013,Riga,Etranger,56.9475,24.106944444444,https://www.wikidata.org/wiki/Q1773
+1021,Seattle,Etranger,47.605,-122.33,https://www.wikidata.org/wiki/Q5083
+1031,Wilhelmshaven,Etranger,53.52861111111111,8.105555555555556,https://www.wikidata.org/wiki/Q3857
+1033,Mainz,Etranger,49.99944444444444,8.27361111111111,https://www.wikidata.org/wiki/Q1720
+1037,Bregenz,Etranger,47.505,9.7491666666667,https://www.wikidata.org/wiki/Q1737
+1039,Schaan,Etranger,47.166666666667,9.5166666666667,https://www.wikidata.org/wiki/Q49657
+1040,Luxembourg,Etranger,49.610555555556,6.1327777777778,https://www.wikidata.org/wiki/Q1842
+1046,Katowice,Etranger,50.25,19,https://www.wikidata.org/wiki/Q588
+1049,Rouen,Etranger,49.443055555556,1.1025,https://www.wikidata.org/wiki/Q30974
+1050,Hirschberg,Etranger,51.4311,8.27583,https://www.wikidata.org/wiki/Q468337
+1058,Meissen,Etranger,51.163611111111,13.4775,https://www.wikidata.org/wiki/Q8738
+1059,Bergamo,Etranger,45.695,9.67,https://www.wikidata.org/wiki/Q628
+1060,Kassel,Etranger,51.315777777778,9.4979166666667,https://www.wikidata.org/wiki/Q2865
+1061,Toulouse,Etranger,43.60444444444445,1.4433333333333334,https://www.wikidata.org/wiki/Q7880
+1063,Hanover,Etranger,52.374444444444,9.7386111111111,https://www.wikidata.org/wiki/Q1715
+1072,Kaliningrad,Etranger,54.716666666667,20.5,https://www.wikidata.org/wiki/Q1829
+1079,Legnica,Etranger,51.21006,16.1619,https://www.wikidata.org/wiki/Q106274
+1105,Linz,Etranger,48.30583333333333,14.286388888888888,https://www.wikidata.org/wiki/Q41329
+1106,Geislingen an der Steige,Etranger,48.624444444444,9.8305555555556,https://www.wikidata.org/wiki/Q80836
+1109,Barmen,Etranger,51.266666666667,7.2,https://www.wikidata.org/wiki/Q153974
+1132,Trier,Etranger,49.75565,6.63935,https://www.wikidata.org/wiki/Q3138
+1134,Tbilisi,Etranger,41.7225,44.7925,https://www.wikidata.org/wiki/Q994
+1137,Münster,Etranger,51.9625,7.6255555555556,https://www.wikidata.org/wiki/Q2742
+1144,Pfullendorf,Etranger,47.924166666667,9.2566666666667,https://www.wikidata.org/wiki/Q82917
+1147,Oldenburg,Etranger,53.143888888889,8.2138888888889,https://www.wikidata.org/wiki/Q2936
+1149,Magdeburg,Etranger,52.1315889,11.6399609,https://www.wikidata.org/wiki/Q1733
+1159,Verviers,Etranger,50.583333333333,5.85,https://www.wikidata.org/wiki/Q202954
+1169,Lendava,ZH,46.566201748,16.449885788,https://www.wikidata.org/wiki/Q15890
+1171,Antwerp,Etranger,51.221111111111114,4.3997222222222225,https://www.wikidata.org/wiki/Q12892
+1197,Brno,Etranger,49.195277777778,16.608333333333,https://www.wikidata.org/wiki/Q14960
+1204,Mülheim an der Ruhr,Etranger,51.4275,6.8825,https://www.wikidata.org/wiki/Q2899
+1206,Friedrichshafen,Etranger,47.654166666667,9.4791666666667,https://www.wikidata.org/wiki/Q4051
+1223,Liège,Etranger,50.639722222222225,5.570555555555556,https://www.wikidata.org/wiki/Q3992
+1235,Offenbach am Main,Etranger,50.1,8.7666666666667,https://www.wikidata.org/wiki/Q3042
+1236,Bremen,Etranger,53.13333333333333,8.733333333333333,https://www.wikidata.org/wiki/Q1209
+1244,Augsburg,Etranger,48.36888888888889,10.897777777777778,https://www.wikidata.org/wiki/Q2749
+1255,Sofia,Etranger,42.697886,23.321726,https://www.wikidata.org/wiki/Q472
+1257,Ulm,Etranger,48.39861111111111,9.991111111111111,https://www.wikidata.org/wiki/Q3012
+1258,Cape Town,Etranger,-33.92527777777778,18.42388888888889,https://www.wikidata.org/wiki/Q5465
+1268,Lund,Etranger,55.708313018551,13.199164196669,https://www.wikidata.org/wiki/Q2167
+1270,Paris,VD,,,
+1280,Helsinki,Etranger,60.170833333333334,24.9375,https://www.wikidata.org/wiki/Q1757
+1284,Mumbai,Etranger,19.075833333333332,72.8775,https://www.wikidata.org/wiki/Q1156
+1287,Pittsburgh,Etranger,40.44166666666667,-80,https://www.wikidata.org/wiki/Q1342
+1292,Naumburg,Etranger,51.152095,11.809819,https://www.wikidata.org/wiki/Q15986
+1294,Domodossola,Etranger,46.1165,8.29313,https://www.wikidata.org/wiki/Q30025464
+1298,Penzance,Etranger,50.12139,-5.53685,https://www.wikidata.org/wiki/Q208209
+1300,Bamberg,Etranger,49.891666666667,10.891666666667,https://www.wikidata.org/wiki/Q3936
+1303,Zagreb,Etranger,45.81305555555556,15.977222222222222,https://www.wikidata.org/wiki/Q1435
+1310,Szczecin,Etranger,53.424722222222,14.555277777778,https://www.wikidata.org/wiki/Q393
+1311,Bari,Etranger,41.125277777778,16.866666666667,https://www.wikidata.org/wiki/Q3519
+1312,Clermont-Ferrand,Etranger,45.779722222222,3.0869444444444,https://www.wikidata.org/wiki/Q42168
+1323,Cuxhaven,Etranger,53.866666666667,8.7,https://www.wikidata.org/wiki/Q4197
+1330,Reutlingen,Etranger,48.483333333333,9.2166666666667,https://www.wikidata.org/wiki/Q3085
+1338,Halle (Saale),Etranger,51.48277777777778,11.969722222222222,https://www.wikidata.org/wiki/Q2814
+1341,Schwerin,Etranger,53.62888888888889,11.415,https://www.wikidata.org/wiki/Q1709
+1342,Stralsund,Etranger,54.30916666666667,13.081944444444444,https://www.wikidata.org/wiki/Q4065
+1344,Bath,Etranger,51.381388888888885,-2.359722222222222,https://www.wikidata.org/wiki/Q22889
+1355,Oslo,Etranger,59.913333333333334,10.738888888888889,https://www.wikidata.org/wiki/Q585
+1357,Cairo,Etranger,30.044444444444444,31.235833333333332,https://www.wikidata.org/wiki/Q85
+1368,Brno,Etranger,49.195277777778,16.608333333333,https://www.wikidata.org/wiki/Q14960
+1385,Osnabrück,Etranger,52.278888888889,8.0430555555556,https://www.wikidata.org/wiki/Q2916
+1389,Kabul,Etranger,34.532777777778,69.165833333333,https://www.wikidata.org/wiki/Q5838
+1395,Cologne,Etranger,50.942222222222,6.9577777777778,https://www.wikidata.org/wiki/Q365
+1397,Gubin,Etranger,51.95,14.733333333333333,https://www.wikidata.org/wiki/Q312061
+1411,Namur,Etranger,50.466666666667,4.8666666666667,https://www.wikidata.org/wiki/Q134121
+1415,Montreal,Etranger,45.5033426,-73.5868411,https://www.wikidata.org/wiki/Q340
+1420,Espoo,Etranger,60.205555555555556,24.655555555555555,https://www.wikidata.org/wiki/Q47034
+1426,Perpignan,Etranger,42.6975,2.8947222222222,https://www.wikidata.org/wiki/Q6730
+1432,Rennes,Etranger,48.114166666667,-1.6808333333333,https://www.wikidata.org/wiki/Q647
+1435,Thessaloniki,Etranger,40.640277777777776,22.935555555555556,https://www.wikidata.org/wiki/Q17151
+1437,Padua,Etranger,45.40777777777778,11.873333333333333,https://www.wikidata.org/wiki/Q617
+1440,Bologna,Etranger,44.493888888889,11.342777777778,https://www.wikidata.org/wiki/Q1891
+1443,Dortmund,Etranger,51.513888888889,7.4652777777778,https://www.wikidata.org/wiki/Q1295
+1444,Haarlem,Etranger,52.380277777778,4.6405555555556,https://www.wikidata.org/wiki/Q9920
+1446,Belgrade,Etranger,44.81777777777778,20.456944444444446,https://www.wikidata.org/wiki/Q3711
+1466,Merano,Etranger,46.669555,11.159419,https://www.wikidata.org/wiki/Q131605
+1472,Minneapolis,Etranger,44.981944444444444,-93.26916666666666,https://www.wikidata.org/wiki/Q36091
+1495,Tokyo,Etranger,35.68944444444445,139.69166666666666,https://www.wikidata.org/wiki/Q1490
+1497,Novara,Etranger,45.45,8.62,https://www.wikidata.org/wiki/Q6046
+1507,Singapore,Etranger,1.3,103.8,https://www.wikidata.org/wiki/Q334
+1508,Santiago,Etranger,-33.4375,-70.65,https://www.wikidata.org/wiki/Q2887
+1518,Lisbon,Etranger,38.708042,-9.139016,https://www.wikidata.org/wiki/Q597
+1533,Koblenz,Etranger,50.359722222222,7.5977777777778,https://www.wikidata.org/wiki/Q3104
+1534,Sarajevo,Etranger,43.85638888888889,18.413055555555555,https://www.wikidata.org/wiki/Q11194
+1542,Hochheim am Main,Etranger,50.01083333333333,8.350763888888888,https://www.wikidata.org/wiki/Q632750
+1543,Tailfingen,Etranger,,,
+1545,Salzburg,Etranger,47.8,13.045,https://www.wikidata.org/wiki/Q34713
+1546,Innsbruck,Etranger,47.268333333333,11.393333333333,https://www.wikidata.org/wiki/Q1735
+1560,Saint-Quentin,Etranger,,,
+1591,"Washington, D.C.",Etranger,38.895,-77.036666666667,https://www.wikidata.org/wiki/Q61
+1594,Lille,Etranger,50.631944444444,3.0575,https://www.wikidata.org/wiki/Q648
+1637,Grenoble,Etranger,45.186944444444,5.7263888888889,https://www.wikidata.org/wiki/Q1289
+1645,Lecco,Etranger,,,
+1659,Prizren,Etranger,42.23,20.74,https://www.wikidata.org/wiki/Q200061
+1661,Asnières-sur-Seine,Etranger,48.91667,2.28333,https://www.wikidata.org/wiki/Q49344708
+1662,São Paulo,Etranger,-23.550394444444,-46.633947222222,https://www.wikidata.org/wiki/Q174
+1691,Aachen,Etranger,50.776207,6.083788,https://www.wikidata.org/wiki/Q1017
+1711,Neuwied,Etranger,50.428611111111,7.4613888888889,https://www.wikidata.org/wiki/Q3967
+1715,Verona,Etranger,45.43861111111111,10.992777777777778,https://www.wikidata.org/wiki/Q2028
+1716,Hagen,Etranger,51.359444444444,7.475,https://www.wikidata.org/wiki/Q2871
+1736,Elberfeld,Etranger,51.257222,7.149167,https://www.wikidata.org/wiki/Q702259
+1741,Timișoara,Etranger,45.759722222222,21.23,https://www.wikidata.org/wiki/Q83404
+1745,Heiligenstadt,Etranger,48.2538,16.3549,https://www.wikidata.org/wiki/Q379531
+1752,Lindau,Etranger,,,
+1811,Macon,Etranger,32.84069,-83.6324,https://www.wikidata.org/wiki/Q219656
+1828,Erlangen,Etranger,49.5925,11.005,https://www.wikidata.org/wiki/Q3126
+1847,Anduze,Etranger,,,
+1953,Nîmes,Etranger,43.83833333333333,4.3597222222222225,https://www.wikidata.org/wiki/Q42807
+1980,Duisburg,Etranger,51.432222222222,6.7611111111111,https://www.wikidata.org/wiki/Q2100
+1983,Dijon,Etranger,47.323055555556,5.0419444444444,https://www.wikidata.org/wiki/Q7003
+2001,Ankara,Etranger,39.93576,32.83869,https://www.wikidata.org/wiki/Q3640
+2363,Gelsenkirchen,Etranger,51.51027777777778,7.094166666666666,https://www.wikidata.org/wiki/Q2765
+2455,Berlin,ZH,,,
+2519,Kobe,Etranger,34.69016666666667,135.19544444444443,https://www.wikidata.org/wiki/Q48320
+2629,Aschaffenburg,Etranger,49.9740542,9.1493636,https://www.wikidata.org/wiki/Q3942
+2674,Horn,Etranger,53.55406,10.08989,https://www.wikidata.org/wiki/Q1572
+2678,Belfort,Etranger,50.8463,5.65981,https://www.wikidata.org/wiki/Q4991979
+2684,Quebec City,Etranger,46.816111,-71.224167,https://www.wikidata.org/wiki/Q2145
+2694,Colombo,Etranger,,,
+2711,Kraków,Etranger,50.061388888889,19.937222222222,https://www.wikidata.org/wiki/Q31487
+2714,Jena,Etranger,50.927222222222,11.586388888889,https://www.wikidata.org/wiki/Q3150
+2717,Paderborn,Etranger,51.71666666666667,8.766666666666667,https://www.wikidata.org/wiki/Q2971
+2720,Hildesheim,Etranger,52.15,9.95,https://www.wikidata.org/wiki/Q3185
+2723,"Myszków, près de Poznań",Etranger,,,
+2740,Esslingen am Neckar,Etranger,48.740555555556,9.3108333333333,https://www.wikidata.org/wiki/Q3786
+2755,Kyiv,Etranger,50.45,30.523611111111,https://www.wikidata.org/wiki/Q1899
+2757,Montevideo,Etranger,-34.90591666666667,-56.19131111111111,https://www.wikidata.org/wiki/Q1335
+2792,Detmold,Etranger,51.937777777778,8.8833333333333,https://www.wikidata.org/wiki/Q3922
+2859,Ixelles,Etranger,,,
+2862,Mexico City,Etranger,19.353773,-99.13589,https://www.wikidata.org/wiki/Q1489
+2869,Krefeld,Etranger,51.333333333333,6.5666666666667,https://www.wikidata.org/wiki/Q2805
+2873,Villanueva de Córdoba,Etranger,38.32277,-4.62873,https://www.wikidata.org/wiki/Q24011686
+2886,Leiden,Etranger,,,
+2922,Mayen,Etranger,50.333333333333,7.2166666666667,https://www.wikidata.org/wiki/Q516611
+2951,Posen,Etranger,,,
+2952,Palermo,Etranger,38.115658055555556,13.361261944444445,https://www.wikidata.org/wiki/Q2656
+2994,São Paulo,Etranger,-23.550394444444,-46.633947222222,https://www.wikidata.org/wiki/Q174

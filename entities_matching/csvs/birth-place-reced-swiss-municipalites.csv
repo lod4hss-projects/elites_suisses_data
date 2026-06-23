@@ -1,0 +1,3224 @@
+id,birth_canton,name,long,lat,wikidata_uri
+0,BE,Seedorf,7.312505,47.034721,https://www.wikidata.org/wiki/Q66928
+1,SG,Lichtensteig,9.0830555555556,47.316388888889,https://www.wikidata.org/wiki/Q69274
+2,SG,St. Gallen,9.3772222222222,47.423333333333,https://www.wikidata.org/wiki/Q25607
+3,SO,Solothurn,7.5375,47.208055555556,https://www.wikidata.org/wiki/Q68965
+4,BE,Lauterbrunnen,7.9086111111111,46.599722222222,https://www.wikidata.org/wiki/Q64011
+5,NE,La Chaux-de-Fonds,6.8295583333333,47.099627777778,https://www.wikidata.org/wiki/Q68124
+6,VD,Bottens,6.6666666666667,46.616666666667,https://www.wikidata.org/wiki/Q52271
+7,VD,Montreux,6.9125,46.435,https://www.wikidata.org/wiki/Q69354
+8,ZH,Meilen,8.6411111111111,47.270277777778,https://www.wikidata.org/wiki/Q68261
+9,VS,Visp,7.8827777777778,46.292222222222,https://www.wikidata.org/wiki/Q64147
+10,ZH,Zurich,8.54111111111111,47.37444444444444,https://www.wikidata.org/wiki/Q72
+11,TI,Quinto,8.7,46.516666666667,https://www.wikidata.org/wiki/Q67501
+12,TI,Gresso,,,
+13,TI,Sorengo,8.9333333333333,46,https://www.wikidata.org/wiki/Q69995
+14,NE,Neuchâtel,6.9305555555556,46.990277777778,https://www.wikidata.org/wiki/Q69345
+15,ZH,Wädenswil,8.6722222222222,47.230277777778,https://www.wikidata.org/wiki/Q69718
+16,Etranger,Hambourg,,,
+17,BS,Basel,7.5905555555556,47.560555555556,https://www.wikidata.org/wiki/Q78
+18,Etranger,Bielefeld,,,
+19,SG,Wil,,,
+20,GE,Genève,,,
+21,LU,Lucerne,8.3059,47.0523,https://www.wikidata.org/wiki/Q4191
+22,BL,Sissach,7.8106194444444,47.464361111111,https://www.wikidata.org/wiki/Q66554
+23,Etranger,Alsace,,,
+24,LU,Gerliswil,,,
+25,VD,Nyon,6.23888,46.38196166666667,https://www.wikidata.org/wiki/Q64027
+26,TG,Frauenfeld,8.8963888888889,47.555833333333,https://www.wikidata.org/wiki/Q68120
+27,TG,Arbon,9.4333333333333,47.516666666667,https://www.wikidata.org/wiki/Q64156
+28,Etranger,Turin,,,
+29,SG,Au,9.6333333333333,47.433055555556,https://www.wikidata.org/wiki/Q66254
+30,SO,Büren,7.6708333333333,47.451111111111,https://www.wikidata.org/wiki/Q70057
+31,ZH,Hütten,,,
+32,GR,Chur,9.52965,46.85212,https://www.wikidata.org/wiki/Q69007
+33,ZH,Winterthur,8.72671,47.4992,https://www.wikidata.org/wiki/Q9125
+34,BE,Laufen,7.5,47.416666666667,https://www.wikidata.org/wiki/Q68363
+35,LU,Emmen,8.3,47.077222222222,https://www.wikidata.org/wiki/Q4225
+36,SO,Olten,7.9077777777778,47.353055555556,https://www.wikidata.org/wiki/Q68129
+37,GE,Petit-Saconnex,,,
+38,OW,Sarnen,8.2469444444444,46.896944444444,https://www.wikidata.org/wiki/Q63964
+39,SH,Schaffhausen,8.63386,47.69653,https://www.wikidata.org/wiki/Q9009
+40,ZH,Aussersihl,,,
+41,Etranger,Montréal,,,
+42,ZH,Zurich,8.54111111111111,47.37444444444444,https://www.wikidata.org/wiki/Q72
+43,ZH,Fluntern,,,
+44,Etranger,Frankfurt am Main,,,
+45,Etranger,Francfort,,,
+46,VD,Sainte-Croix,6.48894,46.82369,https://www.wikidata.org/wiki/Q70090
+47,Etranger,Rio de Janeiro,,,
+48,GR,Seewis im Prättigau,9.6375,46.990277777778,https://www.wikidata.org/wiki/Q64748
+49,Etranger,Freiburg im Breisgau,,,
+50,TG,Hauptwil-Gottshaus,9.2830555555556,47.466388888889,https://www.wikidata.org/wiki/Q66307
+51,BE,Bern,7.44743,46.94798,https://www.wikidata.org/wiki/Q70
+52,BL,Füllinsdorf,7.7297222222222,47.505555555556,https://www.wikidata.org/wiki/Q66523
+53,FR,Bulle,7.05,46.616666666667,https://www.wikidata.org/wiki/Q68308
+54,VD,Clarens,,,
+55,Etranger,Berlin,,,
+56,SH,Schleitheim,8.4851,47.7493,https://www.wikidata.org/wiki/Q69111
+57,Etranger,Danzig,,,
+58,ZH,Thalwil,8.5647222222222,47.295277777778,https://www.wikidata.org/wiki/Q68959
+59,ZH,Affoltern am Albis,8.45023,47.28167,https://www.wikidata.org/wiki/Q68290
+60,ZH,Wülflingen,,,
+61,GR,Savognin,,,
+62,GE,Goms,8.249993,46.483326,https://www.wikidata.org/wiki/Q26836831
+63,BE,Biel/Bienne,7.2472222222222,47.137222222222,https://www.wikidata.org/wiki/Q1034
+64,GE,Plainpalais,,,
+65,BE,Erlach,7.0974,47.0426,https://www.wikidata.org/wiki/Q69453
+66,LU,Sursee,8.1080555555556,47.174166666667,https://www.wikidata.org/wiki/Q7123
+67,FR,Romont,,,
+68,VD,Lausanne,6.6333333333333,46.533333333333,https://www.wikidata.org/wiki/Q807
+69,VD,Payerne,,,
+70,NE,Saint-Aubin,6.980556,46.89,https://www.wikidata.org/wiki/Q70403
+71,VD,Yverdon-les-Bains,6.6408333333333,46.7785,https://www.wikidata.org/wiki/Q63946
+72,AG,Wohlen,,,
+73,GE,Eaux-Vives,,,
+74,VD,Vevey,6.85,46.466666666667,https://www.wikidata.org/wiki/Q68160
+75,Etranger,Paris,,,
+76,GR,Poschiavo,10.049722222222,46.333333333333,https://www.wikidata.org/wiki/Q69503
+77,VD,Lutry,6.69902,46.51508,https://www.wikidata.org/wiki/Q69697
+78,AG,Kölliken,8.0236111111111,47.3375,https://www.wikidata.org/wiki/Q68106
+79,BE,Burgdorf,7.6263888888889,47.056666666667,https://www.wikidata.org/wiki/Q68311
+80,Etranger,Moscou,,,
+81,GR,Maienfeld,9.5308333333333,47.007777777778,https://www.wikidata.org/wiki/Q64178
+82,AG,Aarau,8.0446,47.3923,https://www.wikidata.org/wiki/Q14274
+83,LU,Emmenbrücke-Littau,,,
+84,BE,Ins,7.1,47,https://www.wikidata.org/wiki/Q69487
+85,BE,Rüschegg,7.3930555555556,46.779722222222,https://www.wikidata.org/wiki/Q65474
+86,BE,Spiegel bei Bern,,,
+87,VD,Crans,6.2,46.35,https://www.wikidata.org/wiki/Q57115
+88,Etranger,Gênes,,,
+89,AG,Berikon,8.3736111111111,47.3525,https://www.wikidata.org/wiki/Q64334
+90,GE,Carouge,6.14037,46.18166,https://www.wikidata.org/wiki/Q69364
+91,TG,Gachnang,8.85,47.533055555556,https://www.wikidata.org/wiki/Q64840
+92,ZH,Winterthur,8.72671,47.4992,https://www.wikidata.org/wiki/Q9125
+93,SO,Granges,,,
+94,Etranger,Cologne,,,
+95,SG,Niederuzwil,,,
+96,UR,Cham,8.4594444444444,47.180277777778,https://www.wikidata.org/wiki/Q69235
+97,Etranger,Varese,,,
+98,BL,Liestal,7.735,47.483888888889,https://www.wikidata.org/wiki/Q68972
+99,ZH,Rüti,,,
+100,BS,Riehen,7.649166666666667,47.580555555555556,https://www.wikidata.org/wiki/Q5262
+101,BL,Pratteln,7.69275,47.5185,https://www.wikidata.org/wiki/Q64679
+102,NE,Le Locle,6.74816,47.05317,https://www.wikidata.org/wiki/Q64093
+103,ZH,Zürich-Hottingen,,,
+104,VD,Aigle,6.9646,46.3173,https://www.wikidata.org/wiki/Q43195
+105,AG,Oberentfelden,8.0486111111111,47.359722222222,https://www.wikidata.org/wiki/Q64990
+106,ZH,Küsnacht,8.5825,47.318055555556,https://www.wikidata.org/wiki/Q69216
+107,SG,St. Gallen,9.3772222222222,47.423333333333,https://www.wikidata.org/wiki/Q25607
+108,ZG,Unterägeri,8.5844444444444,47.138611111111,https://www.wikidata.org/wiki/Q65658
+109,BL,Zwingen,7.5333333333333,47.433055555556,https://www.wikidata.org/wiki/Q66702
+110,VD,Aubonne,6.3833333333333,46.5,https://www.wikidata.org/wiki/Q43232
+111,BE,Grindelwald,8.0333333333333,46.625555555556,https://www.wikidata.org/wiki/Q64004
+112,LU,Neudorf,,,
+113,BE,Liebefeld,,,
+114,VS,Agarn,7.65,46.283333333333,https://www.wikidata.org/wiki/Q66913
+115,TI,Cresciano,,,
+116,SO,Hauenstein-Ifenthal,7.8722222222222,47.378888888889,https://www.wikidata.org/wiki/Q66060
+117,ZG,Cham,8.4594444444444,47.180277777778,https://www.wikidata.org/wiki/Q69235
+118,VD,Forel,6.76288,46.53788,https://www.wikidata.org/wiki/Q70565
+119,AR,Herisau,9.2786,47.3851,https://www.wikidata.org/wiki/Q63970
+120,VD,La Tour-de-Peilz,6.8666666666667,46.45,https://www.wikidata.org/wiki/Q69721
+121,SZ,Seewen,7.6597222222222,47.435833333333,https://www.wikidata.org/wiki/Q66577
+122,UR,Erstfeld,8.59937,46.81237,https://www.wikidata.org/wiki/Q69642
+123,JU,Bassecourt,,,
+124,BE,Wyssachen,7.8214,47.07402,https://www.wikidata.org/wiki/Q66446
+125,BE,Reichenbach,,,
+126,BE,Reichenbach im Kandertal,7.73708,46.57532,https://www.wikidata.org/wiki/Q66378
+127,TI,Caslano,8.87952,45.96989,https://www.wikidata.org/wiki/Q67270
+128,Etranger,Milan,,,
+129,SZ,Schübelbach,8.9263888888889,47.173333333333,https://www.wikidata.org/wiki/Q65623
+130,ZH,Rieden,,,
+131,ZG,Baar,8.5263888888889,47.195555555556,https://www.wikidata.org/wiki/Q64087
+132,AI,Appenzell,9.4166666666667,47.333333333333,https://www.wikidata.org/wiki/Q67125
+133,NW,Buochs,8.42068,46.97463,https://www.wikidata.org/wiki/Q64567
+134,BE,Brienz,,,
+135,ZH,Stallikon,8.4908333333333,47.327222222222,https://www.wikidata.org/wiki/Q66062
+136,NE,Les Verrières,6.4833333333333,46.9,https://www.wikidata.org/wiki/Q69807
+137,BE,Heimiswil,7.6597222222222,47.064444444444,https://www.wikidata.org/wiki/Q67632
+138,ZH,Uster,8.7191666666667,47.349166666667,https://www.wikidata.org/wiki/Q64032
+139,TG,Homburg,9.0163888888889,47.633333333333,https://www.wikidata.org/wiki/Q67205
+140,LU,Gelfingen,,,
+141,VD,Riex,,,
+142,GE,Lancy,6.11578,46.18969,https://www.wikidata.org/wiki/Q64065
+143,VS,Massongex,6.9833333333333,46.25,https://www.wikidata.org/wiki/Q70184
+144,ZH,Eglisau,8.52607,47.57335,https://www.wikidata.org/wiki/Q69175
+145,BE,Meiringen,8.187222222222223,46.7275,https://www.wikidata.org/wiki/Q64123
+146,SG,Sankt Josefen,,,
+147,SO,Schönenwerd,8.0027777777778,47.371944444444,https://www.wikidata.org/wiki/Q66884
+148,SO,Mümliswil-Ramiswil,7.7033333333333,47.340833333333,https://www.wikidata.org/wiki/Q65071
+149,VS,Verbier,,,
+150,GE,Cologny,6.1833333333333,46.216666666667,https://www.wikidata.org/wiki/Q69245
+151,AG,Zurzach,,,
+152,TI,Faido,8.8,46.483333333333,https://www.wikidata.org/wiki/Q69673
+153,Etranger,Alexandrie,,,
+154,GR,Samedan,9.8719444444444,46.533611111111,https://www.wikidata.org/wiki/Q69085
+155,BE,Lyss,7.3069444444444,47.075,https://www.wikidata.org/wiki/Q69512
+156,BE,Konolfingen,7.6166666666667,46.883333333333,https://www.wikidata.org/wiki/Q66211
+157,VS,Sion,7.36606,46.23045,https://www.wikidata.org/wiki/Q68136
+158,OW,Engelberg,,,
+159,VS,Sierre,7.532,46.2918,https://www.wikidata.org/wiki/Q68297
+160,Etranger,Cadiz,,,
+161,NW,Stans,8.3666666666667,46.959444444444,https://www.wikidata.org/wiki/Q63931
+162,VD,Le Sentier,,,
+163,ZH,Ottenbach,8.4038888888889,47.281388888889,https://www.wikidata.org/wiki/Q67513
+164,GE,Chêne-Bougeries,6.1833333333333,46.183333333333,https://www.wikidata.org/wiki/Q69530
+165,Etranger,Oregon,,,
+166,TI,Lugano,8.9625,46.010277777778,https://www.wikidata.org/wiki/Q7024
+167,BE,Herzogenbuchsee,7.70619,47.18838,https://www.wikidata.org/wiki/Q67499
+168,OW,Sachseln,8.2386111111111,46.867777777778,https://www.wikidata.org/wiki/Q64614
+169,GE,Chancy,5.97891,46.1476,https://www.wikidata.org/wiki/Q69811
+170,Etranger,Nancy,,,
+171,SH,Rüdlingen,8.5663888888889,47.566666666667,https://www.wikidata.org/wiki/Q66796
+172,AG,Wettingen,8.32666,47.46586,https://www.wikidata.org/wiki/Q27576
+173,TI,Bellinzona,9.023809,46.195555,https://www.wikidata.org/wiki/Q64044
+174,GE,Petit-Veyrier,,,
+175,GE,Perly-Certoux,6.0913,46.1565,https://www.wikidata.org/wiki/Q65516
+176,Etranger,New York,,,
+177,GE,Landecy,,,
+178,Etranger,Lyon,,,
+179,VD,Mont-sur-Rolle,6.3333333333333,46.466666666667,https://www.wikidata.org/wiki/Q68762
+180,VD,Bex,7.0166666666667,46.25,https://www.wikidata.org/wiki/Q52261
+181,GE,Satigny,6.03683,46.21406,https://www.wikidata.org/wiki/Q69451
+182,GE,Sécheron,,,
+183,VD,Veytaux,6.9275,46.42138888888889,https://www.wikidata.org/wiki/Q68071
+184,GE,Vernier,6.1,46.2,https://www.wikidata.org/wiki/Q63922
+185,GE,Genthod,6.15,46.266666666667,https://www.wikidata.org/wiki/Q48923
+186,ZH,Hombrechtikon,8.7702777777778,47.253333333333,https://www.wikidata.org/wiki/Q69188
+187,AR,Trogen,9.4647222222222,47.4075,https://www.wikidata.org/wiki/Q68189
+188,ZH,Niederweningen,8.3788888888889,47.5075,https://www.wikidata.org/wiki/Q66411
+189,VS,Monthey,6.95,46.25,https://www.wikidata.org/wiki/Q64051
+190,GR,Churwalden,9.5433333333333,46.780833333333,https://www.wikidata.org/wiki/Q64363
+191,SG,Balgach,9.5997222222222,47.4,https://www.wikidata.org/wiki/Q65508
+192,BE,Spiez,,,
+193,UR,Andermatt,8.6314,46.62049,https://www.wikidata.org/wiki/Q64019
+194,VS,Turin,,,
+195,ZH,Niederglatt,8.5033333333333,47.492222222222,https://www.wikidata.org/wiki/Q67920
+196,ZH,Horgen,8.5975,47.260833333333,https://www.wikidata.org/wiki/Q68286
+197,Etranger,"Lori, Armenien, Osmanisches Reich",,,
+198,Etranger,Lingen,,,
+199,Etranger,La Haye,,,
+200,ZH,Pfäffikon,8.7822222222222,47.366666666667,https://www.wikidata.org/wiki/Q68269
+201,GR,Pontresina,9.8997222222222,46.499722222222,https://www.wikidata.org/wiki/Q69259
+202,GE,Le Petit-Saconnex,,,
+203,Etranger,Monte-Carlo,,,
+204,ZH,Bubikon,8.8202777777778,47.269444444444,https://www.wikidata.org/wiki/Q67068
+205,JU,Courtételle,7.31764,47.33094,https://www.wikidata.org/wiki/Q67463
+206,AG,Auw,8.3663888888889,47.212222222222,https://www.wikidata.org/wiki/Q64420
+207,AG,Zofingen,7.94754,47.28836,https://www.wikidata.org/wiki/Q63986
+208,BL,Binningen,7.5666666666667,47.533333333333,https://www.wikidata.org/wiki/Q69621
+209,ZH,Seebach,,,
+210,AG,Baden,8.30799,47.47291,https://www.wikidata.org/wiki/Q63939
+211,LU,Entlebuch,8.0630555555556,46.992777777778,https://www.wikidata.org/wiki/Q14547
+212,FR,Fribourg,7.15,46.8,https://www.wikidata.org/wiki/Q36378
+213,TI,Mendrisio,8.9833333333333,45.866666666667,https://www.wikidata.org/wiki/Q69041
+214,VD,Féchy,6.3666666666667,46.483333333333,https://www.wikidata.org/wiki/Q70260
+215,SG,Niederhelfenschwil,9.1830555555556,47.483333333333,https://www.wikidata.org/wiki/Q66714
+216,Etranger,Wäschenbeuren,,,
+217,Etranger,Beyrouth,,,
+218,BE,Wilderswil,7.8666666666667,46.666388888889,https://www.wikidata.org/wiki/Q69256
+219,NE,La Sagne,6.7988,47.0388,https://www.wikidata.org/wiki/Q68532
+220,Etranger,Budapest,,,
+221,GE,Cartigny,6.021,46.174,https://www.wikidata.org/wiki/Q65531
+222,Etranger,Avignon,,,
+223,Etranger,Naples,,,
+224,ZH,Altstetten,,,
+225,GE,Satigny,6.03683,46.21406,https://www.wikidata.org/wiki/Q69451
+226,ZH,Wetzikon,8.7930555555556,47.320833333333,https://www.wikidata.org/wiki/Q68305
+227,NE,Les Hauts-Geneveys,,,
+228,Etranger,Trieste,,,
+229,Etranger,Varsovie,,,
+230,Etranger,Macerata Feltria,,,
+231,ZH,Elgg,8.86454,47.49138,https://www.wikidata.org/wiki/Q67137
+232,VD,Sépey-près-Vulliens,,,
+233,BE,Schwarzenegg,,,
+234,VD,Vallorbe,6.3833333333333,46.716666666667,https://www.wikidata.org/wiki/Q68587
+235,Etranger,Modène,,,
+236,ZH,Zollikon,8.5783333333333,47.342222222222,https://www.wikidata.org/wiki/Q218691
+237,NE,Grandchamp,,,
+238,Etranger,Dorpat,,,
+239,ZH,Elsau,8.8027777777778,47.506111111111,https://www.wikidata.org/wiki/Q64832
+240,Etranger,Krzecin,,,
+241,Etranger,Stade près de l'Elbe,,,
+242,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+243,Etranger,Illzach,,,
+244,Etranger,Kiel,,,
+245,AI,Brülisau,,,
+246,SG,Heiden,9.5311111111111,47.441111111111,https://www.wikidata.org/wiki/Q68315
+247,VD,Rolle,6.33167,46.45755,https://www.wikidata.org/wiki/Q69570
+248,VD,Pully,6.6666666666667,46.516666666667,https://www.wikidata.org/wiki/Q69738
+249,Etranger,Göttingen,,,
+250,BE,Lauenen,7.3163888888889,46.416388888889,https://www.wikidata.org/wiki/Q65903
+251,Etranger,Montpellier,,,
+252,Etranger,Buchdorf,,,
+253,Etranger,Giessen,,,
+254,Etranger,Francfort-sur-le-Main,,,
+255,Etranger,Bonn,,,
+256,BE,Delémont,7.3472222222222,47.365277777778,https://www.wikidata.org/wiki/Q63896
+257,Etranger,Utrecht,,,
+258,FR,Wünnewil-Flamatt,7.2833333333333,46.866666666667,https://www.wikidata.org/wiki/Q67718
+259,Etranger,Strasbourg,,,
+260,Etranger,Saint-Pargoire,,,
+261,Etranger,Heilbronn,,,
+262,TG,Amriswil,9.3,47.549722222222,https://www.wikidata.org/wiki/Q69768
+263,AR,Walzenhausen,9.6013888888889,47.451111111111,https://www.wikidata.org/wiki/Q64594
+264,BE,Münchenbuchsee,7.45,47.016388888889,https://www.wikidata.org/wiki/Q69071
+265,BE,Trubschachen,7.85,46.916388888889,https://www.wikidata.org/wiki/Q69114
+266,BE,Steffisburg,7.6333333333333,46.783055555556,https://www.wikidata.org/wiki/Q69668
+267,Etranger,Lemberg,,,
+268,BE,Oberburg,7.6275,47.038888888889,https://www.wikidata.org/wiki/Q67860
+269,BE,Sonvilier,6.9652777777778,47.139444444444,https://www.wikidata.org/wiki/Q66471
+270,ZH,Hirzel,,,
+271,BE,Orpund,7.3063888888889,47.138888888889,https://www.wikidata.org/wiki/Q69227
+272,SG,Gossau,,,
+273,TG,Weinfelden,9.112,47.5698,https://www.wikidata.org/wiki/Q68258
+274,Etranger,Saint-Mihiel,,,
+275,Etranger,Barcelone,,,
+276,Etranger,Nüremberg,,,
+277,SG,Walenstadt,9.315,47.1234,https://www.wikidata.org/wiki/Q64191
+278,Etranger,Brest,,,
+279,Etranger,Annemasse,,,
+280,Etranger,Sholapore,,,
+281,Etranger,Nantes,,,
+282,VS,Fully,7.1166666666667,46.133333333333,https://www.wikidata.org/wiki/Q70137
+283,Etranger,"Grisolia Cipollina, Cosenza",,,
+284,VS,Brigue,,,
+285,Etranger,Karlsruhe,,,
+286,Etranger,Suhl,,,
+287,Etranger,Arnstadt,,,
+288,Etranger,Nankin,,,
+289,Etranger,Atzelsdorf,,,
+290,Etranger,Bremerhaven,,,
+291,Etranger,Marseille,,,
+292,BE,Thun,7.63,46.759,https://www.wikidata.org/wiki/Q68978
+293,Etranger,Athènes,,,
+294,BE,Guggisberg,7.3330555555556,46.766388888889,https://www.wikidata.org/wiki/Q64969
+295,Etranger,Gross Neukirch,,,
+296,GR,Arosa,9.6830555555556,46.783055555556,https://www.wikidata.org/wiki/Q63954
+297,Etranger,Aurich,,,
+298,LU,Altishofen,7.9666666666667,47.199722222222,https://www.wikidata.org/wiki/Q14586
+299,BE,Moutier,7.3708333333333,47.280277777778,https://www.wikidata.org/wiki/Q67157
+300,BE,Hasle bei Burgdorf,7.6555555555556,47.017777777778,https://www.wikidata.org/wiki/Q67066
+301,ZH,Wald,,,
+302,Etranger,Madrid,,,
+303,Etranger,Hohenems,,,
+304,AR,Wolfhalden,9.5508333333333,47.453888888889,https://www.wikidata.org/wiki/Q661621
+305,ZH,Schaffhausen,8.63386,47.69653,https://www.wikidata.org/wiki/Q9009
+306,TI,Locarno,8.7997222222222,46.166388888889,https://www.wikidata.org/wiki/Q11935
+307,AG,Stein,,,
+308,SO,Trimbach,7.9,47.363611111111,https://www.wikidata.org/wiki/Q65037
+309,Etranger,Stuttgart,,,
+310,Etranger,Nordhausen,,,
+311,Etranger,Saarbrücken,,,
+312,BE,Saint-Imier,7,47.152777777778,https://www.wikidata.org/wiki/Q66390
+313,Etranger,Dresde,,,
+314,TG,Tobel-Tägerschen,9.0330555555556,47.516666666667,https://www.wikidata.org/wiki/Q65818
+315,BE,Köniz,7.4152777777778,46.925,https://www.wikidata.org/wiki/Q64058
+316,ZH,Kloten,8.5827777777778,47.448055555556,https://www.wikidata.org/wiki/Q68165
+317,Etranger,Leon,,,
+318,Etranger,"Prien, Bavière",,,
+319,Etranger,Nepi,,,
+320,VD,Orbe,6.5322277777778,46.724452777778,https://www.wikidata.org/wiki/Q68213
+321,TG,Sulgen,9.19313,47.54235,https://www.wikidata.org/wiki/Q65971
+322,Etranger,Bordeaux,,,
+323,VD,Echallens,6.6333333333333,46.633333333333,https://www.wikidata.org/wiki/Q70714
+324,Etranger,Bellegarde,,,
+325,Etranger,Iowa City,,,
+326,Etranger,Toronto,,,
+327,Etranger,Les Verrières,6.4833333333333,46.9,https://www.wikidata.org/wiki/Q69807
+328,Etranger,Treysa,,,
+329,Etranger,Blaubeuren,,,
+330,Etranger,Tübingen,,,
+331,Etranger,Ilmenau,,,
+332,Etranger,Radès,,,
+333,VD,Neuchâtel,6.9305555555556,46.990277777778,https://www.wikidata.org/wiki/Q69345
+334,Etranger,Prague,,,
+335,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+336,Etranger,Berleburg,,,
+337,Etranger,Chemnitz,,,
+338,Etranger,Darmstadt,,,
+339,Etranger,Eschweiler,,,
+340,ZH,Fällanden,8.64,47.371666666667,https://www.wikidata.org/wiki/Q64869
+,,,8.63558,47.36952,
+341,ZH,Kilchberg,,,
+342,ZH,Kleinandelfingen,8.6830555555556,47.6,https://www.wikidata.org/wiki/Q68413
+343,ZH,Richterswil,8.7058333333333,47.208055555556,https://www.wikidata.org/wiki/Q68227
+344,VD,Morges,6.4986111111111,46.509447222222,https://www.wikidata.org/wiki/Q69401
+345,VD,Granges-près-Marnand,,,
+346,VD,Le Lieu,6.2833333333333,46.65,https://www.wikidata.org/wiki/Q69546
+347,VD,Begnins,6.25,46.433333333333,https://www.wikidata.org/wiki/Q43251
+348,VD,Avenches,7.0398,46.88,https://www.wikidata.org/wiki/Q43236
+349,VD,Arzier-Le Muids,6.212777777777778,46.45527777777778,https://www.wikidata.org/wiki/Q43218
+350,VD,Crissier,6.5833333333333,46.55,https://www.wikidata.org/wiki/Q57121
+351,Etranger,Vladimir,,,
+352,VD,Chexbres,6.78008,46.48432,https://www.wikidata.org/wiki/Q52818
+353,VD,Jongny,6.84659,46.48761,https://www.wikidata.org/wiki/Q69583
+354,VD,Bière,6.3333333333333,46.533333333333,https://www.wikidata.org/wiki/Q52262
+355,VD,Lucens,6.83732,46.70916,https://www.wikidata.org/wiki/Q70110
+356,Etranger,"Amillis, Seine-et-Marne",,,
+357,NE,Cressier,,,
+358,VD,Moudon,6.79743,46.66871,https://www.wikidata.org/wiki/Q70202
+359,VD,Château-d’Oex,7.1166666666667,46.466666666667,https://www.wikidata.org/wiki/Q52699
+360,Etranger,Buenos Aires,,,
+361,BE,Seeberg,7.6647222222222,47.155,https://www.wikidata.org/wiki/Q70275
+362,SG,Ennetbühl SG,,,
+363,Etranger,Krompach,,,
+364,ZG,Zug,8.516944444444444,47.168055555555554,https://www.wikidata.org/wiki/Q68144
+365,Etranger,Breslau,,,
+366,Etranger,Merksem-Antwerpen,,,
+367,Etranger,Kirberg,,,
+368,Etranger,Poggio a Caiano,,,
+369,Etranger,Providence,,,
+370,AR,Teufen,9.39,47.39,https://www.wikidata.org/wiki/Q67209
+371,Etranger,Saint-Yrieix-la-Perche,,,
+372,AG,Muri,,,
+373,NE,Couvet,,,
+374,Etranger,Rio Novo,,,
+375,Etranger,Arnsberg,,,
+376,Etranger,Lauchhammer/Senftenberg,,,
+377,TI,Viganello,,,
+378,TI,Croglio,,,
+379,Etranger,Heemstede,,,
+380,Etranger,Istanbul,,,
+381,VD,Sullens,6.5666666666667,46.6,https://www.wikidata.org/wiki/Q70537
+382,ZH,Rorbas,8.56841,47.53414,https://www.wikidata.org/wiki/Q67909
+383,ZH,Männedorf,8.6916666666667,47.255277777778,https://www.wikidata.org/wiki/Q64627
+384,SH,Beggingen,8.5330555555556,47.766666666667,https://www.wikidata.org/wiki/Q69123
+385,ZH,Berg am Irchel,8.5997222222222,47.566388888889,https://www.wikidata.org/wiki/Q65781
+386,ZH,Regensberg,8.4386111111111,47.483888888889,https://www.wikidata.org/wiki/Q70197
+387,ZH,Glattfelden,8.4994444444444,47.560833333333,https://www.wikidata.org/wiki/Q68399
+388,ZH,Pfäffikon,8.7822222222222,47.366666666667,https://www.wikidata.org/wiki/Q68269
+389,Etranger,Lienheim,,,
+390,SO,Mümliswil-Ramiswil,7.7033333333333,47.340833333333,https://www.wikidata.org/wiki/Q65071
+391,Etranger,Gamshurst,,,
+392,ZH,Dielsdorf,8.4541666666667,47.483611111111,https://www.wikidata.org/wiki/Q67951
+393,ZH,Turbenthal,8.8441666666667,47.438333333333,https://www.wikidata.org/wiki/Q65858
+394,SG,Rapperswil,,,
+395,ZH,Bauma,8.8777777777778,47.368055555556,https://www.wikidata.org/wiki/Q67145
+396,ZH,Stadel bei Niederglatt,8.4663888888889,47.529444444444,https://www.wikidata.org/wiki/Q67907
+397,ZH,Rümlang,8.5330555555556,47.453333333333,https://www.wikidata.org/wiki/Q67894
+398,Etranger,Füssen,,,
+399,ZH,Seegräben,8.7719444444444,47.343333333333,https://www.wikidata.org/wiki/Q67310
+400,BE,Burgdorf,,,
+401,GL,Glaris,,,
+402,Etranger,Bonneville,,,
+403,SO,Kappel,,,
+404,ZH,Andelfingen,8.6788888888889,47.594722222222,https://www.wikidata.org/wiki/Q68423
+405,AR,Reute,9.575,47.419444444444,https://www.wikidata.org/wiki/Q66204
+406,NE,Auvernier,,,
+407,VS,Champéry,6.8713714,46.1750525,https://www.wikidata.org/wiki/Q70099
+408,ZH,Mettmenstetten,8.4644444444444,47.244722222222,https://www.wikidata.org/wiki/Q65547
+409,VD,Corbeyrier,6.97975,46.36956,https://www.wikidata.org/wiki/Q57099
+410,GE,Meyrin,6.07911,46.23222,https://www.wikidata.org/wiki/Q68230
+411,TG,Kreuzlingen,9.1783333333333,47.645833333333,https://www.wikidata.org/wiki/Q63905
+412,SG,Oberuzwil,9.123611111111112,47.42944444444444,https://www.wikidata.org/wiki/Q66557
+413,ZH,Volken,8.6261111111111,47.575,https://www.wikidata.org/wiki/Q67922
+414,ZH,Maschwanden,8.4277777777778,47.235555555556,https://www.wikidata.org/wiki/Q64977
+415,BE,Biglen,7.62667,46.92781,https://www.wikidata.org/wiki/Q65875
+416,Etranger,Germersheim,,,
+417,ZH,Feuerthalen,8.6452777777778,47.692222222222,https://www.wikidata.org/wiki/Q66283
+418,TG,Affeltrangen,9.0166666666667,47.516388888889,https://www.wikidata.org/wiki/Q65800
+419,ZH,Laufen-Uhwiesen,8.6366666666667,47.670833333333,https://www.wikidata.org/wiki/Q66336
+420,ZH,Flaach,8.6091666666667,47.576388888889,https://www.wikidata.org/wiki/Q70367
+421,ZH,Hottingen-Zurich,,,
+422,ZH,Waltalingen,,,
+423,Etranger,Hersfeld,,,
+424,ZH,Wasterkingen,8.4741666666667,47.591666666667,https://www.wikidata.org/wiki/Q67882
+425,GL,Braunwald,,,
+426,SH,Wilchingen,8.4666666666667,47.666388888889,https://www.wikidata.org/wiki/Q69164
+427,GE,Jussy,6.27913,46.23712,https://www.wikidata.org/wiki/Q65538
+428,ZH,Lanzenmoos,,,
+429,AG,Vordemwald,7.9,47.276111111111,https://www.wikidata.org/wiki/Q64234
+430,BE,Langnau,,,
+431,ZH,Wattenwil,,,
+432,JU,Porrentruy,7.0833333333333,47.416666666667,https://www.wikidata.org/wiki/Q68256
+433,TG,Altnau,9.26118,47.60732,https://www.wikidata.org/wiki/Q69237
+434,BL,Arlesheim,7.6202777777778,47.492222222222,https://www.wikidata.org/wiki/Q581647
+435,Etranger,Copponex,,,
+436,GE,Troinex,6.14745,46.16313,https://www.wikidata.org/wiki/Q69817
+437,VD,Villars-Mendraz,,,
+438,ZH,Bülach,8.5422222222222,47.518888888889,https://www.wikidata.org/wiki/Q9093
+439,Etranger,Würzburg,,,
+440,ZH,Unterstrass,,,
+441,Etranger,Waldenburg,7.75,47.383055555556,https://www.wikidata.org/wiki/Q67092
+442,SH,Schaffhausen Siblingen,,,
+443,Etranger,Saint-Julien-en-Genevois,,,
+444,Etranger,Chicago,,,
+445,TG,Oberhofen bei Kreuzlingen,,,
+446,Etranger,Gross-Strehlitz,,,
+447,Etranger,Cannstatt,,,
+448,AG,Frick,8.0222222222222,47.508055555556,https://www.wikidata.org/wiki/Q66617
+449,UR,Altdorf,8.6394444444444,46.880555555556,https://www.wikidata.org/wiki/Q68150
+450,BE,Anet,,,
+451,SO,Feldbrunnen-St. Niklaus,7.5555555555556,47.220833333333,https://www.wikidata.org/wiki/Q66969
+452,ZH,Herrliberg,8.63018,47.29716,https://www.wikidata.org/wiki/Q69224
+453,ZH,Kyburg,,,
+454,GR,Stampa,,,
+455,SG,Flawil,9.19771,47.40532,https://www.wikidata.org/wiki/Q65506
+456,SO,Wolfwil,7.7930555555556,47.269166666667,https://www.wikidata.org/wiki/Q66066
+457,AG,Fahrwangen,8.2430555555556,47.295833333333,https://www.wikidata.org/wiki/Q64982
+458,AG,Brugg,,,
+459,SG,Ganterschwil,,,
+460,BL,Bubendorf,7.7364,47.4497,https://www.wikidata.org/wiki/Q66532
+461,Etranger,Graz,,,
+462,VD,L'Isle,6.4166666666667,46.616666666667,https://www.wikidata.org/wiki/Q68387
+463,Etranger,Kulmbach,,,
+464,Etranger,Caluire-et-Cuire,,,
+465,Etranger,Londres,,,
+466,Etranger,Annonay,,,
+467,Etranger,Pforzheim,,,
+468,ZH,Hottingen,,,
+469,BE,Langenthal,7.7888888888889,47.215277777778,https://www.wikidata.org/wiki/Q69726
+470,Etranger,Heidelberg,,,
+471,BE,Courtelary,7.0722222222222,47.179166666667,https://www.wikidata.org/wiki/Q65649
+472,ZG,Zug,8.516944444444444,47.168055555555554,https://www.wikidata.org/wiki/Q68144
+473,SG,Wattwil,9.08303,47.29572,https://www.wikidata.org/wiki/Q66601
+474,SZ,Einsiedeln,8.7430555555556,47.127777777778,https://www.wikidata.org/wiki/Q68950
+475,BE,Murten,7.1169444444444,46.928055555556,https://www.wikidata.org/wiki/Q68283
+476,SG,Mels,9.4166666666667,47.049722222222,https://www.wikidata.org/wiki/Q67027
+477,ZH,Hinwil,8.8444444444444,47.303333333333,https://www.wikidata.org/wiki/Q69383
+478,Etranger,Kehl-Kork,,,
+479,ZG,Oberägeri,8.6136111111111,47.135833333333,https://www.wikidata.org/wiki/Q65017
+480,Etranger,Binzhou,,,
+481,ZH,Schönenberg,,,
+482,SZ,Schwyz,8.658332,47.020546,https://www.wikidata.org/wiki/Q68155
+483,GR,Alvaneu,,,
+484,Etranger,Casablanca,,,
+485,Etranger,Munich,,,
+486,Etranger,Třinec,,,
+487,GL,Mitlödi,,,
+488,BE,Eriswil,7.85,47.083055555556,https://www.wikidata.org/wiki/Q65744
+489,GR,Zernez,10.099722222222,46.699722222222,https://www.wikidata.org/wiki/Q64609
+490,Etranger,"Emmendingen, Breisgau, Baden",,,
+491,Etranger,Lennep,,,
+492,BL,Münchenstein,7.61739,47.51857,https://www.wikidata.org/wiki/Q69030
+493,GE,Presinge,6.2550748,46.2190839,https://www.wikidata.org/wiki/Q69839
+494,FR,Kerzers,7.2,46.983333333333,https://www.wikidata.org/wiki/Q69871
+495,Etranger,Nuremberg,,,
+496,BL,Langenbruck,7.7694444444444,47.349444444444,https://www.wikidata.org/wiki/Q64808
+497,LU,Kriens,8.28,47.034444444444,https://www.wikidata.org/wiki/Q14571
+498,ZH,Thun,7.63,46.759,https://www.wikidata.org/wiki/Q68978
+499,ZH,Wollishofen,,,
+500,Etranger,Galaţi,,,
+501,VD,Grandvaux,,,
+502,VD,Froideville,6.69177,46.59817,https://www.wikidata.org/wiki/Q68720
+503,BE,Saicourt,7.2069444444444,47.244166666667,https://www.wikidata.org/wiki/Q67384
+504,GL,Schwanden,,,
+505,SG,Pfäfers,9.4997222222222,46.983055555556,https://www.wikidata.org/wiki/Q66052
+506,Etranger,Mulhouse,,,
+507,VD,Croy,6.47567,46.69384,https://www.wikidata.org/wiki/Q70541
+508,VD,Goumoëns,6.6,46.65,https://www.wikidata.org/wiki/Q70741
+509,VD,Bursins,6.2833333333333,46.45,https://www.wikidata.org/wiki/Q52298
+510,VD,Ouchy,,,
+511,VD,Montheron,,,
+512,VD,L'Abbaye,,,
+513,Etranger,Amsterdam,,,
+514,Etranger,Versailles,,,
+515,Etranger,Jassy,,,
+516,Etranger,Edimbourg,,,
+517,Etranger,Quakenbrück,,,
+518,Etranger,Osterode,,,
+519,BL,Rothenfluh,7.9161111111111,47.461944444444,https://www.wikidata.org/wiki/Q66801
+520,Etranger,Munster,,,
+521,BL,Frenkendorf,7.7144444444444,47.503055555556,https://www.wikidata.org/wiki/Q66593
+522,BE,Grandval,7.4263888888889,47.284444444444,https://www.wikidata.org/wiki/Q67029
+523,Etranger,Lons-le-Saunier,,,
+524,GR,Davos,9.8398333333333,46.809055555556,https://www.wikidata.org/wiki/Q68097
+525,VD,Coinsins,6.2333333333333,46.416666666667,https://www.wikidata.org/wiki/Q57091
+526,Etranger,Neuilly-sur-Seine,,,
+527,Etranger,Copenhague,,,
+528,VD,Yverdon-les-Bains,6.6408333333333,46.7785,https://www.wikidata.org/wiki/Q63946
+529,Etranger,Stockholm,,,
+530,AG,Spreitenbach,,,
+531,GE,Onex,6.1,46.183333333333,https://www.wikidata.org/wiki/Q68240
+532,Etranger,Neydens,,,
+533,VD,Corcelles-près-Payerne,6.966666666666667,46.833333333333336,https://www.wikidata.org/wiki/Q57104
+534,ZH,Wallisellen,8.5922222222222,47.412222222222,https://www.wikidata.org/wiki/Q69374
+,,,8.59672,47.41499,
+535,Etranger,Frankfurt,,,
+536,ZH,Uerikon Stäfa,,,
+537,SH,Hallau,8.4578,47.6966,https://www.wikidata.org/wiki/Q69172
+538,TG,Langrickenbach,9.2475,47.593611111111,https://www.wikidata.org/wiki/Q66312
+539,GE,Vandœuvres,6.2,46.216666666667,https://www.wikidata.org/wiki/Q65522
+540,VD,Tannay,6.1833333333333,46.3,https://www.wikidata.org/wiki/Q69312
+541,GE,Avully,5.9985,46.16747,https://www.wikidata.org/wiki/Q69200
+542,VD,Gingins,6.1833333333333,46.416666666667,https://www.wikidata.org/wiki/Q69337
+543,ZH,Enge,,,
+544,BE,Koppigen,7.6041666666667,47.134444444444,https://www.wikidata.org/wiki/Q66668
+545,TG,Diessenhofen,8.7497222222222,47.683333333333,https://www.wikidata.org/wiki/Q67128
+546,BS,Basel,7.5905555555556,47.560555555556,https://www.wikidata.org/wiki/Q78
+547,GE,Le Grand-Saconnex,6.1166666666667,46.233333333333,https://www.wikidata.org/wiki/Q69714
+548,BE,"Schwarzenegg, Unterlangenegg",,,
+549,VS,Törbel,7.8514,46.2382,https://www.wikidata.org/wiki/Q68469
+550,VS,Münster,,,
+551,VS,Chamoson,7.2166666666667,46.2,https://www.wikidata.org/wiki/Q70178
+552,VS,Sion,7.36606,46.23045,https://www.wikidata.org/wiki/Q68136
+553,VD,Oron,6.8333333333333,46.566666666667,https://www.wikidata.org/wiki/Q70734
+554,BE,Bolligen,7.4986111111111,46.976111111111,https://www.wikidata.org/wiki/Q69160
+555,BL,Eptingen,7.8166666666667,47.383055555556,https://www.wikidata.org/wiki/Q64715
+556,BE,Heiligenschwendi,7.68229,46.75201,https://www.wikidata.org/wiki/Q65485
+557,VD,L'Isle,6.4166666666667,46.616666666667,https://www.wikidata.org/wiki/Q68387
+558,BE,Thun,7.63,46.759,https://www.wikidata.org/wiki/Q68978
+559,LU,Hasle,,,
+560,SG,Wittenbach,,,
+561,NE,Boudry,6.8333333333333,46.95,https://www.wikidata.org/wiki/Q69507
+562,GL,Luchsingen,,,
+563,NE,Fontainemelon,,,
+564,NE,Saint-Aubin-Sauges,,,
+565,VD,Perroy,6.3666666666667,46.466666666667,https://www.wikidata.org/wiki/Q68076
+566,GE,Versoix,6.1666666666667,46.283333333333,https://www.wikidata.org/wiki/Q63979
+567,GE,Collonge-Bellerive,6.2,46.25,https://www.wikidata.org/wiki/Q69037
+568,VD,Chéserex,6.1666666666667,46.416666666667,https://www.wikidata.org/wiki/Q52777
+569,VD,Saint-Livres,6.38563,46.5095,https://www.wikidata.org/wiki/Q68749
+570,ZH,Ellikon an der Thur,8.8255555555556,47.564166666667,https://www.wikidata.org/wiki/Q65769
+,,,8.82418,47.56307,
+571,Etranger,Udine,,,
+572,Etranger,Los Angeles,,,
+573,Etranger,Filderstadt,,,
+574,NE,Cortaillod,6.84793,46.94399,https://www.wikidata.org/wiki/Q70308
+575,Etranger,"Baumgartenhof, comm. Bernardvillé",,,
+576,Etranger,Heidenheim,,,
+577,TG,Aadorf,8.8975,47.493888888889,https://www.wikidata.org/wiki/Q69131
+578,GR,Silvaplana,9.7997222222222,46.466666666667,https://www.wikidata.org/wiki/Q65254
+579,TG,Gachnang,8.85,47.533055555556,https://www.wikidata.org/wiki/Q64840
+580,SG,Wartau,9.4833333333333,47.083055555556,https://www.wikidata.org/wiki/Q66788
+581,BE,Tavannes,7.2013888888889,47.220833333333,https://www.wikidata.org/wiki/Q67203
+582,Etranger,Düsseldorf,,,
+583,BE,Tramelan,7.1013888888889,47.223333333333,https://www.wikidata.org/wiki/Q66384
+584,BE,Bützberg,,,
+585,Etranger,Bochum,,,
+586,SG,Wartau,9.4833333333333,47.083055555556,https://www.wikidata.org/wiki/Q66788
+587,BE,Ittigen,7.4791666666667,46.9775,https://www.wikidata.org/wiki/Q69690
+588,AG,Brittnau,7.9472222222222,47.260833333333,https://www.wikidata.org/wiki/Q64273
+589,TI,Biasca,8.9666666666667,46.35,https://www.wikidata.org/wiki/Q67523
+590,GR,Klosters,9.8833388888889,46.883333333333,https://www.wikidata.org/wiki/Q68236
+591,GR,Andiast,,,
+592,BE,Meikirch,7.3652777777778,47.009722222222,https://www.wikidata.org/wiki/Q67294
+593,TG,Romanshorn,9.35639,47.56354,https://www.wikidata.org/wiki/Q65125
+594,Etranger,Palazzuolo di Romagna,,,
+595,VS,Le Châble,,,
+596,BE,Lengnau,7.3666666666667,47.181666666667,https://www.wikidata.org/wiki/Q66473
+597,TG,Wagenhausen,8.8486111111111,47.659722222222,https://www.wikidata.org/wiki/Q65519
+598,Etranger,Dessau,,,
+599,ZH,Wipkingen,,,
+600,BE,Wohlen bei Bern,7.3569444444444,46.971944444444,https://www.wikidata.org/wiki/Q67613
+601,LU,Aesch,,,
+602,FR,Bossonnens,6.85,46.516666666667,https://www.wikidata.org/wiki/Q68429
+603,LU,Eschenbach,,,
+604,TI,Maggia,8.708,46.248,https://www.wikidata.org/wiki/Q67996
+605,Etranger,Weimar,,,
+606,TG,Glarisegg,,,
+607,BE,Krauchtal,,,
+608,TG,Bernrain,,,
+609,TI,Castelrotto,,,
+610,TI,Embrach,8.5933333333333,47.510277777778,https://www.wikidata.org/wiki/Q65877
+611,TI,Contra,,,
+612,TI,Muralto,8.8,46.166666666667,https://www.wikidata.org/wiki/Q69961
+613,VD,Le Châtelard,6.9833333333333,46.683333333333,https://www.wikidata.org/wiki/Q68480
+614,VD,Brenles,,,
+615,BE,Sumiswald,7.7452611111111,47.027469444444,https://www.wikidata.org/wiki/Q68167
+616,BE,Courroux,7.3666666666667,47.366666666667,https://www.wikidata.org/wiki/Q70095
+617,BE,Roggwil,7.8236111111111,47.241666666667,https://www.wikidata.org/wiki/Q68015
+618,ZH,Dättlikon,8.6252777777778,47.526111111111,https://www.wikidata.org/wiki/Q70381
+619,SG,Altstätten,9.54875,47.37801,https://www.wikidata.org/wiki/Q68281
+620,VS,Reckingen,,,
+621,Etranger,"Borken, Westfalen",,,
+622,Etranger,Chieti,,,
+623,Etranger,Lanciano,,,
+624,Etranger,Villach,,,
+625,Etranger,Eisenharz,,,
+626,Etranger,Stellenbosch,,,
+627,BE,Huttwil,7.85,47.116388888889,https://www.wikidata.org/wiki/Q69619
+628,Etranger,Bremen,,,
+629,AG,Gansingen,8.1347222222222,47.544166666667,https://www.wikidata.org/wiki/Q67348
+630,VD,Pompaples,6.5166666666667,46.666666666667,https://www.wikidata.org/wiki/Q70675
+631,Etranger,Vaduz,,,
+632,Etranger,Derby,,,
+633,AG,Möhlin,7.8458333333333,47.558333333333,https://www.wikidata.org/wiki/Q69126
+634,Etranger,Bühl,7.25,47.066388888889,https://www.wikidata.org/wiki/Q69983
+635,Etranger,Zell,,,
+636,ZH,Töss,,,
+637,AR,Lutzenberg,9.5836111111111,47.458055555556,https://www.wikidata.org/wiki/Q67178
+638,FR,Murten,7.1169444444444,46.928055555556,https://www.wikidata.org/wiki/Q68283
+639,Etranger,St Huberts,,,
+640,VD,Provence,6.68415,46.90124,https://www.wikidata.org/wiki/Q70450
+641,Etranger,Saint-Pétersbourg,,,
+642,Etranger,Colmar,,,
+643,GE,Pregny-Chambésy,6.1434722222222,46.242138888889,https://www.wikidata.org/wiki/Q69822
+644,ZH,Bachs,8.4391666666667,47.524722222222,https://www.wikidata.org/wiki/Q70273
+645,BE,Schwanden bei Schüpfen,,,
+646,Etranger,San Francisco,,,
+647,AG,Lenzburg,8.1802777777778,47.3875,https://www.wikidata.org/wiki/Q69433
+648,GL,Mollis,,,
+649,VD,Montricher,6.3666666666667,46.6,https://www.wikidata.org/wiki/Q68626
+650,Etranger,Allahabad,,,
+651,Etranger,Ilsenburg am Harz,,,
+652,Etranger,Cannes,,,
+653,VD,Territet,,,
+654,BE,Porrentruy,7.0833333333333,47.416666666667,https://www.wikidata.org/wiki/Q68256
+655,AG,Dottikon,8.2402777777778,47.384444444444,https://www.wikidata.org/wiki/Q64438
+656,Etranger,Wiesbaden,,,
+657,Etranger,Argenteuil,,,
+658,BE,Les Bois,6.9,47.183333333333,https://www.wikidata.org/wiki/Q70232
+659,Etranger,Manille,,,
+660,Etranger,Essen,,,
+661,LU,Sempach,8.1936111111111,47.132777777778,https://www.wikidata.org/wiki/Q7151
+662,TG,Bussnang,9.0838888888889,47.558333333333,https://www.wikidata.org/wiki/Q65983
+663,Etranger,Dresden,,,
+664,BE,Erlenbach im Simmental,7.5529,46.6608,https://www.wikidata.org/wiki/Q66132
+665,Etranger,Neustadt an der Weinstraße,,,
+666,TG,Münchwilen,,,
+667,Etranger,Pockau,,,
+668,ZH,Dübendorf,8.6194444444444,47.398055555556,https://www.wikidata.org/wiki/Q64082
+669,BE,Täuffelen,7.2,47.066666666667,https://www.wikidata.org/wiki/Q69443
+670,Etranger,Le Creusot,,,
+671,GR,Sagogn,9.2558,46.7922,https://www.wikidata.org/wiki/Q65684
+672,Etranger,Hamburg,,,
+673,GR,S-chanf,9.9833333333333,46.616388888889,https://www.wikidata.org/wiki/Q65552
+674,Etranger,Bresse,,,
+675,BE,Wichtrach,7.5763888888889,46.842777777778,https://www.wikidata.org/wiki/Q65945
+676,Etranger,Foëcy,,,
+677,BS,Münchenstein,7.61739,47.51857,https://www.wikidata.org/wiki/Q69030
+678,VD,La Lance,,,
+679,Etranger,Rome,,,
+680,SO,Breitenbach,7.5444444444444,47.408333333333,https://www.wikidata.org/wiki/Q66672
+681,TG,Kreuzlingen,9.1783333333333,47.645833333333,https://www.wikidata.org/wiki/Q63905
+682,TG,Ermatingen,9.0797222222222,47.669166666667,https://www.wikidata.org/wiki/Q65127
+683,Etranger,Arona,,,
+684,BE,Bargen,,,
+685,Etranger,Pernambouc,,,
+686,BL,Birsfelden,7.6230555555556,47.553055555556,https://www.wikidata.org/wiki/Q64665
+687,SG,Steinach,9.4333333333333,47.499722222222,https://www.wikidata.org/wiki/Q66860
+688,GR,Sent,,,
+689,BE,Grellingen,7.5897222222222,47.442222222222,https://www.wikidata.org/wiki/Q66821
+690,Etranger,Odessa,,,
+691,ZH,Buch,8.7830555555556,47.716388888889,https://www.wikidata.org/wiki/Q66305
+692,Etranger,Bucarest,,,
+693,BE,Frutigen,7.6497222222222,46.583055555556,https://www.wikidata.org/wiki/Q66208
+694,Etranger,Lonigo,,,
+695,Etranger,Gand,,,
+696,AG,Klingnau,8.25,47.583055555556,https://www.wikidata.org/wiki/Q67135
+697,NE,Le Landeron,7.0691,47.0554,https://www.wikidata.org/wiki/Q70204
+698,BL,Aesch,,,
+699,BE,Laufen,7.5,47.416666666667,https://www.wikidata.org/wiki/Q68363
+700,GL,Hätzingen,,,
+701,SO,Bolken,7.6638888888889,47.192777777778,https://www.wikidata.org/wiki/Q66688
+702,AG,Rheinfelden,7.7958333333333,47.553888888889,https://www.wikidata.org/wiki/Q269667
+703,Etranger,Gonobitz,,,
+704,Etranger,Farningham,,,
+705,Etranger,Bruxelles,,,
+706,BL,Waldenburg,7.75,47.383055555556,https://www.wikidata.org/wiki/Q67092
+707,Etranger,Arrufo,,,
+708,ZH,Wangen-Brüttisellen,8.6463888888889,47.411944444444,https://www.wikidata.org/wiki/Q66829
+709,AG,Kaiseraugst,7.7277777777778,47.541388888889,https://www.wikidata.org/wiki/Q69048
+710,BE,Muri bei Bern,7.4872222222222,46.931944444444,https://www.wikidata.org/wiki/Q69765
+711,VD,Saint-Prex,6.4575,46.483611111111,https://www.wikidata.org/wiki/Q68063
+712,SZ,Rothenthurm,8.6744444444444,47.104166666667,https://www.wikidata.org/wiki/Q66962
+713,BE,Courfaivre,,,
+714,Etranger,Catane,,,
+715,VD,La Croix-sur-Lutry,,,
+716,VD,Vuarrens,6.65,46.683333333333,https://www.wikidata.org/wiki/Q68910
+717,Etranger,Canton,,,
+718,BE,La Neuveville,7.0944444444444,47.065277777778,https://www.wikidata.org/wiki/Q69476
+719,ZH,Erlenbach,8.5922222222222,47.304444444444,https://www.wikidata.org/wiki/Q69203
+720,BE,Kleindietwil,,,
+721,Etranger,Dornbirn,,,
+722,BE,Soubey,7.04054,47.31014,https://www.wikidata.org/wiki/Q67480
+723,Etranger,Charleroi,,,
+724,Etranger,Haifa,,,
+725,Etranger,Singen am Hohentwiel,,,
+726,Etranger,"Lansing,",,,
+727,Etranger,Boston,,,
+728,BE,Choindez,,,
+729,Etranger,Reno,,,
+730,Etranger,Wuppertal,,,
+731,Etranger,Alger,,,
+732,Etranger,Westhofen,,,
+733,Etranger,Boulogne-Billancourt,,,
+734,Etranger,Calestano,,,
+735,Etranger,Mörfelden,,,
+736,Etranger,Ravensburg,,,
+737,Etranger,Klagenfurt,,,
+738,GE,Lancy,6.11578,46.18969,https://www.wikidata.org/wiki/Q64065
+739,Etranger,Mussoorie,,,
+740,VS,Randogne,,,
+741,FR,Giffers,7.2102833333333,46.761394444444,https://www.wikidata.org/wiki/Q66476
+742,Etranger,Maputo,,,
+743,BE,Nidau,7.2402777777778,47.125555555556,https://www.wikidata.org/wiki/Q13209
+744,VS,Wiler,,,
+745,Etranger,Karlsbad,,,
+746,BE,Bonfol,7.1521,47.4767,https://www.wikidata.org/wiki/Q67993
+747,BE,Schwarzenburg,7.3333333333333,46.816666666667,https://www.wikidata.org/wiki/Q70708
+748,TG,Horn,9.463027777777778,47.495305555555554,https://www.wikidata.org/wiki/Q66195
+749,SO,Kienberg,7.9680555555556,47.441388888889,https://www.wikidata.org/wiki/Q64533
+750,TI,Novazzano,8.9833333333333,45.85,https://www.wikidata.org/wiki/Q67743
+751,SO,Erlinsbach,8.0069444444444,47.406666666667,https://www.wikidata.org/wiki/Q66252
+752,BE,Wangen an der Aare,7.65018,47.2311,https://www.wikidata.org/wiki/Q67536
+753,Etranger,Vicenza,,,
+754,FR,Jaun,7.2666666666667,46.616666666667,https://www.wikidata.org/wiki/Q66911
+755,SG,Berg,,,
+756,FR,Châtel-Saint-Denis,6.901111,46.526944,https://www.wikidata.org/wiki/Q69517
+757,SG,Uzwil,9.1333333333333,47.45,https://www.wikidata.org/wiki/Q64171
+758,BE,Bassecourt,,,
+759,Etranger,Moukden,,,
+760,Etranger,Pfaffenhofen,,,
+761,AG,Lengnau,8.3305555555556,47.522222222222,https://www.wikidata.org/wiki/Q69429
+762,BE,Busswil bei Melchnau,7.8333333333333,47.186944444444,https://www.wikidata.org/wiki/Q67450
+763,BE,Saignelégier,7,47.25,https://www.wikidata.org/wiki/Q67666
+764,BL,Reinach,,,
+765,SG,Rorschach,9.4936111111111,47.478611111111,https://www.wikidata.org/wiki/Q68250
+766,GL,Niederurnen,,,
+767,BE,Busswil bei Büren,,,
+768,VD,Epesses,,,
+769,VD,Missy,6.97383,46.87618,https://www.wikidata.org/wiki/Q70679
+770,BE,Courrendlin,7.3666666666667,47.333333333333,https://www.wikidata.org/wiki/Q69
+771,TI,Lumino,9.06804,46.2383,https://www.wikidata.org/wiki/Q67670
+772,GR,Sils im Domleschg,9.4497222222222,46.7,https://www.wikidata.org/wiki/Q65069
+773,Etranger,Varna,,,
+774,UR,Göschenen,8.5863888888889,46.6675,https://www.wikidata.org/wiki/Q69639
+775,VS,Vernayaz,7.0333333333333,46.133333333333,https://www.wikidata.org/wiki/Q68713
+776,AG,Oberhof,,,
+777,Etranger,Nilvange,,,
+778,GR,St. Moritz,9.837777777777777,46.49722222222222,https://www.wikidata.org/wiki/Q68986
+779,BS,Kleinhüningen,,,
+780,SO,Mühledorf SO,,,
+781,VD,Juriens,6.45,46.683333333333,https://www.wikidata.org/wiki/Q70490
+782,BE,Farnern,7.6211111111111,47.268055555556,https://www.wikidata.org/wiki/Q68591
+783,SG,Muolen,9.3163888888889,47.516666666667,https://www.wikidata.org/wiki/Q67044
+784,SG,Buchs,,,
+785,BE,Muri bei Bern,7.4872222222222,46.931944444444,https://www.wikidata.org/wiki/Q69765
+786,FR,Bösingen,7.2333333333333,46.9,https://www.wikidata.org/wiki/Q67379
+787,SG,Nutenwil,,,
+788,FR,Haut-Intyamon,7.0561111111111,46.516944444444,https://www.wikidata.org/wiki/Q66876
+789,VS,Fiesch,8.1333333333333,46.4,https://www.wikidata.org/wiki/Q68051
+790,VD,Les Posses-Dessus,,,
+791,Etranger,Lörrach,,,
+792,Etranger,Khotine,,,
+793,BE,Seedorf,7.312505,47.034721,https://www.wikidata.org/wiki/Q66928
+794,SH,Oberhallau,8.4775,47.7053,https://www.wikidata.org/wiki/Q66648
+795,BL,Augst,7.7206018,47.5338077,https://www.wikidata.org/wiki/Q66515
+796,BE,Saint-Brais,7.1166666666667,47.3,https://www.wikidata.org/wiki/Q68513
+797,Etranger,Storzeln bei Binningen,,,
+798,SG,Hüttlingen,8.9833333333333,47.583055555556,https://www.wikidata.org/wiki/Q65802
+799,SO,Balsthal,7.6944444444444,47.316388888889,https://www.wikidata.org/wiki/Q65455
+800,NE,Bôle,,,
+801,AG,Besenbüren,8.3458333333333,47.315,https://www.wikidata.org/wiki/Q659378
+802,VS,Tourtemagne,,,
+803,TG,Kurzdorf,,,
+804,Etranger,Pont d'Ain,,,
+805,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+806,Etranger,Magdala,,,
+807,TI,Barbengo,,,
+808,Etranger,Poissy,,,
+809,BE,Walkringen,7.62,46.946666666667,https://www.wikidata.org/wiki/Q67460
+810,BE,Oberhofen am Thunersee,7.66914,46.7298,https://www.wikidata.org/wiki/Q66611
+811,SG,Bad Ragaz,9.5,46.999722222222,https://www.wikidata.org/wiki/Q95759
+812,ZG,Risch,8.4313888888889,47.141111111111,https://www.wikidata.org/wiki/Q66604
+813,LU,Ebikon,8.3430555555556,47.083888888889,https://www.wikidata.org/wiki/Q14566
+814,SH,Hallau,8.4578,47.6966,https://www.wikidata.org/wiki/Q69172
+815,Etranger,château de Sclassin,,,
+816,TG,Hub,,,
+817,ZH,Altikon,8.7808333333333,47.573333333333,https://www.wikidata.org/wiki/Q65929
+818,Etranger,Portsmouth,,,
+819,TG,Sonnenberg,,,
+820,TG,Hefenhofen,9.3013888888889,47.563888888889,https://www.wikidata.org/wiki/Q66405
+821,LU,Oberwil-Lieli,8.3833333333333,47.333333333333,https://www.wikidata.org/wiki/Q65646
+822,AG,Birmenstorf,8.25,47.463611111111,https://www.wikidata.org/wiki/Q64457
+823,GL,Ennenda,,,
+824,BE,Court,7.3375,47.240277777778,https://www.wikidata.org/wiki/Q69897
+825,TI,Sagno,,,
+826,Etranger,Leipzig,,,
+827,Etranger,Eisenach,,,
+828,VS,Martigny,7.07277777778,46.1,https://www.wikidata.org/wiki/Q68956
+829,ZH,Steinmaur,8.4477777777778,47.494166666667,https://www.wikidata.org/wiki/Q67887
+830,Etranger,Anzin,,,
+831,Etranger,Breitenwang,,,
+832,NE,Colombier,,,
+833,NE,Fontaines,,,
+834,AI,Steinegg,,,
+835,SG,Rheineck,9.5834,47.47005,https://www.wikidata.org/wiki/Q69595
+836,AG,Jonen,8.3972222222222,47.298333333333,https://www.wikidata.org/wiki/Q64957
+837,Etranger,Brombach,,,
+838,LU,Nottwil,8.1369444444444,47.134722222222,https://www.wikidata.org/wiki/Q7131
+839,BE,Jegenstorf,7.5069444444444,47.049722222222,https://www.wikidata.org/wiki/Q10341
+840,SH,Merishausen,8.6091666666667,47.760555555556,https://www.wikidata.org/wiki/Q69649
+841,BE,Gwatt,,,
+842,Etranger,Witebsk,,,
+843,TG,Bischofszell,9.2333333333333,47.499722222222,https://www.wikidata.org/wiki/Q64865
+844,AG,Murgenthal,7.8333333333333,47.266388888889,https://www.wikidata.org/wiki/Q64478
+845,BE,Uttigen,7.5763083333333,46.793919444444,https://www.wikidata.org/wiki/Q66120
+846,VS,Ardon,7.25,46.2,https://www.wikidata.org/wiki/Q69556
+847,VD,L'Orient,,,
+848,VD,Roche,,,
+849,Etranger,Achalkalaki,,,
+850,VD,Jouxtens-Mézery,6.6,46.55,https://www.wikidata.org/wiki/Q70243
+851,BE,Utzenstorf,7.5572222222222,47.126944444444,https://www.wikidata.org/wiki/Q67778
+852,VD,Vuibroye,,,
+853,ZH,Adliswil,8.5255555555556,47.312222222222,https://www.wikidata.org/wiki/Q68210
+854,VD,Ecublens,,,
+855,FR,Billens-Hennens,6.9,46.683333333333,https://www.wikidata.org/wiki/Q70454
+856,GL,Linthal,,,
+857,VS,Bagnes/Champsec,,,
+858,GL,Netstal,,,
+859,GR,Disentis/Mustér,8.8497222222222,46.699722222222,https://www.wikidata.org/wiki/Q68347
+,,,8.84761,46.73425,
+860,Etranger,Lutterbach,,,
+861,TI,Bedretto,8.5166666666667,46.5,https://www.wikidata.org/wiki/Q67035
+862,SH,Neunkirch,8.4988888888889,47.69,https://www.wikidata.org/wiki/Q67114
+863,SO,Deitingen,7.6236111111111,47.215833333333,https://www.wikidata.org/wiki/Q66142
+864,Etranger,Kamenz,,,
+865,BE,Belp,,,
+866,SG,Eschenbach,,,
+867,SZ,Reichenburg,8.9744444444444,47.169444444444,https://www.wikidata.org/wiki/Q65862
+868,SG,Uzwil,,,
+869,BE,Niederscherli,,,
+870,GE,Confignon,6.083323,46.183354,https://www.wikidata.org/wiki/Q65277
+871,SZ,Wangen,8.8955555555556,47.190833333333,https://www.wikidata.org/wiki/Q66707
+872,JU,Clos du Doubs,7.15,47.35,https://www.wikidata.org/wiki/Q68869
+873,SZ,Schwyz,8.658332,47.020546,https://www.wikidata.org/wiki/Q68155
+874,TI,Osogna,,,
+875,VD,Gilly,6.3,46.45,https://www.wikidata.org/wiki/Q70383
+876,AG,Aarburg,7.9013888888889,47.320555555556,https://www.wikidata.org/wiki/Q64165
+877,AR,Herisau,9.2786,47.3851,https://www.wikidata.org/wiki/Q63970
+878,ZG,Menzingen,8.5916666666667,47.180277777778,https://www.wikidata.org/wiki/Q66050
+879,Etranger,Gleiwitz,,,
+880,Etranger,Greifswald,,,
+881,SZ,Lachen,8.8566666666667,47.191111111111,https://www.wikidata.org/wiki/Q67100
+882,Etranger,Caravaggio,,,
+883,BE,Zollbrück,,,
+884,Etranger,Bandung,,,
+885,Etranger,Téhéran,,,
+886,Etranger,Baltimore,,,
+887,Etranger,Hong Kong,,,
+888,Etranger,Kleinsteinlohe,,,
+889,VD,Daillens,6.55,46.616666666667,https://www.wikidata.org/wiki/Q68892
+890,AG,Buchs,,,
+891,Etranger,Metz,,,
+892,Etranger,Freudenstadt,,,
+893,Etranger,Görz,,,
+894,Etranger,Baden,8.30799,47.47291,https://www.wikidata.org/wiki/Q63939
+895,TG,Eschenz,8.8663888888889,47.65,https://www.wikidata.org/wiki/Q65080
+896,Etranger,Santa Maria del Molise,,,
+897,TG,Kirchberg TG,,,
+898,Etranger,Brooklyn,,,
+899,BE,Wynau,7.8111111111111,47.260833333333,https://www.wikidata.org/wiki/Q70104
+900,Etranger,Offenburg,,,
+901,Etranger,Mannheim,,,
+902,BE,Lauterbrunnen,7.9086111111111,46.599722222222,https://www.wikidata.org/wiki/Q64011
+903,GR,Seewis im Prättigau,9.6375,46.990277777778,https://www.wikidata.org/wiki/Q64748
+904,Etranger,Sèvres,,,
+905,GR,Celerina/Schlarigna,9.859055555555555,46.51213888888889,https://www.wikidata.org/wiki/Q64964
+906,Etranger,Vienne,,,
+907,Etranger,Newstead,,,
+908,GR,Fürstenau,9.4333333333333,46.716388888889,https://www.wikidata.org/wiki/Q64805
+909,Etranger,Florence,,,
+910,JU,La Baroche,7.1666666666667,47.416666666667,https://www.wikidata.org/wiki/Q70511
+911,FR,Hauteville,7.1166666666667,46.666666666667,https://www.wikidata.org/wiki/Q662294
+912,BL,Bennwil,7.77987,47.40317,https://www.wikidata.org/wiki/Q64735
+913,Etranger,Hanau,,,
+914,Etranger,Constance,,,
+915,Etranger,Le Havre,,,
+916,Etranger,Gualeguaychú,,,
+917,Etranger,Vlissingen,,,
+918,FR,Sâles,6.9666666666667,46.633333333333,https://www.wikidata.org/wiki/Q67736
+919,TG,Basadingen-Schlattingen,8.7497222222222,47.666666666667,https://www.wikidata.org/wiki/Q66711
+920,VD,Morrens,6.6333333333333,46.583333333333,https://www.wikidata.org/wiki/Q68940
+921,BE,Saanen,7.2663888888889,46.483055555556,https://www.wikidata.org/wiki/Q66629
+922,NW,Hergiswil,8.3125,46.984444444444,https://www.wikidata.org/wiki/Q570969
+923,SO,St. Gallen,9.3772222222222,47.423333333333,https://www.wikidata.org/wiki/Q25607
+924,GE,Chougny Vandoeuvres,,,
+925,Etranger,La Vernaz,,,
+926,TI,Besazio,,,
+927,Etranger,Wesserling,,,
+928,GE,Thônex,6.2166666666667,46.2,https://www.wikidata.org/wiki/Q68201
+929,VD,Vufflens,,,
+930,Etranger,Pest,,,
+931,VD,Allaman,6.4,46.466666666667,https://www.wikidata.org/wiki/Q43201
+932,Etranger,Prarustin,,,
+933,GE,Sierne,,,
+934,Etranger,Montauban,,,
+935,Etranger,Ipswich,,,
+936,VD,Dully,6.3,46.433333333333,https://www.wikidata.org/wiki/Q68622
+937,Etranger,Mauriac,,,
+938,Etranger,Lüdenscheid,,,
+939,TI,Riva San Vitale,8.9666666666667,45.9,https://www.wikidata.org/wiki/Q67130
+940,BL,Schönenbuch,7.5008333333333,47.536944444444,https://www.wikidata.org/wiki/Q66508
+941,GR,Malix,,,
+942,Etranger,Venise,,,
+943,BE,Schleumen,,,
+944,Etranger,Ettlingen bei Karlsruhe,,,
+945,VS,Saint-Maurice,7.0047,46.219,https://www.wikidata.org/wiki/Q69545
+946,TI,Paradiso,8.95,45.983333333333,https://www.wikidata.org/wiki/Q68205
+947,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+948,FR,Windig,,,
+949,VS,Raron,7.8,46.31,https://www.wikidata.org/wiki/Q69786
+950,BE,Corcelles,7.4541666666667,47.286111111111,https://www.wikidata.org/wiki/Q67862
+951,SG,Uznach,8.9838888888889,47.224166666667,https://www.wikidata.org/wiki/Q67106
+952,Etranger,Veringendorf,,,
+953,BE,Interlaken,,,
+954,ZH,Wil bei Rafz,,,
+955,Etranger,Uppsala,,,
+956,ZH,Rafz,8.5408333333333,47.612222222222,https://www.wikidata.org/wiki/Q66457
+957,BE,Diesse,,,
+958,GR,Sils im Engadin/Segl,9.7663888888889,46.433055555556,https://www.wikidata.org/wiki/Q64200
+959,BE,Corgémont,7.13857,47.19107,https://www.wikidata.org/wiki/Q66917
+960,VS,Martigny,7.07277777778,46.1,https://www.wikidata.org/wiki/Q68956
+961,Etranger,Palmyra,,,
+962,AG,Magden,7.8152777777778,47.528888888889,https://www.wikidata.org/wiki/Q66567
+963,BE,Boncourt,7.0166666666667,47.5,https://www.wikidata.org/wiki/Q66980
+964,ZH,Stäfa,8.7328,47.2401,https://www.wikidata.org/wiki/Q69774
+965,ZH,Dägerlen,8.7230555555556,47.561944444444,https://www.wikidata.org/wiki/Q68437
+966,BE,Reconvilier,7.2222222222222,47.236111111111,https://www.wikidata.org/wiki/Q67249
+967,BE,Courtedoux,7.028,47.41289,https://www.wikidata.org/wiki/Q69855
+968,AG,Riken,,,
+969,FR,Treyvaux,7.1333333333333,46.733333333333,https://www.wikidata.org/wiki/Q67448
+970,ZH,Aadorferfeld-Elgg,,,
+971,FR,Domdidier,7.011667,46.866667,https://www.wikidata.org/wiki/Q67681
+972,NW,Büren,7.6708333333333,47.451111111111,https://www.wikidata.org/wiki/Q70057
+973,SZ,Ibach,,,
+974,FR,Cheiry,,,
+975,FR,Alterswil,,,
+976,FR,Estavayer,6.8472277777778,46.850002777778,https://www.wikidata.org/wiki/Q28035756
+977,FR,Guin,,,
+978,GL,Näfels,,,
+979,AI,Schlatt-Haslen,9.3961111111111,47.356666666667,https://www.wikidata.org/wiki/Q64301
+980,SH,Herblingen,,,
+981,SZ,Ingenbohl,8.6116666666667,47.002777777778,https://www.wikidata.org/wiki/Q66330
+982,SZ,Arth,8.5241666666667,47.064444444444,https://www.wikidata.org/wiki/Q69742
+983,SO,Nunningen,7.6194444444444,47.394166666667,https://www.wikidata.org/wiki/Q64697
+984,SH,Neuhausen am Rheinfall,8.6166666666667,47.683055555556,https://www.wikidata.org/wiki/Q69372
+985,Etranger,Losheim,,,
+986,Etranger,Bratislava,,,
+987,FR,Tour-de-Trême,,,
+988,Etranger,Lussenga,,,
+989,TI,San Nazzaro,,,
+990,SG,St. Gallen,9.3772222222222,47.423333333333,https://www.wikidata.org/wiki/Q25607
+991,Etranger,St-Blasien,,,
+992,AG,Gontenschwil,8.1472222222222,47.273333333333,https://www.wikidata.org/wiki/Q65333
+993,GR,Roveredo,9.1257,46.2348,https://www.wikidata.org/wiki/Q64912
+994,Etranger,Ljubljana,,,
+995,Etranger,Sulz am Neckar,,,
+996,GR,Scuol,10.2995,46.797,https://www.wikidata.org/wiki/Q69079
+997,NW,Wolfenschiessen,8.3972222222222,46.909444444444,https://www.wikidata.org/wiki/Q64351
+998,Etranger,Rastatt,,,
+999,Etranger,Johannesburg,,,
+1000,Etranger,Bad Homburg,,,
+1001,SG,Degersheim,9.1997222222222,47.366666666667,https://www.wikidata.org/wiki/Q64974
+1002,SG,Rorschacherberg,9.5,47.466388888889,https://www.wikidata.org/wiki/Q66269
+1003,Etranger,Jestetten,,,
+1004,LU,Pfaffnau,7.8994444444444,47.227777777778,https://www.wikidata.org/wiki/Q14612
+1005,Etranger,Trondheim,,,
+1006,Etranger,Buffalo,,,
+1007,Etranger,Cuijk,,,
+1008,Etranger,Tiaret,,,
+1009,Etranger,Urbana,,,
+1010,Etranger,Harsefeld,,,
+1011,Etranger,Libourne,,,
+1012,Etranger,"Washington, D.C.",,,
+1013,Etranger,Riga,,,
+1014,Etranger,"Swinemünde, Usedom",,,
+1015,Etranger,Surbiton,,,
+1016,Etranger,"Walnut Creek, California",,,
+1017,VS,Zermatt,7.7461,46.0193,https://www.wikidata.org/wiki/Q27494
+1018,Etranger,Bergisch Gladbach,,,
+1019,Etranger,Delhi,,,
+1020,Etranger,Windsor,,,
+1021,Etranger,Seattle,,,
+1022,Etranger,Detroit,,,
+1023,Etranger,Pau,,,
+1024,Etranger,Fürstenwalde/Spree,,,
+1025,Etranger,Pescara,,,
+1026,AG,Menziken,8.1916666666667,47.24,https://www.wikidata.org/wiki/Q65309
+1027,Etranger,Pennsylvania,,,
+1028,Etranger,Erlenbach am Main,,,
+1029,Etranger,Guildford,,,
+1030,Etranger,Rehau,,,
+1031,Etranger,Wilhelmshaven,,,
+1032,Etranger,Nedroma,,,
+1033,Etranger,Mainz,,,
+1034,Etranger,São João de Loure,,,
+1035,Etranger,Gliwice,,,
+1036,BE,Niederlandisch,,,
+1037,Etranger,Bregenz,,,
+1038,Etranger,Kaufbeuren,,,
+1039,Etranger,Schaan,,,
+1040,Etranger,Luxembourg,,,
+1041,VD,Cheseaux-sur-Lausanne,6.6,46.583333333333,https://www.wikidata.org/wiki/Q52773
+1042,Etranger,Bennwil,7.77987,47.40317,https://www.wikidata.org/wiki/Q64735
+1043,FR,Charmey,,,
+1044,Etranger,"Büdingen,",,,
+1045,Etranger,Mérida,,,
+1046,Etranger,Silésie,,,
+1047,Etranger,Divonne,,,
+1048,Etranger,Soultz,,,
+1049,Etranger,Rouen,,,
+1050,Etranger,Hirschberg,,,
+1051,SH,Wilchingen,8.4666666666667,47.666388888889,https://www.wikidata.org/wiki/Q69164
+1052,Etranger,Oberfischach,,,
+1053,Etranger,Cali,,,
+1054,SO,Schaffhausen,8.63386,47.69653,https://www.wikidata.org/wiki/Q9009
+1055,Etranger,Saint-Raphaël,,,
+1056,ZH,Lindau,8.6719444444444,47.443055555556,https://www.wikidata.org/wiki/Q65759
+1057,Etranger,Tertre,,,
+1058,Etranger,Meissen,,,
+1059,Etranger,Bergame,,,
+1060,Etranger,Kassel,,,
+1061,Etranger,Toulouse,,,
+1062,Etranger,Schwäbisch Gmünd,,,
+1063,Etranger,Hanovre,,,
+1064,Etranger,Tobolsk,,,
+1065,Etranger,Stallupoenen,,,
+1066,Etranger,Frascati,,,
+1067,Etranger,Léogeats,,,
+1068,VD,Duillier,6.2333333333333,46.416666666667,https://www.wikidata.org/wiki/Q70389
+1069,Etranger,Quintin,,,
+1070,Etranger,Angers,,,
+1071,Etranger,Lombeek-Notre-Dame,,,
+1072,Etranger,Königsberg,,,
+1073,TG,Affeltrangen,9.0166666666667,47.516388888889,https://www.wikidata.org/wiki/Q65800
+1074,NE,Les Brenets,,,
+1075,BE,Renan,6.9259,47.1261,https://www.wikidata.org/wiki/Q517870
+1076,Etranger,Berndorf,,,
+1077,FR,Schmitten,7.25,46.85,https://www.wikidata.org/wiki/Q67705
+1078,Etranger,"Brandenburg, Schleswig",,,
+1079,Etranger,Liegnitz,,,
+1080,Etranger,Fulda,,,
+1081,Etranger,Pöllau,,,
+1082,Etranger,Holzheim,,,
+1083,Etranger,Drahan,,,
+1084,Etranger,Milie,,,
+1085,Etranger,Pörtschach am Wörthersee,,,
+1086,Etranger,Moguilev,,,
+1087,Etranger,Oppeln,,,
+1088,Etranger,Reichenbach im Vogtland,,,
+1089,Etranger,Telsze,,,
+1090,Etranger,Heilsberg,,,
+1091,Etranger,Zaukerode,,,
+1092,Etranger,Jätzdorf,,,
+1093,Etranger,Uerzig sur la Moselle,,,
+1094,Etranger,Erdobénye,,,
+1095,Etranger,Liptószentmiklós,,,
+1096,Etranger,Pettau,,,
+1097,Etranger,Kaldenkirchen,,,
+1098,Etranger,Dubrovna,,,
+1099,Etranger,L'Aquila,,,
+1100,Etranger,Vilémov,,,
+1101,Etranger,Neunkirchen,,,
+1102,LU,Buchs,,,
+1103,AG,Sisseln,7.9902777777778,47.554444444444,https://www.wikidata.org/wiki/Q540871
+1104,Etranger,Técső,,,
+1105,Etranger,Linz,,,
+1106,Etranger,Geislingen an der Steige,,,
+1107,AG,Attelwil,,,
+1108,Etranger,Bibersfeld,,,
+1109,Etranger,Barmen,,,
+1110,Etranger,Bruneck,,,
+1111,Etranger,Piovene,,,
+1112,Etranger,Reising / Bayer,,,
+1113,Etranger,Rovigo,,,
+1114,Etranger,Samiano,,,
+1115,Etranger,Lobberich,,,
+1116,NW,Beckenried,8.4747,46.9665,https://www.wikidata.org/wiki/Q69140
+1117,Etranger,Walldürn,,,
+1118,VD,L'Etivaz,,,
+1119,NE,La Brévine,6.6,46.983333333333,https://www.wikidata.org/wiki/Q68838
+1120,BE,Sigriswil,7.7166666666667,46.716388888889,https://www.wikidata.org/wiki/Q65732
+1121,NE,Marin,,,
+1122,Etranger,Jüterbog,,,
+1123,ZH,Lindau,8.6719444444444,47.443055555556,https://www.wikidata.org/wiki/Q65759
+1124,AG,Burg,,,
+1125,BE,Strättligen,,,
+1126,ZH,Riesbach,,,
+1127,Etranger,Stadtlauringen,,,
+1128,Etranger,Wloclawek,,,
+1129,SG,Oberriet,9.5663888888889,47.316388888889,https://www.wikidata.org/wiki/Q65263
+1130,Etranger,Vukovar,,,
+1131,TI,Broglio,,,
+1132,Etranger,Trier,,,
+1133,VD,Le Solliat,,,
+1134,Etranger,Tiflis,,,
+1135,Etranger,Flumenthal,7.5986111111111,47.237222222222,https://www.wikidata.org/wiki/Q67334
+1136,Etranger,Bogotá,,,
+1137,Etranger,Münster,,,
+1138,Etranger,Czuszów,,,
+1139,Etranger,Salon-de-Provence,,,
+1140,BS,Bettingen,7.665,47.570833333333,https://www.wikidata.org/wiki/Q67530
+1141,NE,Peseux,,,
+1142,TG,Warth-Weiningen,8.8663888888889,47.583055555556,https://www.wikidata.org/wiki/Q68405
+1143,Etranger,Weinheim,,,
+1144,Etranger,Pfullendorf,,,
+1145,Etranger,Beuthen,,,
+1146,Etranger,Dorville,,,
+1147,Etranger,Oldenburg,,,
+1148,Etranger,Guntur,,,
+1149,Etranger,Magdeburg,,,
+1150,TG,Kaltenbach,,,
+1151,Etranger,Neuravensburg,,,
+1152,Etranger,Coligny,,,
+1153,Etranger,Torhout,,,
+1154,Etranger,Frankenstein,,,
+1155,Etranger,Nysa,,,
+1156,Etranger,Santiago de Chile,,,
+1157,NE,Thielle-Wavre,,,
+1158,GR,Thusis,9.43282,46.68854,https://www.wikidata.org/wiki/Q66171
+1159,Etranger,Verviers,,,
+1160,Etranger,Bussum,,,
+1161,ZH,Weisslingen,8.7638888888889,47.4325,https://www.wikidata.org/wiki/Q70375
+1162,Etranger,Surakarta,,,
+1163,Etranger,Gyéres,,,
+1164,Etranger,Mascara,,,
+1165,Etranger,Söderhamn,,,
+1166,BL,Gelterkinden,7.8527777777778,47.465277777778,https://www.wikidata.org/wiki/Q65936
+1167,Etranger,Mazatenango,,,
+1168,TG,Steckborn,8.9830555555556,47.666388888889,https://www.wikidata.org/wiki/Q67123
+1169,ZH,Lindau,8.6719444444444,47.443055555556,https://www.wikidata.org/wiki/Q65759
+1170,Etranger,Hove Sussex,,,
+1171,Etranger,Anvers,,,
+1172,Etranger,Fritzlar,,,
+1173,BE,Perrefitte,7.3416666666667,47.276111111111,https://www.wikidata.org/wiki/Q66455
+1174,Etranger,Oviedo,,,
+1175,Etranger,Lisieux,,,
+1176,SG,Marbach,9.5681,47.3917,https://www.wikidata.org/wiki/Q67900
+1177,Etranger,Bruxelles-Schærbeek,,,
+1178,VD,Romanel-sur-Lausanne,6.6,46.566666666667,https://www.wikidata.org/wiki/Q70254
+1179,Etranger,Lübbecke,,,
+1180,Etranger,Gottesberg,,,
+1181,Etranger,Mons-en-Baroeul,,,
+1182,TI,Rovio,,,
+1183,Etranger,"Ciudad de Rio, Cordoba",,,
+1184,Etranger,Masulipatam,,,
+1185,Etranger,"Montceau-les-Mines, Saône-et-Loire",,,
+1186,VD,Ecoteaux,,,
+1187,Etranger,"Chrzanów, Oberschlesien",,,
+1188,Etranger,Abadan,,,
+1189,Etranger,Glasgow,,,
+1190,GR,Mesocco,9.23744,46.39146,https://www.wikidata.org/wiki/Q64617
+1191,SG,Sankt Margrethen,,,
+1192,ZH,Affoltern,,,
+1193,SG,Bronschhofen,,,
+1194,VD,Genolier,6.2166666666667,46.433333333333,https://www.wikidata.org/wiki/Q69290
+1195,Etranger,Vieux-Thann,,,
+1196,Etranger,Villefranche-sur-Mer,,,
+1197,Etranger,Brno,,,
+1198,BE,Develier,7.2833333333333,47.35,https://www.wikidata.org/wiki/Q68520
+1199,BE,Douanne-Twann,,,
+1200,Etranger,Megève,,,
+1201,Etranger,Quedlinburg,,,
+1202,SH,Thayngen,8.6997222222222,47.733055555556,https://www.wikidata.org/wiki/Q69152
+,,,8.69055,47.75863,
+1203,Etranger,Banjarmasin,,,
+1204,Etranger,Mülheim an der Ruhr,,,
+1205,Etranger,Pezinok,,,
+1206,Etranger,Friedrichshafen,,,
+1207,Etranger,Mardin,,,
+1208,Etranger,Lviv,,,
+1209,SG,Mogelsberg,,,
+1210,Etranger,"Birchanger, Essex",,,
+1211,Etranger,Czestochowa,,,
+1212,FR,Gruyères,7.081944,46.583611,https://www.wikidata.org/wiki/Q69600
+1213,Etranger,Val Müstair,10.416666666667,46.6,https://www.wikidata.org/wiki/Q70513
+1214,VD,Renens,6.58971,46.53528,https://www.wikidata.org/wiki/Q69745
+1215,Etranger,Dumyat,,,
+1216,Etranger,Oberleutensdorf,,,
+1217,BE,Lützelflüh,7.6892,47.0091,https://www.wikidata.org/wiki/Q67826
+1218,BE,Münsingen,7.561,46.87298,https://www.wikidata.org/wiki/Q69783
+1219,ZH,Steinmaur,8.4477777777778,47.494166666667,https://www.wikidata.org/wiki/Q67887
+1220,BE,Oberdiessbach,7.6191666666667,46.839444444444,https://www.wikidata.org/wiki/Q67582
+1221,Etranger,San Giovanni Incarico,,,
+1222,Etranger,Rivoli,,,
+1223,Etranger,Liège,,,
+1224,Etranger,Abaeté,,,
+1225,NE,Le Cerneux-Péquignot,6.6666666666667,47.016666666667,https://www.wikidata.org/wiki/Q70456
+1226,TI,Chiasso,9.03203,45.83535,https://www.wikidata.org/wiki/Q68111
+1227,Etranger,Kecskemét,,,
+1228,ZH,Egg,8.6905555555556,47.301944444444,https://www.wikidata.org/wiki/Q64877
+1229,BE,Basse-Allaine,7.0333333333333,47.45,https://www.wikidata.org/wiki/Q70531
+1230,Etranger,Kirchdorf an der Krems,,,
+1231,Etranger,Strem,,,
+1232,Etranger,Reichenberg,,,
+1233,Etranger,Hamm,,,
+1234,Etranger,Vlastislav,,,
+1235,Etranger,Offenbach am Main,,,
+1236,Etranger,Brême,,,
+1237,Etranger,Raettvik,,,
+1238,Etranger,Teplitz-Schönau,,,
+1239,Etranger,Nittenau,,,
+1240,Etranger,Bordighera,,,
+1241,Etranger,Böhmisch Budweis,,,
+1242,Etranger,Rostock,,,
+1243,Etranger,Newcastle upon Tyne,,,
+1244,Etranger,Augsburg,,,
+1245,Etranger,Cardiff,,,
+1246,VD,Clarens-sur-Montreux,,,
+1247,Etranger,"Epinal, Vosges",,,
+1248,AG,Bremgarten,,,
+1249,Etranger,Tarente,,,
+1250,Etranger,Bezau,,,
+1251,LU,Oberkirch,8.1158333333333,47.156388888889,https://www.wikidata.org/wiki/Q7135
+1252,Etranger,Bagnères de Bigorre,,,
+1253,Etranger,Bad Säckingen,,,
+1254,Etranger,Corleone,,,
+1255,Etranger,Sofia,,,
+1256,Etranger,Poitiers,,,
+1257,Etranger,Ulm,,,
+1258,Etranger,Le Cap,,,
+1259,TG,Münsterlingen,9.2337,47.6313,https://www.wikidata.org/wiki/Q69233
+1260,LU,Rain,8.2575,47.130833333333,https://www.wikidata.org/wiki/Q7107
+1261,Etranger,Forbach,,,
+1262,Etranger,Sittard,,,
+1263,Etranger,Limbus,,,
+1264,Etranger,Lahore,,,
+1265,Etranger,Weissenbach an der Enns,,,
+1266,Etranger,Dettwiller,,,
+1267,VD,Donatyre,,,
+1268,Etranger,Lund,,,
+1269,Etranger,Deesen/Westerwald,,,
+1270,VD,Paris,,,
+1271,BE,Soubey,7.04054,47.31014,https://www.wikidata.org/wiki/Q67480
+1272,Etranger,Abiada,,,
+1273,LU,Willisau,7.9927777777778,47.120555555556,https://www.wikidata.org/wiki/Q14627
+1274,Etranger,Weidenau,,,
+1275,Etranger,Stondon,,,
+1276,Etranger,Rendsburg,,,
+1277,Etranger,Quesitz bei Leipzig,,,
+1278,Etranger,Horb-Nordstetten,,,
+1279,Etranger,Jablonec/Gablonz,,,
+1280,Etranger,Helsinki,,,
+1281,Etranger,Pötzling,,,
+1282,Etranger,"Wilmington, Delaware",,,
+1283,Etranger,Berchtesgaden,,,
+1284,Etranger,Bombay,,,
+1285,Etranger,Liebenwalde,,,
+1286,Etranger,Easton,,,
+1287,Etranger,Pittsburgh,,,
+1288,Etranger,Taormina,,,
+1289,Etranger,Saint Louis,,,
+1290,BE,Courgenay,7.1333333333333,47.4,https://www.wikidata.org/wiki/Q67414
+1291,ZH,Schwerzenbach,8.65589,47.38182,https://www.wikidata.org/wiki/Q66814
+1292,Etranger,Naumburg,,,
+1293,Etranger,Hannoversch Münden,,,
+1294,Etranger,Domodossola,,,
+1295,Etranger,Västeras,,,
+1296,Etranger,Havane,,,
+1297,Etranger,Köthen,,,
+1298,Etranger,Penzance,,,
+1299,Etranger,Godesberg,,,
+1300,Etranger,Bamberg,,,
+1301,Etranger,Corvallis,,,
+1302,AG,Leuggern,8.2194444444444,47.581944444444,https://www.wikidata.org/wiki/Q66718
+1303,Etranger,Zagreb,,,
+1304,GR,Vrin,,,
+1305,Etranger,Lobenstein Thüringen,,,
+1306,Etranger,Potsdam,,,
+1307,Etranger,North Olmsted,,,
+1308,SG,Goldach,9.4663888888889,47.483055555556,https://www.wikidata.org/wiki/Q66790
+1309,GR,Val Müstair,10.416666666667,46.6,https://www.wikidata.org/wiki/Q70513
+1310,Etranger,Stettin,,,
+1311,Etranger,Bari,,,
+1312,Etranger,Clermont-Ferrand,,,
+1313,Etranger,"Long Branch, N.J.",,,
+1314,Etranger,Poiana Maggiore,,,
+1315,Etranger,Moscice,,,
+1316,Etranger,"Royan, Charente-Maritime",,,
+1317,Etranger,Perugia,,,
+1318,Etranger,Rinteln,,,
+1319,OW,Giswil,8.1844444444444,46.833055555556,https://www.wikidata.org/wiki/Q69248
+,,,8.11884,46.83586,
+1320,Etranger,Bielitz,,,
+1321,Etranger,Bingen am Rhein,,,
+1322,Etranger,Brunswick,,,
+1323,Etranger,Cuxhaven,,,
+1324,Etranger,Hermsdorf,,,
+1325,Etranger,Klein-Eichstedt,,,
+1326,Etranger,Laukischken,,,
+1327,Etranger,Ludwigsburg,,,
+1328,Etranger,Elmshorn,,,
+1329,Etranger,Ernstthal,,,
+1330,Etranger,Reutlingen,,,
+1331,Etranger,Schreiberhau,,,
+1332,Etranger,Hauerz,,,
+1333,Etranger,Hohenrechberg,,,
+1334,Etranger,Homburg vor der Höhe,,,
+1335,Etranger,Kirch-Beerfurth,,,
+1336,Etranger,Köslin,,,
+1337,Etranger,Coquimbo,,,
+1338,Etranger,Halle,,,
+1339,Etranger,Marienwerder,,,
+1340,Etranger,Montjoie,,,
+1341,Etranger,Schwerin,,,
+1342,Etranger,Stralsund,,,
+1343,Etranger,Wertheim am Main,,,
+1344,Etranger,Bath,,,
+1345,Etranger,Mödling,,,
+1346,Etranger,Vöcklabruck,,,
+1347,Etranger,Avranches,,,
+1348,Etranger,Gasny,,,
+1349,Etranger,Ribérac,,,
+1350,VS,Salins,,,
+1351,Etranger,Wasselheim,,,
+1352,Etranger,Messina,,,
+1353,Etranger,Morra De Sanctis,,,
+1354,Etranger,Strassburg,,,
+1355,Etranger,Oslo,,,
+1356,Etranger,Alexoten,,,
+1357,Etranger,Le Caire,,,
+1358,AG,Neuhof,,,
+1359,ZH,Knonau,8.4613888888889,47.224722222222,https://www.wikidata.org/wiki/Q66328
+1360,Etranger,Laibach,,,
+1361,VD,Grandson,6.6443,46.8085,https://www.wikidata.org/wiki/Q70199
+1362,BE,Nods,7.0819444444444,47.115277777778,https://www.wikidata.org/wiki/Q67468
+1363,ZH,Oberstrass-Zürich,,,
+1364,Etranger,Odrau,,,
+1365,VD,Ormont-Dessus,7.15,46.35,https://www.wikidata.org/wiki/Q70082
+1366,BE,Rapperswil-Dieterswil,,,
+1367,SG,Sargans,9.4398,47.0481,https://www.wikidata.org/wiki/Q64571
+1368,Etranger,Brünn,,,
+1369,ZH,Seen-Winterthur,,,
+1370,ZH,Töss-Winterthur,,,
+1371,LU,Triengen,8.0758333333333,47.235833333333,https://www.wikidata.org/wiki/Q7138
+1372,Etranger,Pápa,,,
+1373,Etranger,Montabaur,,,
+1374,Etranger,Parme,,,
+1375,Etranger,Carthaus,,,
+1376,Etranger,Katwijk,,,
+1377,Etranger,Evreux,,,
+1378,FR,La Praz,6.4333333333333,46.666666666667,https://www.wikidata.org/wiki/Q70549
+1379,Etranger,"Mazet-Saint-Voy, Haute-Loire",,,
+1380,BE,Courchavon,7.05,47.433333333333,https://www.wikidata.org/wiki/Q69935
+1381,Etranger,"Carpentras, Vaucluse",,,
+1382,Etranger,Breslau / Schlesien,,,
+1383,Etranger,"Pranles, Ardèche",,,
+1384,Etranger,"Aubagne, Bouches-du-Rhône",,,
+1385,Etranger,Osnabrück,,,
+1386,Etranger,Bourges,,,
+1387,Etranger,Port-Saïd,,,
+1388,BE,Corban,7.4666666666667,47.35,https://www.wikidata.org/wiki/Q68769
+1389,Etranger,Kaboul,,,
+1390,Etranger,Tortona,,,
+1391,Etranger,Tlemçen,,,
+1392,Etranger,Mostaganem,,,
+1393,Etranger,"Helmstedt, Niedersachsen",,,
+1394,Etranger,"Seltmans, Bavière",,,
+1395,Etranger,Köln,,,
+1396,Etranger,Ahaus,,,
+1397,Etranger,Guben,,,
+1398,Etranger,Nyon,6.23888,46.38196166666667,https://www.wikidata.org/wiki/Q64027
+1399,Etranger,Münich,,,
+1400,Etranger,Weil am Rhein,,,
+1401,Etranger,Haslach im Kinzigtal,,,
+1402,Etranger,Mährisch Schönberg,,,
+1403,Etranger,Tüllingen,,,
+1404,Etranger,Celle,,,
+1405,Etranger,Waldbröl,,,
+1406,Etranger,Wasserburg am Inn,,,
+1407,Etranger,Moenchengladbach,,,
+1408,Etranger,Dunedoo,,,
+1409,Etranger,Uccle,,,
+1410,Etranger,Aubange,,,
+1411,Etranger,Namur,,,
+1412,Etranger,Zottegem,,,
+1413,Etranger,Batak,,,
+1414,Etranger,Ouagadougou,,,
+1415,Etranger,Montreal,,,
+1416,Etranger,LaSalle QC,,,
+1417,Etranger,Seoul,,,
+1418,Etranger,Valladolid,,,
+1419,Etranger,Hoboken,,,
+1420,Etranger,Espoo,,,
+1421,Etranger,Vantaa,,,
+1422,Etranger,Rovaniemi,,,
+1423,Etranger,"Chaux, Haute-Saône",,,
+1424,Etranger,"Ambilly, Haute-Savoie",,,
+1425,Etranger,Oyonnax,,,
+1426,Etranger,Perpignan,,,
+1427,Etranger,Thionville,,,
+1428,Etranger,Carcassonne,,,
+1429,Etranger,Pierrecourt,,,
+1430,Etranger,Pont-à-Mousson,,,
+1431,Etranger,"Neuvic sur Isle, Dordogne",,,
+1432,Etranger,Rennes,,,
+1433,Etranger,Scarborough,,,
+1434,Etranger,Nelson,,,
+1435,Etranger,Thessalonique,,,
+1436,Etranger,Debrecen,,,
+1437,Etranger,Padoue,,,
+1438,Etranger,Trento,,,
+1439,Etranger,Camino,,,
+1440,Etranger,Bologne,,,
+1441,Etranger,Viareggio,,,
+1442,Etranger,Boujad,,,
+1443,Etranger,Dortmund,,,
+1444,Etranger,Haarlem,,,
+1445,Etranger,Lima,,,
+1446,Etranger,Belgrade,,,
+1447,Etranger,Hsin-Chu,,,
+1448,Etranger,Cerna,,,
+1449,Etranger,Kante,,,
+1450,Etranger,Bizerte,,,
+1451,Etranger,Ksar-Hellal,,,
+1452,Etranger,Da Nang,,,
+1453,Etranger,Mexico City,,,
+1454,Etranger,"New Haven, Connecticut",,,
+1455,Etranger,Ruhengeri,,,
+1456,Etranger,Annecy,,,
+1457,LU,Pfäffikon,8.7822222222222,47.366666666667,https://www.wikidata.org/wiki/Q68269
+1458,Etranger,Vésenex-Crassy,,,
+1459,Etranger,Gühlitz près Perleberg,,,
+1460,BE,Mühledorf BE,,,
+1461,Etranger,Evian-les-Bains,,,
+1462,AG,Beinwil am See,8.2025,47.267777777778,https://www.wikidata.org/wiki/Q65000
+1463,SH,Ramsen,8.7997222222222,47.699722222222,https://www.wikidata.org/wiki/Q69182
+1464,Etranger,Jéna,,,
+1465,Etranger,Maastricht,,,
+1466,Etranger,Meran,,,
+1467,Etranger,Gronau,,,
+1468,AG,Laufenburg,8.0594444444444,47.560833333333,https://www.wikidata.org/wiki/Q69191
+1469,Etranger,Altenkirchen,,,
+1470,Etranger,Civitella del Tronto bei Ascoli Piceno,,,
+1471,Etranger,Bergzabern,,,
+1472,Etranger,Minneapolis,,,
+1473,Etranger,Oberkassel,,,
+1474,Etranger,Wischau,,,
+1475,Etranger,Agon,,,
+1476,Etranger,Samolenz,,,
+1477,Etranger,Düren,,,
+1478,BE,Wald,7.4716666666667,46.8825,https://www.wikidata.org/wiki/Q67251
+1479,Etranger,Brody,,,
+1480,VS,Grimisuat,7.3833333333333,46.266666666667,https://www.wikidata.org/wiki/Q69579
+1481,Etranger,Guadeloupe,,,
+1482,Etranger,Wangen am Untersee,,,
+1483,Etranger,Ràbacsécsény,,,
+1484,SO,Solothurn,7.5375,47.208055555556,https://www.wikidata.org/wiki/Q68965
+1485,Etranger,Mstislaw,,,
+1486,TG,Felben-Wellhausen,8.9427777777778,47.576944444444,https://www.wikidata.org/wiki/Q64837
+1487,Etranger,Wrocław,,,
+1488,Etranger,Sochi,,,
+1489,Etranger,Nicosia,,,
+1490,Etranger,Ancône,,,
+1491,Etranger,San Daniele del Friuli,,,
+1492,Etranger,Bačko Petrovo Selo,,,
+1493,SO,Gretzenbach,7.9986111111111,47.358055555556,https://www.wikidata.org/wiki/Q65965
+1494,TG,Wigoltingen,9.0329,47.5958,https://www.wikidata.org/wiki/Q65834
+1495,Etranger,Tokyo,,,
+1496,Etranger,Bernkastel-Kues,,,
+1497,Etranger,Novara,,,
+1498,Etranger,Sora,,,
+1499,Etranger,Charleston,,,
+1500,Etranger,Ottawa,,,
+1501,Etranger,Hangzhou,,,
+1502,AG,Wölflinswil,7.9979,47.4611,https://www.wikidata.org/wiki/Q66442
+1503,ZH,Hettlingen,8.7097222222222,47.547777777778,https://www.wikidata.org/wiki/Q64967
+1504,VS,Leukerbad,7.6333333333333,46.383333333333,https://www.wikidata.org/wiki/Q69436
+1505,AG,Wiliberg,8.0222222222222,47.269444444444,https://www.wikidata.org/wiki/Q64250
+1506,VD,Vufflens-le-Château,6.46669,46.52583,https://www.wikidata.org/wiki/Q69445
+1507,Etranger,Singapour,,,
+1508,Etranger,Santiago,,,
+1509,Etranger,Neu-Ulm,,,
+1510,Etranger,Modesto,,,
+1511,Etranger,Alahärmä,,,
+1512,Etranger,Pont-Sainte-Maxence,,,
+1513,Etranger,Bangalore,,,
+1514,Etranger,Nidda,,,
+1515,Etranger,Quito,,,
+1516,Etranger,Newark,,,
+1517,Etranger,Meknes,,,
+1518,Etranger,Lisbonne,,,
+1519,Etranger,Nashville,,,
+1520,Etranger,Addis-Abeba,,,
+1521,Etranger,Aalen,,,
+1522,Etranger,King's Lynn,,,
+1523,Etranger,Solingen,,,
+1524,SG,Grabs,9.45,47.183055555556,https://www.wikidata.org/wiki/Q67048
+1525,Etranger,Trutnov,,,
+1526,Etranger,Hazaribagh,,,
+1527,VD,Bussigny-sur-Oron,,,
+1528,ZH,Zumikon,8.6238888888889,47.332777777778,https://www.wikidata.org/wiki/Q66898
+1529,SO,Zullwil,7.6013888888889,47.391388888889,https://www.wikidata.org/wiki/Q66345
+1530,Etranger,Gloucestershire,,,
+1531,AG,Windisch,8.2222222222222,47.480277777778,https://www.wikidata.org/wiki/Q69208
+1532,Etranger,Donauwörth,,,
+1533,Etranger,Koblenz AG,8.2372222222222,47.609722222222,https://www.wikidata.org/wiki/Q69441
+1534,Etranger,Sarajevo,,,
+1535,AG,Ennetbaden,8.3166666666667,47.481666666667,https://www.wikidata.org/wiki/Q64424
+1536,GE,Les Pâquis,,,
+1537,BE,Aarberg,7.2763888888889,47.045833333333,https://www.wikidata.org/wiki/Q64113
+1538,VD,Prilly,6.6,46.533333333333,https://www.wikidata.org/wiki/Q69757
+1539,Etranger,Riaz,7.0666666666667,46.633333333333,https://www.wikidata.org/wiki/Q67741
+1540,VD,Penthalaz,6.52912,46.61277,https://www.wikidata.org/wiki/Q70659
+1541,ZH,Wiedikon,,,
+1542,Etranger,Hochheim am Main,,,
+1543,Etranger,Tailfingen,,,
+1544,Etranger,Carinthia,,,
+1545,Etranger,Salzbourg,,,
+1546,Etranger,Innsbruck,,,
+1547,Etranger,Hudiksvall,,,
+1548,VD,Le Chenit,6.2333333333333,46.6,https://www.wikidata.org/wiki/Q52743
+1549,Etranger,Marburg,,,
+1550,Etranger,Bois-Colombes,,,
+1551,VD,Chessel,6.89547,46.34959,https://www.wikidata.org/wiki/Q52781
+1552,Etranger,Pozzuolo,,,
+1553,Etranger,Bagheria,,,
+1554,FR,Belfaux,7.09504,46.82873,https://www.wikidata.org/wiki/Q65880
+1555,VD,Saint-Cergue,6.15,46.45,https://www.wikidata.org/wiki/Q69335
+1556,SH,Neuhausen am Rheinfall,8.6166666666667,47.683055555556,https://www.wikidata.org/wiki/Q69372
+1557,VD,Yens,6.40671,46.527,https://www.wikidata.org/wiki/Q68642
+1558,VD,Vucherens,6.8,46.616666666667,https://www.wikidata.org/wiki/Q70048
+1559,FR,Haut-Intyamon,7.0561111111111,46.516944444444,https://www.wikidata.org/wiki/Q66876
+1560,Etranger,Saint-Quentin,,,
+1561,VD,Chavannes-le-Veyron,6.45,46.6,https://www.wikidata.org/wiki/Q52706
+1562,VD,Yvonand,6.75,46.8,https://www.wikidata.org/wiki/Q68492
+1563,FR,Meyriez,7.1166666666667,46.916666666667,https://www.wikidata.org/wiki/Q68662
+1564,VD,Ballens,6.3666666666667,46.55,https://www.wikidata.org/wiki/Q43240
+1565,SZ,Gersau,8.5247222222222,46.991111111111,https://www.wikidata.org/wiki/Q64380
+1566,VS,Salgesch,7.5666666666667,46.3,https://www.wikidata.org/wiki/Q70317
+1567,Etranger,Fontainebrux,,,
+1568,Etranger,Bogota,,,
+1569,TG,Wäldi,9.0830555555556,47.633333333333,https://www.wikidata.org/wiki/Q65991
+1570,VD,Chesalles-sur-Oron,,,
+1571,VD,Thierrens,,,
+1572,FR,Avry,7.0666666666667,46.783333333333,https://www.wikidata.org/wiki/Q67073
+1573,VD,Ollon,6.99348,46.29731,https://www.wikidata.org/wiki/Q70115
+1574,FR,Esmonts,,,
+1575,Etranger,Ferrières sur Annecy,,,
+1576,VD,Cossonay,6.5166666666667,46.616666666667,https://www.wikidata.org/wiki/Q57111
+1577,Etranger,Chaves,,,
+1578,VD,Leysin,7,46.333333333333,https://www.wikidata.org/wiki/Q69610
+1579,VS,Charrat,,,
+1580,VD,Vernand-Dessous,,,
+1581,VD,Vernand-Dessus,,,
+1582,LU,Zell,,,
+1583,Etranger,St-Andrew,,,
+1584,VD,Lavey,,,
+1585,VD,Le Brassus,,,
+1586,Etranger,Créteil,,,
+1587,FR,Ecublens,,,
+1588,VD,Peyres-Possens,,,
+1589,VD,Syens,6.7833333333333,46.65,https://www.wikidata.org/wiki/Q68684
+1590,VD,Le Lieu,6.2833333333333,46.65,https://www.wikidata.org/wiki/Q69546
+1591,Etranger,Washington,,,
+1592,Etranger,Varennes-lès-Nevers,,,
+1593,VD,Baulmes,6.5166666666667,46.783333333333,https://www.wikidata.org/wiki/Q43245
+1594,Etranger,Lille,,,
+1595,VD,Oron-le-Châtel,,,
+1596,Etranger,Medellin,,,
+1597,Etranger,Hanoi,,,
+1598,Etranger,Châteauroux,,,
+1599,BS,Bâle-Ville,,,
+1600,VD,Ormont-Dessous,7.05,46.366666666667,https://www.wikidata.org/wiki/Q70227
+1601,VD,Villeneuve,6.925,46.396388888888886,https://www.wikidata.org/wiki/Q69972
+1602,VD,Epalinges,6.6666666666667,46.55,https://www.wikidata.org/wiki/Q69252
+1603,FR,Saint-Aubin,6.980556,46.89,https://www.wikidata.org/wiki/Q70403
+1604,VS,Martigny,7.07277777778,46.1,https://www.wikidata.org/wiki/Q68956
+1605,VD,Fiez,6.6166666666667,46.833333333333,https://www.wikidata.org/wiki/Q68861
+1606,VS,Montana-Village,,,
+1607,VD,Bougy-Villars,6.35,46.483333333333,https://www.wikidata.org/wiki/Q52272
+1608,VD,Rougemont,7.20939,46.5004,https://www.wikidata.org/wiki/Q70000
+1609,Etranger,Bujumo-Murambi,,,
+1610,SG,Gams,9.4333333333333,47.2,https://www.wikidata.org/wiki/Q67315
+1611,Etranger,Mantova,,,
+1612,Etranger,Mamborê,,,
+1613,VS,Lourtier,,,
+1614,TI,Lugaggia,,,
+1615,BE,Cortébert,7.1,47.183333333333,https://www.wikidata.org/wiki/Q69974
+1616,TI,Collina d'Oro,8.9166666666667,45.983333333333,https://www.wikidata.org/wiki/Q69062
+1617,TI,Bedano,8.9166666666667,46.05,https://www.wikidata.org/wiki/Q68799
+1618,TI,Capriasca,8.9666666666667,46.066666666667,https://www.wikidata.org/wiki/Q69043
+1619,Etranger,Valsolda,,,
+1620,TI,Cureglia,8.95,46.033333333333,https://www.wikidata.org/wiki/Q70148
+1621,Etranger,Imperia,,,
+1622,TI,Arzo,,,
+1623,TI,Acquarossa,8.92733,46.45993,https://www.wikidata.org/wiki/Q68358
+1624,TI,Corticiasca,,,
+1625,Etranger,Cesena/Forlì,,,
+1626,UR,Schattdorf,8.67129,46.84936,https://www.wikidata.org/wiki/Q66635
+1627,TI,Ligornetto,,,
+1628,TI,Bironico,,,
+1629,TI,Sementina,,,
+1630,TI,Novaggio,,,
+1631,TI,Massagno,8.95,46.016666666667,https://www.wikidata.org/wiki/Q67055
+1632,Etranger,Madras,,,
+1633,TI,Collina d'Oro,8.9166666666667,45.983333333333,https://www.wikidata.org/wiki/Q69062
+1634,AG,Meisterschwanden,8.2302777777778,47.296111111111,https://www.wikidata.org/wiki/Q65316
+1635,TI,Monteggio,,,
+1636,GR,Grono,9.1477,46.2482,https://www.wikidata.org/wiki/Q66181
+1637,Etranger,Grenoble,,,
+1638,TI,Stabio,8.9333333333333,45.85,https://www.wikidata.org/wiki/Q67760
+1639,TI,Carabietta,,,
+1640,TI,Brissago,8.7,46.116666666667,https://www.wikidata.org/wiki/Q69706
+1641,Etranger,Joroinen,,,
+1642,TI,Muzzano,8.9205,45.9976,https://www.wikidata.org/wiki/Q68796
+1643,TI,Vico Morcote,8.9166666666667,45.933333333333,https://www.wikidata.org/wiki/Q70118
+1644,Etranger,Capodistria,,,
+1645,Etranger,Lecco,,,
+1646,TG,Buerglen,,,
+1647,TI,Brusino Arsizio,8.93865,45.92824,https://www.wikidata.org/wiki/Q70120
+1648,Etranger,Cremona,,,
+1649,BE,Kandersteg,7.6744444444444,46.496388888889,https://www.wikidata.org/wiki/Q66218
+1650,TI,Cadro,,,
+1651,TI,Cimadera,,,
+1652,TI,Cevio,8.54233,46.3783,https://www.wikidata.org/wiki/Q67675
+1653,Etranger,Champdepraz,,,
+1654,TI,Loco,,,
+1655,TI,Olivone,,,
+1656,TI,Brè sopra Lugano,,,
+1657,Etranger,Sarnico,,,
+1658,Etranger,Ostiglia,,,
+1659,Etranger,Prizren,,,
+1660,AG,Auenstein,8.1358333333333,47.417777777778,https://www.wikidata.org/wiki/Q64504
+1661,Etranger,Asnières-sur-Seine,,,
+1662,Etranger,São Paulo,,,
+1663,VD,Essertes,,,
+1664,Etranger,"Malsch, Kreiz Karlsruhe",,,
+1665,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+1666,BE,Noflen,,,
+1667,VD,Etagnières,6.6166666666667,46.6,https://www.wikidata.org/wiki/Q68739
+1668,VD,Belmont-sur-Pully,,,
+1669,LU,Vitznau,8.4842,47.01014,https://www.wikidata.org/wiki/Q14578
+1670,BL,Therwil,7.55,47.499722222222,https://www.wikidata.org/wiki/Q66595
+1671,SO,Däniken,7.9819444444444,47.356666666667,https://www.wikidata.org/wiki/Q65586
+1672,ZH,Marthalen,8.6505555555556,47.626666666667,https://www.wikidata.org/wiki/Q67213
+1673,ZH,Pfäffikon,8.7822222222222,47.366666666667,https://www.wikidata.org/wiki/Q68269
+1674,Etranger,Leutkirch,,,
+1675,ZH,Wädenswilerberg,,,
+1676,SG,Oberhelfenschwil,9.1,47.34972222222222,https://www.wikidata.org/wiki/Q66958
+1677,ZH,Kollbrunn,,,
+1678,FR,Villars-sur-Glâne,7.1166666666667,46.783333333333,https://www.wikidata.org/wiki/Q69760
+1679,GE,Dardagny,5.9946,46.1952,https://www.wikidata.org/wiki/Q69471
+1680,GE,Choulex,6.22384,46.22625,https://www.wikidata.org/wiki/Q68180
+1681,ZH,Regensdorf,8.4744444444444,47.438333333333,https://www.wikidata.org/wiki/Q64205
+1682,Etranger,Lissa,,,
+1683,Etranger,Neidenburg,,,
+1684,Etranger,Heslach,,,
+1685,Etranger,Mindersdorf,,,
+1686,SG,Nesslau,9.21831,47.22957,https://www.wikidata.org/wiki/Q70720
+1687,BE,Madretsch,,,
+1688,GR,Santa Maria,,,
+1689,Etranger,Burzweiler,,,
+1690,Etranger,Regensburg,,,
+1691,Etranger,Aachen,,,
+1692,Etranger,Cagliari,,,
+1693,Etranger,Irun,,,
+1694,Etranger,Cottbus,,,
+1695,Etranger,Oakville,,,
+1696,Etranger,Nice,,,
+1697,Etranger,Piacenza,,,
+1698,Etranger,Nembro,,,
+1699,Etranger,Corme,,,
+1700,Etranger,Maracaibo,,,
+1701,Etranger,Maccio,,,
+1702,Etranger,Hégenheim,,,
+1703,Etranger,Göteborg,,,
+1704,VD,Niédens,,,
+1705,AR,Rehetobel,9.4816,47.42784,https://www.wikidata.org/wiki/Q67182
+1706,FR,Le Lac-Noir,,,
+1707,Etranger,Nérac,,,
+1708,AG,Dietwil,8.39204,47.14877,https://www.wikidata.org/wiki/Q64763
+1709,Etranger,Saint-Germain-sur-Talloires,,,
+1710,Etranger,Werden an der Ruhr,,,
+1711,Etranger,Neuwied,,,
+1712,Etranger,Waregem,,,
+1713,Etranger,Vizag,,,
+1714,LU,Escholzmatt-Marbach,7.9333333333333,46.916666666667,https://www.wikidata.org/wiki/Q14550
+1715,Etranger,Vérone,,,
+1716,Etranger,Hagen,,,
+1717,SO,Fulenbach,7.8361111111111,47.2775,https://www.wikidata.org/wiki/Q65312
+1718,BE,Langnau im Emmental,7.7852777777778,46.943333333333,https://www.wikidata.org/wiki/Q66300
+1719,VD,Curtilles,6.85,46.7,https://www.wikidata.org/wiki/Q68733
+1720,BE,Kirchberg,,,
+1721,LU,Egolzwil,8.0072222222222,47.184722222222,https://www.wikidata.org/wiki/Q14589
+1722,VS,Les Agettes,,,
+1723,SO,Biberist,7.5586111111111,47.182777777778,https://www.wikidata.org/wiki/Q66723
+1724,BE,Wengi,,,
+1725,LU,Beromünster,8.2,47.199722222222,https://www.wikidata.org/wiki/Q7146
+1726,BE,Haute-Ajoie,7,47.383333333333,https://www.wikidata.org/wiki/Q70609
+1727,ZH,Andelfingen,8.6788888888889,47.594722222222,https://www.wikidata.org/wiki/Q68423
+1728,BE,Schlosswil,,,
+1729,Etranger,Zutphen,,,
+1730,Etranger,Estrun,,,
+1731,Etranger,Watford,,,
+1732,SO,Flawil,9.19771,47.40532,https://www.wikidata.org/wiki/Q65506
+1733,SZ,Muotathal,8.7577777777778,46.974444444444,https://www.wikidata.org/wiki/Q66069
+1734,GR,Valendas,,,
+1735,SO,Drei Höfe,7.6333333333333,47.166666666667,https://www.wikidata.org/wiki/Q240486
+1736,Etranger,Elberfeld,,,
+1737,TG,Güttingen,9.28637,47.59645,https://www.wikidata.org/wiki/Q66317
+1738,AG,Möriken-Wildegg,8.1830555555556,47.416388888889,https://www.wikidata.org/wiki/Q65227
+1739,SZ,Siebnen,,,
+1740,Etranger,Olot,,,
+1741,Etranger,Timisoara,,,
+1742,Etranger,Kuopio,,,
+1743,Etranger,Ravenne,,,
+1744,Etranger,Biberach,,,
+1745,Etranger,Heiligenstadt,,,
+1746,ZH,Obfelden,8.4241666666667,47.263888888889,https://www.wikidata.org/wiki/Q65942
+1747,ZH,Zollikofen,7.4569444444444,46.999722222222,https://www.wikidata.org/wiki/Q69675
+1748,VD,Villette,,,
+1749,SG,Hemberg,9.17538888888889,47.3005,https://www.wikidata.org/wiki/Q65631
+1750,Etranger,Niedereggenen,,,
+1751,BL,Muttenz,7.6451888888889,47.52275,https://www.wikidata.org/wiki/Q66191
+1752,Etranger,Lindau,8.6719444444444,47.443055555556,https://www.wikidata.org/wiki/Q65759
+1753,BE,Wiedlisbach,7.6467,47.252,https://www.wikidata.org/wiki/Q67133
+1754,Etranger,Moncófar,,,
+1755,VD,Le Dézaley,,,
+1756,FR,Semsales,6.9333333333333,46.566666666667,https://www.wikidata.org/wiki/Q67699
+1757,VD,Savigny,6.7166666666667,46.566666666667,https://www.wikidata.org/wiki/Q70647
+1758,VS,Vouvry,6.8833333333333,46.333333333333,https://www.wikidata.org/wiki/Q68889
+1759,Etranger,Torgau,,,
+1760,GL,Nidfurn,,,
+1761,AG,Wohlenschwil,8.25903,47.41152,https://www.wikidata.org/wiki/Q65161
+1762,AR,Speicher,9.4433333333333,47.410555555556,https://www.wikidata.org/wiki/Q67148
+1763,VD,Saint-Cierges,,,
+1764,BE,Gondiswil,7.8736111111111,47.145555555556,https://www.wikidata.org/wiki/Q65477
+1765,BE,Oberwil bei Büren,7.4069444444444,47.130277777778,https://www.wikidata.org/wiki/Q67558
+1766,SZ,Wollerau,8.7194444444444,47.195555555556,https://www.wikidata.org/wiki/Q69647
+1767,Etranger,Manchester,,,
+1768,Etranger,Guebwiller,,,
+1769,Etranger,Halifax,,,
+1770,NE,Boudevilliers,,,
+1771,ZH,Turbenthal,8.8441666666667,47.438333333333,https://www.wikidata.org/wiki/Q65858
+1772,AG,Reinach,,,
+1773,ZH,Weiningen,8.4355555555556,47.420833333333,https://www.wikidata.org/wiki/Q66093
+1774,AR,Stein,,,
+1775,UR,Seedorf,,,
+1776,NE,Chézard-Saint-Martin,,,
+1777,SH,Trasadingen,8.4262,47.66979,https://www.wikidata.org/wiki/Q66977
+1778,SH,Beringen,8.57543,47.69643,https://www.wikidata.org/wiki/Q69186
+1779,BE,Rüegsau,7.6830555555556,47.016388888889,https://www.wikidata.org/wiki/Q67834
+1780,SG,Straubenzell,,,
+1781,SO,Büsserach,7.5402777777778,47.391388888889,https://www.wikidata.org/wiki/Q66770
+1782,Etranger,Hesse,,,
+1783,BE,Thunstetten,7.7569444444444,47.203888888889,https://www.wikidata.org/wiki/Q67788
+1784,Etranger,Tecuci,,,
+1785,BE,Mengestorf,,,
+1786,ZH,Wetzikon,8.7930555555556,47.320833333333,https://www.wikidata.org/wiki/Q68305
+1787,BE,Worben,7.29652,47.10071,https://www.wikidata.org/wiki/Q67364
+1788,BE,Liebewil,,,
+1789,BE,Bärau,,,
+1790,SG,Bürerwald,,,
+1791,BE,Laupen,7.2330555555556,46.9,https://www.wikidata.org/wiki/Q67112
+1792,SO,Boningen,7.8583333333333,47.309444444444,https://www.wikidata.org/wiki/Q65606
+1793,BE,Aeschi bei Spiez,7.6830555555556,46.649722222222,https://www.wikidata.org/wiki/Q68327
+1794,BE,Schangnau,7.88341,46.81117,https://www.wikidata.org/wiki/Q66700
+1795,BE,Wynigen,7.6680555555556,47.106666666667,https://www.wikidata.org/wiki/Q67439
+1796,SG,Bütschwil,,,
+1797,SG,Toggenburg,,,
+1798,GR,Paspels,,,
+1799,LU,Hitzkirch,8.2622222222222,47.225,https://www.wikidata.org/wiki/Q7114
+1800,BE,Leuzigen,7.4597222222222,47.176111111111,https://www.wikidata.org/wiki/Q67376
+1801,Etranger,Günzburg,,,
+1802,OW,Alpnach,8.2733333333333,46.94,https://www.wikidata.org/wiki/Q69296
+1803,Etranger,Säckingen,,,
+1804,BE,Wattenwil,,,
+1805,ZH,Oberengstringen,8.4633333333333,47.410277777778,https://www.wikidata.org/wiki/Q69963
+1806,VD,Echandens,6.55,46.533333333333,https://www.wikidata.org/wiki/Q68630
+1807,Etranger,Commentry,,,
+1808,Etranger,Piémont,,,
+1809,Etranger,Aarhus,,,
+1810,GE,Bardonnex,6.1,46.133333333333,https://www.wikidata.org/wiki/Q68191
+1811,Etranger,Macon,,,
+1812,VD,Vallée de Joux,,,
+1813,Etranger,Niederschwarzbach,,,
+1814,ZH,Embrach,8.5933333333333,47.510277777778,https://www.wikidata.org/wiki/Q65877
+1815,Etranger,Dillingen,,,
+1816,Etranger,Colombe,,,
+1817,Etranger,Bayeux,,,
+1818,Etranger,Garches,,,
+1819,Etranger,Friedrichsdorf,,,
+1820,VD,Aclens,6.5166666666667,46.566666666667,https://www.wikidata.org/wiki/Q30986
+1821,BE,Kehrsatz,7.4708333333333,46.909444444444,https://www.wikidata.org/wiki/Q68274
+1822,Etranger,Völkermarkt,,,
+1823,Etranger,Poméranie,,,
+1824,SZ,Galgenen,8.875,47.182222222222,https://www.wikidata.org/wiki/Q66580
+1825,BE,Unterseen,7.8497,46.6872,https://www.wikidata.org/wiki/Q67097
+1826,Etranger,Mackenzie,,,
+1827,TI,Pollegio,8.9333333333333,46.35,https://www.wikidata.org/wiki/Q67750
+1828,Etranger,Erlangen,,,
+1829,ZH,Wiesendangen,8.7911111111111,47.522222222222,https://www.wikidata.org/wiki/Q64853
+1830,Etranger,Bisaccia,,,
+1831,Etranger,Campolongo sul Brenta,,,
+1832,Etranger,Bossuet,,,
+1833,ZH,Fischenthal,8.9211111111111,47.332222222222,https://www.wikidata.org/wiki/Q65854
+1834,SO,Zuchwil,7.5597222222222,47.205555555556,https://www.wikidata.org/wiki/Q18473
+1835,VS,Guttet-Feschel,7.65,46.316666666667,https://www.wikidata.org/wiki/Q69988
+1836,SO,Welschenrohr,,,
+1837,BE,Lengnau,,,
+1838,Etranger,Bingen,,,
+1839,TG,Erlen,9.2330555555556,47.549722222222,https://www.wikidata.org/wiki/Q65439
+1840,VD,Borex,6.17809,46.37873,https://www.wikidata.org/wiki/Q52270
+1841,BE,Signau,7.7266666666667,46.921666666667,https://www.wikidata.org/wiki/Q67289
+1842,FR,Pont-en-Ogoz,7.0833333333333,46.683333333333,https://www.wikidata.org/wiki/Q66903
+1843,Etranger,Saint-Gingolph,6.806379,46.391671,https://www.wikidata.org/wiki/Q70528
+1844,VD,Chavannes-près-Renens,6.57625,46.52816,https://www.wikidata.org/wiki/Q52714
+1845,Etranger,Menden DE,,,
+1846,LU,Dagmersellen,7.9894444444444,47.213055555556,https://www.wikidata.org/wiki/Q14587
+1847,Etranger,Anduze,,,
+1848,Etranger,Birmingham,,,
+1849,Etranger,Pontaix,,,
+1850,Etranger,Valence,,,
+1851,Etranger,Bourg-en-Bresse,,,
+1852,Etranger,Deudehom,,,
+1853,GE,Satigny,6.03683,46.21406,https://www.wikidata.org/wiki/Q69451
+1854,Etranger,Amiens,,,
+1855,SO,Metzerlen-Mariastein,7.4666666666667,47.466666666667,https://www.wikidata.org/wiki/Q70025
+1856,AG,Lenzburg,8.1802777777778,47.3875,https://www.wikidata.org/wiki/Q69433
+1857,AG,Villmergen,8.2455555555556,47.348333333333,https://www.wikidata.org/wiki/Q64232
+1858,Etranger,Alost,,,
+1859,AG,Safenwil,7.9833333333333,47.319166666667,https://www.wikidata.org/wiki/Q64448
+1860,Etranger,Kirchberg,,,
+1861,Etranger,Elbistan,,,
+1862,Etranger,Poebene,,,
+1863,Etranger,Tarcento,,,
+1864,BE,Wohlen,,,
+1865,BE,St. Stephan,7.3830555555556,46.5,https://www.wikidata.org/wiki/Q66798
+1866,TG,Märstetten,9.0663888888889,47.6,https://www.wikidata.org/wiki/Q64992
+1867,TI,Tenero-Contra,8.85,46.183333333333,https://www.wikidata.org/wiki/Q67745
+1868,AG,Hallwil,8.1786111111111,47.330277777778,https://www.wikidata.org/wiki/Q65291
+1869,SG,Au,9.6333333333333,47.433055555556,https://www.wikidata.org/wiki/Q66254
+1870,SZ,Oberägeri,8.6136111111111,47.135833333333,https://www.wikidata.org/wiki/Q65017
+1871,AG,Oftringen,7.9236111111111,47.315,https://www.wikidata.org/wiki/Q68220
+1872,SH,Stein am Rhein,8.8591666666667,47.659444444444,https://www.wikidata.org/wiki/Q11939
+1873,VD,Corcelles-près-Concise,6.7,46.833333333333,https://www.wikidata.org/wiki/Q57102
+1874,GR,Chur,9.52965,46.85212,https://www.wikidata.org/wiki/Q69007
+1875,NE,Cernier,,,
+1876,GR,Malans,9.5761111111111,46.981944444444,https://www.wikidata.org/wiki/Q69053
+1877,FR,Vauderens,,,
+1878,BE,Saanen,7.2663888888889,46.483055555556,https://www.wikidata.org/wiki/Q66629
+1879,LU,Schüpfheim,8.015,46.95,https://www.wikidata.org/wiki/Q14559
+1880,LU,Hohenrain,8.3177777777778,47.180833333333,https://www.wikidata.org/wiki/Q7109
+1881,BE,Cormoret,7.0555555555556,47.175,https://www.wikidata.org/wiki/Q66425
+1882,ZH,Dürnten,8.8433333333333,47.278888888889,https://www.wikidata.org/wiki/Q67220
+1883,BE,Saint-Imier,7,47.152777777778,https://www.wikidata.org/wiki/Q66390
+1884,BE,Kirchlindach,7.4111111111111,47,https://www.wikidata.org/wiki/Q69688
+1885,BE,Saxeten,7.8330555555556,46.633055555556,https://www.wikidata.org/wiki/Q66009
+1886,BE,Bévilard,,,
+1887,Etranger,Châlons-en-Champagne,,,
+1888,AG,Villnachern,8.1608333333333,47.471388888889,https://www.wikidata.org/wiki/Q65995
+1889,AG,Baden,8.30799,47.47291,https://www.wikidata.org/wiki/Q63939
+1890,ZH,Zollikon et Affoltern,,,
+1891,AG,Veltheim,8.1483333333333,47.44,https://www.wikidata.org/wiki/Q65142
+1892,GR,Ramosch,,,
+1893,BL,Hölstein,7.7701388888889,47.426138888889,https://www.wikidata.org/wiki/Q69020
+1894,Etranger,Transvaal,,,
+1895,BL,Lausen,7.7597222222222,47.4725,https://www.wikidata.org/wiki/Q66733
+1896,LU,Ettiswil,8.0172222222222,47.148611111111,https://www.wikidata.org/wiki/Q14592
+1897,BE,Därstetten,7.48831,46.67202,https://www.wikidata.org/wiki/Q65721
+1898,GR,Breil/Brigels,9.0497222222222,46.766388888889,https://www.wikidata.org/wiki/Q64920
+1899,TG,Amriswil,9.3,47.549722222222,https://www.wikidata.org/wiki/Q69768
+1900,ZH,Dietikon,8.4038888888889,47.405555555556,https://www.wikidata.org/wiki/Q64070
+1901,SG,Mosnang,9.0330555555556,47.35,https://www.wikidata.org/wiki/Q65775
+1902,BE,Bätterkinden,7.5333333333333,47.133333333333,https://www.wikidata.org/wiki/Q67596
+1903,ZH,Illnau-Effretikon,8.7197222222222,47.415833333333,https://www.wikidata.org/wiki/Q64873
+1904,AG,Rothrist,7.8833333333333,47.302777777778,https://www.wikidata.org/wiki/Q64482
+1905,VD,Eysins,6.2,46.383333333333,https://www.wikidata.org/wiki/Q69287
+1906,Etranger,Málaga,,,
+1907,TG,Wängi,8.9497222222222,47.5,https://www.wikidata.org/wiki/Q68177
+1908,Etranger,Uman,,,
+1909,AG,Schinznach-Dorf,8.1444444444444,47.448333333333,https://www.wikidata.org/wiki/Q66991
+1910,ZH,Oberstammheim,,,
+1911,NE,La Jonchère,,,
+1912,VD,Cully,,,
+1913,TI,Morbio Inferiore,9.0166666666667,45.85,https://www.wikidata.org/wiki/Q70143
+1914,TG,Diessenhofen,8.7497222222222,47.683333333333,https://www.wikidata.org/wiki/Q67128
+1915,SG,Eichberg,9.53081,47.34295,https://www.wikidata.org/wiki/Q66271
+1916,TI,Vira,,,
+1917,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+1918,BE,Chaluet,,,
+1919,BE,Sonceboz-Sombeval,7.1791666666667,47.197222222222,https://www.wikidata.org/wiki/Q67292
+1920,BE,Zauggenried,7.5405555555556,47.072777777778,https://www.wikidata.org/wiki/Q67424
+1921,BE,Lyssach,7.5794444444444,47.064444444444,https://www.wikidata.org/wiki/Q67593
+1922,VD,Corsier-sur-Vevey,6.85,46.466666666667,https://www.wikidata.org/wiki/Q57110
+1923,FR,Marsens,7.0666666666667,46.65,https://www.wikidata.org/wiki/Q67075
+1924,VD,Mur,,,
+1925,VS,Montana,,,
+1926,Etranger,Campli,,,
+1927,TG,Schönholzerswilen,9.1403,47.5163,https://www.wikidata.org/wiki/Q68442
+1928,AG,Abtwil,8.3555555555556,47.176111111111,https://www.wikidata.org/wiki/Q69219
+1929,Etranger,Nürtingen,,,
+1930,BE,Rapperswil,7.41,47.063055555556,https://www.wikidata.org/wiki/Q67577
+1931,VD,Sainte-Croix,6.48894,46.82369,https://www.wikidata.org/wiki/Q70090
+1932,TI,Embrach,8.5933333333333,47.510277777778,https://www.wikidata.org/wiki/Q65877
+1933,VD,Montpreveyres,6.7333333333333,46.583333333333,https://www.wikidata.org/wiki/Q70617
+1934,TG,Berlingen,9.0163888888889,47.666388888889,https://www.wikidata.org/wiki/Q65463
+1935,TG,Roggwil,,,
+1936,VD,Faoug,7.07442,46.90243,https://www.wikidata.org/wiki/Q70559
+1937,LU,Grosswangen,8.05,47.133055555556,https://www.wikidata.org/wiki/Q7133
+1938,SO,Erschwil,7.5430555555556,47.373333333333,https://www.wikidata.org/wiki/Q66775
+1939,GR,Ilanz/Glion,9.206,46.775,https://www.wikidata.org/wiki/Q15056824
+1940,VS,Täsch,7.7666666666667,46.066666666667,https://www.wikidata.org/wiki/Q69305
+,,,7.81117,46.05405,
+1941,LU,Udligenswil,8.4005555555556,47.090555555556,https://www.wikidata.org/wiki/Q14577
+1942,SG,Thal,9.5666666666667,47.466388888889,https://www.wikidata.org/wiki/Q65543
+1943,FR,Saint-Antoine,,,
+1944,AG,Sins,8.3969444444444,47.191388888889,https://www.wikidata.org/wiki/Q64372
+1945,Etranger,Stockton,,,
+1946,BS,Basel,7.5905555555556,47.560555555556,https://www.wikidata.org/wiki/Q78
+1947,Etranger,Człuchów,,,
+1948,SO,Dulliken,7.9458333333333,47.3525,https://www.wikidata.org/wiki/Q65978
+1949,ZG,Risch,8.4313888888889,47.141111111111,https://www.wikidata.org/wiki/Q66604
+1950,FR,Siviriez,6.8833333333333,46.65,https://www.wikidata.org/wiki/Q68619
+1951,VD,Seigneux,,,
+1952,Etranger,Saar-Union,,,
+1953,Etranger,Nîmes,,,
+1954,Etranger,Mazamet,,,
+1955,VD,Mont-la-Ville,6.4094444444444,46.645833333333,https://www.wikidata.org/wiki/Q70547
+1956,SO,Feldbrunnen-St. Niklaus,7.5555555555556,47.220833333333,https://www.wikidata.org/wiki/Q66969
+1957,TI,Capriasca,8.9666666666667,46.066666666667,https://www.wikidata.org/wiki/Q69043
+1958,BE,Eggiwil,7.79567,46.87575,https://www.wikidata.org/wiki/Q67393
+1959,TI,Airolo,8.6166666666667,46.533333333333,https://www.wikidata.org/wiki/Q69265
+1960,Etranger,Zwickau,,,
+1961,Etranger,Étampes,,,
+1962,Etranger,Wilno,,,
+1963,Etranger,Neumarkt in Steiermark,,,
+1964,VS,Savièse,7.3333333333333,46.25,https://www.wikidata.org/wiki/Q69558
+1965,Etranger,Lodi,,,
+1966,Etranger,Miami,,,
+1967,Etranger,Alexandria,,,
+1968,Etranger,Wilster,,,
+1969,Etranger,Caen,,,
+1970,Etranger,Katowice,,,
+1971,Etranger,Wipperfürth,,,
+1972,Etranger,Mannheim-Neckarau,,,
+1973,Etranger,Montandon,,,
+1974,Etranger,Wittenberge,,,
+1975,Etranger,"Reddemitz, Westpreussen",,,
+1976,Etranger,Tuttlingen,,,
+1977,ZH,Höngg-Zürich,,,
+1978,BE,Glovelier,,,
+1979,BE,Diemtigen,7.5651,46.6494,https://www.wikidata.org/wiki/Q65957
+1980,Etranger,Duisburg,,,
+1981,Etranger,Karachi,,,
+1982,GL,Lütisburg,9.0811,47.3947,https://www.wikidata.org/wiki/Q66857
+1983,Etranger,Dijon,,,
+1984,Etranger,Groningen,,,
+1985,Etranger,Eupen,,,
+1986,GR,S-chanf,9.9833333333333,46.616388888889,https://www.wikidata.org/wiki/Q65552
+1987,VS,Gampel,,,
+1988,Etranger,Le Mans,,,
+1989,Etranger,Condrieu,,,
+1990,Etranger,The Bronx,,,
+1991,BE,Riggisberg,7.4780555555556,46.809444444444,https://www.wikidata.org/wiki/Q65618
+1992,BE,Seeberg,,,
+1993,LU,Littau,,,
+1994,VD,Saint-Loup,,,
+1995,LU,Stans,8.3666666666667,46.959444444444,https://www.wikidata.org/wiki/Q63931
+1996,SG,Vilters-Wangs,9.45,47.016666666667,https://www.wikidata.org/wiki/Q66246
+1997,GL,Obstalden,,,
+1998,AG,Unterkulm,8.115,47.312222222222,https://www.wikidata.org/wiki/Q65140
+1999,AG,Lengnau,,,
+2000,GL,Schwändi,,,
+2001,Etranger,Ankara,,,
+2002,ZH,Wildberg,8.8163888888889,47.428611111111,https://www.wikidata.org/wiki/Q67346
+2003,SG,Bruggen,,,
+2004,ZH,Seuzach,8.7294444444444,47.535833333333,https://www.wikidata.org/wiki/Q65805
+2005,Etranger,Grossbartloff,,,
+2006,SO,Recherswil,7.5944444444444,47.163611111111,https://www.wikidata.org/wiki/Q66849
+2007,GL,Ziegelbrücke,,,
+2008,TG,Balterswil,,,
+2009,Etranger,Yerevan,,,
+2010,VD,Montagny,,,
+2011,Etranger,Merseburg,,,
+2012,VD,Apples,,,
+2013,VD,Rennaz,6.9166666666667,46.366666666667,https://www.wikidata.org/wiki/Q70214
+2014,Etranger,Wörgl,,,
+2015,Etranger,Saint Petersburg,,,
+2016,ZH,Oberrieden,8.5780555555556,47.277777777778,https://www.wikidata.org/wiki/Q65528
+2017,VS,Riddes,7.2166666666667,46.166666666667,https://www.wikidata.org/wiki/Q68504
+2018,ZH,Gossau,,,
+2019,ZH,Urdorf,8.4277777777778,47.386666666667,https://www.wikidata.org/wiki/Q69109
+2020,BE,Grossaffoltern,7.3597222222222,47.066666666667,https://www.wikidata.org/wiki/Q65921
+2021,VD,Prévonloup,6.8833333333333,46.7,https://www.wikidata.org/wiki/Q70563
+2022,AG,Leimbach,,,
+2023,Etranger,Egringen,,,
+2024,BE,Schüpfen,7.37466,47.03577,https://www.wikidata.org/wiki/Q66783
+2025,BL,Augst,7.7206018,47.5338077,https://www.wikidata.org/wiki/Q66515
+2026,VD,Chavornay,6.56898,46.70654,https://www.wikidata.org/wiki/Q52726
+2027,BE,Montfaucon,7.05,47.283333333333,https://www.wikidata.org/wiki/Q68081
+,,,7.0505555555556,47.281388888889,
+2028,FR,Cugy,6.890833,46.814722,https://www.wikidata.org/wiki/Q70302
+2029,VS,Savièse,7.3333333333333,46.25,https://www.wikidata.org/wiki/Q69558
+2030,Etranger,Fiorano,,,
+2031,SO,Lüsslingen,,,
+2032,Etranger,Bailén,,,
+2033,LU,Schlierbach,8.1113888888889,47.224166666667,https://www.wikidata.org/wiki/Q7140
+2034,Etranger,Ostiano,,,
+2035,SG,Grub,9.5093611111111,47.448055555556,https://www.wikidata.org/wiki/Q67200
+2036,GR,Igis,,,
+2037,AG,Gränichen,8.0997222222222,47.358333333333,https://www.wikidata.org/wiki/Q64267
+2038,BE,Därligen,7.81287,46.65335,https://www.wikidata.org/wiki/Q65065
+2039,TI,Chiasso,9.03203,45.83535,https://www.wikidata.org/wiki/Q68111
+2040,BE,Neuenegg,7.2997222222222,46.9,https://www.wikidata.org/wiki/Q66125
+2041,SO,Kriegstetten,7.5986111111111,47.174722222222,https://www.wikidata.org/wiki/Q65213
+2042,Etranger,Schaplava,,,
+2043,SG,Berneck,9.61254,47.42465,https://www.wikidata.org/wiki/Q67225
+2044,BL,Allschwil,7.5358333333333,47.550833333333,https://www.wikidata.org/wiki/Q64727
+2045,Etranger,Bramstedt,,,
+2046,TG,Zihlschlacht-Sitterdorf,9.2663888888889,47.516666666667,https://www.wikidata.org/wiki/Q65443
+2047,GR,Tamins,9.4066,46.8294,https://www.wikidata.org/wiki/Q64740
+2048,AI,Oberegg,9.5533333333333,47.422222222222,https://www.wikidata.org/wiki/Q69407
+2049,SG,Schänis,9.0466,47.1588,https://www.wikidata.org/wiki/Q65446
+2050,BE,Obersteckholz,,,
+2051,LU,Buchrain,8.3475,47.095277777778,https://www.wikidata.org/wiki/Q7098
+2052,Etranger,Seissen,,,
+2053,BE,Hasle-Rüegsau,,,
+2054,BE,Rüeggisberg,7.4394,46.8218,https://www.wikidata.org/wiki/Q66387
+2055,FR,Torny,6.9666666666667,46.766666666667,https://www.wikidata.org/wiki/Q68048
+2056,Etranger,Le Cateau,,,
+2057,TI,Brusino,,,
+2058,TI,Porza,8.95,46.016666666667,https://www.wikidata.org/wiki/Q68808
+2059,NE,Brot-Plamboz,6.7333333333333,46.966666666667,https://www.wikidata.org/wiki/Q70519
+,,,6.75321,46.98481,
+2060,BE,Brügg,,,
+2061,VD,Pampigny,,,
+2062,FR,Ried bei Kerzers,7.18105,46.96335,https://www.wikidata.org/wiki/Q69938
+2063,BE,Matten,,,
+2064,Etranger,Miesbach,,,
+2065,FR,Pont-en-Ogoz,7.0833333333333,46.683333333333,https://www.wikidata.org/wiki/Q66903
+2066,BE,Oberhofen,,,
+2067,BE,Reichenbach im Kandertal,7.73708,46.57532,https://www.wikidata.org/wiki/Q66378
+2068,NE,Les Geneveys-sur-Coffrane,,,
+2069,FR,Autigny,7.02746,46.73984,https://www.wikidata.org/wiki/Q70180
+2070,ZH,Dietlikon,8.6191666666667,47.42,https://www.wikidata.org/wiki/Q65164
+2071,BE,Bümpliz,,,
+2072,Etranger,Rust,,,
+2073,ZH,Russikon,8.7777777777778,47.395277777778,https://www.wikidata.org/wiki/Q67957
+2074,ZH,Kempttal,,,
+2075,ZH,Rüschlikon,8.5541666666667,47.308055555556,https://www.wikidata.org/wiki/Q66819
+2076,AG,Zeiningen,7.8708333333333,47.542777777778,https://www.wikidata.org/wiki/Q65147
+2077,BE,Wangen,,,
+2078,Etranger,Nottingham,,,
+2079,SG,Niederbüren,9.2,47.466388888889,https://www.wikidata.org/wiki/Q66266
+2080,TG,Wigoltingen,9.0329,47.5958,https://www.wikidata.org/wiki/Q65834
+2081,SG,Kaltbrunn,9.0333333333333,47.216388888889,https://www.wikidata.org/wiki/Q66786
+2082,FR,Jaun,7.2666666666667,46.616666666667,https://www.wikidata.org/wiki/Q66911
+2083,SO,Derendingen,7.5899,47.19185,https://www.wikidata.org/wiki/Q69143
+2084,ZH,Hochfelden,8.5166666666667,47.524444444444,https://www.wikidata.org/wiki/Q68410
+2085,TG,Bettwiesen,9.0333333333333,47.5,https://www.wikidata.org/wiki/Q65823
+2086,Etranger,Recklinghauser,,,
+2087,LU,Horw,8.3111111111111,47.016388888889,https://www.wikidata.org/wiki/Q14570
+2088,Etranger,Päwesin,,,
+2089,ZH,Kleinhandelfingen,,,
+2090,AG,Othmarsingen,8.21528,47.40115,https://www.wikidata.org/wiki/Q65124
+2091,SG,Widnau,9.6333333333333,47.399722222222,https://www.wikidata.org/wiki/Q65612
+2092,SO,Gerlafingen,7.5738888888889,47.172222222222,https://www.wikidata.org/wiki/Q65629
+2093,BE,Niederhünigen,7.6363888888889,46.877222222222,https://www.wikidata.org/wiki/Q67657
+2094,BE,Clos du Doubs,7.15,47.35,https://www.wikidata.org/wiki/Q68869
+2095,BE,Péry-La Heutte,7.250004,47.194169,https://www.wikidata.org/wiki/Q16269754
+2096,AG,Buchs b. Aarau,,,
+2097,SG,Kirchberg,,,
+2098,Etranger,S. Vito al Tagliamento,,,
+2099,BL,Titterten,7.71745,47.401919444444,https://www.wikidata.org/wiki/Q64687
+2100,VD,Romainmôtier-Envy,6.4666666666667,46.7,https://www.wikidata.org/wiki/Q70671
+2101,FR,Promasens,,,
+2102,TI,Giubiasco,,,
+2103,VD,Treycovagnes,6.6,46.766666666667,https://www.wikidata.org/wiki/Q68718
+2104,VS,Nendaz,7.3,46.183333333333,https://www.wikidata.org/wiki/Q69540
+2105,FR,Châtel-Saint-Denis,6.901111,46.526944,https://www.wikidata.org/wiki/Q69517
+2106,Etranger,Brescia,,,
+2107,TI,Onsernone,8.6166666666667,46.2,https://www.wikidata.org/wiki/Q67664
+2108,ZH,Grüningen,8.7625,47.284166666667,https://www.wikidata.org/wiki/Q67120
+2109,SG,Bollingen,,,
+2110,AG,Strengelbach,7.9291666666667,47.281666666667,https://www.wikidata.org/wiki/Q64237
+2111,TI,Canobbio,8.9666666666667,46.033333333333,https://www.wikidata.org/wiki/Q68434
+2112,FR,Estavayer,6.8472277777778,46.850002777778,https://www.wikidata.org/wiki/Q28035756
+2113,GL,Engi,,,
+2114,VS,Saas-Balen,7.9166666666667,46.133333333333,https://www.wikidata.org/wiki/Q70304
+2115,SO,Grenchen,7.3958333333333,47.193055555556,https://www.wikidata.org/wiki/Q68248
+2116,Etranger,Sovramonte - Belluno,,,
+2117,Etranger,Reggio Emilia,,,
+2118,Etranger,Villeurbanne,,,
+2119,Etranger,Altensteigdorf,,,
+2120,BE,Lotzwil,7.7930555555556,47.191388888889,https://www.wikidata.org/wiki/Q66846
+2121,LU,Rickenbach,,,
+2122,AG,Rupperswil,8.1277777777778,47.4025,https://www.wikidata.org/wiki/Q65306
+2123,AG,Ammerswil,8.2066666666667,47.369166666667,https://www.wikidata.org/wiki/Q65198
+2124,BE,Röthenbach im Emmental,7.7330555555556,46.849722222222,https://www.wikidata.org/wiki/Q65741
+2125,LU,Rothenburg,8.2716666666667,47.093888888889,https://www.wikidata.org/wiki/Q7083
+2126,AG,Uerkheim,8.025,47.305277777778,https://www.wikidata.org/wiki/Q64376
+2127,AG,Suhr,8.0805555555556,47.374722222222,https://www.wikidata.org/wiki/Q65195
+2128,GR,Mastrils,,,
+2129,VS,Grächen,7.8166666666667,46.166666666667,https://www.wikidata.org/wiki/Q70097
+,,,7.84884,46.19671,
+2130,VS,Saint-Léonard,7.42695,46.25656,https://www.wikidata.org/wiki/Q68222
+2131,Etranger,Verviers-Hodimont,,,
+2132,BE,Saint-Imier,7,47.152777777778,https://www.wikidata.org/wiki/Q66390
+2133,NE,Saint-Blaise,6.9864,47.0131,https://www.wikidata.org/wiki/Q70424
+2134,BE,Delémont,7.3472222222222,47.365277777778,https://www.wikidata.org/wiki/Q63896
+2135,VS,Chermignon,,,
+2136,BE,Niederbipp,7.6958333333333,47.265833333333,https://www.wikidata.org/wiki/Q69168
+2137,ZH,Oerlikon,,,
+2138,TG,Lengwil,,,
+2139,AG,Niederrohrdorf,8.30485,47.42347,https://www.wikidata.org/wiki/Q64465
+2140,Etranger,Sondrio,,,
+2141,BE,La Baroche,7.1666666666667,47.416666666667,https://www.wikidata.org/wiki/Q70511
+2142,NE,Neuchâtel,6.9305555555556,46.990277777778,https://www.wikidata.org/wiki/Q69345
+2143,Etranger,Alt Wallmoden/Goslar,,,
+2144,SO,Matzendorf,7.6305555555556,47.306944444444,https://www.wikidata.org/wiki/Q66352
+2145,BE,Basse-Allaine,7.0333333333333,47.45,https://www.wikidata.org/wiki/Q70531
+2146,FR,Bollion,,,
+2147,BE,Champoz,7.3,47.258333333333,https://www.wikidata.org/wiki/Q66938
+2148,AG,Riniken,8.1875,47.495555555556,https://www.wikidata.org/wiki/Q66675
+2149,VS,Collombey-Muraz,6.95,46.266666666667,https://www.wikidata.org/wiki/Q70165
+2150,NE,Coffrane,,,
+2151,ZH,Feuerthalen,8.6452777777778,47.692222222222,https://www.wikidata.org/wiki/Q66283
+2152,SO,Selzach,7.4555555555556,47.205555555556,https://www.wikidata.org/wiki/Q67935
+2153,BE,Radelfingen,7.2683,46.9998,https://www.wikidata.org/wiki/Q67140
+2154,VD,Bofflens,6.5,46.7,https://www.wikidata.org/wiki/Q52267
+2155,BE,Fraubrunnen,7.5269444444444,47.085,https://www.wikidata.org/wiki/Q10317
+2156,LU,Römerswil,,,
+2157,ZH,Uetikon am See,8.6772222222222,47.266944444444,https://www.wikidata.org/wiki/Q67058
+2158,Etranger,Collebeato,,,
+2159,VD,Bercher,6.70623,46.69163,https://www.wikidata.org/wiki/Q52256
+2160,SH,Stein am Rhein,8.8591666666667,47.659444444444,https://www.wikidata.org/wiki/Q11939
+2161,BE,Malleray,,,
+2162,VS,Obergoms,8.35,46.533333333333,https://www.wikidata.org/wiki/Q70614
+2163,VD,Coppet,6.18907,46.32135,https://www.wikidata.org/wiki/Q57097
+2164,Etranger,Velký Osek,,,
+2165,SG,Staad,,,
+2166,Etranger,Altona,,,
+2167,Etranger,Neuburg am Inn,,,
+2168,Etranger,Nürnberg,,,
+2169,Etranger,Piancastagnaio,,,
+2170,Etranger,Erzurum,,,
+2171,AR,Wald,,,
+2172,BE,Sorvilier,7.3055555555556,47.240277777778,https://www.wikidata.org/wiki/Q67458
+2173,LU,Müswangen,,,
+2174,Etranger,Klein-Sangerberg,,,
+2175,ZH,Veltheim,8.1483333333333,47.44,https://www.wikidata.org/wiki/Q65142
+2176,FR,Marly,7.1666666666667,46.783333333333,https://www.wikidata.org/wiki/Q65891
+2177,BL,Buus,7.8644444444444,47.505277777778,https://www.wikidata.org/wiki/Q66325
+2178,VD,Mézières,6.9258,46.6785,https://www.wikidata.org/wiki/Q70637
+2179,NW,Ennetbürgen,8.4138888888889,46.984444444444,https://www.wikidata.org/wiki/Q64310
+2180,BE,Le Bémont,7.0166666666667,47.266666666667,https://www.wikidata.org/wiki/Q68502
+2181,VD,Puidoux,6.7666666666667,46.483333333333,https://www.wikidata.org/wiki/Q70545
+2182,GE,Laconnex,6.03404,46.1589,https://www.wikidata.org/wiki/Q69848
+2183,SO,Niedergösgen,7.9930555555556,47.373611111111,https://www.wikidata.org/wiki/Q65009
+2184,LU,Reiden,7.9683333333333,47.243055555556,https://www.wikidata.org/wiki/Q14614
+2185,BE,Mülchi,,,
+2186,VD,Rivaz,6.7666666666667,46.466666666667,https://www.wikidata.org/wiki/Q70515
+2187,ZG,Walchwil,8.5163888888889,47.099722222222,https://www.wikidata.org/wiki/Q66298
+2188,GR,Felsberg,9.4663888888889,46.833055555556,https://www.wikidata.org/wiki/Q64961
+2189,ZH,Unterengstringen,8.4497222222222,47.414722222222,https://www.wikidata.org/wiki/Q66079
+2190,NW,Ennetmoos,8.3372222222222,46.956666666667,https://www.wikidata.org/wiki/Q64599
+2191,GR,Landquart,9.5666666666667,46.949722222222,https://www.wikidata.org/wiki/Q70631
+2192,BE,Schwadernau,7.3052777777778,47.128888888889,https://www.wikidata.org/wiki/Q69858
+2193,SG,Gaiserwald,9.3275,47.430277777778,https://www.wikidata.org/wiki/Q66781
+2194,ZH,Wila,8.8491666666667,47.418333333333,https://www.wikidata.org/wiki/Q66752
+2195,BE,Mörigen,7.2133333333333,47.085,https://www.wikidata.org/wiki/Q69467
+2196,TI,Cadenazzo,8.95,46.15,https://www.wikidata.org/wiki/Q69790
+2197,BE,Krattigen,7.7402,46.65025,https://www.wikidata.org/wiki/Q65953
+2198,BE,Goldiwil,,,
+2199,Etranger,Simrishamn,,,
+2200,Etranger,Umeå,,,
+2201,UR,Flüelen,8.64318,46.91228,https://www.wikidata.org/wiki/Q69665
+2202,BE,Grosshöchstetten,7.6333333333333,46.899722222222,https://www.wikidata.org/wiki/Q67611
+2203,SG,Kappel,,,
+2204,TI,Balerna,9,45.85,https://www.wikidata.org/wiki/Q70141
+2205,NE,Bevaix,,,
+2206,VD,Ballaigues,6.4166666666667,46.733333333333,https://www.wikidata.org/wiki/Q43239
+2207,VD,Yvorne,6.95,46.333333333333,https://www.wikidata.org/wiki/Q70240
+2208,SH,Hofen,,,
+2209,AG,Schinznach,,,
+2210,FR,Muntelier,7.13023,46.93884,https://www.wikidata.org/wiki/Q68665
+2211,BE,Bätterkinden,7.5333333333333,47.133333333333,https://www.wikidata.org/wiki/Q67596
+2212,GR,Zizers,9.5652777777778,46.936111111111,https://www.wikidata.org/wiki/Q69616
+2213,BE,Auswil,7.8333333333333,47.1375,https://www.wikidata.org/wiki/Q67598
+2214,TI,Neggio,8.8833333333333,45.983333333333,https://www.wikidata.org/wiki/Q70038
+2215,AG,Ueken,,,
+2216,ZH,Bachenbülach,8.5458333333333,47.503888888889,https://www.wikidata.org/wiki/Q69887
+2217,GR,Masein,9.42293,46.69735,https://www.wikidata.org/wiki/Q64916
+2218,AG,Merenschwand,8.3775,47.262222222222,https://www.wikidata.org/wiki/Q64755
+2219,Etranger,Saint-Petersbourg,,,
+2220,BE,Ligerz,7.1333333333333,47.083333333333,https://www.wikidata.org/wiki/Q69495
+2221,SG,Gähwil,,,
+2222,NE,La Chaux-du-Milieu,6.7,47.016666666667,https://www.wikidata.org/wiki/Q70436
+2223,VD,Chevilly,6.4833333333333,46.65,https://www.wikidata.org/wiki/Q52785
+2224,TI,Giornico,8.8666666666667,46.4,https://www.wikidata.org/wiki/Q67763
+2225,VD,Villarzel,6.9166666666667,46.75,https://www.wikidata.org/wiki/Q70591
+2226,BE,Wabern,,,
+2227,VS,Veysonnaz,7.33807,46.19722,https://www.wikidata.org/wiki/Q70112
+2228,VD,Forel-sur-Lucens,,,
+2229,AG,Oberrohrdorf,8.3166666666667,47.421944444444,https://www.wikidata.org/wiki/Q64496
+2230,BE,Lützelflüh,7.6892,47.0091,https://www.wikidata.org/wiki/Q67826
+2231,VD,Reverolle,,,
+2232,NE,Hauterive,,,
+2233,NE,Le Pâquier,7.0551944444444,46.594277777778,https://www.wikidata.org/wiki/Q69918
+2234,BE,Grossaffoltern,7.3597222222222,47.066666666667,https://www.wikidata.org/wiki/Q65921
+2235,GR,Trun,8.9831,46.74332,https://www.wikidata.org/wiki/Q64951
+2236,SZ,Küssnacht,8.4408333333333,47.082777777778,https://www.wikidata.org/wiki/Q64183
+2237,SO,Neuendorf,7.7944444444444,47.3025,https://www.wikidata.org/wiki/Q66772
+2238,LU,Romoos,8.0269444444444,47.010277777778,https://www.wikidata.org/wiki/Q14557
+2239,BE,Wald,7.4716666666667,46.8825,https://www.wikidata.org/wiki/Q67251
+2240,VS,Binn,8.1833333333333,46.366666666667,https://www.wikidata.org/wiki/Q68471
+2241,VS,Mörel-Filet,8.048,46.357,https://www.wikidata.org/wiki/Q70643
+2242,SG,Häggenschwil,9.35,47.483055555556,https://www.wikidata.org/wiki/Q66087
+2243,ZH,Schlieren,8.4497222222222,47.398888888889,https://www.wikidata.org/wiki/Q69148
+2244,FR,Billens-Hennens,6.9,46.683333333333,https://www.wikidata.org/wiki/Q70454
+2245,BL,Basel,7.5905555555556,47.560555555556,https://www.wikidata.org/wiki/Q78
+2246,SG,Ebnat-Kappel,9.1234,47.2632,https://www.wikidata.org/wiki/Q66237
+2247,TG,Wagenhausen,8.8486111111111,47.659722222222,https://www.wikidata.org/wiki/Q65519
+2248,GR,Pratval,,,
+2249,VS,Stalden,,,
+2250,BE,Lauperswil,7.7416666666667,46.966111111111,https://www.wikidata.org/wiki/Q67238
+2251,SG,Vilters-Wangs,9.45,47.016666666667,https://www.wikidata.org/wiki/Q66246
+2252,GR,Vnà,,,
+2253,GR,Donat,,,
+2254,BE,Attiswil,7.6135,47.247180555556,https://www.wikidata.org/wiki/Q67257
+2255,Etranger,Séville,,,
+2256,SG,Waldkirch,9.2830555555556,47.466388888889,https://www.wikidata.org/wiki/Q64630
+2257,FR,Lossy,,,
+2258,AG,Baldingen,8.3163888888889,47.555277777778,https://www.wikidata.org/wiki/Q65381
+2259,GR,Vaz/Obervaz,9.55,46.716388888889,https://www.wikidata.org/wiki/Q64647
+2260,GR,Schluein,9.2330555555556,46.783055555556,https://www.wikidata.org/wiki/Q65093
+2261,VS,Bourg-Saint-Pierre,7.2,45.95,https://www.wikidata.org/wiki/Q70157
+2262,ZG,Neuheim,8.5777777777778,47.206666666667,https://www.wikidata.org/wiki/Q65986
+2263,OW,Kerns,8.2761111111111,46.9025,https://www.wikidata.org/wiki/Q67159
+2264,AR,Heiden,9.5311111111111,47.441111111111,https://www.wikidata.org/wiki/Q68315
+2265,LU,Flühli,8.0163888888889,46.883055555556,https://www.wikidata.org/wiki/Q14552
+2266,TG,Uesslingen-Buch,8.8166666666667,47.583055555556,https://www.wikidata.org/wiki/Q65810
+2267,TI,Cabbio,,,
+2268,VD,Mathod,6.5666666666667,46.766666666667,https://www.wikidata.org/wiki/Q68752
+2269,BL,Läufelfingen,7.85585,47.395038888889,https://www.wikidata.org/wiki/Q64719
+2270,AR,Bühler,9.4211111111111,47.372777777778,https://www.wikidata.org/wiki/Q67197
+2271,UR,Wassen,8.5991666666667,46.705555555556,https://www.wikidata.org/wiki/Q69635
+2272,LU,Neuenkirch,8.2025,47.099722222222,https://www.wikidata.org/wiki/Q7128
+2273,VD,Chapelle-sur-Moudon,,,
+2274,AG,Untersiggenthal,8.2538,47.50205,https://www.wikidata.org/wiki/Q64269
+2275,SO,Rüttenen,7.5297222222222,47.230277777778,https://www.wikidata.org/wiki/Q66998
+2276,SO,Dornach,7.618055555555555,47.47888888888889,https://www.wikidata.org/wiki/Q64694
+2277,AG,Erlinsbach,,,
+2278,ZH,Thalheim an der Thur,8.7541666666667,47.580555555556,https://www.wikidata.org/wiki/Q65844
+2279,AG,Hägglingen,8.25225,47.38914,https://www.wikidata.org/wiki/Q65286
+2280,FR,Bösingen,7.2333333333333,46.9,https://www.wikidata.org/wiki/Q67379
+2281,TG,Gachnang,8.85,47.533055555556,https://www.wikidata.org/wiki/Q64840
+2282,FR,Rechthalten,7.24597,46.76336,https://www.wikidata.org/wiki/Q66763
+2283,SO,Laupersdorf,7.6513888888889,47.315,https://www.wikidata.org/wiki/Q66407
+2284,VS,Icogne,7.4333333333333,46.283333333333,https://www.wikidata.org/wiki/Q69535
+2285,GR,Falera,9.2085,46.82735,https://www.wikidata.org/wiki/Q65086
+2286,SG,Rossrüti,,,
+2287,LU,Alberswil,8,47.149722222222,https://www.wikidata.org/wiki/Q14584
+2288,VS,Vollèges,,,
+2289,LU,Ruswil,8.1261111111111,47.083611111111,https://www.wikidata.org/wiki/Q7124
+2290,AG,Mägenwil,8.2333333333333,47.413611111111,https://www.wikidata.org/wiki/Q64551
+2291,SG,Neu Sankt-Johann,,,
+2292,AG,Boswil,8.3138888888889,47.301111111111,https://www.wikidata.org/wiki/Q65222
+2293,VS,Visperterminen,7.9,46.25,https://www.wikidata.org/wiki/Q70387
+2294,LU,Escholzmatt,,,
+2295,GR,Laax,9.25,46.799722222222,https://www.wikidata.org/wiki/Q69606
+,,,9.22791,46.84595,
+2296,TI,Bissone,8.9666666666667,45.95,https://www.wikidata.org/wiki/Q69269
+2297,SG,Quarten,9.2333333333333,47.099722222222,https://www.wikidata.org/wiki/Q66228
+2298,GR,Trimmis,9.5641666666667,46.895833333333,https://www.wikidata.org/wiki/Q69099
+2299,NE,Saint-Blaise,6.9864,47.0131,https://www.wikidata.org/wiki/Q70424
+2300,VD,Dizy,6.5,46.633333333333,https://www.wikidata.org/wiki/Q68902
+2301,VD,Lussery-Villars,6.5333333333333,46.633333333333,https://www.wikidata.org/wiki/Q70586
+2302,VS,Vétroz,7.27066,46.22584,https://www.wikidata.org/wiki/Q69515
+2303,TI,Capolago,,,
+2304,VD,Sugnens,,,
+2305,VD,Burinaux,,,
+2306,BE,Merzligen,7.25,47.083333333333,https://www.wikidata.org/wiki/Q70293
+2307,Etranger,Montreux-Vieux,,,
+2308,AG,Staffelbach,8.0472222222222,47.283055555556,https://www.wikidata.org/wiki/Q64239
+2309,SO,Oensingen,7.7138888888889,47.288611111111,https://www.wikidata.org/wiki/Q65846
+2310,BE,Oppligen,7.5972222222222,46.820277777778,https://www.wikidata.org/wiki/Q67659
+2311,AG,Oberkulm,8.1236111111111,47.3,https://www.wikidata.org/wiki/Q65426
+2312,TG,Mammern,8.9155555555556,47.645277777778,https://www.wikidata.org/wiki/Q69956
+2313,TG,Amlikon-Bissegg,9.0497222222222,47.566388888889,https://www.wikidata.org/wiki/Q65787
+2314,VS,Simplon,8.05,46.2,https://www.wikidata.org/wiki/Q69194
+2315,VD,Bussigny,6.55,46.55,https://www.wikidata.org/wiki/Q52300
+2316,TG,Amriswil,9.3,47.549722222222,https://www.wikidata.org/wiki/Q69768
+2317,GR,Thalkirch,,,
+2318,BE,Grossaffoltern,7.3597222222222,47.066666666667,https://www.wikidata.org/wiki/Q65921
+2319,BE,Grasswil b. Seeberg,,,
+2320,ZH,Benken,,,
+2321,VD,Suscévaz,6.5833333333333,46.766666666667,https://www.wikidata.org/wiki/Q70017
+2322,VD,La Sarraz,6.50837,46.65798,https://www.wikidata.org/wiki/Q70210
+2323,BE,Bözingen,,,
+2324,Etranger,Neuhaus,,,
+2325,LU,Cham,8.4594444444444,47.180277777778,https://www.wikidata.org/wiki/Q69235
+2326,AR,Hundwil,9.3194444444444,47.365277777778,https://www.wikidata.org/wiki/Q69652
+2327,AG,Königsfelden bei Brugg,,,
+2328,TI,Maggia,8.708,46.248,https://www.wikidata.org/wiki/Q67996
+2329,Etranger,Céphalonie,,,
+2330,FR,St. Antoni,,,
+2331,VD,Château-d’Oex,7.1166666666667,46.466666666667,https://www.wikidata.org/wiki/Q52699
+2332,VD,Combremont-le-Grand,,,
+2333,FR,Dompierre,6.88008,46.71129,https://www.wikidata.org/wiki/Q68896
+2334,VS,Brig-Glis,7.9876194444444,46.315916666667,https://www.wikidata.org/wiki/Q15583
+2335,BE,Brugg,,,
+2336,VD,Champvent,6.57186,46.78302,https://www.wikidata.org/wiki/Q52694
+2337,BE,Forst,,,
+2338,SH,Guntmadingen,,,
+2339,ZH,Wettswil am Albis,8.4747222222222,47.338611111111,https://www.wikidata.org/wiki/Q65934
+2340,GR,Celerina/Schlarigna,9.859055555555555,46.51213888888889,https://www.wikidata.org/wiki/Q64964
+2341,GR,Breil/Brigels,9.0497222222222,46.766388888889,https://www.wikidata.org/wiki/Q64920
+2342,BE,Rüderswil,7.7238888888889,46.984444444444,https://www.wikidata.org/wiki/Q67644
+2343,AG,Aristau,8.36236,47.28563,https://www.wikidata.org/wiki/Q64752
+2344,Etranger,Havelange,,,
+2345,Etranger,Itzehoe,,,
+2346,Etranger,Pasadena,,,
+2347,Etranger,Bendorf,,,
+2348,TI,Campo (Vallemaggia),8.4833333333333,46.283333333333,https://www.wikidata.org/wiki/Q67864
+2349,Etranger,Sumatra,,,
+2350,Etranger,Bingum,,,
+2351,Etranger,Pekin,,,
+2352,VS,Champex,,,
+2353,NE,La Chaux-de-Fonds,6.8295583333333,47.099627777778,https://www.wikidata.org/wiki/Q68124
+2354,Etranger,Thonon-les-Bains,,,
+2355,Etranger,Dorfchemnitz,,,
+2356,Etranger,Baden bei Wien,,,
+2357,Etranger,Oberwart,,,
+2358,Etranger,Kirchheim/Teck,,,
+2359,Etranger,Newmachar,,,
+2360,Etranger,Lerida,,,
+2361,Etranger,Lauchheim,,,
+2362,TG,Fischingen,8.9666666666667,47.416388888889,https://www.wikidata.org/wiki/Q65525
+2363,Etranger,Gelsenkirchen,,,
+2364,Etranger,Leverkusen,,,
+2365,VS,Lausanne,6.6333333333333,46.533333333333,https://www.wikidata.org/wiki/Q807
+2366,Etranger,Geesthacht,,,
+2367,Etranger,Tel Aviv,,,
+2368,Etranger,Saint-Brieuc,,,
+2369,Etranger,La Paz,,,
+2370,Etranger,Örkelljunga,,,
+2371,Etranger,Bayonne,,,
+2372,Etranger,Ehingen,,,
+2373,VD,Combremont-le-Petit,,,
+2374,ZH,Bassersdorf,8.6283333333333,47.443055555556,https://www.wikidata.org/wiki/Q69734
+2375,Etranger,Etat de New-York,,,
+2376,Etranger,Farsala,,,
+2377,Etranger,Duffel,,,
+2378,Etranger,Tremessen,,,
+2379,Etranger,Gevelsberg,,,
+2380,Etranger,Troyes,,,
+2381,Etranger,Hoensbroek,,,
+2382,ZG,Menzingen,8.5916666666667,47.180277777778,https://www.wikidata.org/wiki/Q66050
+2383,AG,Neuenhof,8.3291666666667,47.446944444444,https://www.wikidata.org/wiki/Q64461
+2384,VS,Saint-Gingolph,6.806379,46.391671,https://www.wikidata.org/wiki/Q70528
+2385,NE,Savagnier,,,
+2386,Etranger,Blumenau,,,
+2387,Etranger,Près de Francfort,,,
+2388,VS,Salgesch,7.5666666666667,46.3,https://www.wikidata.org/wiki/Q70317
+2389,LU,Hochdorf,8.2888888888889,47.166388888889,https://www.wikidata.org/wiki/Q7102
+2390,VS,Liddes,7.1833333333333,45.983333333333,https://www.wikidata.org/wiki/Q68899
+2391,VD,Giez,6.6166666666667,46.816666666667,https://www.wikidata.org/wiki/Q70661
+2392,GR,Vals,9.1833333333333,46.616388888889,https://www.wikidata.org/wiki/Q64585
+2393,LU,Perlen,,,
+2394,TI,Sessa,,,
+2395,VD,Corseaux-sur-Vevey,,,
+2396,AG,Rekingen,8.3236111111111,47.570555555556,https://www.wikidata.org/wiki/Q65580
+2397,VD,Valeyres-sous-Rances,6.5333333333333,46.75,https://www.wikidata.org/wiki/Q70501
+2398,ZH,"Bülach, Rafz",,,
+2399,BE,Dürrenroth,7.791,47.0892,https://www.wikidata.org/wiki/Q69819
+2400,Etranger,Endingen am Kaiserstuhl,,,
+2401,Etranger,Sydney,,,
+2402,BE,Frutigen,7.6497222222222,46.583055555556,https://www.wikidata.org/wiki/Q66208
+2403,LU,Ermensee,8.2333333333333,47.233055555556,https://www.wikidata.org/wiki/Q7115
+2404,GL,Glarus Süd,9.0741638888889,46.994436111111,https://www.wikidata.org/wiki/Q70695
+2405,VD,Lignerolle,6.45,46.733333333333,https://www.wikidata.org/wiki/Q70503
+2406,FR,Riaz,7.0666666666667,46.633333333333,https://www.wikidata.org/wiki/Q67741
+2407,BE,Gurtendorf bei Wabern,,,
+2408,ZH,Volketswil,8.6952777777778,47.390555555556,https://www.wikidata.org/wiki/Q69754
+2409,GR,Versam,,,
+2410,ZG,Erlenbach,8.5922222222222,47.304444444444,https://www.wikidata.org/wiki/Q69203
+2411,LU,Bern,7.44743,46.94798,https://www.wikidata.org/wiki/Q70
+2412,TI,Comano,8.95,46.033333333333,https://www.wikidata.org/wiki/Q70133
+2413,BE,Erlenbach im Simmental,7.5529,46.6608,https://www.wikidata.org/wiki/Q66132
+2414,Etranger,Udupi,,,
+2415,VS,Saillon,7.1833333333333,46.166666666667,https://www.wikidata.org/wiki/Q70710
+2416,ZH,Hagenbuch,8.8883333333333,47.5225,https://www.wikidata.org/wiki/Q65926
+2417,TI,Gordola,8.86378,46.18838,https://www.wikidata.org/wiki/Q69671
+2418,SO,Gossliwil,,,
+2419,AG,Rüfenach,,,
+2420,BE,Stettlen,7.5236111111111,46.959444444444,https://www.wikidata.org/wiki/Q70052
+2421,TG,Rohren-Toos,,,
+2422,GR,Flims,9.2830555555556,46.833055555556,https://www.wikidata.org/wiki/Q65049
+2423,BE,Trub,7.8830555555556,46.933055555556,https://www.wikidata.org/wiki/Q67842
+2424,SG,Wildhaus,,,
+2425,AG,Bünzen,8.3261111111111,47.310833333333,https://www.wikidata.org/wiki/Q64784
+2426,NE,Wavre,,,
+2427,LU,Wauwil,8.0166666666667,47.183055555556,https://www.wikidata.org/wiki/Q14623
+2428,AG,Beinwil,,,
+2429,TI,Sonogno,,,
+2430,TI,Bosco/Gurin,8.5,46.316666666667,https://www.wikidata.org/wiki/Q70328
+2431,VD,Founex,6.18506,46.33644,https://www.wikidata.org/wiki/Q69331
+2432,VD,Prangins,6.25,46.4,https://www.wikidata.org/wiki/Q69293
+2433,BE,Mittelhäusern,,,
+2434,ZH,Bäretswil,8.8575,47.336944444444,https://www.wikidata.org/wiki/Q65868
+2435,ZH,Bäretswil,8.8575,47.336944444444,https://www.wikidata.org/wiki/Q65868
+2436,SZ,Feusisberg,8.7472222222222,47.186944444444,https://www.wikidata.org/wiki/Q69654
+2437,ZH,Pfungen,8.6469444444444,47.515555555556,https://www.wikidata.org/wiki/Q65119
+2438,Etranger,Badenweiler,,,
+2439,SO,Rüeggisberg,7.4394,46.8218,https://www.wikidata.org/wiki/Q66387
+2440,TG,Sulgen,9.19313,47.54235,https://www.wikidata.org/wiki/Q65971
+2441,Etranger,Achern,,,
+2442,Etranger,Bodenfelde an der Weser,,,
+2443,SO,Bärschwil,7.4736111111111,47.383333333333,https://www.wikidata.org/wiki/Q66716
+2444,ZH,Uster,8.7191666666667,47.349166666667,https://www.wikidata.org/wiki/Q64032
+2445,GR,Schloss Reichenau,,,
+2446,Etranger,Köln am Rhein,,,
+2447,Etranger,Salonique,,,
+2448,VD,Agiez,6.5,46.716666666667,https://www.wikidata.org/wiki/Q43188
+2449,GR,Klosters,9.8833388888889,46.883333333333,https://www.wikidata.org/wiki/Q68236
+2450,Etranger,Chingford,,,
+2451,AG,Neuenegg,7.2997222222222,46.9,https://www.wikidata.org/wiki/Q66125
+2452,NE,Val-de-Travers,6.6,46.9,https://www.wikidata.org/wiki/Q70526
+2453,GE,Veyrier,6.1833333333333,46.166666666667,https://www.wikidata.org/wiki/Q69587
+2454,LU,Emmenweid,,,
+2455,ZH,Berlin,,,
+2456,FR,Broc,7.1,46.6,https://www.wikidata.org/wiki/Q67519
+2457,BE,Worb,7.5644444444444,46.930555555556,https://www.wikidata.org/wiki/Q69732
+2458,ZH,Trüllikon,8.6930555555556,47.639166666667,https://www.wikidata.org/wiki/Q67933
+2459,BE,Golaten,,,
+2460,Etranger,Toledo,,,
+2461,OW,Lungern,8.1597222222222,46.787222222222,https://www.wikidata.org/wiki/Q64292
+2462,AG,Schafisheim,8.1430555555556,47.378888888889,https://www.wikidata.org/wiki/Q65993
+2463,Etranger,Hammern,,,
+2464,ZH,Pfäffikon,8.7822222222222,47.366666666667,https://www.wikidata.org/wiki/Q68269
+2465,SO,Winznau,7.9333333333333,47.365555555556,https://www.wikidata.org/wiki/Q65588
+2466,Etranger,Doncaster,,,
+2467,BE,Vendlincourt,7.15,47.45,https://www.wikidata.org/wiki/Q58038
+2468,AG,Endingen,8.2902777777778,47.538611111111,https://www.wikidata.org/wiki/Q69438
+2469,BE,Arni,7.6652777777778,46.934722222222,https://www.wikidata.org/wiki/Q67569
+2470,Etranger,Constantinople,,,
+2471,Etranger,Heidelsheim,,,
+2472,GE,Céligny,6.2,46.35,https://www.wikidata.org/wiki/Q69410
+2473,GR,Davos-Glaris,,,
+2474,VD,Blonay,,,
+2475,BE,Ursenbach,7.7736111111111,47.1375,https://www.wikidata.org/wiki/Q70287
+2476,LU,Menzberg,,,
+2477,ZH,Kämmoos/Bübikon,,,
+2478,VD,Oron-la-Ville,,,
+2479,SG,Mosnang,9.0330555555556,47.35,https://www.wikidata.org/wiki/Q65775
+2480,BE,Ostermundigen,7.4833333333333,46.955277777778,https://www.wikidata.org/wiki/Q69682
+2481,GR,Sumvitg,8.9330555555556,46.716388888889,https://www.wikidata.org/wiki/Q64942
+2482,BE,Mühleberg,,,
+2483,Etranger,Pise,,,
+2484,GR,Splügen,,,
+2485,GR,Filisur,,,
+2486,BL,Ormalingen,7.8763888888889,47.470555555556,https://www.wikidata.org/wiki/Q67918
+2487,BE,Daucher-Alfermée,,,
+2488,SO,Oberbuchsiten,7.7666666666667,47.310833333333,https://www.wikidata.org/wiki/Q67008
+2489,FR,Schmitten,,,
+2490,BE,Hilterfingen,7.65822,46.7432,https://www.wikidata.org/wiki/Q66042
+2491,AR,Gais,9.4511111111111,47.360555555556,https://www.wikidata.org/wiki/Q67171
+2492,TG,Rickenbach,9.0497222222222,47.449722222222,https://www.wikidata.org/wiki/Q68440
+2493,BE,Muri,,,
+2494,SO,Metzerlen-Mariastein,7.4666666666667,47.466666666667,https://www.wikidata.org/wiki/Q70025
+2495,Etranger,Bournemouth,,,
+2496,ZH,Aesch,8.4380555555556,47.336944444444,https://www.wikidata.org/wiki/Q68342
+2497,Etranger,Angoulème,,,
+2498,AG,Möriken-Wildegg,8.1830555555556,47.416388888889,https://www.wikidata.org/wiki/Q65227
+2499,Etranger,Padang,,,
+2500,SG,Flums,9.3439,47.0928,https://www.wikidata.org/wiki/Q69954
+2501,AG,Endingen,8.2902777777778,47.538611111111,https://www.wikidata.org/wiki/Q69438
+2502,AR,Urnäsch,9.2858333333333,47.318055555556,https://www.wikidata.org/wiki/Q67168
+2503,Etranger,Cernobbio,,,
+2504,TG,Lommis,8.9830555555556,47.516388888889,https://www.wikidata.org/wiki/Q65014
+2505,VS,Euseigne,,,
+2506,TI,Bodio,,,
+2507,TG,Kradolf-Schönenberg,9.1830555555556,47.516388888889,https://www.wikidata.org/wiki/Q65830
+2508,BE,Ringgenberg,7.8951,46.7029,https://www.wikidata.org/wiki/Q66582
+2509,FR,Givisiez,7.1333333333333,46.816666666667,https://www.wikidata.org/wiki/Q66461
+2510,BE,Guemligen,,,
+2511,Etranger,Sudbury,,,
+2512,Etranger,Brandenburg an der Havel,,,
+2513,SO,Wattwil,9.08303,47.29572,https://www.wikidata.org/wiki/Q66601
+2514,LU,Weggis,8.4383333333333,47.032222222222,https://www.wikidata.org/wiki/Q14580
+2515,TI,Vacallo,9.0333333333333,45.85,https://www.wikidata.org/wiki/Q67470
+2516,LU,Mauensee,8.0658333333333,47.167222222222,https://www.wikidata.org/wiki/Q7136
+2517,AG,Schöftland,8.0527777777778,47.305277777778,https://www.wikidata.org/wiki/Q65411
+2518,BE,Kappelen,7.2680555555556,47.060833333333,https://www.wikidata.org/wiki/Q65924
+2519,Etranger,Kobe,,,
+2520,BE,Zollikofen,7.4569444444444,46.999722222222,https://www.wikidata.org/wiki/Q69675
+2521,VD,Senarclens,6.4833333333333,46.6,https://www.wikidata.org/wiki/Q70533
+2522,GE,Soral,6.0427,46.1434,https://www.wikidata.org/wiki/Q65535
+2523,BE,Sigriswil,7.7166666666667,46.716388888889,https://www.wikidata.org/wiki/Q65732
+2524,TG,Sulgen,9.19313,47.54235,https://www.wikidata.org/wiki/Q65971
+2525,VS,Daviaz,,,
+2526,FR,Salvenach,,,
+2527,LU,Wolhusen,8.0744444444444,47.061666666667,https://www.wikidata.org/wiki/Q7125
+2528,VS,Conthey,7.3,46.216666666667,https://www.wikidata.org/wiki/Q69563
+,,,7.25479,46.2725,
+2529,GR,Vignogn,,,
+2530,VS,Granges,,,
+2531,Etranger,Anrath,,,
+2532,BE,Lauterbrunnen,7.9086111111111,46.599722222222,https://www.wikidata.org/wiki/Q64011
+2533,LU,Nebikon,7.9780555555556,47.1925,https://www.wikidata.org/wiki/Q14610
+2534,LU,Schongau,8.2580555555556,47.267222222222,https://www.wikidata.org/wiki/Q7121
+2535,GR,Sumvitg,8.9330555555556,46.716388888889,https://www.wikidata.org/wiki/Q64942
+2536,GR,Sarn,,,
+2537,AG,Reitnau,8.0444444444444,47.2525,https://www.wikidata.org/wiki/Q64393
+2538,LU,Malters,8.1830555555556,47.036944444444,https://www.wikidata.org/wiki/Q14572
+2539,BE,Epsach,7.2201,47.07041,https://www.wikidata.org/wiki/Q67371
+2540,SG,Sennwald,9.5,47.266388888889,https://www.wikidata.org/wiki/Q69393
+,,,9.47681,47.24391,
+2541,AG,Gebenstorf,8.24235,47.4795,https://www.wikidata.org/wiki/Q64486
+2542,VD,Montcherand,6.5166666666667,46.733333333333,https://www.wikidata.org/wiki/Q68653
+2543,TG,Kesswil,9.3129,47.58756,https://www.wikidata.org/wiki/Q69413
+2544,ZH,Altstätten,9.54875,47.37801,https://www.wikidata.org/wiki/Q68281
+2545,BE,Neuegg,,,
+2546,BE,Schwarzenburg,7.3333333333333,46.816666666667,https://www.wikidata.org/wiki/Q70708
+2547,ZH,Dinhard,8.7697222222222,47.5575,https://www.wikidata.org/wiki/Q65795
+2548,ZH,Adlikon,,,
+2549,TG,Müllheim,9.00367,47.60279,https://www.wikidata.org/wiki/Q65471
+2550,BE,Niedermuhlern,7.4655555555556,46.861388888889,https://www.wikidata.org/wiki/Q66148
+2551,FR,Courgevaux,7.11215,46.90648,https://www.wikidata.org/wiki/Q67456
+2552,UR,Silenen,8.6691666666667,46.791111111111,https://www.wikidata.org/wiki/Q69135
+2553,VS,Anchettes,,,
+2554,FR,Delley-Portalban,6.967778,46.913333,https://www.wikidata.org/wiki/Q68552
+2555,SG,Wartau,9.4833333333333,47.083055555556,https://www.wikidata.org/wiki/Q66788
+2556,GL,Rüti,,,
+2557,TG,Bichelsee-Balterswil,8.9163888888889,47.449722222222,https://www.wikidata.org/wiki/Q65820
+2558,AR,Schwellbrunn,9.249,47.3523,https://www.wikidata.org/wiki/Q64622
+2559,AG,Schmiedrued,8.1125,47.263888888889,https://www.wikidata.org/wiki/Q65583
+2560,BE,Bangerten,,,
+2561,GR,Flerden,9.3997222222222,46.699722222222,https://www.wikidata.org/wiki/Q64800
+2562,Etranger,Wattwiller,,,
+2563,AG,Seengen,8.2083333333333,47.3275,https://www.wikidata.org/wiki/Q65004
+2564,TG,Wängi,,,
+2565,BE,Mühleberg,7.2666666666667,46.949722222222,https://www.wikidata.org/wiki/Q67278
+2566,ZH,Reppischmühle,,,
+2567,TI,Russo,,,
+2568,TG,Neunforn,8.7830555555556,47.599722222222,https://www.wikidata.org/wiki/Q65020
+2569,VS,Collombey-Muraz,6.95,46.266666666667,https://www.wikidata.org/wiki/Q70165
+2570,TI,Arogno,8.9833333333333,45.966666666667,https://www.wikidata.org/wiki/Q68449
+2571,TG,Amriswil,9.3,47.549722222222,https://www.wikidata.org/wiki/Q69768
+2572,GE,Chêne-Bourg,6.19704,46.19737,https://www.wikidata.org/wiki/Q69035
+2573,SZ,Altendorf,8.83,47.192222222222,https://www.wikidata.org/wiki/Q69625
+2574,BL,Lampenberg,7.7584305555556,47.424711111111,https://www.wikidata.org/wiki/Q64724
+2575,SG,Ebnat,,,
+2576,VS,Leuk,7.6333333333333,46.316666666667,https://www.wikidata.org/wiki/Q69590
+2577,BE,Worb,7.5644444444444,46.930555555556,https://www.wikidata.org/wiki/Q69732
+2578,SG,Nesslau,9.21831,47.22957,https://www.wikidata.org/wiki/Q70720
+2579,BL,Bärenwil bei Langenbruck,,,
+2580,SG,Turbenthal,8.8441666666667,47.438333333333,https://www.wikidata.org/wiki/Q65858
+2581,Etranger,Bovenden bei Göttingen,,,
+2582,GR,Untervaz,9.535,46.9275,https://www.wikidata.org/wiki/Q69095
+2583,VD,Les Echerins,,,
+2584,BE,Hellsau,7.64832,47.14372,https://www.wikidata.org/wiki/Q68603
+2585,VD,Signy-Avenex,6.197359722222222,46.389849444444444,https://www.wikidata.org/wiki/Q69324
+2586,Etranger,Böblingen,,,
+2587,GR,Castiel,,,
+2588,FR,Bussy,,,
+2589,VS,Saint-Martin,,,
+2590,SO,Aetingen,,,
+2591,ZH,Schlatt,,,
+2592,TI,Lisora,,,
+2593,GE,Plan-les-Ouates,6.1166666666667,46.166666666667,https://www.wikidata.org/wiki/Q65273
+2594,TG,Tägerwilen,9.1311111111111,47.655555555556,https://www.wikidata.org/wiki/Q66188
+2595,GR,San Vittore,9.1061,46.238,https://www.wikidata.org/wiki/Q65687
+2596,AG,Remetschwil,8.3319444444444,47.410833333333,https://www.wikidata.org/wiki/Q64500
+2597,SO,Obergösgen,7.9527777777778,47.366388888889,https://www.wikidata.org/wiki/Q65849
+2598,SO,Egerkingen,7.7944444444444,47.321944444444,https://www.wikidata.org/wiki/Q64275
+2599,VS,Naters,7.9886,46.3237,https://www.wikidata.org/wiki/Q67040
+2600,VS,Brig-Glis,7.9876194444444,46.315916666667,https://www.wikidata.org/wiki/Q15583
+2601,FR,Düdingen,7.1905611111111,46.846105555556,https://www.wikidata.org/wiki/Q70108
+2602,VS,Chalais,7.5,46.266666666667,https://www.wikidata.org/wiki/Q70736
+2603,VS,Saint-Pierre-de-Clages,,,
+2604,NE,La Chaux-de-Fonds,6.8295583333333,47.099627777778,https://www.wikidata.org/wiki/Q68124
+2605,GE,Lancy,6.11578,46.18969,https://www.wikidata.org/wiki/Q64065
+2606,AG,Hendschiken,8.2194444444444,47.387222222222,https://www.wikidata.org/wiki/Q65319
+2607,AI,Gonten,9.3466666666667,47.328333333333,https://www.wikidata.org/wiki/Q64604
+2608,SO,Starrkirch-Wil,7.9263888888889,47.348333333333,https://www.wikidata.org/wiki/Q66154
+2609,SG,Winkeln,,,
+2610,VD,Jouxtens-Mézery,6.6,46.55,https://www.wikidata.org/wiki/Q70243
+2611,TI,Ascona,8.7666666666667,46.15,https://www.wikidata.org/wiki/Q63992
+2612,Etranger,L'Haÿ-les-Roses,,,
+2613,Etranger,Andernach/Rhein,,,
+2614,Etranger,Cambrai,,,
+2615,Etranger,"Cincinnati, Ohio",,,
+2616,Etranger,Schleswig,,,
+2617,TG,Sulgen,9.19313,47.54235,https://www.wikidata.org/wiki/Q65971
+2618,SZ,Küssnacht,8.4408333333333,47.082777777778,https://www.wikidata.org/wiki/Q64183
+2619,TG,Wuppenau ou Wil,,,
+2620,SG,Rebstein,9.5833333333333,47.399722222222,https://www.wikidata.org/wiki/Q17834
+2621,Etranger,Sandgrub-Liebenau,,,
+2622,Etranger,Gauselfingen,,,
+2623,SG,Sankt-Fiden,,,
+2624,Etranger,Crest,,,
+2625,TI,Bruzella,,,
+2626,SZ,Wangen,8.8955555555556,47.190833333333,https://www.wikidata.org/wiki/Q66707
+2627,GR,Domat/Ems,9.45455,46.81981,https://www.wikidata.org/wiki/Q68266
+2628,BE,Villeret,7.0194444444444,47.159444444444,https://www.wikidata.org/wiki/Q69979
+2629,Etranger,Aschaffenburg,,,
+2630,AG,Olten,7.9077777777778,47.353055555556,https://www.wikidata.org/wiki/Q68129
+2631,Etranger,Luino,,,
+2632,GE,Malagny,,,
+2633,Etranger,"Liepaja,",,,
+2634,ZH,Witikon,,,
+2635,VD,Etoy,6.4166666666667,46.483333333333,https://www.wikidata.org/wiki/Q70216
+2636,GE,Corsier,6.2283,46.26213,https://www.wikidata.org/wiki/Q65643
+2637,TI,Verscio,,,
+2638,AI,Trogen,9.4647222222222,47.4075,https://www.wikidata.org/wiki/Q68189
+2639,TI,Acquarossa,8.92733,46.45993,https://www.wikidata.org/wiki/Q68358
+2640,TI,Bioggio,8.907552,46.014312,https://www.wikidata.org/wiki/Q68425
+2641,TI,Camorino,,,
+2642,TI,Melano,,,
+2643,AG,Staffelbach,8.0472222222222,47.283055555556,https://www.wikidata.org/wiki/Q64239
+2644,Etranger,Morschwiller-le-Bas,,,
+2645,VD,Vernand-près-Lausanne,,,
+2646,GE,Avusy,5.9833333333333,46.15,https://www.wikidata.org/wiki/Q68174
+2647,FR,Cugy,,,
+2648,Etranger,Vailly-sur-Aisne,,,
+2649,Etranger,Ensisheim,,,
+2650,UR,Bürglen,,,
+2651,Etranger,"Poissy, Seine-et-Oise",,,
+2652,TG,Berg,,,
+2653,Etranger,Göppingen,,,
+2654,AG,Rottenschwil,8.36202,47.31375,https://www.wikidata.org/wiki/Q64433
+2655,GE,Cologny,6.1833333333333,46.216666666667,https://www.wikidata.org/wiki/Q69245
+2656,GL,Matt,,,
+2657,AG,Möriken-Wildegg,8.1830555555556,47.416388888889,https://www.wikidata.org/wiki/Q65227
+2658,LU,Schötz,7.9894444444444,47.171111111111,https://www.wikidata.org/wiki/Q14618
+2659,AI,Gontenbad,,,
+2660,TG,Eschlikon,8.959,47.461,https://www.wikidata.org/wiki/Q65026
+2661,BL,Rünenberg,7.8833333333333,47.433055555556,https://www.wikidata.org/wiki/Q67275
+2662,Etranger,Schiltigheim,,,
+2663,BL,Böckten,7.8355555555556,47.4625,https://www.wikidata.org/wiki/Q66731
+2664,SZ,Tuggen,8.9455555555556,47.203055555556,https://www.wikidata.org/wiki/Q65620
+2665,NW,Dallenwil,8.3916666666667,46.934444444444,https://www.wikidata.org/wiki/Q64575
+2666,NW,Oberdorf,,,
+2667,OW,Näfels,,,
+2668,NW,Engelberg,,,
+2669,VS,Saxon,7.1666666666667,46.15,https://www.wikidata.org/wiki/Q69572
+2670,ZH,Oberstrass,,,
+2671,TG,Aadorf,8.8975,47.493888888889,https://www.wikidata.org/wiki/Q69131
+2672,SH,Hemmental,,,
+2673,Etranger,Ründeroth b Köln,,,
+2674,Etranger,Horn,9.463027777777778,47.495305555555554,https://www.wikidata.org/wiki/Q66195
+2675,Etranger,Fez,,,
+2676,GR,Ruschein,,,
+2677,Etranger,Port Elizabeth,,,
+2678,Etranger,Belfort,,,
+2679,Etranger,San Salvador,,,
+2680,Etranger,Oehringen,,,
+2681,Etranger,Hall,,,
+2682,Etranger,Burnley,,,
+2683,BE,Buchholterberg,7.6833333333333,46.816388888889,https://www.wikidata.org/wiki/Q65495
+2684,Etranger,Québec,,,
+2685,Etranger,Gilly,6.3,46.45,https://www.wikidata.org/wiki/Q70383
+2686,VD,Vinzel,6.27702,46.45042,https://www.wikidata.org/wiki/Q68651
+2687,GE,Coutance,,,
+2688,ZH,Küsnacht,8.5825,47.318055555556,https://www.wikidata.org/wiki/Q69216
+2689,Etranger,Liebwalde,,,
+2690,ZH,Maur,8.6702777777778,47.341666666667,https://www.wikidata.org/wiki/Q64857
+2691,VD,Bassins,6.2333333333333,46.466666666667,https://www.wikidata.org/wiki/Q43243
+2692,Etranger,Tier,,,
+2693,NE,Lignières,7.0666666666667,47.083333333333,https://www.wikidata.org/wiki/Q68706
+2694,Etranger,Colombo,,,
+2695,Etranger,Bahia,,,
+2696,Etranger,Hessen,,,
+2697,TI,Acquarossa,8.92733,46.45993,https://www.wikidata.org/wiki/Q68358
+2698,Etranger,Wales,,,
+2699,BE,Thörigen,7.7280555555556,47.173333333333,https://www.wikidata.org/wiki/Q70277
+2700,Etranger,Honnef,,,
+2701,Etranger,Friedrich-Wilhelms-Hütte,,,
+2702,ZH,Laufen-Uhwiesen,8.6366666666667,47.670833333333,https://www.wikidata.org/wiki/Q66336
+2703,Etranger,Fourneaux près de Modane,,,
+2704,TG,Hüttwilen,8.8666666666667,47.599722222222,https://www.wikidata.org/wiki/Q65826
+2705,Etranger,Zwochau,,,
+2706,Etranger,Poznan,,,
+2707,Etranger,Rimini,,,
+2708,Etranger,Nimègue,,,
+2709,VD,Chatillens,,,
+2710,VD,Les Planches-sur-Montreux,,,
+2711,Etranger,Cracovie,,,
+2712,Etranger,Jessenetz bei Konitz,,,
+2713,AG,Küttigen,8.05,47.416388888889,https://www.wikidata.org/wiki/Q65007
+2714,Etranger,Jena,,,
+2715,Etranger,Stockach,,,
+2716,Etranger,Lerbach,,,
+2717,Etranger,Paderborn,,,
+2718,Etranger,Grünstadt,,,
+2719,Etranger,"Fiesole, Florence",,,
+2720,Etranger,Hildesheim,,,
+2721,FR,Fiaugères,,,
+2722,Etranger,Dippach,,,
+2723,Etranger,"Myszków, près de Poznań",,,
+2724,Etranger,Puławy,,,
+2725,BE,Ersigen,7.5941666666667,47.091666666667,https://www.wikidata.org/wiki/Q67636
+2726,Etranger,Usingen,,,
+2727,Etranger,Grosshockenheim,,,
+2728,Etranger,Beaumont,,,
+2729,Etranger,Wesel,,,
+2730,Etranger,Pouilly-sur-Saône,,,
+2731,Etranger,Bobrezowo,,,
+2732,BL,Pfeffingen,7.5905555555556,47.46,https://www.wikidata.org/wiki/Q66549
+2733,Etranger,Kastelruth,,,
+2734,Etranger,Radkersburg,,,
+2735,Etranger,Kremenets,,,
+2736,Etranger,Hechtsberg,,,
+2737,BE,Tschugg,7.07757,47.02371,https://www.wikidata.org/wiki/Q69891
+2738,BE,Bowil,7.695,46.8925,https://www.wikidata.org/wiki/Q69380
+2739,Etranger,St Veit an der Glan,,,
+2740,Etranger,Esslingen am Neckar,,,
+2741,BE,Pohlern bei Thoune,,,
+2742,Etranger,Ham bei Hamburg,,,
+2743,Etranger,"Saint-Ay, Loiret",,,
+2744,Etranger,Arnhem,,,
+2745,Etranger,Voerde in Westfalen,,,
+2746,ZH,Hittnau,8.8238888888889,47.37,https://www.wikidata.org/wiki/Q65841
+2747,Etranger,Kürenz,,,
+2748,Etranger,Indersdorf,,,
+2749,Etranger,Brilon,,,
+2750,Etranger,Beiersdorf,,,
+2751,Etranger,Allondans,,,
+2752,Etranger,Gernsbach,,,
+2753,ZH,Oetwil am See,8.7211111111111,47.270833333333,https://www.wikidata.org/wiki/Q67354
+2754,Etranger,Berneck,9.61254,47.42465,https://www.wikidata.org/wiki/Q67225
+2755,Etranger,Kiev,,,
+2756,Etranger,Charlottenburg,,,
+2757,Etranger,Montevideo,,,
+2758,Etranger,Breckerfeld,,,
+2759,ZH,Illnau-Effretikon,8.7197222222222,47.415833333333,https://www.wikidata.org/wiki/Q64873
+2760,BE,Unterlangenegg,7.7163888888889,46.783055555556,https://www.wikidata.org/wiki/Q68170
+2761,Etranger,Chomutov,,,
+2762,Etranger,Halberstadt,,,
+2763,Etranger,Forchheim,,,
+2764,FR,Wünnewil-Flamatt,7.2833333333333,46.866666666667,https://www.wikidata.org/wiki/Q67718
+2765,Etranger,Phyangtong,,,
+2766,FR,Vuisternens-devant-Romont,6.9333333333333,46.65,https://www.wikidata.org/wiki/Q68485
+2767,Etranger,Sarrebourg,,,
+2768,FR,Chavannes-sous-Orsonnens,,,
+2769,Etranger,Bannes,,,
+2770,Etranger,Rheinland,,,
+2771,Etranger,Lambach,,,
+2772,GL,Mühlehorn,,,
+2773,FR,Hauterive,,,
+2774,Etranger,Lecce,,,
+2775,VD,Saint-Légier-La Chiésaz,6.8833333333333,46.466666666667,https://www.wikidata.org/wiki/Q68432
+2776,Etranger,Nalliers,,,
+2777,VD,Bullet,6.55689,46.84263,https://www.wikidata.org/wiki/Q52293
+2778,Etranger,Rose-Hill,,,
+2779,Etranger,"Sancoins, Cher",,,
+2780,VD,Suchy,6.60508,46.72132,https://www.wikidata.org/wiki/Q68943
+2781,Etranger,"Rjeshitza, Rezekne",,,
+2782,Etranger,Dabovo,,,
+2783,NE,Serrières,,,
+2784,TG,Kradolf-Schönenberg,9.1830555555556,47.516388888889,https://www.wikidata.org/wiki/Q65830
+2785,UR,Silenen,8.6691666666667,46.791111111111,https://www.wikidata.org/wiki/Q69135
+2786,Etranger,Pinneberg,,,
+2787,VD,Cremin,,,
+2788,VD,Paudex,6.67369,46.50837,https://www.wikidata.org/wiki/Q70248
+2789,Etranger,Schussenried,,,
+2790,Etranger,Gräbschen,,,
+2791,GR,Schiers,9.6833333333333,46.966388888889,https://www.wikidata.org/wiki/Q65244
+2792,Etranger,Detmold,,,
+2793,Etranger,Posen/Poznan,,,
+2794,TG,Altenklingen,,,
+2795,Etranger,Casale Monferrato,,,
+2796,VD,Gryon,7.0975,46.2906,https://www.wikidata.org/wiki/Q69522
+2797,Etranger,Cittadella,,,
+2798,TI,Castro,,,
+2799,Etranger,Pertuis,,,
+2800,BE,Beatenberg,7.8,46.699722222222,https://www.wikidata.org/wiki/Q68108
+2801,BE,Kernenried,7.5458333333333,47.068888888889,https://www.wikidata.org/wiki/Q67618
+2802,Etranger,Livourne,,,
+2803,Etranger,Chamonix,,,
+2804,Etranger,Jekaterinoslaw,,,
+2805,Etranger,Boulogne-sur-Mer,,,
+2806,Etranger,"Montargis, Loiret",,,
+2807,Etranger,Kaiserslautern,,,
+2808,Etranger,Dantzig,,,
+2809,FR,Auboranges,6.8,46.583333333333,https://www.wikidata.org/wiki/Q70438
+2810,Etranger,"Gagnac, Lot",,,
+2811,Etranger,Saarburg,,,
+2812,Etranger,Striegau,,,
+2813,Etranger,"Saint-Pierre-de-Trivizy, Tarn",,,
+2814,Etranger,"Frameries, Hainaut",,,
+2815,Etranger,Cherbourg,,,
+2816,NE,La Neuveville,7.0944444444444,47.065277777778,https://www.wikidata.org/wiki/Q69476
+2817,Etranger,Saint-Pierre,,,
+2818,Etranger,Saint-Fort-sur-Gironde,,,
+2819,Etranger,Capellades,,,
+2820,SO,Riedholz,7.5680555555556,47.23,https://www.wikidata.org/wiki/Q66973
+2821,BE,Douanne,,,
+2822,Etranger,"Rougemont-le-Château, Belfort",,,
+2823,Etranger,Vic sur Seille,,,
+2824,Etranger,Traiguen,,,
+2825,Etranger,Romans,,,
+2826,Etranger,Schwarmstedt,,,
+2827,Etranger,Kalisz,,,
+2828,ZH,Otelfingen,8.3911111111111,47.460833333333,https://www.wikidata.org/wiki/Q66156
+2829,Etranger,Plzeň,,,
+2830,Etranger,Idaho,,,
+2831,SG,Oberriet,9.5663888888889,47.316388888889,https://www.wikidata.org/wiki/Q65263
+2832,BE,Oberthal,7.6663888888889,46.916388888889,https://www.wikidata.org/wiki/Q67503
+2833,Etranger,Flensbourg,,,
+2834,Etranger,Sasbach bei Achern,,,
+2835,LU,Buttisholz,8.0944444444444,47.113611111111,https://www.wikidata.org/wiki/Q7132
+2836,Etranger,Brunstatt,,,
+2837,VD,Mont-la-Ville,6.4094444444444,46.645833333333,https://www.wikidata.org/wiki/Q70547
+2838,Etranger,Yiyang,,,
+2839,Etranger,Castelló de la Plana,,,
+2840,Etranger,Buzau,,,
+2841,TI,Losone,8.74207,46.16894,https://www.wikidata.org/wiki/Q67116
+2842,VD,Fontaines-sur-Grandson,6.6166666666667,46.833333333333,https://www.wikidata.org/wiki/Q70551
+2843,Etranger,Zittau,,,
+2844,VD,Lavey-Morcles,7.0333333333333,46.2,https://www.wikidata.org/wiki/Q70250
+2845,NE,Neuchâtel,6.9305555555556,46.990277777778,https://www.wikidata.org/wiki/Q69345
+2846,BE,Uetendorf,7.5666666666667,46.766388888889,https://www.wikidata.org/wiki/Q66114
+2847,Etranger,Altenbögge,,,
+2848,BE,Trachselwald,,,
+2849,BE,Dürrenroth,7.791,47.0892,https://www.wikidata.org/wiki/Q69819
+2850,Etranger,Cauderan,,,
+2851,Etranger,Bristol,,,
+2852,Etranger,Eggenburg,,,
+2853,Etranger,Jaegerndorf,,,
+2854,Etranger,Bitche,,,
+2855,Etranger,Lodz,,,
+2856,VD,Bursinel,6.3,46.433333333333,https://www.wikidata.org/wiki/Q52296
+2857,Etranger,Wittlich,,,
+2858,Etranger,Schwenningen,,,
+2859,Etranger,Ixelles,,,
+2860,Etranger,Erfurt,,,
+2861,BE,Rubigen,7.5433333333333,46.898611111111,https://www.wikidata.org/wiki/Q67821
+2862,Etranger,Mexico,,,
+2863,LU,Geuensee,8.1069444444444,47.199722222222,https://www.wikidata.org/wiki/Q7142
+2864,Etranger,Kosice,,,
+2865,Etranger,Jauer,,,
+2866,AG,Seon,8.1597222222222,47.345833333333,https://www.wikidata.org/wiki/Q64563
+2867,Etranger,Jhelum,,,
+2868,Etranger,Ilford,,,
+2869,Etranger,Krefeld,,,
+2870,Etranger,Novi Sad,,,
+2871,Etranger,nord de la france,,,
+2872,Etranger,Kladno,,,
+2873,Etranger,Villanueva de Cordoba,,,
+2874,Etranger,"Meaux, Seine et Marne",,,
+2875,Etranger,Tarakan,,,
+2876,Etranger,Nove Mesto nad Metuji,,,
+2877,Etranger,Waltershausen,,,
+2878,Etranger,Sari,,,
+2879,Etranger,"Empoli, Florence",,,
+2880,Etranger,Valentigney,,,
+2881,Etranger,Luck,,,
+2882,Etranger,Moutiers,,,
+2883,Etranger,Kaunas,,,
+2884,BE,Iseltwald,7.9636,46.7098,https://www.wikidata.org/wiki/Q64760
+2885,Etranger,Insterburg,,,
+2886,Etranger,Leiden,,,
+2887,Etranger,"Figline Valdarno, Florence",,,
+2888,Etranger,"Pontarlier, Doubs",,,
+2889,Etranger,Cysoing,,,
+2890,Etranger,Selb,,,
+2891,Etranger,Bell,,,
+2892,Etranger,Retford,,,
+2893,Etranger,Morlaix,,,
+2894,Etranger,Kalima,,,
+2895,Etranger,Neishabour,,,
+2896,Etranger,Ludwigshafen,,,
+2897,Etranger,Rodewisch,,,
+2898,Etranger,Wernburg,,,
+2899,Etranger,"Hammond, Indiana",,,
+2900,Etranger,Fürth,,,
+2901,Etranger,Pilsen,,,
+2902,Etranger,St-Goarshausen,,,
+2903,Etranger,Zrenjanin,,,
+2904,Etranger,Burg,,,
+2905,Etranger,Lommel,,,
+2906,Etranger,Baarland,,,
+2907,GR,Tinzen,,,
+2908,Etranger,Nordhausen/ Thüringen,,,
+2909,Etranger,Lice,,,
+2910,Etranger,Bischofshofen,,,
+2911,Etranger,Pelmonostor,,,
+2912,VD,Salavaux,,,
+2913,Etranger,Peterborough,,,
+2914,Etranger,Pavie,,,
+2915,Etranger,Raiatea,,,
+2916,Etranger,Norfolk,,,
+2917,Etranger,"Umanak, Groenland",,,
+2918,Etranger,Kampen,,,
+2919,Etranger,Burgsteinfurt,,,
+2920,Etranger,Schiedam,,,
+2921,Etranger,Breme,,,
+2922,Etranger,Mayen,,,
+2923,Etranger,Meknès,,,
+2924,JU,Charmoille,,,
+2925,Etranger,"Neuwiller, Haut-Rhin",,,
+2926,Etranger,Münchberg,,,
+2927,Etranger,Tarbes,,,
+2928,Etranger,Sainte-Elisabeth/Joliette,,,
+2929,Etranger,Rheinbach,,,
+2930,LU,Wikon,7.9658333333333,47.262777777778,https://www.wikidata.org/wiki/Q14625
+2931,Etranger,Hard,,,
+2932,Etranger,Altötting,,,
+2933,Etranger,"Casalmaggiore, Cremona",,,
+2934,Etranger,Southampton,,,
+2935,Etranger,Fachsenfeld,,,
+2936,AG,Bözen,,,
+2937,Etranger,Ornsköldsvik,,,
+2938,Etranger,Blida,,,
+2939,Etranger,Edesheim/Pfalz,,,
+2940,Etranger,Wolfsburg,,,
+2941,Etranger,Moers,,,
+2942,Etranger,Puerto-Rico,,,
+2943,Etranger,Oran,,,
+2944,Etranger,"Brownsville, Pennsylvanie",,,
+2945,Etranger,Neugersdorf in Sachsen,,,
+2946,Etranger,Kansas City,,,
+2947,VS,Turtmann,,,
+2948,Etranger,"Sallanches, Haute-Savoie",,,
+2949,Etranger,Neumünster,,,
+2950,Etranger,Gafsa,,,
+2951,Etranger,Posen,,,
+2952,Etranger,Palerme,,,
+2953,Etranger,Bad Essen,,,
+2954,Etranger,Varnsdorf,,,
+2955,Etranger,Colombes,,,
+2956,Etranger,Oberzeiring,,,
+2957,ZH,Baden,8.30799,47.47291,https://www.wikidata.org/wiki/Q63939
+2958,Etranger,Douala,,,
+2959,TI,Cavergno,,,
+2960,Etranger,Cambridge,,,
+2961,Etranger,Aix-en-Provence,,,
+2962,Etranger,Meldorf,,,
+2963,Etranger,Anderlecht,,,
+2964,Etranger,Betschkerek im Banat,,,
+2965,NE,Saint-Aubin,6.980556,46.89,https://www.wikidata.org/wiki/Q70403
+2966,Etranger,Backnang,,,
+2967,Etranger,Arnsdorf,,,
+2968,Etranger,Eisenberg,,,
+2969,TI,Preonzo,,,
+2970,JU,Grandfontaine,6.9333333333333,47.383333333333,https://www.wikidata.org/wiki/Q67982
+2971,Etranger,Louvain,,,
+2972,Etranger,Pistoia,,,
+2973,Etranger,Hillegom,,,
+2974,Etranger,Leonberg,,,
+2975,BE,Wohlen bei Bern,7.3569444444444,46.971944444444,https://www.wikidata.org/wiki/Q67613
+2976,Etranger,Schweidnitz,,,
+2977,Etranger,Minden,,,
+2978,Etranger,Calw,,,
+2979,Etranger,Battle Creek,,,
+2980,Etranger,Mittweida,,,
+2981,Etranger,Pont l'Evêque,,,
+2982,Etranger,Hawai,,,
+2983,Etranger,Eberbach,,,
+2984,Etranger,Sulz,,,
+2985,Etranger,Neustadt an der Waldnaab,,,
+2986,Etranger,Norwich,,,
+2987,BE,Zweisimmen,7.3663888888889,46.549722222222,https://www.wikidata.org/wiki/Q69417
+2988,Etranger,Aurillac,,,
+2989,Etranger,"Shawinigan, Québec",,,
+2990,Etranger,Schottland,,,
+2991,Etranger,Malines,,,
+2992,Etranger,Avereest,,,
+2993,Etranger,Helpsen,,,
+2994,Etranger,Sao Paulo,,,
+2995,Etranger,Meiningen,,,
+2996,Etranger,Ile de Wight,,,
+2997,Etranger,London,,,
+2998,Etranger,"Hittisau, Vorarlberg",,,
+2999,Etranger,Durban,,,
+3000,Etranger,Oulu,,,
+3001,Etranger,Cincinnati,,,
+3002,Etranger,Elze,,,
+3003,Etranger,Vorau,,,
+3004,Etranger,Marburg an der Lahn,,,
+3005,Etranger,Speyer a. Rh.,,,
+3006,Etranger,Teheran,,,
+3007,Etranger,Malmö,,,
+3008,Etranger,Bludenz,,,
+3009,Etranger,Wassenaar,,,
+3010,Etranger,Autun,,,
+3011,Etranger,Glogau,,,
+3012,BE,Wahlern,,,
+3013,Etranger,Pfronten-Heitlern,,,
+3014,Etranger,Coblence,,,
+3015,LU,St. Urban,,,
+3016,Etranger,Heffingen,,,
+3017,Etranger,Châteaudun,,,
+3018,Etranger,Rocourt,6.9557,47.3894,https://www.wikidata.org/wiki/Q67978
+3019,Etranger,Kortrÿk,,,
+3020,Etranger,Vernon,,,
+3021,Etranger,Portici,,,
+3022,Etranger,"Momignies, Hainaut",,,
+3023,Etranger,Merano,,,
+3024,Etranger,Nenzing/Vorarlberg,,,
+3025,Etranger,Putzleinsdorf,,,
+3026,Etranger,Bazna,,,
+3027,Etranger,Marl,,,
+3028,Etranger,Biella,,,
+3029,Etranger,Worms,,,
+3030,Etranger,"Wauseon, Ohio",,,
+3031,Etranger,Saint-Cloud,,,
+3032,VD,Henniez,6.8833333333333,46.75,https://www.wikidata.org/wiki/Q68873
+3033,VD,Penthéréaz,6.6,46.683333333333,https://www.wikidata.org/wiki/Q70645
+3034,VD,Bussigny,6.55,46.55,https://www.wikidata.org/wiki/Q52300
+3035,VD,Champagne,6.65159,46.83576,https://www.wikidata.org/wiki/Q52685
+3036,NE,La Côte-aux-Fées,6.4833333333333,46.866666666667,https://www.wikidata.org/wiki/Q68526
+3037,VD,Gland,6.2666666666667,46.416666666667,https://www.wikidata.org/wiki/Q69300
+3038,TI,Intragna,,,
+3039,Etranger,Chamalières,,,
+3040,VS,Munster,,,
+3041,Etranger,Colorado Springs,,,
+3042,ZH,Oberembrach,8.6183333333333,47.4875,https://www.wikidata.org/wiki/Q65512
+3043,AG,Holziken,8.0388888888889,47.321944444444,https://www.wikidata.org/wiki/Q65969
+3044,Etranger,Lemgo,,,
+3045,Etranger,Harare,,,
+3046,Etranger,Genève,,,
+3047,Etranger,"Young America, Minnesota",,,
+3048,AG,Mumpf,7.9194444444444,47.547222222222,https://www.wikidata.org/wiki/Q66293
+3049,Etranger,Diepenbeek,,,
+3050,Etranger,Zurich,8.54111111111111,47.37444444444444,https://www.wikidata.org/wiki/Q72
+3051,Etranger,Etterbeek,,,
+3052,Etranger,Quierschied,,,
+3053,Etranger,Flawil,9.19771,47.40532,https://www.wikidata.org/wiki/Q65506
+3054,Etranger,Rabat,,,
+3055,Etranger,Hoogezand-Sappemeer,,,
+3056,VD,Neyruz,7.0666666666667,46.766666666667,https://www.wikidata.org/wiki/Q66466
+3057,Etranger,Saigon,,,
+3058,AG,Herzogenbuchsee,7.70619,47.18838,https://www.wikidata.org/wiki/Q67499
+3059,Etranger,Arcachon,,,
+3060,Etranger,Sindelfingen,,,
+3061,AG,Herznach,,,
+3062,BE,Inkwil,7.67,47.202777777778,https://www.wikidata.org/wiki/Q67646
+3063,GL,Diesbach,,,
+3064,Etranger,Tanger,,,
+3065,SG,Oberbüren,9.1663888888889,47.45,https://www.wikidata.org/wiki/Q66670
+3066,Etranger,Monforte de Lemos,,,
+3067,Etranger,Remscheid,,,
+3068,Etranger,Redcar,,,
+3069,Etranger,Würzburg,,,
+3070,Etranger,Diégo-Suarez,,,
+3071,Etranger,Cleveland,,,
+3072,TI,Lugano-Castagnola,,,
+3073,Etranger,Bad Marienberg,,,
+3074,Etranger,Caransebes,,,
+3075,TG,Egnach,9.36488,47.526787,https://www.wikidata.org/wiki/Q65029
+3076,ZH,Boppelsen,8.4033333333333,47.471388888889,https://www.wikidata.org/wiki/Q67062
+3077,GE,Bernex,6.0684,46.17845,https://www.wikidata.org/wiki/Q65259
+3078,Etranger,Reinsberg,,,
+3079,SO,Etziken,7.6486111111111,47.188611111111,https://www.wikidata.org/wiki/Q66682
+3080,Etranger,Coburg,,,
+3081,Etranger,Frischborn,,,
+3082,Etranger,Neustadt,,,
+3083,Etranger,Gmünd,,,
+3084,Etranger,Landsberg am Lech,,,
+3085,TG,Gottlieben,9.1338111111111,47.6643,https://www.wikidata.org/wiki/Q66302
+3086,AI,Herisau,9.2786,47.3851,https://www.wikidata.org/wiki/Q63970
+3087,ZH,Uetikon am See,8.6772222222222,47.266944444444,https://www.wikidata.org/wiki/Q67058
+3088,Etranger,Timelkam,,,
+3089,Etranger,Radolfzell,,,
+3090,ZH,Forch,,,
+3091,BE,Bönigen,7.8946,46.6864,https://www.wikidata.org/wiki/Q65502
+3092,Etranger,Montecatini Terme,,,
+3093,Etranger,San Valentino in Abruzzo Citeriore,,,
+3094,Etranger,Terni,,,
+3095,Etranger,Kilinochchi,,,
+3096,GR,Soglio,,,
+3097,Etranger,Sicile,,,
+3098,AG,Tägerig,8.2805555555556,47.403888888889,https://www.wikidata.org/wiki/Q65190
+3099,Etranger,Lödingen,,,
+3100,VD,Oleyres,,,
+3101,Etranger,Oberschmitten bei Darmstadt,,,
+3102,FR,Ménières,6.880833,46.782222,https://www.wikidata.org/wiki/Q68709
+3103,ZH,Kappel am Albis,8.5272222222222,47.228611111111,https://www.wikidata.org/wiki/Q64589
+3104,VD,Ursins,6.6666666666667,46.733333333333,https://www.wikidata.org/wiki/Q70046
+3105,VS,Vex,7.4,46.216666666667,https://www.wikidata.org/wiki/Q67724
+3106,VS,Ayent,7.4,46.283333333333,https://www.wikidata.org/wiki/Q70167
+,,,7.4103,46.32796,
+3107,TG,Birwinken,9.2,47.583333333333,https://www.wikidata.org/wiki/Q65767
+3108,GR,Davos,9.8398333333333,46.809055555556,https://www.wikidata.org/wiki/Q68097
+3109,AG,Hornussen,,,
+3110,ZH,Hedingen,8.4494444444444,47.298611111111,https://www.wikidata.org/wiki/Q65129
+3111,Etranger,Le Fleix,,,
+3112,Etranger,Tangermünde,,,
+3113,Etranger,Toluca,,,
+3114,Etranger,Geilenkirchen-Hünshoven,,,
+3115,Etranger,Bischwiller,,,
+3116,BE,Toffen,7.49239,46.85884,https://www.wikidata.org/wiki/Q66692
+3117,Etranger,Colonie Alsen sur le Wannsee,,,
+3118,Etranger,Fréjus,,,
+3119,Etranger,Vincennes,,,
+3120,SG,Diepoldsau,9.65,47.383055555556,https://www.wikidata.org/wiki/Q65615
+3121,Etranger,Nakel,,,
+3122,VD,Essertines-sur-Yverdon,6.6333333333333,46.716666666667,https://www.wikidata.org/wiki/Q68735
+3123,Etranger,Greiz,,,
+3124,VD,Saint-Saphorin-sur-Morges,,,
+3125,TG,Bottighofen,9.2013888888889,47.639722222222,https://www.wikidata.org/wiki/Q65962
+3126,GR,Maloja,,,
+3127,LU,Sulz,,,
+3128,VS,Vionnaz,6.9,46.316666666667,https://www.wikidata.org/wiki/Q69549
+3129,SG,Mosnang,9.0330555555556,47.35,https://www.wikidata.org/wiki/Q65775
+3130,Etranger,Swakopmund,,,
+3131,BE,Fontenais,7.0833333333333,47.4,https://www.wikidata.org/wiki/Q68780
+3132,GR,Grüsch,9.6330555555556,46.966388888889,https://www.wikidata.org/wiki/Q64635
+3133,TG,Buchs/Frauenfeld,,,
+3134,Etranger,Plumieux,,,
+3135,JU,Delémont,7.3472222222222,47.365277777778,https://www.wikidata.org/wiki/Q63896
+3136,TI,Origlio,8.95,46.05,https://www.wikidata.org/wiki/Q70334
+3137,Etranger,Kell am See,,,
+3138,ZH,Seen,,,
+3139,TG,Wattenwil,7.5072222222222,46.77,https://www.wikidata.org/wiki/Q65492
+3140,BE,Gurzelen,,,
+3141,GE,Vessy,,,
+3142,NE,Dombresson,,,
+3143,FR,Billens-Hennens,6.9,46.683333333333,https://www.wikidata.org/wiki/Q70454
+3144,VD,Oulens-sous-Echallens,6.5833333333333,46.65,https://www.wikidata.org/wiki/Q70651
+3145,Etranger,Reichenau in Sachsen,,,
+3146,VD,Pailly,6.67349,46.69974,https://www.wikidata.org/wiki/Q68840
+3147,Etranger,Höllstein im Wiesental,,,
+3148,JU,Soulce,,,
+3149,BE,Kiesen,7.5858333333333,46.819444444444,https://www.wikidata.org/wiki/Q66381
+3150,BE,Kandergrund,7.67686,46.53618,https://www.wikidata.org/wiki/Q65540
+3151,BE,Adelboden,,,
+3152,VS,Niederwald,8.1833333333333,46.433333333333,https://www.wikidata.org/wiki/Q70357
+3153,SH,Schaffouse,,,
+3154,VD,Yverdon-les-Bains,6.6408333333333,46.7785,https://www.wikidata.org/wiki/Q63946
+3155,SG,St. Gallen,9.3772222222222,47.423333333333,https://www.wikidata.org/wiki/Q25607
+3156,ZH,Hereq,,,
+3157,AG,Baden,8.30799,47.47291,https://www.wikidata.org/wiki/Q63939
+3158,NE,Valangin,,,
+3159,Etranger,Le Pont-de-Beauvoisin,,,
+3160,BE,Kirchenthurnen,,,
+3161,TG,Sommeri,9.2833333333333,47.566388888889,https://www.wikidata.org/wiki/Q66641
+3162,BE,Boltigen,7.3911,46.6291,https://www.wikidata.org/wiki/Q65939
+3163,LU,Büron,8.0947222222222,47.213333333333,https://www.wikidata.org/wiki/Q7139
+3164,NE,La Chaux-de-Fonds,6.8295583333333,47.099627777778,https://www.wikidata.org/wiki/Q68124
+3165,VD,Allens,,,
+3166,NE,Les Ponts-de-Martel,6.72664,46.99684,https://www.wikidata.org/wiki/Q68617
+3167,AG,Eiken,7.9902777777778,47.533055555556,https://www.wikidata.org/wiki/Q66433
+3168,VD,Le Mont-sur-Lausanne,6.6333333333333,46.55,https://www.wikidata.org/wiki/Q70221
+3169,Etranger,Bellano,,,
+3170,BE,Radelfingen,,,
+3171,BE,La Ferrière,6.90027,47.14336,https://www.wikidata.org/wiki/Q69879
+3172,FR,Pierrafortscha,7.1833333333333,46.783333333333,https://www.wikidata.org/wiki/Q67321
+3173,FR,La Roche,7.1333333333333,46.7,https://www.wikidata.org/wiki/Q67686
+3174,FR,Misery-Courtion,7.0666666666667,46.85,https://www.wikidata.org/wiki/Q67326
+3175,NE,La Chaux-de-Fonds,6.8295583333333,47.099627777778,https://www.wikidata.org/wiki/Q68124
+3176,TG,Franenfeld,,,
+3177,Etranger,Roeselare,,,
+3178,Etranger,Bad Salzuflen,,,
+3179,SH,Gächlingen,8.499,47.7027,https://www.wikidata.org/wiki/Q66500
+3180,Etranger,Cava Manara,,,
+3181,FR,Fétigny,6.914444,46.796111,https://www.wikidata.org/wiki/Q70311
+3182,ZG,Hünenberg,8.4263888888889,47.176111111111,https://www.wikidata.org/wiki/Q66256
+3183,Etranger,Boczki,,,
+3184,ZH,Turbenthal,8.8441666666667,47.438333333333,https://www.wikidata.org/wiki/Q65858
+3185,AG,Tegerfelden,8.28483,47.5619,https://www.wikidata.org/wiki/Q64255
+3186,FR,Grolley,7.0666666666667,46.833333333333,https://www.wikidata.org/wiki/Q67037
+3187,Etranger,Kamieniec Podolski,,,
+3188,BE,Rapperswil,,,
+3189,BE,Rüti bei Büren,7.4055555555556,47.152777777778,https://www.wikidata.org/wiki/Q11737
+3190,FR,Vuisternens-devant-Romont,6.9333333333333,46.65,https://www.wikidata.org/wiki/Q68485
+3191,LU,Meggen,8.3744444444444,47.046388888889,https://www.wikidata.org/wiki/Q14573
+3192,VD,La Chaux (Cossonay),6.4727,46.616,https://www.wikidata.org/wiki/Q52701
+3193,LU,Langnau bei Reiden,,,
+3194,TI,Acquarossa,8.92733,46.45993,https://www.wikidata.org/wiki/Q68358
+3195,VD,Gimel,6.30658,46.51015,https://www.wikidata.org/wiki/Q70245
+3196,VD,Château-d’Oex,7.1166666666667,46.466666666667,https://www.wikidata.org/wiki/Q52699
+3197,GE,Coppet,6.18907,46.32135,https://www.wikidata.org/wiki/Q57097
+3198,TG,Wuppenau,9.1088888888889,47.497222222222,https://www.wikidata.org/wiki/Q65771
+3199,FR,Montagny,,,
+3200,BE,Rütschelen,7.775,47.173611111111,https://www.wikidata.org/wiki/Q67625
+3201,FR,Marsens,7.0666666666667,46.65,https://www.wikidata.org/wiki/Q67075
+3202,BE,Kirchberg,7.5861111111111,47.085833333333,https://www.wikidata.org/wiki/Q66463
+3203,Etranger,Ladenburg,,,
+3204,SO,Tscheppach,,,
+3205,AG,Unterentfelden,8.0416666666667,47.369166666667,https://www.wikidata.org/wiki/Q64253
+3206,VD,Cuarnens,6.4333333333333,46.633333333333,https://www.wikidata.org/wiki/Q68624
+3207,NE,Le Locle,6.74816,47.05317,https://www.wikidata.org/wiki/Q64093
+3208,NE,Le Landeron,7.0691,47.0554,https://www.wikidata.org/wiki/Q70204
