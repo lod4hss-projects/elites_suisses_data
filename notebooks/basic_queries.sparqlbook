@@ -12,9 +12,21 @@
     "metadata": {}
   },
   {
+    "kind": 1,
+    "language": "markdown",
+    "value": "If needed : \n```\nCLEAR GRAPH <https://swiss-elites.lod4hss.cloud/resource/>\n```\nBeware : this empries the whole graph !",
+    "metadata": {}
+  },
+  {
     "kind": 2,
     "language": "sparql",
     "value": "### Classes and number of their instances\nSELECT ?class (COUNT(*) AS ?number)\n WHERE { graph <https://swiss-elites.lod4hss.cloud/resource/>\n {?s a ?class} }\nGROUP BY ?class\nORDER BY DESC(?number)",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "\nSELECT ?s ?p ?sName WHERE {\n         #GRAPH <https://swiss-elites.lod4hss.cloud/resource/> \n         {\n          BIND (<https://swiss-elites.lod4hss.cloud/resource/p69819> AS ?o)\n          ?s ?p ?o.\n          MINUS {GRAPH <https://swiss-elites.lod4hss.cloud/resource/baseFields>\n          {?s ?p ?o}\n          }\n          MINUS {GRAPH <https://swiss-elites.lod4hss.cloud/resource/originatesFrom>\n          {?s ?p ?o}\n          }\n          OPTIONAL {?s <https://sdhss.org/ontology/shortcuts/P9> ?sLabel}\n          OPTIONAL {?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?sClass.\n                ?sClass <http://www.w3.org/2000/01/rdf-schema#label> ?sClassLabel}\n          BIND (COALESCE(?sLabel, ?sClassLabel, 'Unknown Label') AS ?sName )\n          FILTER (?p != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)\n          }\n          }\n        ORDER BY ?sName",
     "metadata": {}
   },
   {

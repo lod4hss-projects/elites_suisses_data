@@ -1,0 +1,8 @@
+[
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX eso: <http://elites_suisses/ontology/>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX sdh-short: <https://sdhss.org/ontology/shortcuts/>\nPREFIX sdh: <https://sdhss.org/ontology/core/>\nPREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>\nPREFIX swel: <https://swiss-elites.lod4hss.cloud/resource/>\nPREFIX sdh-slc: <https://sdhss.org/ontology/social-life-core/>\nPREFIX sdh-sls: <https://sdhss.org/ontology/social-life-specific/>\n\n\n\nselect ?p (count(*) as ?n) \nwhere {\n?studyTitle a sdh-sls:C7;\n    ?p ?o.\n\n}\ngroup by ?p\norder by desc(?n)",
+    "metadata": {}
+  }
+]
