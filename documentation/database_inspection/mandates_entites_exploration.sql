@@ -12,6 +12,29 @@ SELECT count(*) number
 FROM elites_suisses.mandat
 LIMIT 100;
 
+-- Persons with multiple mandates
+SELECT m."idIdentite", i.name_forename, count(*) number
+FROM elites_suisses.mandat m, elites_suisses.identite i 
+where i.id = m."idIdentite" 
+group by i.name_forename, m."idIdentite" 
+order by number desc
+LIMIT 100;
+
+-- Distribution of multiple mandates
+with tw1 as (
+SELECT m."idIdentite", i.name_forename, count(*) number
+FROM elites_suisses.mandat m, elites_suisses.identite i 
+where i.id = m."idIdentite" 
+group by i.name_forename, m."idIdentite" )
+select number, count(*) as n_number
+from tw1
+group by "number" 
+order by number desc;
+
+
+
+
+
 /*
  * First data cleaning, replace trailing spaces in names,
  * in view of simplifying queries
@@ -93,9 +116,9 @@ where m.entite ~* 'Worb';
 select m.*
 from elites_suisses.mandat m 
 where 
---m.entities_id is null
+m.entities_id is null
 --and 
-fonction ~* 'Administrateur-délégué et président'
+--fonction ~* 'Administrateur-délégué et président'
 ;
 
 -- 7558
@@ -117,7 +140,7 @@ FROM elites_suisses.mandat m
 -- inconsistency of the data
 -- add column and clean up
 --where fonction ~* 'prof'
-where fonction ~* 'avoc'
+--where fonction ~* 'avoc'
 GROUP BY fonction
 ORDER BY number DESC;
 
@@ -132,7 +155,8 @@ SELECT type_entite, COUNT(*) as number
 FROM tw1
 -- inconsistency of the data
 -- add column and clean up
-where type_entite~* 'Féd'
+--where type_entite~* 'Féd'
+where type_entite~* 'Prix'
 GROUP BY type_entite
 ORDER BY number DESC;
 
@@ -269,7 +293,7 @@ ORDER BY number DESC;
 -- this view represents organisations implicitly present in mandates
 -- same query as above
 drop view elites_suisses.v_groups_from_mandates;
-create view elites_suisses.v_groups_from_mandates AS 
+create view elites_suisses.v_groups_from_mandates owner ???? AS 
 with tw1 as (
 select entite, organe,"typeEntite" AS type_entite,
 case 
@@ -286,6 +310,11 @@ FROM tw1
 where available_id !~ 'sans'
 GROUP BY nom, e.id, entite, organe, type_entite, available_id
 ORDER BY number DESC;
+
+select *
+from elites_suisses.v_groups_from_mandates
+where m_type_entite ~* 'assoc';
+
 
 -- canton parliaments
 select *

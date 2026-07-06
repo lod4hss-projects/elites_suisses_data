@@ -1,6 +1,8 @@
 
-/*
- * Formations multiples
+/* 
+ * Multiple educational steps or degrees 
+ * for the same person
+ * 
  */
 
 select e."ID_IDENTITE", count(*) as num 
@@ -34,10 +36,21 @@ select i.name_forename, e.*
 from elites_suisses.education e 
 	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
 -- where i.name_forename = 'Brenner, Ernst'
-where i.id = 52223	
+where i.id = 55864 -- 52223	
 order by "ID_IDENTITE" 
 limit 10;	
 
+
+-- example of multiple training
+select i.name_forename, e.zkp_edu, e."ID_IDENTITE", e."Date", e."Formation niveau",
+	e."Titre_stxt", e."TITRE_Codé", e."Institution", e.id_institution, e."THÈSE_Directeur_IdIdentité" ,
+	e."Lieu", e."Canton", e."Pays" 
+from elites_suisses.education e 
+	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
+-- where i.name_forename = 'Brenner, Ernst'
+where i.id = 55864 -- 52223	
+order by "ID_IDENTITE" 
+limit 10;	
 
 
 
@@ -66,7 +79,7 @@ drop view elites_suisses.v_education ;
 create view elites_suisses.v_education as
 select e.zkp_edu as id_edu, e."ID_IDENTITE" as id_person, cg.pk_crm_group , 
 e."THÈSE_Directeur_IdIdentité" as id_directeur, e."Date" as grade_date,
-e.fk_study
+e.fk_study_discipline, e.fk_study_title
 from elites_suisses.education e 
 		join elites_suisses.crm_group cg on cg.fk_source_entity = e.id_institution 
 where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
@@ -75,6 +88,17 @@ and length(e."Date") < 5
 --and e."THÈSE_Directeur_IdIdentité" is not null
 --limit 100;
 ;
+
+
+
+-- inspect the view
+select *
+from elites_suisses.v_education 
+--where id_directeur is not null
+order by id_person
+limit 100;
+
+
 
 select *
 from elites_suisses.v_education 
@@ -101,11 +125,7 @@ group by  trim(lower(e."Formation niveau"))
 order by number desc;
 
 
-select trim(lower(e."TITRE_Codé")), count(*) as number
-FROM elites_suisses.education e 
-where trim(lower(e."Formation niveau")) = 'base'
-group by  trim(lower(e."TITRE_Codé")) 
-order by number desc;
+
 
 
 /*
@@ -132,18 +152,70 @@ select sum(number) total
 from tw1;
 
 
+
+
 /*
 * Degree code
 */
 
-select row_number() OVER (ORDER BY 1)::INTEGER, trim(lower(replace(e."TITRE_Codé", '?',''))) titre, count(*) as number
+select trim(lower(e."TITRE_Codé")), count(*) as number
 FROM elites_suisses.education e 
--- filter provisoire
-join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu
- where length(trim(lower(e."TITRE_Codé"))) > 2
-group by trim(lower(replace(e."TITRE_Codé", '?',''))) 
+where trim(lower(e."Formation niveau")) = 'base'
+group by  trim(lower(e."TITRE_Codé")) 
+order by number desc;
+
+
+-- issue with the quotes corrected
+update elites_suisses.education set "TITRE_Codé" = REPLACE("TITRE_Codé", '’', '''');
+
+
+
+with tw1 as (
+select 
+	CASE
+      when trim(lower(e."TITRE_Codé")) like 'apprent%'
+      then 'apprentissage'
+      when trim(lower(e."TITRE_Codé")) like 'licenc%'
+      then 'licence'
+      when trim(lower(e."TITRE_Codé")) like 'doctora%'
+      then 'doctorat'
+      when trim(lower(e."TITRE_Codé")) like 'll.%'
+      then 'll. m.'
+      else trim(lower(replace(replace(e."TITRE_Codé", '?',''), 'diplome', 'diplôme'))) 
+    end titre_code
+FROM elites_suisses.education e 
+)
+select titre_code, count(*) as number
+FROM tw1 e 
+where length(titre_code) > 2
+group by  titre_code 
 having count(*) > 2
-order by titre;
+order by titre_code;
+order by number desc;
+
+
+-- replace on original table !!!
+update elites_suisses.education e set "TITRE_Codé" = CASE
+      when trim(lower(e."TITRE_Codé")) like 'apprent%'
+      then 'apprentissage'
+      when trim(lower(e."TITRE_Codé")) like 'licenc%'
+      then 'licence'
+      when trim(lower(e."TITRE_Codé")) like 'doctora%'
+      then 'doctorat'
+      when trim(lower(e."TITRE_Codé")) like 'll.%'
+      then 'll. m.'
+      else trim(lower(replace(replace(e."TITRE_Codé", '?',''), 'diplome', 'diplôme'))) 
+    end;
+
+
+
+
+select e."TITRE_Codé", count(*) as number
+FROM elites_suisses.education e 
+where length(e."TITRE_Codé") > 2
+group by  e."TITRE_Codé" 
+having count(*) > 2
+order by e."TITRE_Codé";
 order by number desc;
 
 
@@ -157,14 +229,60 @@ limit 10;
 
 
 
+/*
+ * Create table with study title
+ */
 
-select trim(lower(e."TITRE_Codé")) titre, count(*) as number
+select row_number() OVER (ORDER BY 1)::INTEGER, e."TITRE_Codé", count(*) as number
 FROM elites_suisses.education e 
-	join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu 
-group by  trim(lower(e."TITRE_Codé")) 
-having count(*) > 5
-order by titre;
+where length(e."TITRE_Codé") > 2
+group by  e."TITRE_Codé" 
+having count(*) > 2
+--order by e."TITRE_Codé";
 order by number desc;
+
+
+drop table elites_suisses.t_study_title ;
+create table elites_suisses.t_study_title as
+select row_number() OVER (ORDER BY 1)::INTEGER as id, e."TITRE_Codé" study_title, count(*) as number
+FROM elites_suisses.education e 
+where length(e."TITRE_Codé") > 2
+group by  e."TITRE_Codé" 
+having count(*) > 2
+--order by e."TITRE_Codé";
+order by number desc;
+
+alter table elites_suisses.t_study_title add CONSTRAINT t_study_title_pk PRIMARY key (id);
+
+select * from elites_suisses.t_study_title ;
+
+
+
+select st.*, e.*
+from elites_suisses.education e 
+	join elites_suisses.t_study_title st on st.study_title= e."TITRE_Codé" 
+limit 10;
+
+
+alter table elites_suisses.education add column fk_study_title integer;
+-- FOREIGN KEY 
+alter table elites_suisses.education add constraint fk_study_title_fk foreign key (fk_study_title) 
+	references elites_suisses.t_study_title(id);
+
+
+update elites_suisses.education e set fk_study_title = st.id 
+from elites_suisses.t_study_title st
+where st.study_title= e."TITRE_Codé";
+
+
+select st.study_title, e.*
+from elites_suisses.education e
+	join elites_suisses.t_study_title st on st.id = e.fk_study_title 
+limit 10
+
+
+
+
 
 
 
