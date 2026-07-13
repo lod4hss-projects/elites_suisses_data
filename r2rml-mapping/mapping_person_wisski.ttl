@@ -181,6 +181,7 @@
         rr:class sdh-sls:C8;
     ];
     rr:predicateObjectMap [
+        # standard label
         rr:predicate sdh-short:P9;
         rr:objectMap [ rr:column "study_title" ];
     ].

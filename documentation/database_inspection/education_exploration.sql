@@ -12,7 +12,7 @@ order by num desc
 limit 20;
 
 -- number of different segmets per person
-select e."ID_IDENTITE", count(*) as num , string_agg(distinct e."Formation niveau", ',' order by e."Formation niveau")
+select e."ID_IDENTITE",count(*) as num , string_agg(distinct e."Formation niveau", ',' order by e."Formation niveau")
 from elites_suisses.education e 
 group by e."ID_IDENTITE" 
 order by num desc;
@@ -54,6 +54,15 @@ limit 10;
 
 
 
+
+-- example of multiple training
+select e."Date", i.name_forename, i.birth_year, e.*
+from elites_suisses.education e 
+	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
+-- where i.name_forename = 'Brenner, Ernst'
+where e."Institution" ~* 'Louva'
+order by "ID_IDENTITE" ;
+limit 10;	
 
 
 
@@ -108,7 +117,12 @@ order by id_person
 limit 100;
 
 
-
+select *
+from elites_suisses.v_education 
+where id_directeur is not null
+--where id_person is null
+order by id_person
+limit 100;
 
 
 
@@ -158,34 +172,10 @@ from tw1;
 * Degree code
 */
 
-select row_number() OVER (ORDER BY 1)::INTEGER, trim(lower(replace(e."TITRE_Codé", '?',''))) titre, count(*) as number
-FROM elites_suisses.education e 
--- filter provisoire
-join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu
- where length(trim(lower(e."TITRE_Codé"))) > 2
-group by trim(lower(replace(e."TITRE_Codé", '?',''))) 
-having count(*) > 2
-order by titre;
-order by number desc;
-
-
-
-select i.name_forename, e.*
-from elites_suisses.education e 
-	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
-where e.id_institution is not null
-order by "ID_IDENTITE" 
-limit 10;	
-
-
-
-
-select trim(lower(e."TITRE_Codé")) titre, count(*) as number
+select trim(lower(e."TITRE_Codé")), count(*) as number
 FROM elites_suisses.education e 
 where trim(lower(e."Formation niveau")) = 'base'
 group by  trim(lower(e."TITRE_Codé")) 
-having count(*) > 5
-order by titre;
 order by number desc;
 
 
@@ -214,7 +204,7 @@ FROM tw1 e
 where length(titre_code) > 2
 group by  titre_code 
 having count(*) > 2
-order by titre_code;
+--order by titre_code;
 order by number desc;
 
 
@@ -257,11 +247,12 @@ limit 10;
  * Create table with study title
  */
 
-select row_number() OVER (ORDER BY 1)::INTEGER, e."TITRE_Codé", count(*) as number
+select row_number() OVER (ORDER BY 1)::INTEGER id, e."TITRE_Codé", count(*) as number
 FROM elites_suisses.education e 
 where length(e."TITRE_Codé") > 2
 group by  e."TITRE_Codé" 
 having count(*) > 2
+--order by id;
 --order by e."TITRE_Codé";
 order by number desc;
 
@@ -606,6 +597,9 @@ where e.id_institution is null
 and length(e."Institution") > 2
 group by e."Institution" 
 order by number DESC;
+
+
+
 
 
 

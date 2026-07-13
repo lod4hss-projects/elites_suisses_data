@@ -48,12 +48,34 @@ update elites_suisses.mandat m set "typeEntite" =trim("typeEntite");
 
 update elites_suisses.mandat m set "partiAffiliationOfficeSecteur" =trim("partiAffiliationOfficeSecteur");
 
+alter table elites_suisses.mandat add CONSTRAINT mandat_pk PRIMARY key (id);
 
 /*
  * [March 2026, FB] I add the entity_id column as a column to be used as foreign key
  */
 
 ALTER TABLE elites_suisses.mandat ADD COLUMN entities_id INTEGER;
+
+
+
+
+
+-- Query preparing CSV export for OpenRefine
+SELECT m."idIdentite", i.name_forename, i.birth_year,
+m."typeEntite", 
+m.entite, e.nom nom_table_entite,  
+cg."name" , m.fk_crm_group_organe, m.entities_id ,
+m.organe,m."partiAffiliationOfficeSecteur" ,
+m.fonction,  m.sphere
+FROM elites_suisses.mandat m 
+	join elites_suisses.identite i on i.id = m."idIdentite"
+	left join elites_suisses.entites e on e."id" = m."entities_id" 
+	left join elites_suisses.crm_group cg on cg.pk_crm_group = m.fk_crm_group_organe 
+order by i.id;
+LIMIT 100;
+
+
+
 
 
 select *
