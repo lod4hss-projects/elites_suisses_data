@@ -4,7 +4,7 @@
 select-insert-test.ipynb
 select-insert-test-sparqlwrapper.ipynb
 
-
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
