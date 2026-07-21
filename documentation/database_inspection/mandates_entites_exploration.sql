@@ -46,6 +46,8 @@ update elites_suisses.mandat m set entite =trim(entite);
 
 update elites_suisses.mandat m set "typeEntite" =trim("typeEntite");
 
+update elites_suisses.mandat m set sphere =trim(sphere);
+
 update elites_suisses.mandat m set "partiAffiliationOfficeSecteur" =trim("partiAffiliationOfficeSecteur");
 
 alter table elites_suisses.mandat add CONSTRAINT mandat_pk PRIMARY key (id);
