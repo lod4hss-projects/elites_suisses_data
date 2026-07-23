@@ -1,181 +1,184 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Seite-1" id="bSiUw3Vx1BqaFRmyLhPr">
-    <mxGraphModel dx="771" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-54" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="xqZrpZ_5HSHeCWyo25AA-53" value="crm P2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="E74 Group" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="410" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-11" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-7" value="crm P107">
-          <mxGeometry relative="1" x="0.0002" as="geometry">
-            <mxPoint as="offset" />
-            <Array as="points">
-              <mxPoint x="450" y="510.04" />
-              <mxPoint x="510" y="510.04" />
-              <mxPoint x="510" y="455" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="E4 Period &amp;amp; P9 consists of (forms part of)" vertex="1">
-          <mxGeometry height="80" width="80" x="620" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="E55 Type &amp;amp; P150 defines typical parts of (defines typical wholes for)" vertex="1">
-          <mxGeometry height="80" width="80" x="490" y="50" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="P107 has current or former member" vertex="1">
-          <mxGeometry height="80" width="80" x="730" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-23" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-22" value="crm P107 has current or former member">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Harvard University" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-25" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="xqZrpZ_5HSHeCWyo25AA-24" value="crm P2 has type">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-29" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-27" value="crm P2 has type">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Harvard Law School" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="770" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Faculty/Department" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="770" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Graduate School" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="850" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" value="crm E55 Type" vertex="1">
-          <mxGeometry height="40" width="120" x="600" y="600" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" value="crm E74 Group" vertex="1">
-          <mxGeometry height="40" width="120" x="360" y="600" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-32" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-36" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;crm P107 has current or former member&lt;/span&gt;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-42" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-39">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-46" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-43">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-47" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-44">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-48" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-45">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="ETH Domain (wd:Q664875)" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="930" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="ETH Zurich" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="1050" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="EPFL Lausanne" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="1129" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Paul Scherrer Institute" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="1210" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-44" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Eidgenössische Forschungsanstalt für Wald, Schnee und Landschaft" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="1290" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Eawag" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="1370" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="A. Subgroups&lt;div&gt;(e.g. graduate schools, colleges etc.)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="160" x="80" y="600" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" value="crm E74 Group" vertex="1">
-          <mxGeometry height="40" width="120" x="360" y="880" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="B. Domains/Supergroups&lt;div&gt;(e.g. University clusters)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="160" x="80" y="880" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="E55 Type" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="410" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-55" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="University of Paris&lt;div&gt;(wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q209842&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="1530" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" value="crm E74 Group" vertex="1">
-          <mxGeometry height="40" width="120" x="360" y="1480" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="C. Historical Transformation&lt;div&gt;(Fusion/Split-up, Formation/Dissolution)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="160" x="80" y="1480" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="= Parent Group" vertex="1">
-          <mxGeometry height="30" width="90" x="490" y="665" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;[ E74 Group: Alte Universität von Paris (bis 1970) ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P99i was dissolved by&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;v&lt;/div&gt;&lt;div&gt;[ E68 Dissolution: Aufteilung 1970 ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P93i was taken out of existence by&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;v&lt;/div&gt;&lt;div&gt;[ E74 Group: Paris I ] &amp;lt;-------+&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P151 was formed from&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;[ E66 Formation: Fusion / Reunion ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P95 brought into existence&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;v&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;[ E74 Group: Neue Sorbonne Universität ]&lt;/div&gt;" vertex="1">
-          <mxGeometry height="240" width="320" x="400" y="2010" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-79" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-55">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-61" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;Université Paris IV (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q546118)&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgba(0, 0, 0, 0), rgba(237, 237, 237, 0)); background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="1680" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-80" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-55">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-64" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;Université Paris VI (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q1144549)&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgba(0, 0, 0, 0), rgba(237, 237, 237, 0)); background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="1780" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-81" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-55">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-65" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;Université Paris XIII&lt;/div&gt;&lt;div&gt;(wd: ...)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="1880" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-66" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;Université Paris I (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;...)&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgba(0, 0, 0, 0), rgba(237, 237, 237, 0)); background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="600" y="1580" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-70" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-55" value="P151 was formed from">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="430" y="1670" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" value="crm E74 Group" vertex="1">
-          <mxGeometry height="40" width="120" x="600" y="1480" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="..." vertex="1">
-          <mxGeometry height="40" width="60" x="630" y="1640" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="..." vertex="1">
-          <mxGeometry height="40" width="60" x="630" y="1740" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="..." vertex="1">
-          <mxGeometry height="40" width="60" x="630" y="1840" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-82" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-64">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-83" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-61" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;P151 was formed from&lt;/span&gt;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-76" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div&gt;Sorbonne University (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q41497113)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="840" y="1780" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-84" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" value="crm E74 Group" vertex="1">
-          <mxGeometry height="40" width="120" x="840" y="1480" as="geometry" />
-        </mxCell>
-        <mxCell id="xqZrpZ_5HSHeCWyo25AA-85" edge="1" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="xqZrpZ_5HSHeCWyo25AA-7" value="crm P151">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="390.04" y="510" />
-              <mxPoint x="320.04" y="510" />
-              <mxPoint x="320.04" y="455.04" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Seite-1" id="bSiUw3Vx1BqaFRmyLhPr">
+        <mxGraphModel dx="532" dy="341" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-54" value="crm P2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" target="xqZrpZ_5HSHeCWyo25AA-53" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-7" value="E74 Group" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="360" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-11" value="crm P107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" target="xqZrpZ_5HSHeCWyo25AA-7" edge="1">
+                    <mxGeometry x="0.0002" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="450" y="510.04"/>
+                            <mxPoint x="510" y="510.04"/>
+                            <mxPoint x="510" y="455"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-15" value="E4 Period &amp;amp; P9 consists of (forms part of)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="60" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-16" value="E55 Type &amp;amp; P150 defines typical parts of (defines typical wholes for)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="50" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-20" value="P107 has current or former member" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="80" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-23" value="crm P107 has current or former member" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-21" target="xqZrpZ_5HSHeCWyo25AA-22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-21" value="Harvard University" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="650" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-25" value="crm P2 has type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-22" target="xqZrpZ_5HSHeCWyo25AA-24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-29" value="crm P2 has type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-22" target="xqZrpZ_5HSHeCWyo25AA-27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-22" value="Harvard Law School" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-24" value="Faculty/Department" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-27" value="Graduate School" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="850" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-30" value="crm E55 Type" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="600" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-31" value="crm E74 Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="600" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-32" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;crm P107 has current or former member&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" target="xqZrpZ_5HSHeCWyo25AA-36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" target="xqZrpZ_5HSHeCWyo25AA-39" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" target="xqZrpZ_5HSHeCWyo25AA-43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" target="xqZrpZ_5HSHeCWyo25AA-44" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-33" target="xqZrpZ_5HSHeCWyo25AA-45" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-33" value="ETH Domain (wd:Q664875)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="930" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-36" value="ETH Zurich" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1050" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-39" value="EPFL Lausanne" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1129" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-43" value="Paul Scherrer Institute" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-44" value="Eidgenössische Forschungsanstalt für Wald, Schnee und Landschaft" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-45" value="Eawag" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1370" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-49" value="A. Subgroups&lt;div&gt;(e.g. graduate schools, colleges etc.)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="600" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-51" value="crm E74 Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="880" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-52" value="B. Domains/Supergroups&lt;div&gt;(e.g. University clusters)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="880" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-53" value="E55 Type" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="600" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-55" value="University of Paris&lt;div&gt;(wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q209842&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1530" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-56" value="crm E74 Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="1480" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-57" value="C. Historical Transformation&lt;div&gt;(Fusion/Split-up, Formation/Dissolution)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="1480" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-58" value="= Parent Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="665" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-60" value="&lt;div&gt;[ E74 Group: Alte Universität von Paris (bis 1970) ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P99i was dissolved by&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;v&lt;/div&gt;&lt;div&gt;[ E68 Dissolution: Aufteilung 1970 ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P93i was taken out of existence by&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;v&lt;/div&gt;&lt;div&gt;[ E74 Group: Paris I ] &amp;lt;-------+&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P151 was formed from&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;[ E66 Formation: Fusion / Reunion ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;| P95 brought into existence&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;v&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;[ E74 Group: Neue Sorbonne Universität ]&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="2010" width="320" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-61" target="xqZrpZ_5HSHeCWyo25AA-55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-61" value="&lt;div&gt;Université Paris IV (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q546118)&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgba(0, 0, 0, 0), rgba(237, 237, 237, 0)); background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="1680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-64" target="xqZrpZ_5HSHeCWyo25AA-55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-64" value="&lt;div&gt;Université Paris VI (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q1144549)&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgba(0, 0, 0, 0), rgba(237, 237, 237, 0)); background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="1780" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-65" target="xqZrpZ_5HSHeCWyo25AA-55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-65" value="&lt;div&gt;Université Paris XIII&lt;/div&gt;&lt;div&gt;(wd: ...)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="1880" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-66" value="&lt;div&gt;Université Paris I (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;...)&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgba(0, 0, 0, 0), rgba(237, 237, 237, 0)); background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="1580" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-70" value="P151 was formed from" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-66" target="xqZrpZ_5HSHeCWyo25AA-55" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="1670" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-72" value="crm E74 Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="1480" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-73" value="..." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="1640" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-74" value="..." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="1740" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-75" value="..." style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="1840" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-76" target="xqZrpZ_5HSHeCWyo25AA-64" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-83" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: nowrap; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;P151 was formed from&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-76" target="xqZrpZ_5HSHeCWyo25AA-61" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-76" value="&lt;div&gt;Sorbonne University (wd:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Q41497113)&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="1780" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-84" value="crm E74 Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="1480" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-85" value="crm P151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" target="xqZrpZ_5HSHeCWyo25AA-7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="390.04" y="510"/>
+                            <mxPoint x="320.04" y="510"/>
+                            <mxPoint x="320.04" y="455.04"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="Formation" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="260" y="300" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

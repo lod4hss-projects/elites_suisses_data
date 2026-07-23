@@ -94,7 +94,11 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA elites_suisses
 GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO hgb_editor;
 
 
+ALTER TABLE new_table RENAME TO old_table;
 
+
+SELECT last_value FROM elites_suisses.crm_group_pk_crm_group_seq1;
+--SELECT setval('elites_suisses.crm_group_pk_crm_group_seq1', 566, true);
 
 
 

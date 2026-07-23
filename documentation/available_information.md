@@ -1,9 +1,20 @@
 
 # Semantic Analysis and Mapping of Database Tables 
 
+
+
 &nbsp;
 
-## Persons (table *identite*)
+
+
+## Original Tables
+
+These tables were delivered by the project
+
+
+&nbsp;
+
+### Persons (table *identite*)
 
 
 Rows in this table represent persons.
@@ -15,7 +26,7 @@ Data inspection and structure of the table [to be found here](information_analys
 &nbsp;
 
 
-## Links (table *identifier*)
+### Links (table *identifier*)
 
 Rows in this table represent relations to other identifiers or to webpages about the same persons.
 
@@ -25,7 +36,7 @@ Data inspection and structure of the table [to be found here](information_analys
 
 
 
-## Parents (table *filiations*)
+### Parents (table *filiations*)
 
 Rows in this table represent relations to parents.
 
@@ -34,7 +45,7 @@ Data inspection and structure of the table [to be found here](information_analys
 &nbsp;
 
 
-## Education (table *education*)
+### Education (table *education*)
 
 Rows in this table represent educational phases, studies and degrees.
 
@@ -44,7 +55,7 @@ Data inspection and structure of the table [to be found here](information_analys
 
 
 
-## Marriage (table *mariage*)
+### Marriage (table *mariage*)
 
 Rows in this table represent marriages.
 
@@ -55,7 +66,7 @@ Data inspection and structure of the table [to be found here](information_analys
 &nbsp;
 
 
-## Organisations (tables *entites*, *autresNomsEntites*)
+### Organisations (tables *entites*, *autresNomsEntites*)
 
 Rows in the *entites* table represent organisations of different kinds.
 
@@ -70,7 +81,7 @@ Data inspection and structure of the table [to be found here](information_analys
 &nbsp;
 
 
-## Roles, Memberships, Prizes (table *mandat*)
+### Roles, Memberships, Prizes (table *mandat*)
 
 Rows in this table represent a bundle of different informations, mainly instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data
 
@@ -79,4 +90,61 @@ Data inspection and structure of the table [to be found here](information_analys
 &nbsp;
 
 
+## New tables
 
+These tables allow to create new aentities and associate the original text values to these entities
+
+
+### crm_group
+
+This table replaces the original *entities* table for the management of organisations, etc.
+
+Relevant sql scripts files are:
+
+* [Create new tables for groups (crm_group, group_type, etc.)](database_inspection/groups_new_tables.sql)
+* [Feed the new tables](database_inspection/groups_entities_enrichment.sql)
+
+
+### group_type
+
+This table provides a refined controlled vocabulary for group types
+
+
+### group_type
+
+This table provides a controlled vocabulary for genders
+
+
+### social_relationship_type
+
+This table provides a controlled vocabulary for social relationships' types
+
+
+### social_role
+
+This table provides a controlled vocabulary for any kind of social roles, in all domains
+
+
+
+### t_study_title
+
+This table provides a controlled vocabulary for study titles, it is used in the domain of education
+
+
+### t_study_discipline
+
+This table provides a controlled vocabulary for study and teaching disciplines, it is used in the domain of education and teaching
+
+
+
+### t_entity_sub_entity_education
+
+This table is used to clean up organisations related to mandates in the domain of education
+
+
+&nbsp;
+
+
+## New views
+
+These tables are use for data in spection and consistency check

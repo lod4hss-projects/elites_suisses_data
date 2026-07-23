@@ -64,9 +64,8 @@ and e_nom !~ 'uri'
 order by e_nom;
 
 
---insert into elites_suisses.crm_group ("name", description, fk_source_entity, import_notes)
-select distinct concat(e'Conseil d\'État du canton ', e_nom) nom, concat(e'Conseil d\'État du canton ', e_nom), 
-e_id, '20260415_imp1'
+--insert into elites_suisses.crm_group ("name", description, import_notes)
+select distinct concat(e'Conseil d\'État du canton ', e_nom) nom, concat(e'Conseil d\'État du canton ', e_nom),  '20260415_imp1'
 from elites_suisses.v_groups_from_mandates
 where 
 m_organe ~* 'cutif' and 
@@ -75,6 +74,7 @@ and e_nom !~ 'orpa'
 and e_nom !~ 'ossa'
 and e_nom !~ 'uri'
 order by nom;
+
 
 
 --insert into elites_suisses.crm_group ("name", description, fk_source_entity, import_notes)
@@ -116,8 +116,8 @@ order by e_nom;
 
 
 --insert into elites_suisses.crm_group ("name", description, fk_source_entity, import_notes, fk_group_type)
-select distinct concat(e'Parlement cantonal du Canton de ', e_nom) nom, concat(e'Législatif du canton ', e_nom), 
-e_id, '20260415_imp3', 3
+select distinct concat(e'Parlement cantonal du Canton de ', e_nom) nom, concat(e'Législatif du canton ', e_nom),
+'20260415_imp3', 3
 from elites_suisses.v_groups_from_mandates
 where 
 m_organe ~* 'gislati' 
@@ -134,3 +134,42 @@ where
 m_organe ~* 'cutif'
 and m_type_entite ~* 'can'
 and length(e_nom) = 2;
+
+
+
+
+/*
+ * Add missing entities to groups
+ */
+select * 
+from elites_suisses.entites e
+limit 100;
+
+select distinct e.nom, e."typeEntite", e. , cg.name_standard, cg.name_original, cg.fk_source_entity 
+from elites_suisses.entites e
+   left join elites_suisses.crm_group cg on e.id = cg.fk_source_entity     
+order by e.nom ; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

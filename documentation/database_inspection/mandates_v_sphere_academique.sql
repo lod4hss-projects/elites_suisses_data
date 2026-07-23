@@ -1,3 +1,8 @@
+/*
+ * These scripts are about the inspection and cleaning
+ * of the mandates in the domain of the academic life
+ */
+
 
 select *
 from elites_suisses.v_sphere_academique;
@@ -74,10 +79,14 @@ alter table elites_suisses.t_entity_sub_entity_education add CONSTRAINT t_entity
  */
 
 select * 
-from elites_suisses.t_entity_sub_entity
+from elites_suisses.t_entity_sub_entity_education
 order by id;
 
 
+
+select *
+from elites_suisses.mandat m 
+where id in (66454,64080)
 
 
 /*
