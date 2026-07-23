@@ -102,6 +102,10 @@ select *
 from elites_suisses.mandat m 
 where id in (66454,64080)
 
+select *
+from elites_suisses.mandat m 
+where id in (66454,64080)
+
 
 /*
  * inspection des typeEntite
