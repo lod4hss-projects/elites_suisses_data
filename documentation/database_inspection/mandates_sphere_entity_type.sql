@@ -64,10 +64,17 @@ where m."typeEntite" = 'Prix/Distinction';
  */
 
 -- academic domain
+drop view elites_suisses.v_sphere_academique;
 create view elites_suisses.v_sphere_academique AS
 select *
 from elites_suisses.mandat m 
 where m."sphere" = 'Académique';
+
+select *
+from elites_suisses.v_sphere_academique
+--where "typeEntite" = 'Prix/Distinction'
+where "typeEntite" = 'Enseignement'
+limit 100;
 
 
 select m."typeEntite", count(*) as num
@@ -91,6 +98,7 @@ order by num desc
 
 
 -- administrative domain
+drop view elites_suisses.v_sphere_administrative;
 create view elites_suisses.v_sphere_administrative AS
 select *
 from elites_suisses.mandat m 
@@ -112,6 +120,7 @@ order by m."entite";
 
 
 -- economy domain
+drop view elites_suisses.v_sphere_economique;
 create view elites_suisses.v_sphere_economique AS
 select *
 from elites_suisses.mandat m 
@@ -131,6 +140,7 @@ order by m."entite";
 
 
 -- military domain
+drop view elites_suisses.v_sphere_militaire;
 create view elites_suisses.v_sphere_militaire AS
 select *
 from elites_suisses.mandat m 
@@ -150,6 +160,7 @@ order by m."entite";
 
 
 -- politics domain
+drop view elites_suisses.v_sphere_politique;
 create view elites_suisses.v_sphere_politique AS
 select *
 from elites_suisses.mandat m 
@@ -166,7 +177,9 @@ group by  m."entite",  m."idEntite"
 order by m."entite";
 
 
+
 -- Journalisme domain
+drop view elites_suisses.v_sphere_presse;
 create view elites_suisses.v_sphere_presse AS
 select *
 from elites_suisses.mandat m 
@@ -184,6 +197,7 @@ order by m."entite";
 
 
 -- social interaction domain
+drop view elites_suisses.v_sphere_sociabilite;
 create view elites_suisses.v_sphere_sociabilite AS
 select *
 from elites_suisses.mandat m 

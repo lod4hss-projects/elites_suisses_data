@@ -55,7 +55,6 @@ alter table elites_suisses.social_role add constraint fk_crm_group_fk foreign ke
 
 
 
-
 /*
  * entités et organes / organes dans les entités
  * crm:74 Group
@@ -65,27 +64,49 @@ alter table elites_suisses.social_role add constraint fk_crm_group_fk foreign ke
 --drop table elites_suisses.crm_group cascade;
 CREATE TABLE elites_suisses.crm_group (
     pk_crm_group INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    name varchar(255),
-    description TEXT,
+    name_standard varchar(255),
+    na_st_language varchar(3),
+    name_french varchar(255),
+    name_original varchar(255),
+    definition TEXT,
     fk_group_type INTEGER,
     notes text,
     wikidata_uri varchar(255),
     fk_source_entity integer,
+    fk_part_of integer,
+    fk_origin_of integer,
     import_notes text
 );
 
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE elites_suisses.crm_group TO "hgb_editor";
 
-ALTER TABLE elites_suisses.crm_group OWNER TO "hgb_editor";
+-- 1. Create the new role (with login capability if needed)
+CREATE ROLE hgb_editor WITH LOGIN PASSWORD 'ABCD';
 
-<<<<<<< HEAD
+-- 2. Grant permissions on all existing tables in the schema
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA elites_suisses TO hgb_editor;
+
+-- 3. (Recommended) Grant usage on the schema itself
+-- Without this, the role can't access the schema even if it has table permissions
+GRANT USAGE ON SCHEMA elites_suisses TO hgb_editor;
+
+-- 4. (Optional) Automate permissions for future tables
+ALTER DEFAULT PRIVILEGES IN SCHEMA elites_suisses 
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO hgb_editor;
+
+
+
+
+
+
+
 -- FOREIGN KEY 
 alter table elites_suisses.crm_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
 	references elites_suisses.entites(id);
 
 
-=======
->>>>>>> c88218c (alignement conseil national et organes cantonaux)
+
+
+
 
 ALTER TABLE elites_suisses.mandat ADD COLUMN fk_crm_group_organe INTEGER;
 
@@ -94,12 +115,18 @@ alter table elites_suisses.mandat add constraint fk_crm_group_organe_fk foreign 
 	references elites_suisses.crm_group(pk_crm_group);
 
 
-<<<<<<< HEAD
-=======
+ALTER TABLE elites_suisses.mandat ADD COLUMN fk_crm_group INTEGER;
+
+-- FOREIGN KEY 
+alter table elites_suisses.mandat add constraint fk_crm_group_fk foreign key (fk_crm_group) 
+	references elites_suisses.crm_group(pk_crm_group);
+
+
+
+
 -- FOREIGN KEY 
 alter table elites_suisses.crm_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
 	references elites_suisses.entites(id);
->>>>>>> c88218c (alignement conseil national et organes cantonaux)
 
 
 
@@ -113,8 +140,22 @@ CREATE TABLE elites_suisses.group_type (
     wikidata_uri varchar(255),
     import_notes text
 );
-ALTER TABLE elites_suisses.group_type OWNER TO "hgb_editor";
+
 -- FOREIGN KEY 
 alter table elites_suisses.crm_group add constraint fk_group_type_fk foreign key (fk_group_type) 
 	references elites_suisses.group_type(pk_group_type);
 
+
+
+
+/*
+ * Add foreign key to crm_group from entities
+ */
+
+select m.entite, cg.name_standard, m.id, cg.pk_crm_group 
+from elites_suisses.v_sphere_academique m  
+	join elites_suisses.crm_group cg on cg.fk_source_entity = m.entities_id  
+
+update elites_suisses.mandat m set fk_crm_group = cg.pk_crm_group 
+from elites_suisses.crm_group cg 
+where cg.fk_source_entity = m.entities_id ;

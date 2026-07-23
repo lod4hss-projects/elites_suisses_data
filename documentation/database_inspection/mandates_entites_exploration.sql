@@ -52,12 +52,13 @@ update elites_suisses.mandat m set "partiAffiliationOfficeSecteur" =trim("partiA
 
 alter table elites_suisses.mandat add CONSTRAINT mandat_pk PRIMARY key (id);
 
+
+
 /*
  * [March 2026, FB] I add the entity_id column as a column to be used as foreign key
  */
 
-ALTER TABLE elites_suisses.mandat ADD COLUMN entities_id INTEGER;
-
+ALTER TABLE elites_suisses.mandat ADD COLUMN id_entity INTEGER;
 
 
 
@@ -66,12 +67,12 @@ ALTER TABLE elites_suisses.mandat ADD COLUMN entities_id INTEGER;
 SELECT m."idIdentite", i.name_forename, i.birth_year,
 m."typeEntite", 
 m.entite, e.nom nom_table_entite,  
-cg."name" , m.fk_crm_group_organe, m.entities_id ,
+cg."name" , m.fk_crm_group_organe, m.id_entity ,
 m.organe,m."partiAffiliationOfficeSecteur" ,
 m.fonction,  m.sphere
 FROM elites_suisses.mandat m 
 	join elites_suisses.identite i on i.id = m."idIdentite"
-	left join elites_suisses.entites e on e."id" = m."entities_id" 
+	left join elites_suisses.entites e on e."id" = m."id_entity" 
 	left join elites_suisses.crm_group cg on cg.pk_crm_group = m.fk_crm_group_organe 
 order by i.id;
 LIMIT 100;
@@ -93,8 +94,13 @@ and m."idEntite" is not null and m."idEntite" != ''
 and e."idEntite" is null or e."idEntite" = ''
 limit 100;
 
+
+/*
+ * Added integer entity.id to mandates !!!
+ */
+
 -- added the values
-update elites_suisses.mandat m set entities_id = e.id
+update elites_suisses.mandat m set id_entity = e.id
 from elites_suisses.entites e 
 where e.nom != 'Worb'
 and e."idEntite" = m."idEntite" 
@@ -111,7 +117,7 @@ limit 10;
 
 
 -- FOREIGN KEY 
-alter table elites_suisses.mandat add constraint fk_entities foreign key (entities_id) 
+alter table elites_suisses.mandat add constraint fk_entities foreign key (id_entity) 
 	references elites_suisses.entites(id);
 
 
@@ -126,7 +132,7 @@ from elites_suisses.entites e
 where e.nom  ~* 'Worb'
 limit 10;
 
-update elites_suisses.mandat m set entities_id = 3291
+update elites_suisses.mandat m set id_entity = 3291
 where m.entite ~* 'Worb';
 
 
@@ -140,7 +146,7 @@ where m.entite ~* 'Worb';
 select m.*
 from elites_suisses.mandat m 
 where 
-m.entities_id is null
+m.id_entity is null
 --and 
 --fonction ~* 'Administrateur-délégué et président'
 ;
@@ -148,7 +154,7 @@ m.entities_id is null
 -- 7558
 select count(*)
 from elites_suisses.mandat m 
-where m.entities_id is null;
+where m.id_entity is null;
 
 
 
@@ -203,7 +209,7 @@ ORDER BY number DESC;
 with tw1 as (
 select fonction,organe,"typeEntite" AS type_entite,
 case 
-	when entities_id > 0 then 'avec_id_org'
+	when id_entity > 0 then 'avec_id_org'
 	else 'sans_id_org'
 end available_id
 from elites_suisses.mandat m 
@@ -222,7 +228,7 @@ ORDER BY number DESC;
 with tw1 as (
 select fonction, organe,"typeEntite" AS type_entite,
 case 
-	when entities_id > 0 then 'avec_id_org'
+	when id_entity > 0 then 'avec_id_org'
 	else 'sans_id_org'
 end available_id,
 m."idEntite" 
@@ -272,11 +278,11 @@ order by tw1."number" desc;
 
 -- filtered query for R2RML test
 
-select m."idIdentite", m.entite, m.entities_id, e.nom  
+select m."idIdentite", m.entite, m.id_entity, e.nom  
 from elites_suisses.mandat m 
-    join elites_suisses.entites e on e.id = m.entities_id
+    join elites_suisses.entites e on e.id = m.id_entity
 where m.fonction = 'Membre'
-and m.entities_id > 0
+and m.id_entity > 0
 offset 50
 limit 10;
 
@@ -298,15 +304,15 @@ limit 10;
 with tw1 as (
 select entite, organe,"typeEntite" AS type_entite,
 case 
-	when entities_id > 0 then 'avec_id_org'
+	when id_entity > 0 then 'avec_id_org'
 	else 'sans_id_org'
 end available_id,
-m.entities_id, m.id
+m.id_entity, m.id
 from elites_suisses.mandat m )
 SELECT e.nom e_nom, e.id e_id, tw1.entite m_nom, type_entite m_type_entite, organe m_organe, 
 	COUNT(*) as number, string_agg(tw1.id::text, ',') as m_ids
 FROM tw1
-   left join elites_suisses.entites e on e.id =  tw1.entities_id 
+   left join elites_suisses.entites e on e.id =  tw1.id_entity 
 -- only identified entities
 where available_id !~ 'sans'
 GROUP BY nom, e.id, entite, organe, type_entite, available_id
@@ -321,15 +327,15 @@ create view elites_suisses.v_groups_from_mandates owner ???? AS
 with tw1 as (
 select entite, organe,"typeEntite" AS type_entite,
 case 
-	when entities_id > 0 then 'avec_id_org'
+	when id_entity > 0 then 'avec_id_org'
 	else 'sans_id_org'
 end available_id,
-m.entities_id, m.id
+m.id_entity, m.id
 from elites_suisses.mandat m )
 SELECT e.nom e_nom, e.id e_id, tw1.entite m_nom, type_entite m_type_entite, organe m_organe, 
 	COUNT(*) as number, string_agg(tw1.id::text, ',') as m_ids
 FROM tw1
-   left join elites_suisses.entites e on e.id =  tw1.entities_id 
+   left join elites_suisses.entites e on e.id =  tw1.id_entity 
 -- only identified entities
 where available_id !~ 'sans'
 GROUP BY nom, e.id, entite, organe, type_entite, available_id

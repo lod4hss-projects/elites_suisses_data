@@ -43,7 +43,7 @@ limit 10;
 
 -- example of multiple training
 select i.name_forename, e.zkp_edu, e."ID_IDENTITE", e."Date", e."Formation niveau",
-	e."Titre_stxt", e."TITRE_Codé", e."Institution", e.id_institution, e."THÈSE_Directeur_IdIdentité" ,
+	e."Titre_stxt", e."TITRE_Codé", e."Institution", e.id_entity, e."THÈSE_Directeur_IdIdentité" ,
 	e."Lieu", e."Canton", e."Pays" 
 from elites_suisses.education e 
 	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
@@ -90,7 +90,7 @@ select e.zkp_edu as id_edu, e."ID_IDENTITE" as id_person, cg.pk_crm_group ,
 e."THÈSE_Directeur_IdIdentité" as id_directeur, e."Date" as grade_date,
 e.fk_study_discipline, e.fk_study_title
 from elites_suisses.education e 
-		join elites_suisses.crm_group cg on cg.fk_source_entity = e.id_institution 
+		join elites_suisses.crm_group cg on cg.fk_source_entity = e.id_entity 
 where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
 -- only four years dates
 and length(e."Date") < 5 
@@ -237,7 +237,7 @@ order by number desc;
 select i.name_forename, e.*
 from elites_suisses.education e 
 	join elites_suisses.identite i on i.id = e."ID_IDENTITE" 
-where e.id_institution is not null
+where e.id_entity is not null
 order by "ID_IDENTITE" 
 limit 10;	
 
@@ -323,7 +323,7 @@ FROM elites_suisses.education e
 where length(categorie_norm) > 2
 --where Trim( lower(e."Catégorie") ) ~ 'ingé'
 --where Trim( lower(e."Catégorie") ) ~ 'scien'
---and e.id_institution is not null
+--and e.id_entity is not null
 group by categorie_norm
 having count(*) > 4
 order by categorie_norm;
@@ -370,7 +370,7 @@ FROM elites_suisses.education e
 where length(categorie_norm) > 2
 --where Trim( lower(e."Catégorie") ) ~ 'ingé'
 --where Trim( lower(e."Catégorie") ) ~ 'scien'
---and e.id_institution is not null
+--and e.id_entity is not null
 group by categorie_norm
 having count(*) > 4
 order by categorie_norm;
@@ -469,12 +469,12 @@ order by number desc;
 */
 
 -- crate column for alignment
-alter table elites_suisses.education add column id_institution INTEGER;
-alter table elites_suisses.education add constraint fk_education_entites FOREIGN KEY (id_institution) REFERENCES elites_suisses.entites(id);
+alter table elites_suisses.education add column id_entity INTEGER;
+alter table elites_suisses.education add constraint fk_education_entites FOREIGN KEY (id_entity) REFERENCES elites_suisses.entites(id);
 
 
 -- preparer / vérifier alignment
-select ed."Institution", ed.id_institution, ' ' as sp,  ent.nom, ent.id, ent."typeEntite"
+select ed."Institution", ed.id_entity, ' ' as sp,  ent.nom, ent.id, ent."typeEntite"
 from elites_suisses.education ed 
 	join elites_suisses.entites ent on trim(lower(ent.nom)) = trim(lower(ed."Institution")) 
 order by ed."ID_IDENTITE"
@@ -483,7 +483,7 @@ limit 50;
 
 
 -- insert ids of aligned educational institutions
---update elites_suisses.education ed set id_institution = ent.id 
+--update elites_suisses.education ed set id_entity = ent.id 
 from elites_suisses.entites ent 
 where trim(lower(ent.nom)) = trim(lower(ed."Institution")) ;
 
@@ -492,19 +492,19 @@ where trim(lower(ent.nom)) = trim(lower(ed."Institution")) ;
 
 select count(*)
 from elites_suisses.education e 
-where e.id_institution is not null;
+where e.id_entity is not null;
 
 
 -- most frequent entities
 
 with tw1 as (
-select e.id_institution, count(*) as number
+select e.id_entity, count(*) as number
 from elites_suisses.education e 
-group by e.id_institution 
+group by e.id_entity 
 )
 select e.id, e.nom, tw1."number" 
 from tw1, elites_suisses.entites e 
-where e.id = tw1.id_institution 
+where e.id = tw1.id_entity 
 order by number desc;
 
 
@@ -514,15 +514,15 @@ order by number desc;
 
 -- verify if already present
 with tw1 as (
-select e.id_institution, count(*) as number
+select e.id_entity, count(*) as number
 from elites_suisses.education e 
 -- restriction pour une première opération
 where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
-group by e.id_institution 
+group by e.id_entity 
 )
 select e.id, e.nom, tw1."number", cg."name" group_name
 from tw1 
-	join elites_suisses.entites e on e.id = tw1.id_institution 
+	join elites_suisses.entites e on e.id = tw1.id_entity 
 	left join elites_suisses.crm_group cg on cg.fk_source_entity = e.id 
 -- where cg."name" is not null	
 order by number desc;
@@ -531,14 +531,14 @@ order by nom ;
 
 -- prepare insert
 with tw1 as (
-select e.id_institution, count(*) as number
+select e.id_entity, count(*) as number
 from elites_suisses.education e 
 where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
-group by e.id_institution 
+group by e.id_entity 
 )
 select e.id, e.nom, e.nom
 from tw1 
-	join elites_suisses.entites e on e.id = tw1.id_institution 
+	join elites_suisses.entites e on e.id = tw1.id_entity 
 	left join elites_suisses.crm_group cg on cg.fk_source_entity = e.id 
 where cg."name" is null	
 order by number desc;
@@ -546,15 +546,15 @@ order by nom ;
 
 -- insert
 with tw1 as (
-select e.id_institution, count(*) as number
+select e.id_entity, count(*) as number
 from elites_suisses.education e 
 where trim(lower(e."Formation niveau")) in ('doctorat', 'supérieure')
-group by e.id_institution 
+group by e.id_entity 
 )
-insert into elites_suisses.crm_group ("name", description, fk_source_entity, fk_group_type, import_notes )
+--insert into elites_suisses.crm_group ("name", description, fk_source_entity, fk_group_type, import_notes )
 select e.nom, e.nom, e.id, 6, '20260616_imp1'
 from tw1 
-	join elites_suisses.entites e on e.id = tw1.id_institution 
+	join elites_suisses.entites e on e.id = tw1.id_entity 
 	left join elites_suisses.crm_group cg on cg.fk_source_entity = e.id 
 where cg."name" is null	
 order by number desc;
@@ -580,20 +580,20 @@ order by nom ;
 
 select e.*
 FROM elites_suisses.education e 
-where e.id_institution is null
+where e.id_entity is null
 and length(e."Institution") > 2
 limit 100;
 
 select count(*) as number
 FROM elites_suisses.education e 
-where e.id_institution is null
+where e.id_entity is null
 and length(e."Institution") > 2;
 
 
 
 select e."Institution", count(*) as number
 FROM elites_suisses.education e 
-where e.id_institution is null
+where e.id_entity is null
 and length(e."Institution") > 2
 group by e."Institution" 
 order by number DESC;
