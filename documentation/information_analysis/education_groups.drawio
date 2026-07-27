@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Seite-1" id="bSiUw3Vx1BqaFRmyLhPr">
-        <mxGraphModel dx="532" dy="341" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1063" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -166,17 +166,25 @@
                 <mxCell id="xqZrpZ_5HSHeCWyo25AA-84" value="crm E74 Group" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#3333FF;" parent="1" vertex="1">
                     <mxGeometry x="840" y="1480" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="xqZrpZ_5HSHeCWyo25AA-85" value="crm P151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="xqZrpZ_5HSHeCWyo25AA-7" target="xqZrpZ_5HSHeCWyo25AA-7" edge="1">
-                    <mxGeometry relative="1" as="geometry">
+                <mxCell id="xqZrpZ_5HSHeCWyo25AA-85" value="&lt;a title=&quot;CIDOC CRM version 7.1.3&quot; href=&quot;https://ontome.net/property/139/namespace/188&quot;&gt;crm:P151 was formed fro&lt;/a&gt;m" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="2" target="xqZrpZ_5HSHeCWyo25AA-7" edge="1">
+                    <mxGeometry x="0.0047" relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="390.04" y="510"/>
-                            <mxPoint x="320.04" y="510"/>
-                            <mxPoint x="320.04" y="455.04"/>
+                            <mxPoint x="220" y="510"/>
+                            <mxPoint x="320" y="510"/>
+                            <mxPoint x="320" y="455"/>
                         </Array>
+                        <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" value="Formation" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="260" y="300" width="120" height="60" as="geometry"/>
+                <mxCell id="2" value="Formation" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="160" y="430" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;a title=&quot;CIDOC CRM version 7.1.3&quot; href=&quot;https://ontome.net/property/83/namespace/188&quot;&gt;crm:P95 has formed&lt;/a&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="xqZrpZ_5HSHeCWyo25AA-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="500" as="sourcePoint"/>
+                        <mxPoint x="370" y="465" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
