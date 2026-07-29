@@ -110,7 +110,7 @@ Relevant sql scripts files are:
 This table provides a refined controlled vocabulary for group types
 
 
-### group_type
+### gender
 
 This table provides a controlled vocabulary for genders
 
@@ -139,7 +139,9 @@ This table provides a controlled vocabulary for study and teaching disciplines, 
 
 ### t_entity_sub_entity_education
 
-This table is used to clean up organisations related to mandates in the domain of education
+This table is used to clean up organisations related to mandates in the domain of education.
+
+Further information on this process [to be found here](documentation/information_analysis/t_entity_sub_entity_education.md).
 
 
 &nbsp;
