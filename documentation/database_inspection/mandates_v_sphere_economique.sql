@@ -33,6 +33,18 @@ order by organe, entite;
 
 
 
+
+
+select vse.fonction, count(*) as num
+from elites_suisses.v_sphere_economique vse
+	left join elites_suisses.entites e on e.id = vse.id_entity 
+--where "typeEntite" = 'Prix/Distinction'
+group by vse.fonction
+order by vse.fonction;
+
+
+
+
 select *
 from elites_suisses.entites e 
 where nom = 'Worb';

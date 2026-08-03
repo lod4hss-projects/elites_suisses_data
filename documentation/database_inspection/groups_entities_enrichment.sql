@@ -1,6 +1,7 @@
 
 /*
- * We use the view aggregating 
+ * We use the view aggregating groups from mandates
+ * to inspect and enrich the CRM group data
  */
 
 -- canton parliaments

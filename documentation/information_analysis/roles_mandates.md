@@ -1,7 +1,27 @@
 
+## Mandates and general issues
+
+The rows in this table represent bundles of information, primarily instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but the data also contains information about memberships, prizes, and so on. As is common with older, research-driven databases, additional information has been added to the same '*mandates*' table, involving some implicit conceptual remodelling.
+
+This was in particular achieved by adding a column representing the concept of 'activity spheres'. This shows the distribution of mandates per sphere.
+
+|sphere|num|
+|------|---|
+|Académique|29094|
+||1153|
+|Militaire|459|
+|Sportive|1|
+|Economique|23884|
+|Presse|15|
+|Politique|32126|
+|Administrative|15661|
+|Sociabilité|10078|
 
 
-Rows in this table represent a bundle of different informations, mainly instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data
+We decided to split the analysis and refactoring of the database in line with the 'spheres' and created correspondingly a view per sphere.
+
+Cf. [this document](../database_inspection/mandates_sphere_entity_type.sql) with the SQL code.
+
 
 
 &nbsp;
@@ -12,7 +32,16 @@ Rows in this table represent a bundle of different informations, mainly instance
 
 
 
-### Table: *mandat* - structure
+
+
+
+
+&nbsp;
+
+
+
+
+## Original table: *mandat* - structure
 
 
 | Column Name | Data Type |  Comments | Mapping  | Mapping Comments |

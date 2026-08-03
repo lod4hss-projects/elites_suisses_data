@@ -2,6 +2,11 @@
 
 /*
 * Explore domains and entity types
+* 
+* In this document are documented all the scripts used to clean up the 'sphere'
+* column of the mandates table and create the views for the different 'spheres'
+* 
+* 
 */
 
 select m.sphere, count(*) as num
