@@ -45,16 +45,6 @@ Data inspection and structure of the table [to be found here](information_analys
 &nbsp;
 
 
-### Education (table *education*)
-
-Rows in this table represent educational phases, studies and degrees.
-
-Data inspection and structure of the table [to be found here](information_analysis/education.md).
-
-&nbsp;
-
-
-
 ### Marriage (table *mariage*)
 
 Rows in this table represent marriages.
@@ -64,6 +54,17 @@ Rows in this table represent marriages.
 Data inspection and structure of the table [to be found here](information_analysis/marriage.md).
 
 &nbsp;
+
+
+### Education (table *education*)
+
+Rows in this table represent educational phases, studies and degrees.
+
+Data inspection and structure of the table [to be found here](information_analysis/education.md).
+
+&nbsp;
+
+
 
 
 ### Organisations (tables *entites*, *autresNomsEntites*)

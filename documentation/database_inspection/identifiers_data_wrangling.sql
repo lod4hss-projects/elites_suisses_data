@@ -3,6 +3,12 @@ from elites_suisses.identifier i
 limit 10;
 
 
+select i."Identifier_code", count(*) as num
+from elites_suisses.identifier i
+group by "Identifier_code" 
+order by "Identifier_code" ;
+
+
 
 /*
  * Wikidata
