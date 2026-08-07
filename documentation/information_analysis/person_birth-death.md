@@ -36,8 +36,9 @@ see here the [SQL scripts](documentation/database_inspection/sh_identite_inspect
 
 #### Data cleaning
 
-The first step is to clean those date fields. The following script has been used:
-SCRIPT
+The first step is to clean those date fields. It was decided to only extract the birth year, even if this will reduce a bit the precision of the dates.
+
+The SQL script is documented [here](documentation/database_inspection/persons_data_wrangling.sql)
 
 ### Birth Place
 

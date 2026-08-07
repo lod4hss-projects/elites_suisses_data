@@ -69,3 +69,16 @@ FROM elites_suisses.identite i
 WHERE i."cantonNaissance" IS NOT NULL
   AND TRIM(i."cantonNaissance") <> ''
   AND (i."lieuNaissance" IS NULL OR TRIM(i."lieuNaissance") = '');
+
+-- Query to see if we have instances where a lieuNaissance is documented without a cantonNaissance:
+SELECT COUNT(*)
+FROM elites_suisses.identite i 
+WHERE i."lieuNaissance" IS NOT NULL
+  AND TRIM(i."lieuNaissance") <> ''
+  AND (i."cantonNaissance" IS NULL OR TRIM(i."cantonNaissance") = '');
+
+-- Count the number of unique lieuNaissance, with only lowercase and with trim
+SELECT COUNT(DISTINCT LOWER(TRIM(i."lieuNaissance"))) AS unique_place_count
+FROM elites_suisses.identite i 
+WHERE i."lieuNaissance" IS NOT NULL
+  AND TRIM(i."lieuNaissance") <> '';

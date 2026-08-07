@@ -42,11 +42,12 @@ The second option of distinguishing the first and last name can only be document
 
 ## Decision
 
-It was decided, for the moment, to concatenate the first and last name in a new `name` field, follwoing the rule "`nom`, `prenom`".
+It was decided, for the moment, to concatenate the first and last name in a new `name_forename` field, follwoing the rule "`nom`, `prenom`".
+
+The transformation script is documented [here](documentation/database_inspection/persons_data_wrangling.sql).
 
 Then, the mapping is done with the simpler [`sdh-shortcut:P9 has standard label`](https://ontome.net/property/3201) from the person to the string of the appellation.
 
 ![Person appellation model](ontology/diagrams/person_appellation.png)
 
 It was also decided not the clean the way name have been documented.
-s
