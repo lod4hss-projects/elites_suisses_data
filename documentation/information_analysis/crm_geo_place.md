@@ -156,4 +156,4 @@ This how the data has been processed:
 
 In the elites suisses SQL database, a new table, called `sdh_place` should be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching.
 
-A new column in the in the table `identite` in the elites suisses database should be created, with the label `birth_place_id`, and based on the column `birth_place_id` from the the `person.db` database.
+A new column in the in the table `identite` in the elites suisses database should be created, with the label `fk_birth_place`, and based on the column `birth_place_id` from the the `person.db` database.

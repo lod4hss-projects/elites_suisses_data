@@ -1,0 +1,68 @@
+<mxfile host="65bd71144e">
+    <diagram id="lvn2jVKWbdTF_lWRqiax" name="Page-1">
+        <mxGraphModel dx="982" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <object label="crm:E21 Person" URI="http://www.cidoc-crm.org/cidoc-crm/E21_Person" linkTarget="_blank" link="http://www.cidoc-crm.org/cidoc-crm/E21_Person" en="Person" de="Person" el="Πρόσωπο" fr="Personne" pt="Pessoa" ru="Личность" zh="人物" id="3">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffbdca;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="190" y="440" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="11" value="sdh-shortcut:P9&lt;div&gt;has standard label&lt;/div&gt;" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object label="sdh-slc:C11 Gender" id="5">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fab565;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="390" y="515" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="7" value="sdh-slc:P23 has gender&lt;div&gt;(is gender of)&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="380" y="459" as="sourcePoint"/>
+                        <mxPoint x="575" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="10">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="690" y="515" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="12" value="sdh-shortcut:P11&lt;div&gt;has definition&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;rounded=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="13" source="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="675" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="13">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="590" y="600" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="14" value="owl:sameAs" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;rounded=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="15" source="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="290" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="15">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="590" y="430" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="16" value="crm:P3 has note" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;rounded=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="17" source="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="690" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="17">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="490" y="680" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
