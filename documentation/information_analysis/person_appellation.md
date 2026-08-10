@@ -16,7 +16,7 @@ The appellation of a person is documented in two fields in the `identite` table:
 | 101858 | de la Fléchère | Emma Rosalie Julie |
 | 100334 | Müller | E. 2 |
 
-The number beside the last name suggest that it was at some time incorporated to distinguish individuals only ba their name.
+The number beside the last name suggest that it was at some time incorporated to distinguish individuals only by their name.
 
 Number of empty cells (ith a value `NULL` or with the trimed value "":
 
@@ -24,7 +24,7 @@ Number of empty cells (ith a value `NULL` or with the trimed value "":
 |----|----|----|
 | number of empty cells | 0 | 222 |
 
-see here the [SQL scripts](documentation/database_inspection/sh_identite_inspection.sql).
+see here the [SQL scripts](../database_inspection/sh_identite_inspection.sql).
 
 ## Mapping
 
@@ -44,7 +44,7 @@ The second option of distinguishing the first and last name can only be document
 
 It was decided, for the moment, to concatenate the first and last name in a new `name_forename` field, follwoing the rule "`nom`, `prenom`".
 
-The transformation script is documented [here](documentation/database_inspection/persons_data_wrangling.sql).
+The transformation script is documented [here](../database_inspection/persons_data_wrangling.sql).
 
 Then, the mapping is done with the simpler [`sdh-shortcut:P9 has standard label`](https://ontome.net/property/3201) from the person to the string of the appellation.
 

@@ -1,7 +1,7 @@
 
 ## Mandates and general issues
 
-The rows in this table represent bundles of information, primarily instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but the data also contains information about memberships, prizes, and so on. As is common with older, research-driven databases, additional information has been added to the same '*mandates*' table, involving some implicit conceptual remodelling.
+The rows in this table represent bundles of information, primarily instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but the data also contains information about **memberships**, **prizes**,**teaching activity**, and so on. As is common with older, research-driven databases, additional information has been added to the same '*mandates*' table, involving some implicit conceptual remodelling.
 
 This was in particular achieved by adding a column representing the concept of 'activity spheres'. This shows the distribution of mandates per sphere.
 
@@ -85,9 +85,11 @@ The data in the 'mandat' table can be divided by different 'spheres' of a person
 
 Across the various 'spheres', these five typical fields were used to tackle down a person's activity. Depending on the 'typeEntite', however, the notions of the other fields seem to be varying. Therefore, also the type of content in these fields varies from 'typeEntite' to 'typeEntite'. In addition, the 'typeEntite' field does not contain a controlled vocabulary (not to mention the other fields).
 
-The following lists try to structure the available information for 'typeEntite' across the spheres. The lists contain the original field content, the number of mandats, a suggested normalised vocabulary, and a standard english language vocabulary. See also [inspection script](../database_inspection/sk_mandates_scheme-for-typeEntite.sql).
+The following lists try to structure the available information for 'typeEntite' across the spheres. The lists contain the original field content, the number of mandates, a suggested normalised vocabulary, and a standard english language vocabulary. See also [inspection script](../database_inspection/sk_mandates_scheme-for-typeEntite.sql).
 
-*As of now, these lists can be taken as an outset for cleaning the 'typeEntite' and later data cleaning and verified across the various spheres. The above script contains some queries to look into the data in the mandates table. It is useful sometimes to include the 'organe', 'fontion' and 'partiAffiliationOfficeSecteur' in querying the data to verify the concepts below again before finally modifying the data. ***The lists were made after a first review of the data for each combination, so they should already give a good indication on the various types of mandates in the table.****
+*These lists can be taken as an outset for cleaning the 'typeEntite' and later data cleaning and verified across the various spheres. The above script contains some queries to look into the data in the mandates table. It is useful sometimes to include the 'organe', 'fontion' and 'partiAffiliationOfficeSecteur' in querying the data to verify the concepts below again before finally modifying the data.*
+
+***The lists were made after a first review of the data for each combination, so they should already give a good indication on the various types of mandates in the table.***
 
 #### Sphere: Académique
 

@@ -1,40 +1,49 @@
 
 -- Check for all "typeEntite" in all spheres:
+
 -- Academique
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_academique
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
 -- Administrative
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_administrative
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
 -- Economique
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_economique
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
 -- Militaire
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_militaire
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
 -- Politique
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_politique
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
 -- Presse
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_presse
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
 -- Sociabilite
 SELECT "typeEntite", COUNT (*) AS num
 FROM elites_suisses.v_sphere_sociabilite
 GROUP BY "typeEntite"
 ORDER BY "typeEntite" ASC ;
+
+
 
 
 /* Académique */
