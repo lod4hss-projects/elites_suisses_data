@@ -1,0 +1,69 @@
+<mxfile host="65bd71144e">
+    <diagram id="CmTBLJNN_d506tIADf77" name="Page-1">
+        <mxGraphModel dx="529" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="sdh-shortcut:P9&lt;div&gt;has standard label&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;rounded=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="sdh:P20 has geographical place kind" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="sdh-shortcut:P14&lt;div&gt;has geocoordinates&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;curved=0;" edge="1" parent="1" source="4" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object label="sdh:C13 Geographical Place" id="4">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C78E66;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="390" y="515" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="6">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="660" y="650" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="9" value="owl:sameAs" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="290" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="10">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="660" y="510" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="14" value="sdh-shortcut:P9&lt;div&gt;has standard label&lt;/div&gt;" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object label="sdh:C51 Geographical Place Kind" id="15">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fab565;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="390" y="315" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="17">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="690" y="315" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="18" value="sdh-shortcut:P11&lt;div&gt;has definition&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;rounded=0;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="475" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;String&lt;/span&gt;" id="19">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="590" y="210" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;geocoordinates&lt;/span&gt;" id="24">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="170" y="600" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

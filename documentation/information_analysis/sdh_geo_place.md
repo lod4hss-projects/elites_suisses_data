@@ -154,6 +154,29 @@ This how the data has been processed:
 
 ## To be done
 
-In the elites suisses SQL database, a new table, called `sdh_place` should be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching.
+In the elites suisses SQL database, a new table, called `sdh_geo_place` should be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching. In addition, a table `sdh_geo_place_kind` should be created (with the column `pk_place_kind`, `name`, `definition`), with manualy entering the instance for "Settlement" and "Legal Territory".
+
+This new `sdh_geo_place` table should have the following columns:
+- `pk_place`, the unique identifier of the settlement, based on the `id` column in `person.db`.
+- `name`, for the label of the place, based on the `name` column in `person.db`.
+- `fk_place_kind`, for the kind of Geographical Place, with the only value for "Settlement".
+- `wikidata_uri`, for the equivalent instance in the Wikidata Knowledge Graph, based on the `wikidata_uri` column in `person.db`.
+- `geocoordinates`, for the geocoordinates location of the geographical place, following the WKT standard `POINT(long lat)`, based on the `lat` and `long` columns in `person.db`.
 
 A new column in the in the table `identite` in the elites suisses database should be created, with the label `fk_birth_place`, and based on the column `birth_place_id` from the the `person.db` database.
+
+## Mapping
+
+The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
+- the settlements are instances of the class [`sdh:C13 Geograpical Place`](https://sdhss.org/ontology/core/C13)
+- The column `pk_place` serves as the basis for the URI of the geographical place instance
+- The column `name` is a string linked to the instance of geographical place through the property [`sdh-shortcut:P9 has standard label`](https://sdhss.org/ontology/shortcuts/P9)
+- The column `wikidata_uri` is a string linked to the instance of geographical place through the property [`owl:sameAs`](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_sameAs)
+- The column `geocoordinates` is a string linked to the instance of geographical place through the property [`sdh-shortcut:P14 has geocoordinates`](https://sdhss.org/ontology/shortcuts/P14)
+- the geographical place kind are instances of the class [`sdh:C51 Geograpical Place Kind`](https://sdhss.org/ontology/core/C51)
+- The column `name` is a string linked to the instance of geographical place kind through the property [`sdh-shortcut:P9 has standard label`](https://sdhss.org/ontology/shortcuts/P9)
+- The column definition is a string linked to the instance of geographical place kind through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
+
+Here is the ontological diagram:
+
+![Geographical Place](../information_analysis/sdh_geo_place.png)
