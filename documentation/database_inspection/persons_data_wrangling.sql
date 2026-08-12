@@ -1,16 +1,5 @@
 
 
--- add column concatenanting name and forename
-alter table elites_suisses.identite add column name_forename text;
-
-select concat(nom, ', ', i.prenom  )
-from elites_suisses.identite i 
-limit 10;
-
-update elites_suisses.identite i set name_forename = concat(nom, ', ', i.prenom  );
-
-
-
 -- extract birth year
 
 alter table elites_suisses.identite add column birth_year integer;

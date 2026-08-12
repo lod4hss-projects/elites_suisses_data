@@ -1,175 +1,32 @@
-
--- Number of persons
--- December 2025 : 58729 
-
-
-
-select count(*) as effectif
-from elites_suisses.identite i ;
-
-
-
-
 /*
- * Gender
+ * Data Exploration
  */
 
-
-select UPPER(i.sexe) gender, count(*) as effectif
-from elites_suisses.identite i 
-group by UPPER(i.sexe);
-
-
-
-/*
- * Add gender table and relation
- */
-
---drop table  elites_suisses.social_role ;
-CREATE TABLE elites_suisses.gender (
-    pk_gender INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    name varchar(255),
-    description TEXT,
-    code varchar,
-    notes text,
-    wikidata_uri varchar(255),
-    import_notes text
-);
-
-select *
-from elites_suisses.gender;
-
-
-/*
- * Add foreign key to gender table
- */
-
-alter table elites_suisses.identite add column fk_gender integer;
-
--- FOREIGN KEY 
-alter table elites_suisses.identite add constraint fk_gender_fk foreign key (fk_gender) 
-	references elites_suisses.gender(pk_gender);
-
-
-
-select
-	case 
-		when UPPER(sexe)='F'
-		then 1
-	when UPPER(sexe)='H'
-		then 2
-	end as gender
-from elites_suisses.identite i
-limit 100;
-
-
-update elites_suisses.identite set fk_gender = case 
-		when UPPER(sexe)='F'
-		then 1
-	when UPPER(sexe)='H'
-		then 2
-end;
-
-
--- count fk gender
-select fk_gender, count(*) as n
-from  elites_suisses.identite i 
-group by fk_gender;
-
-
-
-
-
-/*
- * Birth Cantons
- */
-
-select trim(UPPER(i."cantonNaissance")) canton, count(*) as effectif
-from elites_suisses.identite i 
-group by trim(UPPER(i."cantonNaissance"))
-order by effectif desc;
-
-
-
-/*
- * Birth Place
- */
-
-select trim(lower(i."lieuNaissance")) canton, count(*) as effectif
-from elites_suisses.identite i 
-group by trim(lower(i."lieuNaissance"))
-order by effectif desc;
-
-
-/*
- * PhD
- */
-
-select trim(lower(i."formationDoctorat")) canton, count(*) as effectif
-from elites_suisses.identite i 
-group by trim(lower(i."formationDoctorat"))
-order by effectif desc;
-
-
-/*
- * University Degree or Training
- */
-
-select trim(lower(i."formationUniversitaire")) canton, count(*) as effectif
-from elites_suisses.identite i 
-group by trim(lower(i."formationUniversitaire"))
-order by effectif desc;
-
-
-
-/*
- * Military position
- */
-
-select 
- case 
- 	when position('/' in i."gradeMilitaireMax") > 0
- 	then trim(lower(SPLIT_PART(i."gradeMilitaireMax", '/', 1)))
- 	else trim(lower(i."gradeMilitaireMax"))
- end grade, 
-i."gradeMilitaireMax"
-from elites_suisses.identite i ;
-
-with tw1 as (
-select 
- case 
- 	when position('/' in i."gradeMilitaireMax") > 0
- 	then trim(lower(SPLIT_PART(i."gradeMilitaireMax", '/', 1)))
- 	else trim(lower(i."gradeMilitaireMax"))
- end grade, 
-i."gradeMilitaireMax"
-from elites_suisses.identite i 
-)
-select grade, count(*) as effectif
-from tw1
-group by grade
-order by effectif desc;
-
-
-SELECT SPLIT_PART('capitaine/captain', '/', 1);
-
-
-
-
-/*
- * Profession
- */
-
+-- Count of the number of non-empty value in the column "profession"
 select count(*)
 from elites_suisses.identite i 
 --where length(i.profession ) < 2
-where trim(i.profession) = '';
+WHERE i.profession IS NOT NULL
+  AND TRIM(i.profession) <> '';
 
-select trim(lower(i.profession)) profession, count(*) as effectif
+-- Count of the number of distinct value in the column "profession"
+select count(DISTINCT LOWER(TRIM(i.profession)))
 from elites_suisses.identite i 
-group by trim(lower(i.profession))
-order by effectif desc;
+WHERE i.profession IS NOT NULL
+  AND TRIM(i.profession) <> '';
 
+-- List of all professions with their frequencies
+select trim(lower(i.profession)) profession, count(*) as effectif
+from elites_suisses.identite i
+WHERE i.profession IS NOT NULL
+  AND TRIM(i.profession) <> ''
+group by trim(lower(i.profession))
+order by effectif desc
+limit 10;
+
+/*
+ * Data Transformation
+ */
 
 -- test splitting occupations
 select
@@ -188,10 +45,6 @@ select
 	END remainder
 FROM elites_suisses.identite i 
 limit 100;
-
-
-
-
 
 
 -- en ajoutant la récursivité

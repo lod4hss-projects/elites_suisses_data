@@ -1,6 +1,8 @@
 /*
- * Exploring Settlments, Cantons and Countries
+ * Data Exploration
  */
+
+-- Exploring Settlments, Cantons and Countries
 
 -- Query in the identite table counting the number of occurences in the lieuNaissance and cantonNaissance column:
 SELECT *
@@ -228,3 +230,8 @@ WHERE en."creationLieu" IS NOT NULL
       WHERE LOWER(TRIM(i."lieuNaissance")) = LOWER(TRIM(en."creationLieu"))
   )
   ) as counts;
+
+/*
+ * Data Transformation
+ */
+

@@ -1,0 +1,29 @@
+/*
+ * Data Exploration
+ */
+
+-- Count the number of empty values in the column `nationalite`:
+SELECT COUNT(*)
+FROM elites_suisses.identite i 
+WHERE i.nationalite IS NULL
+   OR TRIM(i.nationalite) = '';
+
+-- Count the number of distinct values in the column `nationalite` (excluding empty ones):
+SELECT COUNT(distinct TRIM(i.nationalite))
+FROM elites_suisses.identite i 
+WHERE i.nationalite is NOT NULL
+   AND TRIM(i.nationalite) <> '';
+
+-- The list of distinct values, with the frequency
+select
+	distinct i.nationalite,
+	COUNT(*) AS number_occurences
+FROM elites_suisses.identite i 
+WHERE i.nationalite is NOT NULL
+   AND TRIM(i.nationalite) <> ''
+group by i.nationalite
+order by number_occurences desc;
+
+ /*
+ * Data Transformation
+ */

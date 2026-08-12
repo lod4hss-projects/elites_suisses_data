@@ -1,20 +1,17 @@
 # Information about the profession of persons
 
-This fiels is not transformed for the moment, as it needs a lot of cleaning.
+## Data Exploration
 
-## Occupation
+The column `profession` in the `identite` table contains string values of the main profession(s) of persons. It is a non-structured field to briefly describe an individual, most probably to give context and disambiguate for the exploration of data.
 
-Professions
+This column contains:
+- 35231 persons with an occupation 
+- 23498 with an empty value in profession
+- 16236 distincts professions
 
+The high number of distinct professions shows that this fiels is not structured.
 
-* 35231 persons with an occupation 
-* 23498 without
-
-&nbsp;
-
-* 16236 occurrences
-
-### Most frequent
+Here is the list of the 10 most mentioned professions:
 
 |profession|effectif|
 |----------|--------|
@@ -28,28 +25,13 @@ Professions
 |prof. unige|385|
 |agriculteur|360|
 |prof. uniba|347|
-|landwirt|337|
-|prof. epfz|317|
-|banquier|311|
-|prof. unibe|309|
-|kaufmann|307|
-|architecte|305|
-|commerçant|260|
-|prof. epfl|247|
-|pasteur|239|
-|ingénieur|216|
-|prof. unifr|186|
-|prof. dr. (ethz)|158|
-|juge fédéral|138|
-|chef d'entreprise|127|
-|rechtsanwalt|122|
-|industriel|122|
-|direktor|120|
-|négociant|117|
-|prof. unine|116|
-|notaire|114|
-|gemeindepräsident|99|
 
-&nbsp;
+The SQL queries can be found [here](../database_inspection/sh_person_profession.sql)
 
-Sometimes two (or more) occupations separated by a ','
+Some values contain multiple professions, separated by a ',' or a 'et'.
+
+Moreover, those professions can be deduced from the table `mandats`, even though some information in the `profession` column is unique.
+
+## Decision
+
+As this field is mostly non-structured data, it seems best not to tranform it for the moment

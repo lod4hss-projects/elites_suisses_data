@@ -1,5 +1,5 @@
 /*
- * Gender
+ * Data Exploration
  */
 
 -- Query in the identite table to count the frequency of each value
@@ -10,7 +10,7 @@ order by frequency;
 
 
 /*
- * Add gender table and relation
+ * Data Transformation
  */
 
 --drop table  elites_suisses.social_role ;
@@ -28,9 +28,7 @@ select *
 from elites_suisses.gender;
 
 
-/*
- * Add foreign key to gender table
- */
+-- Add foreign key to gender table
 
 alter table elites_suisses.identite add column fk_gender integer;
 
