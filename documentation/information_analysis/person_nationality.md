@@ -38,18 +38,10 @@ A lot of cleaning is necessary, as:
 - There are a lot of uncertainties with the caracter '?'
 - There are some times the feminin and masculin form of the nationality
 
+The SQL queries can be found [here](../database_inspection/sh_person_nationality.sql)
+
 ## Data Transformation
 
-### Data Cleaning and reconcliation in OpenRefine
+There is a lot od data cleaning that needs to be done, by creating a `sdh_nationality` table (it could be based on the `citizenship` table in the `person.db`).
 
-The cleaning of the nationality required:
-- The cleaning of the string value, to avoid duplicates
-- The creation of instances for each nationality, so that they can be documented further and receive a unique identifier
-- Reconcile the places with equivalent instances in Wikidata
-
-This how the data has been processed: 
-
-1. First the data was cleaned/regularized with openrefine in the identite table, duplicating the fields (to keep the original value) then cleaning and removing duplicates (such as "Zurich" and "Zürich"), and turned into the file "birth-places-citizenship-military-grades-new-cleaned.csv".
-2. Then CSV is then transformed into multiple table, in a new person.db SQL database, using the main.py script. 
-3. The rank, birth place, and citizenship tables are then extracted using the export sql-script to a series of csvs with the same names.
-4. The table csvs are then imported into OpenRefine to do the final wikidata reconciliation, and later re inserted into the database using the import sql-script.
+Then an intermediate table should be created between the `identite` table and the `sdh_nationality` tables, as some individuals have multiple nationalities.
