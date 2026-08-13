@@ -31,7 +31,7 @@ CREATE TABLE elites_suisses.social_role (
     description TEXT,
     notes text,
     wikidata_uri varchar(255),
-    fk_crm_group integer, -- points to the group in which this function is defined
+    fk_sdh_group integer, -- points to the group in which this function is defined
     fk_group_type integer, -- points to the type of group in which this function is defined
     fk_source_es_entity integer, -- points to the Elites suisses related entity
     import_notes text
@@ -50,8 +50,8 @@ alter table elites_suisses.mandat add constraint fk_social_role_fonction_fk fore
 	references elites_suisses.social_role(pk_social_role);
 
 -- FOREIGN KEY 
-alter table elites_suisses.social_role add constraint fk_crm_group_fk foreign key (fk_crm_group) 
-	references elites_suisses.crm_group (pk_crm_group);
+alter table elites_suisses.social_role add constraint fk_sdh_group_fk foreign key (fk_sdh_group) 
+	references elites_suisses.sdh_group (pk_sdh_group);
 
 
 
@@ -61,9 +61,9 @@ alter table elites_suisses.social_role add constraint fk_crm_group_fk foreign ke
 */
 
 -- the table name avoids the reserved term 'group'
---drop table elites_suisses.crm_group cascade;
-CREATE TABLE elites_suisses.crm_group (
-    pk_crm_group INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+--drop table elites_suisses.sdh_group cascade;
+CREATE TABLE elites_suisses.sdh_group (
+    pk_sdh_group INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name_standard varchar(255),
     na_st_language varchar(3),
     name_french varchar(255),
@@ -97,42 +97,42 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO hgb_editor;
 ALTER TABLE new_table RENAME TO old_table;
 
 
-SELECT last_value FROM elites_suisses.crm_group_pk_crm_group_seq1;
---SELECT setval('elites_suisses.crm_group_pk_crm_group_seq1', 566, true);ALTER TABLE new_table RENAME TO old_table;
+SELECT last_value FROM elites_suisses.sdh_group_pk_sdh_group_seq1;
+--SELECT setval('elites_suisses.sdh_group_pk_sdh_group_seq1', 566, true);ALTER TABLE new_table RENAME TO old_table;
 
 
-SELECT last_value FROM elites_suisses.crm_group_pk_crm_group_seq1;
---SELECT setval('elites_suisses.crm_group_pk_crm_group_seq1', 566, true);
+SELECT last_value FROM elites_suisses.sdh_group_pk_sdh_group_seq1;
+--SELECT setval('elites_suisses.sdh_group_pk_sdh_group_seq1', 566, true);
 
 
 -- FOREIGN KEY 
-alter table elites_suisses.crm_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
+alter table elites_suisses.sdh_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
 	references elites_suisses.entites(id);
 
 
-ALTER TABLE elites_suisses.crm_group ADD COLUMN date_begin varchar(20);
-ALTER TABLE elites_suisses.crm_group ADD COLUMN date_end varchar(20);
+ALTER TABLE elites_suisses.sdh_group ADD COLUMN date_begin varchar(20);
+ALTER TABLE elites_suisses.sdh_group ADD COLUMN date_end varchar(20);
 
-ALTER TABLE elites_suisses.crm_group RENAME COLUMN fk_origin_of TO fk_origin_from;
+ALTER TABLE elites_suisses.sdh_group RENAME COLUMN fk_origin_of TO fk_origin_from;
 
-ALTER TABLE elites_suisses.mandat ADD COLUMN fk_crm_group_organe INTEGER;
-
--- FOREIGN KEY 
-alter table elites_suisses.mandat add constraint fk_crm_group_organe_fk foreign key (fk_crm_group_organe) 
-	references elites_suisses.crm_group(pk_crm_group);
-
-
-ALTER TABLE elites_suisses.mandat ADD COLUMN fk_crm_group INTEGER;
+ALTER TABLE elites_suisses.mandat ADD COLUMN fk_sdh_group_organe INTEGER;
 
 -- FOREIGN KEY 
-alter table elites_suisses.mandat add constraint fk_crm_group_fk foreign key (fk_crm_group) 
-	references elites_suisses.crm_group(pk_crm_group);
+alter table elites_suisses.mandat add constraint fk_sdh_group_organe_fk foreign key (fk_sdh_group_organe) 
+	references elites_suisses.sdh_group(pk_sdh_group);
+
+
+ALTER TABLE elites_suisses.mandat ADD COLUMN fk_sdh_group INTEGER;
+
+-- FOREIGN KEY 
+alter table elites_suisses.mandat add constraint fk_sdh_group_fk foreign key (fk_sdh_group) 
+	references elites_suisses.sdh_group(pk_sdh_group);
 
 
 
 
 -- FOREIGN KEY 
-alter table elites_suisses.crm_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
+alter table elites_suisses.sdh_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
 	references elites_suisses.entites(id);
 
 
@@ -149,20 +149,20 @@ CREATE TABLE elites_suisses.group_type (
 );
 
 -- FOREIGN KEY 
-alter table elites_suisses.crm_group add constraint fk_group_type_fk foreign key (fk_group_type) 
+alter table elites_suisses.sdh_group add constraint fk_group_type_fk foreign key (fk_group_type) 
 	references elites_suisses.group_type(pk_group_type);
 
 
 
 
 /*
- * Add foreign key to crm_group from entities
+ * Add foreign key to sdh_group from entities
  */
 
-select m.entite, cg.name_standard, m.id, cg.pk_crm_group 
+select m.entite, cg.name_standard, m.id, cg.pk_sdh_group 
 from elites_suisses.v_sphere_academique m  
-	join elites_suisses.crm_group cg on cg.fk_source_entity = m.entities_id  
+	join elites_suisses.sdh_group cg on cg.fk_source_entity = m.entities_id  
 
-update elites_suisses.mandat m set fk_crm_group = cg.pk_crm_group 
-from elites_suisses.crm_group cg 
+update elites_suisses.mandat m set fk_sdh_group = cg.pk_sdh_group 
+from elites_suisses.sdh_group cg 
 where cg.fk_source_entity = m.entities_id ;
