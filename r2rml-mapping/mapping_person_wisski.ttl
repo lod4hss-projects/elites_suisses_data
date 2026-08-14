@@ -125,14 +125,14 @@
         # keep the full URI for the template
         rr:template "https://elites-suisses.lod4hss.org/resource/mar{id}";
         # rr:termType rr:IRI;
-        rr:class sdh-slc:C9;
+        rr:class sdh-slc:C3;
     ];
     rr:predicateObjectMap [
-        rr:predicate sdh-slc:P20;
+        rr:predicate sdh-slc:P15;
         rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{femme}" ];
     ];
     rr:predicateObjectMap [
-        rr:predicate sdh-slc:P20;
+        rr:predicate sdh-slc:P15;
         rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{homme}" ];
     ];
     rr:predicateObjectMap [
@@ -143,9 +143,9 @@
 
 
 <#crm-group-1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.crm_group" ];
+    rr:logicalTable [ rr:tableName "elites_suisses.t_group" ];
     rr:subjectMap [
-        rr:template "https://elites-suisses.lod4hss.org/resource/g{pk_crm_group}";
+        rr:template "https://elites-suisses.lod4hss.org/resource/g{pk_group}";
         rr:termType rr:IRI;
         rr:class crm:E74;
     ];

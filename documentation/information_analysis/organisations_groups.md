@@ -2,7 +2,7 @@
 
 Documentation of the t_group, t_group_type, t_group_appellations, t_group_follower tables
 
-We recreated an ERD representing the original classes/tables and the new ones. It is [available here](../graphics/ERD_with_new_tables.drawio) and documented [in this file](../graphics/ERD_with_new_tables.md).
+We recreated an ERD representing the original classes/tables and the new ones. It is [available here](../graphics/ERD_with_new_tables.png) and documented [in this file](../graphics/ERD_with_new_tables.md).
 
 &nbsp;
 
@@ -12,7 +12,7 @@ The SQL queries in [this document](../database_inspection/groups_additional_enti
 
 In order to identify these second level, not explicitely identified organisations, we created **a new table** to identify organisations: the *t_group* table.
 
-More details on the columns and relations of this table, cf. [ERD](../graphics/ERD_with_new_tables.drawio) and [ERD documentation](../graphics/ERD_with_new_tables.md).
+More details on the columns and relations of this table, cf. [ERD](../graphics/ERD_with_new_tables.png) and [ERD documentation](../graphics/ERD_with_new_tables.md).
 
 &nbsp;
 
