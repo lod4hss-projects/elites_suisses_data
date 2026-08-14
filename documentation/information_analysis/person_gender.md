@@ -40,4 +40,4 @@ The ontological mapping from the table and the SDHSS ontology ecosystem is as fo
 
 Here is the ontological diagram:
 
-![Gender](../information_analysis/gender.png)
+![Gender](../graphics/gender.png)
