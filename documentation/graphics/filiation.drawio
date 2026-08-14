@@ -1,0 +1,45 @@
+<mxfile host="65bd71144e">
+    <diagram id="anLJmYied1YAbZr0A5a9" name="Page-1">
+        <mxGraphModel dx="123" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="crm:P96 by mother" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object label="crm:E67 Birth" URI="http://www.cidoc-crm.org/cidoc-crm/E67_Birth" linkTarget="_blank" en="Birth" de="Geburt" el="Γέννηση" fr="Naissance" pt="Nascimento" ru="Рождение" zh="出生" id="2">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82ddff;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="320" y="320" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="crm:E21 Person" URI="http://www.cidoc-crm.org/cidoc-crm/E21_Person" linkTarget="_blank" link="http://www.cidoc-crm.org/cidoc-crm/E21_Person" en="Person" de="Person" el="Πρόσωπο" fr="Personne" pt="Pessoa" ru="Личность" zh="人物" id="3">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffbdca;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="320" y="470" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="4" value="crm:P98 brought into life" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry x="0.0023" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <mxPoint x="425" y="420" as="sourcePoint"/>
+                        <mxPoint x="390" y="526" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="crm:E21 Person" URI="http://www.cidoc-crm.org/cidoc-crm/E21_Person" linkTarget="_blank" link="http://www.cidoc-crm.org/cidoc-crm/E21_Person" en="Person" de="Person" el="Πρόσωπο" fr="Personne" pt="Pessoa" ru="Личность" zh="人物" id="5">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffbdca;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="180" y="170" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="8" value="crm:P97 from mother" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="9" source="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="620" y="355" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <object label="crm:E21 Person" URI="http://www.cidoc-crm.org/cidoc-crm/E21_Person" linkTarget="_blank" link="http://www.cidoc-crm.org/cidoc-crm/E21_Person" en="Person" de="Person" el="Πρόσωπο" fr="Personne" pt="Pessoa" ru="Личность" zh="人物" id="9">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffbdca;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                        <mxGeometry x="460" y="170" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
