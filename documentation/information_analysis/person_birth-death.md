@@ -34,22 +34,35 @@ Here is the count of occurences of each birth and death in the table `identite`.
 |birth|45512|
 |death|22725|
 
-see here the [SQL scripts](../database_inspection/sh_identite_inspection.sql).
-
+see here the [here](../database_inspection/sh_person_birth-death.sql)
 #### Data cleaning
 
 The first step is to clean those date fields. It was decided to only extract the birth year, even if this will reduce a bit the precision of the dates.
 
-The SQL script is documented [here](../database_inspection/persons_data_wrangling.sql)
+The SQL script is documented [here](../database_inspection/sh_person_birth-death.sql)
 
 ### Birth Place
 
 As places are not only documented in the identite table, a specific page about geograpical places mentioned in all the tables of the Elites Suisses data has been created. It can be found [here](../information_analysis/crm_geo_place.md).
 
-## Mapping
+## Data Transformation
 
-`lieuNaissance` et `cantonNaissance`
+Extract years.
 
-Both field only contains strings. String values of the field `lieuNaissance` should be instanciated into instances of the classe [`sdh:C13 Geographical Place`](https://ontome.net/class/363).
+[here](../database_inspection/sh_person_birth-death.sql)
 
-This instance would then be related to another instance of `sdh:C13 Geographical Place` of the canton, if needed.
+TO DO
+
+Do the same for the death year.
+
+Should we have two processes for the birth (with place and parents) and the death (just the date)?
+
+## Data Mapping
+
+The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
+- 
+
+The ontological diagram:
+
+![Birth and death](../graphics/birth-death.png)
+
