@@ -3,32 +3,6 @@ SELECT COUNT (*)
 FROM elites_suisses.identite i  ;
 -- = 58729
 
--- Count the number of dates in the naissance column:
-SELECT COUNT(*)
-FROM elites_suisses.identite i
-WHERE NOT (
-    i.naissance  IS NULL
-    OR TRIM(i.naissance) = '');
--- = 45.512
-
--- Count the number of dates in the naissance and death column:
-SELECT *
-from (
-SELECT 'birth' AS column_name,
-       COUNT(*) AS number_occurences
-FROM elites_suisses.identite i 
-WHERE i.naissance  IS NOT NULL
-  AND TRIM(i.naissance) <> ''
-
-UNION ALL
-
-SELECT 'death' AS column_name,
-       COUNT(*) AS number_occurences
-FROM elites_suisses.identite i 
-WHERE i.mort IS NOT NULL
-  AND TRIM(i.mort) <> ''
-) as counts;
-
 /*
  * PhD
  */
