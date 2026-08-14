@@ -19,42 +19,6 @@ m_type_entite ~* 'can';
 
 
 
-
-/*
- * Social roles 
-*/
-
---drop table  elites_suisses.social_role ;
-CREATE TABLE elites_suisses.social_role (
-    pk_social_role INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    name varchar(255),
-    description TEXT,
-    notes text,
-    wikidata_uri varchar(255),
-    fk_sdh_group integer, -- points to the group in which this function is defined
-    fk_group_type integer, -- points to the type of group in which this function is defined
-    fk_source_es_entity integer, -- points to the Elites suisses related entity
-    import_notes text
-
-);
-
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE elites_suisses.social_role TO "hgb_editor";
-ALTER TABLE elites_suisses.social_role OWNER TO "hgb_editor";
-
-
-
-ALTER TABLE elites_suisses.mandat ADD COLUMN fk_social_role_fonction INTEGER;
-
--- FOREIGN KEY 
-alter table elites_suisses.mandat add constraint fk_social_role_fonction_fk foreign key (fk_social_role_fonction) 
-	references elites_suisses.social_role(pk_social_role);
-
--- FOREIGN KEY 
-alter table elites_suisses.social_role add constraint fk_sdh_group_fk foreign key (fk_sdh_group) 
-	references elites_suisses.sdh_group (pk_sdh_group);
-
-
-
 /*
  * entités et organes / organes dans les entités
  * crm:74 Group
@@ -62,8 +26,8 @@ alter table elites_suisses.social_role add constraint fk_sdh_group_fk foreign ke
 
 -- the table name avoids the reserved term 'group'
 --drop table elites_suisses.sdh_group cascade;
-CREATE TABLE elites_suisses.sdh_group (
-    pk_sdh_group INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+CREATE TABLE elites_suisses.t_group (
+    pk_group INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name_standard varchar(255),
     na_st_language varchar(3),
     name_french varchar(255),
@@ -166,3 +130,77 @@ from elites_suisses.v_sphere_academique m
 update elites_suisses.mandat m set fk_sdh_group = cg.pk_sdh_group 
 from elites_suisses.sdh_group cg 
 where cg.fk_source_entity = m.entities_id ;
+
+
+
+
+--DROP TABLE elites_suisses.t_group_appellation;
+CREATE TABLE elites_suisses.t_group_appellation (
+	pk_group_appellation int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	fk_group integer null,
+	appellation text NULL,
+	appellation_language text NULL,
+	date_begin TEXT NULL,
+	date_end TEXT NULL,
+	description text NULL,
+	notes text NULL,
+	import_notes text NULL,
+	CONSTRAINT group_appellation_pkey PRIMARY KEY (pk_group_appellation),
+	CONSTRAINT fk_group_fk FOREIGN KEY (fk_group) REFERENCES elites_suisses.t_group(pk_group)
+
+);
+
+
+
+
+-- DROP TABLE elites_suisses.t_group_follower;
+
+CREATE TABLE elites_suisses.t_group_follower (
+	pk_group_follower int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	sequence_type text null, -- add a type describing the kind of group sequence
+	description text NULL,
+	notes text NULL,
+	fk_group_source int4 NULL,
+	fk_group_target int4 NULL,
+	import_notes text NULL,
+	CONSTRAINT group_follower_pkey PRIMARY KEY (pk_group_follower),
+	CONSTRAINT fk_group_source_fk FOREIGN KEY (fk_group_source) REFERENCES elites_suisses.t_group(pk_group),
+	CONSTRAINT fk_group_target_fk FOREIGN KEY (fk_group_target) REFERENCES elites_suisses.t_group(pk_group)
+);
+
+
+/*
+ * Social roles 
+*/
+
+--drop table  elites_suisses.t_social_role ;
+CREATE TABLE elites_suisses.t_social_role (
+	pk_social_role int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
+	name varchar(255) NULL,
+	description text NULL,
+	notes text NULL,
+	wikidata_uri varchar(255) NULL,
+	fk_group int4 NULL,
+	import_notes text NULL,
+	CONSTRAINT social_role_pkey PRIMARY KEY (pk_social_role),
+	CONSTRAINT fk_crm_group_fk FOREIGN KEY (fk_group) REFERENCES elites_suisses.t_group(pk_group)
+);
+
+
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE elites_suisses.social_role TO "hgb_editor";
+ALTER TABLE elites_suisses.social_role OWNER TO "hgb_editor";
+
+
+
+ALTER TABLE elites_suisses.mandat ADD COLUMN fk_social_role_fonction INTEGER;
+
+-- FOREIGN KEY 
+alter table elites_suisses.mandat add constraint fk_social_role_fonction_fk foreign key (fk_social_role_fonction) 
+	references elites_suisses.social_role(pk_social_role);
+
+
+
+select *
+from elites_suisses.t_social_role sr ;
+

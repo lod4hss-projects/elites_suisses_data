@@ -1,10 +1,13 @@
 
 
 
+## New table : t_group_appellation
+
+Cf. these [SQL scripts](../database_inspection/groups_appellations.sql) and the 
 
 
 
-## autresNomsEntites
+## Original table: autresNomsEntites
 | Column Name | Data Type | Comments | Mapping  | Mapping Comments |
 |-------------|-----------|------|------|------|
 | id | integer |   |   |   |
