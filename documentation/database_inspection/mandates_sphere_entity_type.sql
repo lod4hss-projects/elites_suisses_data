@@ -63,6 +63,14 @@ select *
 from elites_suisses.mandat m 
 where m."typeEntite" = 'Prix/Distinction';
 
+select m."typeEntite", count(*) as num
+from elites_suisses.mandat m 
+group by m."typeEntite"
+order by m."typeEntite";
+
+
+
+
 
 /*
  * Create views per sphere / domain

@@ -5,22 +5,32 @@
 
 
 select *
-from elites_suisses.v_sphere_economique vse ;
+from elites_suisses.v_sphere_economique vse 
+limit 100;
 
 
-select organe, count(*) as num
+select lower(trim(organe)) as organe_norm, count(*) as num
 from elites_suisses.v_sphere_economique
 --where "typeEntite" = 'Prix/Distinction'
 -- where "typeEntite" = 'Enseignement'
-group by organe
-order by organe;
+group by lower(trim(organe))
+having count(*) > 1
+order by organe_norm;
 
 
 select organe, entite, count(*) as num
 from elites_suisses.v_sphere_economique
---where "typeEntite" = 'Prix/Distinction'
+--where entite ~ 'Crédit Suisse'
 group by organe, entite
+order by num desc;
 order by organe, entite;
+
+-- same query as above but order by entities
+select entite, organe, count(*) as num
+from elites_suisses.v_sphere_economique
+where entite ~ 'Crédit Suisse'
+group by organe, entite
+order by entite, organe;
 
 
 

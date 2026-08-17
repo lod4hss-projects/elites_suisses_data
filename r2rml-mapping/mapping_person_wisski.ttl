@@ -98,7 +98,7 @@
 
 
 <#soc_relation_type1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.social_relationship_type" ];
+    rr:logicalTable [ rr:tableName "elites_suisses.t_social_relationship_type" ];
     rr:subjectMap [
         # rr:constant swel: ; does not work,
         # keep the full URI for the template

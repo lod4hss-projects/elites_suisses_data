@@ -1,6 +1,6 @@
 # Semantic Analysis and Mapping of Database Tables
 
-We recreated an ERD representing the original classes/tables and the new ones. It is [available here](../documentation/graphics/ERD_with_new_tables.drawio) and documented [in this file](../documentation/graphics/ERD_with_new_tables.md).
+We recreated an ERD representing the original classes/tables and the new ones. It is [available here](../documentation/graphics/ERD_with_new_tables.png) and documented [in this file](../documentation/graphics/ERD_with_new_tables.md).
 
 &nbsp;
 
@@ -76,7 +76,7 @@ Data inspection and structure of the table [to be found here](information_analys
 
 These tables allow to create new aentities and associate the original text values to these entities
 
-### sdh_group
+### t_group
 
 This table replaces the original *entities* table for the management of organisations, etc.
 
@@ -85,19 +85,19 @@ Relevant sql scripts files are:
 * [Create new tables for groups (crm_group, group_type, etc.)](database_inspection/groups_new_tables.sql)
 * [Feed the new tables](database_inspection/groups_entities_enrichment.sql)
 
-### group_type
+### t_group_type
 
 This table provides a refined controlled vocabulary for group types
 
-### gender
+### t_gender
 
 This table provides a controlled vocabulary for genders
 
-### social_relationship_type
+### t_social_relationship_type
 
 This table provides a controlled vocabulary for social relationships' types
 
-### social_role
+### t_social_role
 
 This table provides a controlled vocabulary for any kind of social roles, in all domains
 
@@ -115,8 +115,16 @@ This table is used to clean up organisations related to mandates in the domain o
 
 Further information on this process [to be found here](documentation/information_analysis/t_entity_sub_entity_education.md).
 
-&nbsp;
+### t_mandates_cleaning_up
+
+This table is used to clean up the *mandat* table. It is separated from the original table (although it hase the same rows) in order to facilitate the cleaning up. It has a 1 to 1 relation to the original table.
+
+Further information about the production of this table [to be found here](database_inspection/mandates_cleaning_up_tables.sql).
+
+ &nbsp;
 
 ## New views
 
-These tables are use for data in spection and consistency check
+These views are used for data in spection and consistency check
+
+[... to be completed]
