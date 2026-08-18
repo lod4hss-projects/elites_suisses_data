@@ -59,8 +59,10 @@ Should we have two processes for the birth (with place and parents) and the deat
 
 ## Data Mapping
 
+DEVIDE THE BIRTH (WITH TABLE BIRTH/PARENTS) AND DEATH?
+
 The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
-- 
+- The new column `birth` is a string linked to the instance of person through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
 
 The ontological diagram:
 

@@ -48,6 +48,6 @@ The transformation script is documented [here](../database_inspection/sh_person_
 
 Then, the mapping is done with the simpler [`sdh-shortcut:P9 has standard label`](https://ontome.net/property/3201) from the person to the string of the appellation.
 
-![Person appellation model](ontology/diagrams/person_appellation.png)
+![Person appellation model](../graphics/person_appellation.png)
 
 It was also decided not the clean the way name have been documented.
