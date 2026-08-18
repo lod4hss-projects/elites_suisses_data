@@ -65,6 +65,6 @@ The SQL queries can be found [here](../database_inspection/sh_person_sources.sql
 
 ## Data tranformation
 
-A new `sdh_sources` table should be created, based on both the `sourcesBio` and `sourcesFormations`. Each entry in those two tables seemed to be devided by a page break (to be confirmed), so this could serve as the basis to distinguish individual entries.
+A new `t_sources` table should be created, based on both the `sourcesBio` and `sourcesFormations`. Each entry in those two tables seemed to be devided by a page break (to be confirmed), so this could serve as the basis to distinguish individual entries.
 
 However, further cleaning should be done do identitdy not only the string for the source, but the work or expression and the specific passage in those work/expression (such as the page of a book).

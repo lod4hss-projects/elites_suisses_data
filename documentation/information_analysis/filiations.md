@@ -23,7 +23,7 @@ The table Filiation is rather straightforward, as it contains mostly foreign key
 
 Some data cleaning is needed to correct some of the inconsistencies (for instance where the id of the child is the same as the parent)
 
-As the documentation of parents in the SDHSS ontology ecosystem is done through the birth event, a new view called `v_person_birth` is created, which contains:
+As the documentation of parents in the SDHSS ontology ecosystem is done through the birth event, a new view called `t_person_birth` is created, which contains:
 - an identifier which is the concatenation of the two filiations (mother and father)
 - a new identifier for the birth
 - the birth year
@@ -73,4 +73,6 @@ Here is the ontological diagram:
 
 ![Filiation](../graphics/filiation.png)
 
+### Ontological Profiles
 
+[Person - Familiy light](https://ontome.net/profile/601)

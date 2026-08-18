@@ -179,4 +179,9 @@ The ontological mapping from the table and the SDHSS ontology ecosystem is as fo
 
 Here is the ontological diagram:
 
-![Geographical Place](../information_analysis/sdh_geo_place.png)
+![Geographical Place](../graphics/t_geo_place.png)
+
+### Ontological Profiles
+
+- [Geographical Place - Type](https://ontome.net/profile/588)
+- [Geographical Place - Geocoordinates light](https://ontome.net/profile/607)

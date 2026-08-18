@@ -41,3 +41,8 @@ The ontological mapping from the table and the SDHSS ontology ecosystem is as fo
 Here is the ontological diagram:
 
 ![Gender](../graphics/gender.png)
+
+### Ontological Profiles
+
+[Person - Gender light](https://ontome.net/profile/535)
+

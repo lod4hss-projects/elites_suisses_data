@@ -91,3 +91,7 @@ The ontological mapping from the table and the SDHSS ontology ecosystem is as fo
 - The column `description` is a string linked to the instance of Social Relationship Type through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
 - The column `notes` is a string linked to the instance of Social Relationship Type through the property [`crm:P3 has note`](http://www.cidoc-crm.org/cidoc-crm/P3_has_note)
 - The column `wikidata_uri` is a string linked to the instance of Social Relationship Type through the property [`owl:sameAs`](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_sameAs)
+
+### Ontological Profiles
+
+[Person - Social Relationship Light and Symmetrical](https://ontome.net/profile/637)
