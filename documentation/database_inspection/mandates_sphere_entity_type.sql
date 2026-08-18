@@ -151,7 +151,6 @@ order by m."entite";
 
 
 
-
 -- military domain
 drop view elites_suisses.v_sphere_militaire;
 create view elites_suisses.v_sphere_militaire AS

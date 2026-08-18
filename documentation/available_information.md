@@ -68,58 +68,17 @@ Data inspection and structure of the table [to be found here](information_analys
 
 Rows in this table represent a bundle of different informations, mainly instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data
 
+This table demands a thorough inspection and discussion. This is **[the access page](information_analysis/mandates_general_inspection.md) to the whole documentation of this process** where we provide links to the sub-pages.
+
 Data inspection and structure of the table [to be found here](information_analysis/roles_mandates.md).
 
 &nbsp;
 
 ## New tables
 
-These tables allow to create new aentities and associate the original text values to these entities
+These tables allow to create new entities and associate the original text values to these entities.
 
-### t_group
-
-This table replaces the original *entities* table for the management of organisations, etc.
-
-Relevant sql scripts files are:
-
-* [Create new tables for groups (crm_group, group_type, etc.)](database_inspection/groups_new_tables.sql)
-* [Feed the new tables](database_inspection/groups_entities_enrichment.sql)
-
-### t_group_type
-
-This table provides a refined controlled vocabulary for group types
-
-### t_gender
-
-This table provides a controlled vocabulary for genders
-
-### t_social_relationship_type
-
-This table provides a controlled vocabulary for social relationships' types
-
-### t_social_role
-
-This table provides a controlled vocabulary for any kind of social roles, in all domains
-
-### t_study_title
-
-This table provides a controlled vocabulary for study titles, it is used in the domain of education
-
-### t_study_discipline
-
-This table provides a controlled vocabulary for study and teaching disciplines, it is used in the domain of education and teaching
-
-### t_entity_sub_entity_education
-
-This table is used to clean up organisations related to mandates in the domain of education.
-
-Further information on this process [to be found here](documentation/information_analysis/t_entity_sub_entity_education.md).
-
-### t_mandates_cleaning_up
-
-This table is used to clean up the *mandat* table. It is separated from the original table (although it hase the same rows) in order to facilitate the cleaning up. It has a 1 to 1 relation to the original table.
-
-Further information about the production of this table [to be found here](database_inspection/mandates_cleaning_up_tables.sql).
+For a description of the new tables, see the [comment to the ERD conceptual model](graphics/ERD_with_new_tables.md).
 
  &nbsp;
 
