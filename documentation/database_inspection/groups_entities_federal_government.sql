@@ -95,7 +95,7 @@ where entities_id = 74;
 -- count the functions
 select fonction, count(*) as num
 from elites_suisses.mandat m 
-where m.fk_crm_group_organe = 79
+where m.fk_sdh_group_organe = 79
 group by fonction 
 order by num desc;
 

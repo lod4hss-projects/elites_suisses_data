@@ -56,7 +56,11 @@ where sa."typeEntite" = 'Enseignement'
 group by entite, e.nom, cg.name_standard, cg.pk_crm_group,sa.fk_crm_group
 order by entite;
 
---drop table elites_suisses.t_entity_sub_entity_education ;
+
+
+
+-- we dropped this table 18 August 2026, we use the 't_mandates_cleaning_up' table
+drop table elites_suisses.t_entity_sub_entity_education ;
 --create table elites_suisses.t_entity_sub_entity_education AS
 select row_number() OVER (ORDER BY 1)::INTEGER as id, count(*) as num, sa.entite, sa.fk_crm_group , null as fk_crm_group_manual, cg.name_standard,  sa.organe, 
 	null as fk_crm_group_organe_manual, sa.fk_crm_group_organe, notes,
@@ -74,6 +78,8 @@ alter table elites_suisses.t_entity_sub_entity_education add CONSTRAINT t_entity
 
 
 /*
+ * this table is not existing any more
+ * 
  * Table to be used to associate entities 
  * to the crm_group table identifiers
  */

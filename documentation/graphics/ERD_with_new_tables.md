@@ -26,7 +26,7 @@ Relevant sql scripts files are:
 * [Create new tables for groups (crm_group, group_type, etc.)](database_inspection/groups_new_tables.sql)
 * [Feed the new tables](database_inspection/groups_entities_enrichment.sql)
 
-### Group Type (t_group)
+### Group Type (t_group_type)
 
 This table provides a refined controlled vocabulary for group types
 Each group has unique basic type.
@@ -47,7 +47,6 @@ It provides an optional relation to the group in which the social role was creat
 
 SQL code that created this table is [in this document](../database_inspection/social_roles.sql).
 
-
 ### t_study_title
 
 This table provides a controlled vocabulary for study titles, it is used in the domain of education.
@@ -61,18 +60,10 @@ This table provides a controlled vocabulary for study and teaching disciplines, 
 The SQL code to produce this table [in is this file](../database_inspection/education_exploration.sql).
 
 
-### t_entity_sub_entity_education
-
-This table is used to clean up organisations related to mandates in the domain of education.
-
-Further information on this process [to be found here](../information_analysis/t_entity_sub_entity_education.md).
-
-The SQL code to produce this table [in is this file](../database_inspection/mandates_v_sphere_academique.sql).
-
-
-
 ### t_mandates_cleaning_up
 
 This table is used to clean up the *mandat* table. It is separated from the original table (although it hase the same rows) in order to facilitate the cleaning up. It has a 1 to 1 relation to the original table.
 
-Further information about the production of this table [to be found here](../database_inspection/mandates_cleaning_up_tables.sql).
+* About groups and related tables [see this document](../information_analysis/organisations_groups.md)
+* Information about the production of this table [to be found here](../database_inspection/mandates_cleaning_up_tables.sql).
+* Information about general cleaning up of this table, see [this document](../database_inspection/mandates_cleaning_up_general.sql)

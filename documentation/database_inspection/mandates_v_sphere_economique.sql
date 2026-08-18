@@ -16,69 +16,6 @@ limit 100;
 
 
 
-/*
- * Type entité
- * 
- * In fact the type depends on the organisation itself
- * 
- */
-
-select lower(trim("typeEntite")) as type_ent, count(*) as num
-from elites_suisses.v_sphere_economique
---where "typeEntite" = 'Prix/Distinction'
--- where "typeEntite" = 'Enseignement'
-group by lower(trim("typeEntite"))
-having count(*) > 1
-order by type_ent;
-
-
-
-select *
-from elites_suisses.t_mandates_cleaning_up tmcu 
-where tmcu.sphere = 'Economique'
-and tmcu."typeEntite" ~* 'associa'
-limit 100;
-
-
-
-select lower(trim("typeEntite")) as type_ent, count(*) as num
-from elites_suisses.t_mandates_cleaning_up tmcu 
---where tmcu.sphere = 'Economique'
-group by lower(trim("typeEntite"))
-having count(*) > 0
-order by num desc;
-order by type_ent;
-
-
-select lower(trim("typeEntite")) as type_ent, count(*) as num
-from elites_suisses.t_mandates_cleaning_up tmcu 
-where true
--- all entities are considered
---and tmcu.sphere = 'Economique'
-and tmcu."typeEntite" ~* 'asso'
-group by lower(trim("typeEntite"))
-having count(*) > 0
-order by type_ent;
-
-
---update elites_suisses.t_mandates_cleaning_up set type_ent_cleaned = 'association'
-where "typeEntite" ~* 'asso';
-
-
-
-select tmcu.type_ent_cleaned, count(*) as num
-from elites_suisses.t_mandates_cleaning_up tmcu 
-where true
--- all entities are considered
---and tmcu.sphere = 'Economique'
---and tmcu."typeEntite" ~* 'asso'
-group by tmcu.type_ent_cleaned
-having count(*) > 0
-order by tmcu.type_ent_cleaned ;
-
-
-
-
 
 
 /*

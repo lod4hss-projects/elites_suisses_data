@@ -217,7 +217,7 @@ order by number desc;
 
 
 -- replace on original table !!!
-update elites_suisses.education e set "TITRE_Codé" = CASE
+--update elites_suisses.education e set "TITRE_Codé" = CASE
       when trim(lower(e."TITRE_Codé")) like 'apprent%'
       then 'apprentissage'
       when trim(lower(e."TITRE_Codé")) like 'licenc%'
