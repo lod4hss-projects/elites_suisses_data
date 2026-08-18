@@ -27,8 +27,8 @@ limit 10;
 
 
 -- if needed add additional situations
--- drop view elites_suisses.same_as ;
-create or replace view elites_suisses.same_as as (
+drop view elites_suisses.v_same_as ;
+create or replace view elites_suisses.v_same_as as (
 select i."zkf_ID_linked", concat('http://www.wikidata.org/entity/', i."Identifier") same_as
 from elites_suisses.identifier i
 where i."Identifier_code" ~* 'wikida'
@@ -36,7 +36,7 @@ where i."Identifier_code" ~* 'wikida'
 
 
 select *
-from elites_suisses.same_as
+from elites_suisses.v_same_as
 where "zkf_ID_linked" = 71142
 limit 10;
 

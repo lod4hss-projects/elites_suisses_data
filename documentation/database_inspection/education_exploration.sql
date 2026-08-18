@@ -92,9 +92,9 @@ group by e.zkp_edu
 having count(*) > 1
 limit 100;
 
--- drop view elites_suisses.v_education ;
+--drop view elites_suisses.v_education ;
 -- create view elites_suisses.v_education as
-select e.zkp_edu as id, e."ID_IDENTITE" as id_person, cg.pk_group , 
+select e.zkp_edu as id_edu, e."ID_IDENTITE" as id_person, cg.pk_group , 
 e."THÈSE_Directeur_IdIdentité" as id_directeur, e."Date" as grade_date,
 e.fk_study_discipline, e.fk_study_title
 from elites_suisses.education e 

@@ -33,7 +33,7 @@
     ].
 
 <#identifier1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.same_as" ];
+    rr:logicalTable [ rr:tableName "elites_suisses.v_same_as" ];
     rr:subjectMap [
         rr:template "https://elites-suisses.lod4hss.org/resource/p{\"zkf_ID_linked\"}";
         rr:termType rr:IRI;
@@ -46,7 +46,7 @@
     .
 
 <#gender1> a rr:TriplesMap;
-    rr:logicalTable [ rr:tableName "elites_suisses.gender" ];
+    rr:logicalTable [ rr:tableName "elites_suisses.t_gender" ];
     rr:subjectMap [
         # rr:constant swel: ; does not work,
         # keep the full URI for the template
@@ -57,6 +57,10 @@
     rr:predicateObjectMap [
         rr:predicate sdh-short:P9;
         rr:objectMap [ rr:column "name" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "description" ];
     ];
        rr:predicateObjectMap [
         rr:predicate owl:sameAs;
@@ -110,6 +114,10 @@
         rr:objectMap [ rr:column "name" ];
     ];
     rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "description" ];
+    ];    
+    rr:predicateObjectMap [
         rr:predicate owl:sameAs;
         rr:objectMap [ 
             rr:column "wikidata_uri";
@@ -151,7 +159,11 @@
     ];
     rr:predicateObjectMap [
         rr:predicate sdh-short:P9;
-        rr:objectMap [ rr:column "name" ];
+        rr:objectMap [ rr:column "name_standard" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "definition" ];
     ];
     rr:predicateObjectMap [
         rr:predicate sdh:P99;
@@ -169,6 +181,10 @@
     rr:predicateObjectMap [
         rr:predicate sdh-short:P9;
         rr:objectMap [ rr:column "categorie_norm" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "definition" ];
     ].
 
 
@@ -183,6 +199,10 @@
         # standard label
         rr:predicate sdh-short:P9;
         rr:objectMap [ rr:column "study_title" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "definition" ];
     ].
 
 
@@ -224,5 +244,5 @@
     rr:predicateObjectMap [
         # is delivered by group
         rr:predicate sdh-sls:P17;
-        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/g{pk_crm_group}" ];
+        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/g{pk_group}" ];
     ].
