@@ -16,7 +16,7 @@ Rows in this table represent persons.
 
 They correspond to instances of the CIDOC CRM E21 Person class.
 
-Data inspection and structure of the table [to be found here](information_analysis/persons.md).
+Data inspection and structure of the table [to be found here](information_analysis/identite.md).
 
 &nbsp;
 
