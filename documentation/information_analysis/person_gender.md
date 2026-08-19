@@ -10,7 +10,7 @@ The `identite` table has a column called `sexe`. Containing string values values
 |F|11216|
 |H|47318|
 
-The SQL query can be found [here](../database_inspection/sh_person_gender.sql).
+The SQL query can be found [here](../database_inspection/person_gender.sql).
 
 This column contains the information of the gender of individuals. Those string values should be instanciated, which implies the creation of a table gender.
 

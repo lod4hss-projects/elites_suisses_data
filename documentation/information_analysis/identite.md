@@ -3,7 +3,7 @@
 
 This table, called `identite`, primarily documents instances of the class [`crm:E21 Person`](https://ontome.net/class/21) and information related to them, as well as metadata on how information has been entered (author, date, etc.).
 
-The table contains 58729 entries (see here the [SQL scripts](../database_inspection/sh_identite_inspection.sql))
+The table contains 58729 entries (see here the [SQL scripts](../database_inspection/identite_inspection.sql))
 
 This table contains the fields listed below. Either the fields need to be transformed in the graph, and a documentation page is linked, or a note mention why it is not transformed.
 

@@ -61,7 +61,7 @@ And here are the 20 most frequent values in `sourcesFormation`
 
 Attention, there are line breaks in the values of the sources.
 
-The SQL queries can be found [here](../database_inspection/sh_person_sources.sql)
+The SQL queries can be found [here](../database_inspection/person_sources.sql)
 
 ## Data tranformation
 

@@ -37,13 +37,13 @@ Here is the count of occurences of each birth and death in the table `identite`.
 | birth       | 45512                |
 | death       | 22725                |
 
-see here the [SQL code](../database_inspection/sh_person_birth-death.sql)
+see here the [SQL code](../database_inspection/person_birth-death.sql)
 
 #### Data cleaning
 
 The first step is to clean those date fields. It was decided to only extract the birth year, even if this will reduce a bit the precision of the dates.
 
-The SQL script is documented [here](../database_inspection/sh_person_birth-death.sql)
+The SQL script is documented [here](../database_inspection/person_birth-death.sql)
 
 ### Birth Place
 
@@ -53,7 +53,7 @@ As places are not only documented in the identite table, a specific page about g
 
 Extract years.
 
-[here](../database_inspection/sh_person_birth-death.sql)
+[here](../database_inspection/person_birth-death.sql)
 
 TO DO
 
@@ -63,10 +63,9 @@ Should we have two processes for the birth (with place and parents) and the deat
 
 ## Data Mapping
 
-Have the shortcuts here
-
-Person > has birth date > year
-Person > has death date > year
+The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
+- The column `birth_year` is a string of the birth year linked to the instance of person through the property [`sdh-shortcut:P2 was birth of`](https://sdhss.org/ontology/shortcuts/P2)
+- The column `death_year` is a string of the death year linked to the instance of person through the property [`sdh-shortcut:P13 was death of`](https://sdhss.org/ontology/shortcuts/P13)
 
 In addition, birth is further developer [here](../information_analysis/v_person_birth.md)
 
@@ -77,15 +76,3 @@ The ontological diagram:
 Profile:
 
 [Person - Identification](https://ontome.net/profile/599)
-
---
-
-DEVIDE THE BIRTH (WITH TABLE BIRTH/PARENTS) AND DEATH?
-
-The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
-
-- The new column `birth` is a string linked to the instance of person through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
-
-The ontological diagram:
-
-![Birth and death](../graphics/birth-death.png)

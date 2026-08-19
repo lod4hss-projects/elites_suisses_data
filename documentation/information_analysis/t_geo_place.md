@@ -36,7 +36,7 @@ As those places are related (settlements being in a canton, a canton being in a 
 - In the `entite` table, there are 90 accounts where the `pays` is documented but not the `siege`.
 - In the `entite` table, there are 17 accounts where the `creationCanton` is documented but not the `creationLieu`.
 
-see here the [SQL scripts](../database_inspection/sh_sdh_geo_place_exploration.sql).
+see here the [SQL scripts](../database_inspection/t_geo_place_exploration.sql).
 
 Canton relatively simple, as there is only 26 Cantons, already present in the identite_cantonNaissance. The Elites Suisses database uses the two letter code for cantons. Here is the list of value that don't follow this rule:
 
@@ -113,7 +113,7 @@ As the identite_lieuNaissance is the column containing the most distinct values,
 |entite_siege|321|
 |entite_creationLieu|19|
 
-see here the [SQL scripts](../database_inspection/sh_sdh_geo_place_exploration.sql).
+see here the [SQL scripts](../database_inspection/t_geo_place_exploration.sql).
 
 This means that if the column identite_lieuNaissance is transformed into instances of the class `sdh:C13 Geographical Place`, it will not contain all of the places documented in the Elites Suisses database.
 
@@ -136,7 +136,7 @@ Here is the list of the 10 most frequent values:
 |lucerne|181|
 |la chaux-de-fonds|151|
 
-see here the [SQL scripts](../database_inspection/sh_sdh_geo_place_exploration.sql).
+see here the [SQL scripts](../database_inspection/t_geo_place_exploration.sql).
 
 ## Data Cleaning and reconcliation in OpenRefine
 

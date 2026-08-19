@@ -134,7 +134,7 @@ Here is the list of the distinct values with their frequency:
 |Unteroffizier|1|
 |Wachtmeister / Militärrichter|1|
 
-The SQL queries can be found [here](../database_inspection/sh_person_military-max.sql)
+The SQL queries can be found [here](../database_inspection/person_military-max.sql)
 
 ## Decision
 

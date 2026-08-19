@@ -38,10 +38,10 @@ A lot of cleaning is necessary, as:
 - There are a lot of uncertainties with the caracter '?'
 - There are some times the feminin and masculin form of the nationality
 
-The SQL queries can be found [here](../database_inspection/sh_person_nationality.sql)
+The SQL queries can be found [here](../database_inspection/person_nationality.sql)
 
 ## Data Transformation
 
-There is a lot od data cleaning that needs to be done, by creating a `sdh_nationality` table (it could be based on the `citizenship` table in the `person.db`).
+There is a lot od data cleaning that needs to be done, by creating a `t_nationality` table (it could be based on the `citizenship` table in the `person.db`).
 
-Then an intermediate table should be created between the `identite` table and the `sdh_nationality` tables, as some individuals have multiple nationalities.
+Then an intermediate table should be created between the `identite` table and the `t_nationality` tables, as some individuals have multiple nationalities.

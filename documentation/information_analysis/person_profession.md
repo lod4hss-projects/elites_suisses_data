@@ -26,7 +26,7 @@ Here is the list of the 10 most mentioned professions:
 |agriculteur|360|
 |prof. uniba|347|
 
-The SQL queries can be found [here](../database_inspection/sh_person_profession.sql)
+The SQL queries can be found [here](../database_inspection/person_profession.sql)
 
 Some values contain multiple professions, separated by a ',' or a 'et'.
 
