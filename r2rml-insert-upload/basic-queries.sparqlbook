@@ -10,5 +10,17 @@
     "language": "sparql",
     "value": "select (count(*) as ?n)\nwhere {?s ?p ?o}",
     "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "select ?g (count(*) as ?num)\nwhere {\n    graph ?g\n    {?s ?p ?o}\n}\ngroup by ?g",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "## execute directly on server\nclear graph <https://swiss-elites.lod4hss.cloud/resource/>",
+    "metadata": {}
   }
 ]

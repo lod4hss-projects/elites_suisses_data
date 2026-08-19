@@ -52,6 +52,20 @@ where updates_notes ~'conseils_etat_20260819';
  *  parlements cantonaux
  */
 
+-- add parent groups to canton parlaments
+select tg.pk_group, tg.name_standard, tg.fk_part_of, tg1.pk_group, tg1.name_standard 
+from elites_suisses.t_group tg 
+	left join  elites_suisses.t_group tg1
+		on right(tg.name_standard,2) = right(tg1.name_standard,2)
+where tg.fk_group_type = 3
+and tg1.fk_group_type = 2;
+
+--update elites_suisses.t_group tg set fk_part_of = tg1.pk_group
+from elites_suisses.t_group tg1
+where tg.fk_group_type = 3
+and tg1.fk_group_type = 2
+and right(tg.name_standard,2) = right(tg1.name_standard,2);
+
 
 select tmcu.pk_t_mandates_cleaning_up, tg.pk_group, tg.name_standard, trim(concat('parlement_cantonal_20260819', ' ', tmcu.updates_notes)),
 tmcu.fk_group, tmcu."typeEntite" , tmcu.entite, tmcu.organe, tmcu.fonction, tmcu.fonction_clean_1 
@@ -75,6 +89,11 @@ select *
 from elites_suisses.t_mandates_cleaning_up tmcu 
 where updates_notes ~'parlement_cantonal_20260819';
 
-select distinct tmcu.fk_group_organe_clean_1, tmcu.fk_group 
-from elites_suisses.t_mandates_cleaning_up tmcu 
-where updates_notes ~'parlement_cantonal_20260819';
+
+
+
+
+
+
+
+

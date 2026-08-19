@@ -30,6 +30,11 @@
         rr:predicate sdh-short:P2;
         rr:objectMap [ rr:column "birth_year" ;
                 rr:dataType xsd:integer];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P13;
+        rr:objectMap [ rr:column "death_year" ;
+                rr:dataType xsd:integer];
     ].
 
 <#identifier1> a rr:TriplesMap;
@@ -94,6 +99,10 @@
         rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{father}" ];
     ];
     rr:predicateObjectMap [
+        rr:predicate crm:P97;
+        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{father}" ];
+    ];
+    rr:predicateObjectMap [
         rr:predicate sdh-short:P1;
         rr:objectMap [ rr:column "birth_year" ;
                 rr:dataType xsd:integer];
@@ -150,7 +159,7 @@
 
 
 
-<#crm-group-1> a rr:TriplesMap;
+<#group-1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.t_group" ];
     rr:subjectMap [
         rr:template "https://elites-suisses.lod4hss.org/resource/g{pk_group}";
@@ -203,6 +212,54 @@
     rr:predicateObjectMap [
         rr:predicate sdh-short:P11;
         rr:objectMap [ rr:column "definition" ];
+    ].
+
+<#geo-place-kind-1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.t_geo_place_kind" ];
+    rr:subjectMap [
+        rr:template "https://elites-suisses.lod4hss.org/resource/gpk{pk_geo_place_kind}";
+        rr:termType rr:IRI;
+        rr:class sdh:C51;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P9;
+        rr:objectMap [ rr:column "name_standard" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "definition" ];
+    ].
+
+
+<#geo-place-1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.t_geo_place" ];
+    rr:subjectMap [
+        rr:template "https://elites-suisses.lod4hss.org/resource/gp{pk_geo_place}";
+        rr:termType rr:IRI;
+        rr:class sdh:C13;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P9;
+        rr:objectMap [ rr:column "name_standard" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "definition" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh:P99;
+        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/gpk{fk_geo_place_kind}" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P14;
+        rr:objectMap [ rr:column "geocoordinates" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ 
+            rr:column "wikidata_uri";
+            rr:termType rr:IRI 
+        ];
     ].
 
 

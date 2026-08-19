@@ -127,6 +127,18 @@ from elites_suisses.t_person_place tpp
 group by  tgp.name_standard, tgp.geocoordinates;
 
 
+/*
+ * Issues with wikidata URIs
+ */
 
+select tgp.wikidata_uri, tgp.pk_geo_place, replace(tgp.wikidata_uri, 'https://www.wikidata.org/wiki/', 'http://www.wikidata.org/entity/')
+from elites_suisses.t_geo_place tgp 
+where tgp.wikidata_uri is not null;
+and length(tgp.wikidata_uri)=0;
 
+--update elites_suisses.t_geo_place tgp set wikidata_uri = NULL
+where tgp.wikidata_uri is not null
+and length(tgp.wikidata_uri)=0;
 
+--update elites_suisses.t_geo_place tgp set wikidata_uri = replace(tgp.wikidata_uri, 'https://www.wikidata.org/wiki/', 'http://www.wikidata.org/entity/')
+where tgp.wikidata_uri is not null;

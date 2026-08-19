@@ -28,18 +28,20 @@ WHERE i.mort IS NOT NULL
   AND TRIM(i.mort) <> ''
 ) as counts;
 
+
+
 /*
  * Data Transformation
  */
 
- -- extract birth year
+ -- add birth year
 
 alter table elites_suisses.identite add column birth_year integer;
 
 select
 case when (regexp_match(naissance, '\d{4}')) is not null
 then (regexp_match(naissance, '\d{4}'))[1]::integer
-else 0
+else null
 end as birth_year
 from elites_suisses.identite i
 limit 100;
@@ -48,7 +50,7 @@ limit 100;
 
 update elites_suisses.identite set birth_year = case when (regexp_match(naissance, '\d{4}')) is not null
 then (regexp_match(naissance, '\d{4}'))[1]::integer
-else 0
+else null
 end;
 
 
@@ -61,4 +63,39 @@ limit 100;
 
 select count(*) number
 from elites_suisses.identite i 
-where birth_year != 0;
+where birth_year is not null;
+
+
+
+ -- add death year
+
+alter table elites_suisses.identite add column death_year integer;
+
+select
+case when (regexp_match(mort, '\d{4}')) is not null
+then (regexp_match(mort, '\d{4}'))[1]::integer
+else null
+end as death_year
+from elites_suisses.identite i
+limit 100;
+
+
+
+update elites_suisses.identite set death_year = case when (regexp_match(mort, '\d{4}')) is not null
+then (regexp_match(mort, '\d{4}'))[1]::integer
+else null
+end;
+
+
+select death_year, count(*) number
+from elites_suisses.identite i 
+group by death_year
+order by count(*) desc
+limit 100;
+
+select count(*) number
+from elites_suisses.identite i 
+where death_year is not null;
+
+
+

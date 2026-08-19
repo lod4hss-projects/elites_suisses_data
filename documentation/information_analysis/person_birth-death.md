@@ -64,10 +64,10 @@ Should we have two processes for the birth (with place and parents) and the deat
 ## Data Mapping
 
 The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
-- The column `birth_year` is a string of the birth year linked to the instance of person through the property [`sdh-shortcut:P2 was birth of`](https://sdhss.org/ontology/shortcuts/P2)
-- The column `death_year` is a string of the death year linked to the instance of person through the property [`sdh-shortcut:P13 was death of`](https://sdhss.org/ontology/shortcuts/P13)
+- The column `birth_year` is a string of the birth year linked to the instance of person through the property [`sdh-shortcut:P2 has birth date`](https://sdhss.org/ontology/shortcuts/P2)
+- The column `death_year` is a string of the death year linked to the instance of person through the property [`sdh-shortcut:P13 has death date`](https://sdhss.org/ontology/shortcuts/P13)
 
-In addition, birth is further developer [here](../information_analysis/v_person_birth.md)
+In addition, birth is further developed [here](../information_analysis/v_person_birth.md)
 
 The ontological diagram:
 
