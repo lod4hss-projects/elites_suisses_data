@@ -16,7 +16,7 @@ Rows in this table represent persons.
 
 They correspond to instances of the CIDOC CRM E21 Person class.
 
-Data inspection and structure of the table [to be found here](information_analysis/identite.md).
+Data inspection and structure of the table [to be found here](../documentation/information_analysis/identite.md).
 
 &nbsp;
 
@@ -24,7 +24,7 @@ Data inspection and structure of the table [to be found here](information_analys
 
 Rows in this table represent relations to other identifiers or to webpages about the same persons.
 
-Data inspection and structure of the table [to be found here](information_analysis/same_as_relations.md).
+Data inspection and structure of the table [to be found here](../documentation/information_analysis/same_as_relations.md) and [here](../documentation/information_analysis/identifier.md).
 
 &nbsp;
 
@@ -32,7 +32,7 @@ Data inspection and structure of the table [to be found here](information_analys
 
 Rows in this table represent relations to parents.
 
-Data inspection and structure of the table [to be found here](information_analysis/filiations.md).
+Data inspection and structure of the table [to be found here](../documentation/information_analysis/filiations.md).
 
 &nbsp;
 
@@ -40,7 +40,7 @@ Data inspection and structure of the table [to be found here](information_analys
 
 Rows in this table represent marriages.
 
-Data inspection and structure of the table [to be found here](information_analysis/marriage.md).
+Data inspection and structure of the table [to be found here](../documentation/information_analysis/marriage.md).
 
 &nbsp;
 
