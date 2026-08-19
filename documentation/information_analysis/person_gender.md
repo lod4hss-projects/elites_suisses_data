@@ -31,12 +31,12 @@ The transformation from the sting value to a dedicated table requires:
 ## Data Mapping
 
 The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
-- the genders are instances of the class [`sdh-slc:C11 Gender`](https://sdhss.org/ontology/social-life-core/C11)
-- The column pk_gender serves as the basis for the URI of the gender instance
-- The column name is a string linked to the instance of gender through the property [`sdh-shortcut:P9 has standard label`](https://sdhss.org/ontology/shortcuts/P9)
-- The column description is a string linked to the instance of gender through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
-- The column notes is a string linked to the instance of gender through the property [`crm:P3 has note`](http://www.cidoc-crm.org/cidoc-crm/P3_has_note)
-- The column wikidata_uri is a string linked to the instance of gender through the property [`owl:sameAs`](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_sameAs)
+- the `genders` are instances of the class [`sdh-slc:C11 Gender`](https://sdhss.org/ontology/social-life-core/C11)
+- The column `pk_gender` serves as the basis for the URI of the gender instance
+- The column `name` is a string linked to the instance of gender through the property [`sdh-shortcut:P9 has standard label`](https://sdhss.org/ontology/shortcuts/P9)
+- The column `description` is a string linked to the instance of gender through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
+- The column `notes` is a string linked to the instance of gender through the property [`crm:P3 has note`](http://www.cidoc-crm.org/cidoc-crm/P3_has_note)
+- The column `wikidata_uri` is a string linked to the instance of gender through the property [`owl:sameAs`](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_sameAs)
 
 Here is the ontological diagram:
 

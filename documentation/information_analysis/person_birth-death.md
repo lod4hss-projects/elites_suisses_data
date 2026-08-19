@@ -63,6 +63,23 @@ Should we have two processes for the birth (with place and parents) and the deat
 
 ## Data Mapping
 
+Have the shortcuts here
+
+Person > has birth date > year
+Person > has death date > year
+
+In addition, birth is further developer [here](../information_analysis/v_person_birth.md)
+
+The ontological diagram:
+
+![Birth and Death Shortcut](../graphics/birth-death-shortcut.png)
+
+Profile:
+
+[Person - Identification](https://ontome.net/profile/599)
+
+--
+
 DEVIDE THE BIRTH (WITH TABLE BIRTH/PARENTS) AND DEATH?
 
 The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
