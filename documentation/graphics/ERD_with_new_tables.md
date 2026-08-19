@@ -69,10 +69,13 @@ This table is used to clean up the *mandat* table. It is separated from the orig
 * Information about general cleaning up of this table, see [this document](../database_inspection/mandates_cleaning_up_general.sql)
 
 
+
+
 ### t_geo_place
 
 Table that identifies geographical places.
 
+For the domain of geographical places, cf. [this document](../information_analysis/t_geo_place.md)
 
 
 ### t_geo_place_kind

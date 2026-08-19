@@ -63,15 +63,26 @@ limit 10;
  * Data Transformation
  */
 
--- Creation of the view
-drop view elites_suisses.v_person_birth ;
-create or replace view elites_suisses.v_person_birth AS
-with tw1 as (
-select distinct fv."idFiliation" id_filiation, fv."idFils" id_fils, if.birth_year, 
-	fv."idParent", fv."sexeParent", ip.sexe sexe_parent
-from elites_suisses.filiations fv 
- join elites_suisses.identite if on if.id = fv."idFils" 
+select distinct fv."idFiliation" id_filiation, fv."idFils" id_fils, ifi.birth_year, 
+	fv."idParent", fv."sexeParent", ip.sexe sexe_parent, tpp.fk_geo_place 
+from elites_suisses.filiations fv
+ join elites_suisses.identite ifi on ifi.id = fv."idFils" 
  join elites_suisses.identite ip on ip.id = fv."idParent" 
+ join elites_suisses.t_person_place tpp on tpp.fk_person = ifi.id
+where fv."idFils" != fv."idParent" 
+--and fv."idFils" IN (101579)
+--limit 100
+
+-- Creation of the view
+--drop view elites_suisses.v_person_birth ;
+create view elites_suisses.v_person_birth AS
+with tw1 as (
+select distinct fv."idFiliation" id_filiation, fv."idFils" id_fils, ifi.birth_year, 
+	fv."idParent", fv."sexeParent", ip.sexe sexe_parent, tpp.fk_geo_place 
+from elites_suisses.filiations fv
+ join elites_suisses.identite ifi on ifi.id = fv."idFils" 
+ join elites_suisses.identite ip on ip.id = fv."idParent" 
+ join elites_suisses.t_person_place tpp on tpp.fk_person = ifi.id
 where fv."idFils" != fv."idParent" 
 --and fv."idFils" IN (101579)
 --limit 100
@@ -89,7 +100,7 @@ select id_filiation, id_fils, birth_year,
 		when upper("sexeParent") = 'H'
 		then "idParent"
 		else NULL
-	end father	
+	end father, fk_geo_place as fk_birth_place
 from tw1)
 --select * 
 --from tw2;
@@ -98,9 +109,10 @@ select string_agg(id_filiation::text,'_'),
 		id_fils as child,
 		birth_year,
 		min(NULLIF(mother, NULL)) as mother,
-		min(NULLIF(father, NULL)) as father
+		min(NULLIF(father, NULL)) as father,
+		fk_birth_place
 from tw2
-group by id_fils, birth_year ;
+group by id_fils, birth_year, fk_birth_place ;
 
 
 -- First 20 rows of the new view
