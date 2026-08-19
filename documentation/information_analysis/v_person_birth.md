@@ -17,22 +17,15 @@ First 20 lignes of the view:
 
 A REFAIRE
 
-
-
 ## Data Mapping
-
-The documentation of parents is done via the class [`crm:E67 Birth`](http://www.cidoc-crm.org/cidoc-crm/E67_Birth).
 
 The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
 - the births are instances of the class [`crm:E67 Birth`](http://www.cidoc-crm.org/cidoc-crm/E67_Birth)
 - The column `child` is the ID of the person linked to the instance of birth through the property [`crm:P98 brought into life`](http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life)
 - The column `mother` is the ID of the person linked to the instance of birth through the property [`crm:P96 by mother`](http://www.cidoc-crm.org/cidoc-crm/P96_by_mother)
 - The column `father` is the ID of the person linked to the instance of birth through the property [`crm:P97 from father`](http://www.cidoc-crm.org/cidoc-crm/P97_from_father)
-
-For the documentation of the birth dates, see [here](../information_analysis/person_birth-death.md)
-
-The ontological mapping from the table and the SDHSS ontology ecosystem is as follows:
-- The new column `birth` is a string linked to the instance of person through the property [`sdh-shortcut:P11 has definition`](https://sdhss.org/ontology/shortcuts/P11)
+- Birth dates
+- Birth place
 
 The ontological diagram:
 

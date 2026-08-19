@@ -154,9 +154,11 @@ This how the data has been processed:
 
 ## New tables relating to geographical places
 
-In the elites suisses SQL database, a new table, called `t_geo_place` was be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching. In addition, a table `t_geo_place_kind` was created (with the column `pk_place_kind`, `name`, `definition`), with manualy entering the instance for "Settlement" and "Legal Territory".
+In the elites suisses SQL database, a new table, called `t_geo_place` has be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching. In addition, a table `t_geo_place_kind` was created (with the column `pk_place_kind`, `name`, `definition`), with manualy entering the instance for "Settlement" and "Legal Territory".
 
-A new table `t_geo_relation` associates a person (table `identite`) with a place and provides a relation type in order to specify if it is a birth place, activity place, death place, etc.
+A new table `t_person_place` associates a person (table `identite`) with a place and provides a relation type in order to specify if it is a birth place, activity place, death place, etc.
+
+A new table `t_geo_relation` has been created, associating two geographical place to provide a relationship type, such as a place being within another place, etc. This table should be documented manually, and is for the moment empty.
 
 ## Mapping
 
