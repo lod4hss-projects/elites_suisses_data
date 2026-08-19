@@ -152,18 +152,11 @@ This how the data has been processed:
 3. The rank, birth place, and citizenship tables are then extracted using the export sql-script to a series of csvs with the same names.
 4. The table csvs are then imported into OpenRefine to do the final wikidata reconciliation, and later re inserted into the database using the import sql-script.
 
-## To be done
+## New tables relating to geographical places
 
-In the elites suisses SQL database, a new table, called `t_geo_place` should be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching. In addition, a table `t_geo_place_kind` should be created (with the column `pk_place_kind`, `name`, `definition`), with manualy entering the instance for "Settlement" and "Legal Territory".
+In the elites suisses SQL database, a new table, called `t_geo_place` was be created, based on the table `birth_place` in the `person.db` SQL database in the folder entities_matching. In addition, a table `t_geo_place_kind` was created (with the column `pk_place_kind`, `name`, `definition`), with manualy entering the instance for "Settlement" and "Legal Territory".
 
-This new `t_geo_place` table should have the following columns:
-- `pk_place`, the unique identifier of the settlement, based on the `id` column in `person.db`.
-- `name`, for the label of the place, based on the `name` column in `person.db`.
-- `fk_place_kind`, for the kind of Geographical Place, with the only value for "Settlement".
-- `wikidata_uri`, for the equivalent instance in the Wikidata Knowledge Graph, based on the `wikidata_uri` column in `person.db`.
-- `geocoordinates`, for the geocoordinates location of the geographical place, following the WKT standard `POINT (long lat)`, based on the `lat` and `long` columns in `person.db`.
-
-A new column in the table `identite` in the elites suisses database should be created, with the label `fk_birth_place`, and based on the column `birth_place_id` from the the `person.db` database.
+A new table `t_geo_relation` associates a person (table `identite`) with a place and provides a relation type in order to specify if it is a birth place, activity place, death place, etc.
 
 ## Mapping
 

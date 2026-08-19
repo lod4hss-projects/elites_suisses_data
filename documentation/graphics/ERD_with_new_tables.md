@@ -67,3 +67,26 @@ This table is used to clean up the *mandat* table. It is separated from the orig
 * About groups and related tables [see this document](../information_analysis/organisations_groups.md)
 * Information about the production of this table [to be found here](../database_inspection/mandates_cleaning_up_tables.sql).
 * Information about general cleaning up of this table, see [this document](../database_inspection/mandates_cleaning_up_general.sql)
+
+
+### t_geo_place
+
+Table that identifies geographical places.
+
+
+
+### t_geo_place_kind
+
+Table that provides 'kinds', i.e. unique types from a community defined controlled vocabulary for geographical places.
+
+
+
+### t_geo_relation
+
+Aassociates a person (table `identite`) with a place (table `t_geo_place`) and provides a relation type in order to specify if it is a birth place, activity place, death place, etc.
+
+
+
+
+
+
