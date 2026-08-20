@@ -61,6 +61,8 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO hgb_editor;
 ALTER TABLE new_table RENAME TO old_table;
 
 
+alter table elites_suisses.t_group add column manual_edits text;
+
 SELECT last_value FROM elites_suisses.sdh_group_pk_sdh_group_seq1;
 --SELECT setval('elites_suisses.sdh_group_pk_sdh_group_seq1', 566, true);ALTER TABLE new_table RENAME TO old_table;
 
@@ -70,27 +72,27 @@ SELECT last_value FROM elites_suisses.sdh_group_pk_sdh_group_seq1;
 
 
 -- FOREIGN KEY 
-alter table elites_suisses.sdh_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
+alter table elites_suisses.t_group add constraint fk_source_entity_fk foreign key (fk_source_entity) 
 	references elites_suisses.entites(id);
 
 
-ALTER TABLE elites_suisses.sdh_group ADD COLUMN date_begin varchar(20);
-ALTER TABLE elites_suisses.sdh_group ADD COLUMN date_end varchar(20);
+ALTER TABLE elites_suisses.t_group ADD COLUMN date_begin varchar(20);
+ALTER TABLE elites_suisses.t_group ADD COLUMN date_end varchar(20);
 
-ALTER TABLE elites_suisses.sdh_group RENAME COLUMN fk_origin_of TO fk_origin_from;
+ALTER TABLE elites_suisses.t_group RENAME COLUMN fk_origin_of TO fk_origin_from;
 
 ALTER TABLE elites_suisses.mandat ADD COLUMN fk_sdh_group_organe INTEGER;
 
 -- FOREIGN KEY 
 alter table elites_suisses.mandat add constraint fk_sdh_group_organe_fk foreign key (fk_sdh_group_organe) 
-	references elites_suisses.sdh_group(pk_sdh_group);
+	references elites_suisses.t_group(pk_sdh_group);
 
 
 ALTER TABLE elites_suisses.mandat ADD COLUMN fk_sdh_group INTEGER;
 
 -- FOREIGN KEY 
 alter table elites_suisses.mandat add constraint fk_sdh_group_fk foreign key (fk_sdh_group) 
-	references elites_suisses.sdh_group(pk_sdh_group);
+	references elites_suisses.t_group(pk_sdh_group);
 
 
 

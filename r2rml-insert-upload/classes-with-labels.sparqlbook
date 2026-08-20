@@ -1,0 +1,146 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "# Get rid of labels in CRM & Co URIs\n\nCf. this Euria page: https://euria.infomaniak.com/shared/01a01fe0-ebec-71cd-bfff-3db2bba2d1d0",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Solution générique",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "select ?g ?s ?p ?newUri\nWHERE {\n  GRAPH ?g {\n    { ?s ?p ?oldUri }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n}\noffset 100\nLIMIT 5",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "SELECT (count(*) as ?num)\nWHERE {\n  GRAPH ?g {\n    { ?s ?p ?oldUri }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n  #FILTER (?oldUri != ?newUri)\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "DELETE {\n  GRAPH ?g { ?s ?p ?oldUri . }\n}\nINSERT {\n  GRAPH ?g { ?s ?p ?newUri . }\n}\nWHERE {\n  GRAPH ?g {\n    { ?s ?p ?oldUri }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "SELECT (COUNT(*) as ?number)\nWHERE {\n  GRAPH ?g {\n    { ?s ?oldUri ?o }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "select ?g ?newUri ?p ?o\nWHERE {\n  GRAPH ?g {\n    { ?oldUri ?p ?o }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n  FILTER (?oldUri != ?newUri)\n}\nOFFSET 500\nLIMIT 5",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "SELECT (COUNT(*) as ?number)\nWHERE {\n  GRAPH ?g {\n    { ?oldUri ?p ?o }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n  FILTER (?oldUri != ?newUri)\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "DELETE {\n  GRAPH ?g { ?oldUri ?p ?o. }\n}\nINSERT {\n  GRAPH ?g {?newUri ?p ?o. }\n}\nWHERE {\n  GRAPH ?g {\n    { ?oldUri ?p ?o }\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>)\n  )\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n  FILTER (?oldUri != ?newUri)\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Issue with the '_'",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?s ?g\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 10",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nconstruct {?sNew a owl:Class}\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  BIND (STRBEFORE(STR(?s), \"_\") AS ?sNewStr)\n  BIND (IRI(?sNewStr) AS ?sNew)\n  FILTER (?oldUri != ?newUri)\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?s ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>\n)\n)\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?s ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n  FILTER ( ?g IN (<https://sdhss.org/ontology/shortcuts/>, <http://www.cidoc-crm.org/cidoc-crm/>, <http://iflastandards.info/ns/lrm/lrmoo/>,\n<https://sdhss.org/ontology/core/>,<https://sdhss.org/ontology/crm-supplement/>,<https://sdhss.org/ontology/social-life-core/>,<https://sdhss.org/ontology/social-life-specific/>\n)\n)\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nconstruct {?sNew a owl:Class}\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  BIND (STRBEFORE(STR(?s), \"_\") AS ?sNewStr)\n  BIND (IRI(?sNewStr) AS ?sNew)\n  #FILTER (?oldUri != ?newUri))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "CONSTRUCT{\n  ?s ?p ?newUri .\n}\nWHERE {\n  { ?s ?p ?oldUri }\n  UNION\n  { ?oldUri ?p ?o }\n  UNION\n  { ?s ?oldUri ?o }\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n  FILTER (?oldUri != ?newUri)\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Properties",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nconstruct {?sNew a owl:ObjectProperty}\nwhere { graph ?g {?s a owl:ObjectProperty\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  BIND (STRBEFORE(STR(?s), \"_\") AS ?sNewStr)\n  BIND (IRI(?sNewStr) AS ?sNew)\n  FILTER (?oldUri != ?newUri)\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nconstruct {?sNew a owl:DatatypeProperty}\nwhere { graph ?g {?s a owl:DatatypeProperty\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  BIND (STRBEFORE(STR(?s), \"_\") AS ?sNewStr)\n  BIND (IRI(?sNewStr) AS ?sNew)\n  FILTER (?oldUri != ?newUri)\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "",
+    "metadata": {}
+  }
+]

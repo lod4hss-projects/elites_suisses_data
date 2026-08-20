@@ -137,6 +137,9 @@ from elites_suisses.t_mandates_cleaning_up tmcu
 group by tmcu.fonction_clean_1 
 order by num desc;
 
+
+
+
 -- inspect not yet coded
 select tmcu.fonction, count(*) as num
 from elites_suisses.t_mandates_cleaning_up tmcu 
@@ -145,7 +148,7 @@ from elites_suisses.t_mandates_cleaning_up tmcu
 where true 
 --and tmcu.sphere = 'Economique'
 and tmcu.fonction_clean_1 is null or tmcu.fonction_clean_1 = ''
-and tmcu.fonction ~* 'Dir/CEO'
+and tmcu.fonction ~* 'Dire'
 --and tmcu.fonction ~* '^membre.{0,3}$'
 group by fonction 
 order by num desc;
