@@ -317,9 +317,9 @@ limit 10
 
 alter table elites_suisses.education add column categorie_norm text;
 
-update elites_suisses.education e set categorie_norm = "Catégorie" ;
+--update elites_suisses.education e set categorie_norm = "Catégorie" ;
 
-update elites_suisses.education e set categorie_norm = replace(trim(lower(e.categorie_norm)), '?', '')
+--update elites_suisses.education e set categorie_norm = replace(trim(lower(e.categorie_norm)), '?', '')
 
 
 
@@ -370,7 +370,7 @@ from elites_suisses.education e
 where e.categorie_norm ilike '%chemie%';
 
 
-drop table elites_suisses.t_study_discipline ;
+--drop table elites_suisses.t_study_discipline ;
 create table elites_suisses.t_study_discipline as
 select row_number() OVER (ORDER BY 1)::INTEGER as id, categorie_norm, count(*) as number
 FROM elites_suisses.education e 

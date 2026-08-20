@@ -1,0 +1,43 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix sdh-short: <https://sdhss.org/ontology/shortcuts/>.
+@prefix sdh: <https://sdhss.org/ontology/core/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix swel: <https://elites-suisses.lod4hss.org/resource/>.
+@prefix sdh-slc: <https://sdhss.org/ontology/social-life-core/>.
+@prefix sdh-sls: <https://sdhss.org/ontology/social-life-specific/>.
+
+
+
+<#membership-1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.v_membership" ];
+    rr:subjectMap [
+        # rr:constant swel: ; does not work,
+        # keep the full URI for the template
+        rr:template "https://elites-suisses.lod4hss.org/resource/memb{id}";
+        # rr:termType rr:IRI;
+        rr:class sdh-slc:C5;
+    ];
+    rr:predicateObjectMap [
+        # was obtained by 
+        rr:predicate sdh-slc:P1;
+        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{fk_person}" ];
+    ];
+    rr:predicateObjectMap [
+        # obtention date, at some time within
+        rr:predicate sdh-short:P4;
+        rr:objectMap [ rr:column "begin_year" ;
+                rr:dataType xsd:integer];
+    ];
+    rr:predicateObjectMap [
+        # obtention date, at some time within
+        rr:predicate sdh-short:P7;
+        rr:objectMap [ rr:column "end_year" ;
+                rr:dataType xsd:integer];
+    ];
+    rr:predicateObjectMap [
+        # is delivered by group
+        rr:predicate sdh-slc:P2;
+        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/g{fk_group}" ];
+    ].

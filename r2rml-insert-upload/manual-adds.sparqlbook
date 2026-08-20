@@ -1,0 +1,20 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Manual additions to the ontology\n\nThis page captures \n",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s owl:sameAs ?o}\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nINSERT DATA {\n  GRAPH <https://lod4hss.cloud/additional-features/>\n    {owl:sameAs rdfs:label 'same as'}\n}",
+    "metadata": {}
+  }
+]

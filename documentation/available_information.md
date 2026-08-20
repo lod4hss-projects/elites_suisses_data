@@ -70,8 +70,6 @@ Rows in this table represent a bundle of different informations, mainly instance
 
 This table demands a thorough inspection and discussion. This is **[the access page](information_analysis/mandates_general_inspection.md) to the whole documentation of this process** where we provide links to the sub-pages.
 
-Data inspection and structure of the table [to be found here](information_analysis/roles_mandates.md).
-
 &nbsp;
 
 ## New tables

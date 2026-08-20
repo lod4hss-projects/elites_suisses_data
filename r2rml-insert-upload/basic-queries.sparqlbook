@@ -22,5 +22,77 @@
     "language": "sparql",
     "value": "## execute directly on server\nclear graph <https://swiss-elites.lod4hss.cloud/resource/>",
     "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nINSERT DATA {\n  GRAPH <https://lod4hss.cloud/additional-features/>\n    {owl:sameAs rdfs:label 'same as'}\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s owl:sameAs ?o}\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "## Issue with the '_'",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?s ?g\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 10",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?s ?g\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nconstruct {?sNew a owl:Class}\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  BIND (STRBEFORE(STR(?s), \"_\") AS ?sNewStr)\n  BIND (IRI(?sNewStr) AS ?sNew)\n  #FILTER (?oldUri != ?newUri))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?s ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s ?p ?o\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nconstruct {?sNew a owl:Class}\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  BIND (STRBEFORE(STR(?s), \"_\") AS ?sNewStr)\n  BIND (IRI(?sNewStr) AS ?sNew)\n  #FILTER (?oldUri != ?newUri))\n  }\n}\nlimit 20",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n\nselect distinct ?g\nwhere { graph ?g {?s a owl:Class\n  FILTER (CONTAINS(STR(?s), \"_\"))\n  }\n}",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
+    "value": "CONSTRUCT{\n  ?s ?p ?newUri .\n}\nWHERE {\n  { ?s ?p ?oldUri }\n  UNION\n  { ?oldUri ?p ?o }\n  UNION\n  { ?s ?oldUri ?o }\n  FILTER (CONTAINS(STR(?oldUri), \"_\"))\n  BIND (STRBEFORE(STR(?oldUri), \"_\") AS ?newUriStr)\n  BIND (IRI(?newUriStr) AS ?newUri)\n  FILTER (?oldUri != ?newUri)\n}",
+    "metadata": {}
   }
 ]

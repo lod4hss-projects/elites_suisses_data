@@ -79,6 +79,29 @@ order by num desc;
 
 
 
+/*
+ * Directeur / CEO
+ */
+
+select tmcu.fonction, count(*) as num
+from elites_suisses.t_mandates_cleaning_up tmcu 
+--where tmcu.organe ~* '^comit.{1,2}$'
+--where tmcu.organe ~* 'comit.*dir.{1,3}$'
+where true 
+--and tmcu.sphere = 'Académique'
+and tmcu.fonction_clean_1 is null or tmcu.fonction_clean_1 = ''
+--and tmcu.fonction ~* 'pr.side'
+and tmcu.fonction ~* '^pr.side.{0,5}$'
+group by fonction 
+order by num desc;
+
+-- updated 6755
+--update elites_suisses.t_mandates_cleaning_up tmcu  set fonction_clean_1 = 'président'
+where tmcu.fonction_clean_1 is null or tmcu.fonction_clean_1 = ''
+and tmcu.fonction ~* '^pr.side.{0,5}$';
+
+
+
 
 /*
  * Organes
