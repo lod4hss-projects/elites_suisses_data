@@ -99,13 +99,13 @@
         rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{father}" ];
     ];
     rr:predicateObjectMap [
-        rr:predicate crm:P97;
-        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/p{father}" ];
-    ];
-    rr:predicateObjectMap [
         rr:predicate sdh-short:P1;
         rr:objectMap [ rr:column "birth_year" ;
                 rr:dataType xsd:integer];
+    ];            
+    rr:predicateObjectMap [
+        rr:predicate sdh:P6;
+        rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/gp{fk_birth_place}" ];
     ].
 
 
