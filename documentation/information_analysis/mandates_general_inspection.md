@@ -34,8 +34,9 @@ Across the various 'spheres', these five typical fields were used to tackle down
 |[Economique](mandates_economique.md)|23884|
 |[Presse](mandates_presse_sportive.md)|15|
 |[Politique](mandates_politique.md)|32126|
-|[Administrative](mandates_economique.md)|15661|
+|[Administrative](mandates_administrative.md)|15661|
 |[Sociabilité](mandates_sociabilite.md)|10078|
+|**total**|**112471**|
 
 
 We decided to split the analysis and refactoring of the database in line with the 'spheres' and created correspondingly a view per sphere.
