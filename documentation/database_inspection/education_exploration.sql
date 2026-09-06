@@ -122,18 +122,6 @@ limit 100;
 
 
 
-/*
-* Education level
-* 
-* Ceci serait un type de formation
-*/
-
-select trim(lower(e."Formation niveau")), count(*) as number
-FROM elites_suisses.education e 
-group by  trim(lower(e."Formation niveau")) 
-order by number desc;
-
-
 
 
 
@@ -247,6 +235,26 @@ order by length ("Date"), _date;
 -- 38 + 82 = 120 cases
 
 
+
+
+
+
+
+
+/*
+* Education level
+* 
+* Ceci serait un type de formation
+*/
+
+select trim(lower(e."Formation niveau")), count(*) as number
+FROM elites_suisses.education e 
+group by  trim(lower(e."Formation niveau")) 
+order by number desc;
+
+
+
+
 /*
 * Degree code
 */
@@ -259,7 +267,7 @@ order by number desc;
 
 
 -- issue with the quotes corrected
-update elites_suisses.education set "TITRE_Codé" = REPLACE("TITRE_Codé", '’', '''');
+--update elites_suisses.education set "TITRE_Codé" = REPLACE("TITRE_Codé", '’', '''');
 
 
 
@@ -280,11 +288,14 @@ FROM elites_suisses.education e
 )
 select titre_code, count(*) as number
 FROM tw1 e 
-where length(titre_code) > 2
+where length(titre_code) > 1 -- / = 1 / = 0 / > 2
 group by  titre_code 
-having count(*) > 2
+--having count(*) > 2
 --order by titre_code;
 order by number desc;
+-- 59 different coded titles with more than 2 person counts; 156 including single person counts
+-- no usable information where length <= 1
+-- 'titre_code' = 'jd' = 'Juris Doctor'
 
 
 -- replace on original table !!!
@@ -336,8 +347,8 @@ having count(*) > 2
 order by number desc;
 
 
-drop table elites_suisses.t_study_title ;
-create table elites_suisses.t_study_title as
+--drop table elites_suisses.t_study_title ;
+--create table elites_suisses.t_study_title as
 select row_number() OVER (ORDER BY 1)::INTEGER as id, e."TITRE_Codé" study_title, count(*) as number
 FROM elites_suisses.education e 
 where length(e."TITRE_Codé") > 2
@@ -346,7 +357,7 @@ having count(*) > 2
 --order by e."TITRE_Codé";
 order by number desc;
 
-alter table elites_suisses.t_study_title add CONSTRAINT t_study_title_pk PRIMARY key (id);
+--alter table elites_suisses.t_study_title add CONSTRAINT t_study_title_pk PRIMARY key (id);
 
 select * from elites_suisses.t_study_title ;
 
@@ -358,13 +369,13 @@ from elites_suisses.education e
 limit 10;
 
 
-alter table elites_suisses.education add column fk_study_title integer;
+--alter table elites_suisses.education add column fk_study_title integer;
 -- FOREIGN KEY 
-alter table elites_suisses.education add constraint fk_study_title_fk foreign key (fk_study_title) 
+--alter table elites_suisses.education add constraint fk_study_title_fk foreign key (fk_study_title) 
 	references elites_suisses.t_study_title(id);
 
 
-update elites_suisses.education e set fk_study_title = st.id 
+--update elites_suisses.education e set fk_study_title = st.id 
 from elites_suisses.t_study_title st
 where st.study_title= e."TITRE_Codé";
 
@@ -386,7 +397,7 @@ limit 10
 * Catégorie, i.e. topic or discipline
 */
 
-alter table elites_suisses.education add column categorie_norm text;
+--alter table elites_suisses.education add column categorie_norm text;
 
 --update elites_suisses.education e set categorie_norm = "Catégorie" ;
 
@@ -413,11 +424,11 @@ order by number desc;
 
 
 -- remplacer si de nouveau nécessaire par 'categorie_norm'
-update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'economie', 'économie')
+--update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'economie', 'économie')
 where e."Catégorie" like '%economie%';
-update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'Economie', 'Économie')
+--update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'Economie', 'Économie')
 where e."Catégorie" like '%Economie%';
-update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'Genie', 'Génie')
+--update elites_suisses.education e set "Catégorie" = replace(e."Catégorie", 'Genie', 'Génie')
 where e."Catégorie" like '%Genie%';
 
 
@@ -442,7 +453,7 @@ where e.categorie_norm ilike '%chemie%';
 
 
 --drop table elites_suisses.t_study_discipline ;
-create table elites_suisses.t_study_discipline as
+--create table elites_suisses.t_study_discipline as
 select row_number() OVER (ORDER BY 1)::INTEGER as id, categorie_norm, count(*) as number
 FROM elites_suisses.education e 
 	join elites_suisses.v_education ve on ve.id_edu = e.zkp_edu
@@ -454,7 +465,7 @@ group by categorie_norm
 having count(*) > 4
 order by categorie_norm;
 
-alter table elites_suisses.t_study_discipline add CONSTRAINT t_study_discipline_pk PRIMARY KEY (id);
+--alter table elites_suisses.t_study_discipline add CONSTRAINT t_study_discipline_pk PRIMARY KEY (id);
 
 select * from elites_suisses.t_study_discipline ;
 
@@ -466,13 +477,13 @@ from elites_suisses.education e
 limit 10;
 
 
-alter table elites_suisses.education add column fk_study_discipline integer;
+--alter table elites_suisses.education add column fk_study_discipline integer;
 -- FOREIGN KEY 
 alter table elites_suisses.education add constraint fk_study_discipline_fk foreign key (fk_study_discipline) 
 	references elites_suisses.t_study_discipline(id);
 
 
-update elites_suisses.education e set fk_study_discipline = sd.id 
+--update elites_suisses.education e set fk_study_discipline = sd.id 
 from elites_suisses.t_study_discipline sd 
 where sd.categorie_norm = e.categorie_norm;
 
@@ -548,8 +559,8 @@ order by number desc;
 */
 
 -- crate column for alignment
-alter table elites_suisses.education add column id_entity INTEGER;
-alter table elites_suisses.education add constraint fk_education_entites FOREIGN KEY (id_entity) REFERENCES elites_suisses.entites(id);
+--alter table elites_suisses.education add column id_entity INTEGER;
+--alter table elites_suisses.education add constraint fk_education_entites FOREIGN KEY (id_entity) REFERENCES elites_suisses.entites(id);
 
 
 -- preparer / vérifier alignment
