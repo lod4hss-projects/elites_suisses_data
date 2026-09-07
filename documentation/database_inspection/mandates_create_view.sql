@@ -1,4 +1,7 @@
 
+/*
+ * Membership
+ */
 
 -- choice of group
 select 
@@ -39,3 +42,30 @@ from elites_suisses.v_membership;
 select *
 from elites_suisses.v_membership
 where "idIdentite" < 100000;
+
+
+
+/*
+*  Social rôle embodiment
+*/
+
+
+
+select * 
+from elites_suisses.t_mandates_cleaning_up tmcu 
+where true 
+and tmcu.fonction_clean_1 > '';
+and tmcu.fk_fonction_1 is not null;
+
+
+select tmcu.fonction_clean_1, tmcu.fk_fonction_1  , count(*) as eff
+from elites_suisses.t_mandates_cleaning_up tmcu 
+where true 
+and tmcu.fonction_clean_1 > ''
+and tmcu.fonction_clean_1 != 'membre'
+group by tmcu.fonction_clean_1 , tmcu.fk_fonction_1  
+order by eff desc;
+
+
+
+
