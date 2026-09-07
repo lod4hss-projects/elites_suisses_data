@@ -1,9 +1,9 @@
 
-# Information on Individual's Educational Background and Career (*`education`*)
+# Information on a Person's Educational Background and Career (*`education`*)
 
-This page documents the available information on the educational background and educational career of individuals listed in the `education` table of the *Élites suisses* database.
+This page documents the available information on the educational background and educational career of individuals listed in the `education` table of the Élites suisses database.
 
-<font color="red">I would suggest creating a new ***`t_education_cleaning_up`*** table based on this table.</font>
+<font color="red">I suggest creating a new ***`t_education_cleaning_up`*** table based on this table.</font>
 
 ## Related Documents
 
@@ -39,31 +39,31 @@ A more detailed description of the content in these columns can be found in the 
 
 ## Table ***`education`***
 
-| Column Name | Data Type |  Description | Mapping  | Mapping Comments |
-|-------------|-----------|------|------|------|
+| Column Name | Data Type |  Description | Mapping  |
+|-------------|-----------|------|------|
 | `sysid` | integer |   |   |   |
-| `zkp_edu` | character varying | primary key |   |   |
-| `ID_IDENTITE` | integer | foreign key to the [***`identite`***](identite.md) table |   |   |
-| [`Formation niveau`](#education-level--niveau-formation-niveau) | character varying | education level or niveau (some overlap with the column `séjour_étranger`, see [notes below](#education-level--niveau-formation-niveau)) | ? |   |
-| [`Titre_stxt`](#study-title-and-discipline-titre_stxt-titre_codé-catégorie) | character varying | obtained educational title/degree (abbreviated/short form) | link to ***`t_study_title`*** |   |
-| [`TITRE_Codé`](#study-title-and-discipline-titre_stxt-titre_codé-catégorie) | character varying | obtained educational title/degree | link to ***`t_study_title`*** |   |
-| [`Catégorie`](#study-title-and-discipline-titre_stxt-titre_codé-catégorie) | character varying | discipline of study | link to ***`t_study_discipline`*** |   |
-| `Ordre` | integer | propriétés de Allen? <font color="red">=> Probably a number for ordering the different educational segments on the website, e.g. https://elitessuisses.unil.ch/p/55864</text> | ? |   |
-| `Institution` | character varying | study institution | link to [***`t_group`***](organisations_groups.md) |   |
-| `Lieu` | character varying | study place (of institution) | link to [***`t_geo_place`***](t_geo_place.md) |   |
-| `Canton` | character varying | study canton | link to [***`t_geo_place`***](t_geo_place.md) |   |
-| `Pays` | character varying | study country | link to [***`t_geo_place`***](t_geo_place.md) |   |
-| [`Date`](#time-period-date) | character varying | year (4-digit) or time period (start year ... end year), sometimes only indicative | ? |   |
-| `THÈSE_Titre` | character varying | title of thesis (master, doctorate, habilitation) | ? |   |
-| `THÈSE_NomDirecteur` | character varying | name of supervisor of a person's title | identite table? |   |
-| `THÈSE_Directeur_IdIdentité` | integer | id of supervisor of a person's title | identite table? |   |
-| `zlg_Creation` | timestamp without time zone |   |   |   |
-| `zlg_CreationNom` | character varying |   |   |   |
-| `zlg_Modif` | timestamp without time zone |   |   |   |
-| `zlg_ModifNom` | character varying |   |   |   |
-| `principal_annexe` | character varying |   |   |   |
-| `séjour_étranger` | character varying | foreign study (some overlap with the column `Formation niveau`, see [notes below](#education-level--niveau-formation-niveau)) | ? |   |
-| `versionDate` | date |   |   |   |
+| `zkp_edu` | character varying | primary key |   |
+| `ID_IDENTITE` | integer | foreign key to the [***`identite`***](identite.md) table |   |
+| [`Formation niveau`](#education-level--niveau-formation-niveau) | character varying | education level or niveau (some overlap with the column `séjour_étranger`, see [notes below](#education-level--niveau-formation-niveau)) | ? |
+| [`Titre_stxt`](#study-title-and-discipline-titre_stxt-titre_codé-catégorie) | character varying | obtained educational title/degree (abbreviated/short form) | link to ***`t_study_title`*** |
+| [`TITRE_Codé`](#study-title-and-discipline-titre_stxt-titre_codé-catégorie) | character varying | obtained educational title/degree | link to ***`t_study_title`*** |
+| [`Catégorie`](#study-title-and-discipline-titre_stxt-titre_codé-catégorie) | character varying | discipline of study | link to ***`t_study_discipline`*** |
+| `Ordre` | integer | propriétés de Allen? <font color="red">=> Probably a number for ordering the different educational segments on the website, e.g. https://elitessuisses.unil.ch/p/55864</text> | ? |
+| `Institution` | character varying | study institution | link to [***`t_group`***](organisations_groups.md) |
+| `Lieu` | character varying | study place (of institution) | link to [***`t_geo_place`***](t_geo_place.md) |
+| `Canton` | character varying | study canton | link to [***`t_geo_place`***](t_geo_place.md) |
+| `Pays` | character varying | study country | link to [***`t_geo_place`***](t_geo_place.md) |
+| [`Date`](#time-period-date) | character varying | year (4-digit) or time period (start year ... end year), sometimes only indicative | ? |
+| `THÈSE_Titre` | character varying | title of thesis (master, doctorate, habilitation) | ? |
+| `THÈSE_NomDirecteur` | character varying | name of supervisor of a person's title | identite table? |
+| `THÈSE_Directeur_IdIdentité` | integer | id of supervisor of a person's title | identite table? |
+| `zlg_Creation` | timestamp without time zone |   |   |
+| `zlg_CreationNom` | character varying |   |   |
+| `zlg_Modif` | timestamp without time zone |   |   |
+| `zlg_ModifNom` | character varying |   |   |
+| `principal_annexe` | character varying |   |   |
+| `séjour_étranger` | character varying | foreign study (some overlap with the column `Formation niveau`, see [notes below](#education-level--niveau-formation-niveau)) | ? |
+| `versionDate` | date |   |   |
 
 &nbsp;
 

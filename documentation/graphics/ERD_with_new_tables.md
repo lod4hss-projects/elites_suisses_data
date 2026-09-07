@@ -1,4 +1,4 @@
-# Comments on ERD
+# Comments on extended ERD
 
 This ERD reproduces the tables and main columns in the original database and adds with specific colors the new columns, classes and relations that we add for the sake of identifying implicit entities
 
@@ -89,7 +89,11 @@ Table that provides 'kinds', i.e. unique types from a community defined controll
 Aassociates a person (table `identite`) with a place (table `t_geo_place`) and provides a relation type in order to specify if it is a birth place, activity place, death place, etc.
 
 
+&nbsp;
 
+---
+
+Go back to [Semantic Analysis and Mapping of the Database Tables](../available_information.md)
 
 
 
