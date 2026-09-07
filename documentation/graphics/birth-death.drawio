@@ -1,33 +1,33 @@
 <mxfile host="65bd71144e">
     <diagram id="AVdKiCdb2fnhb9_ZEdo-" name="Page-2">
-        <mxGraphModel dx="753" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="539" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <object label="crm:E21 Person" URI="http://www.cidoc-crm.org/cidoc-crm/E21_Person" linkTarget="_blank" link="http://www.cidoc-crm.org/cidoc-crm/E21_Person" en="Person" de="Person" el="Πρόσωπο" fr="Personne" pt="Pessoa" ru="Личность" zh="人物" id="o5pNKLtUBo9ttrAvuN4K-1">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffbdca;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffbdca;fontSize=16;fontStyle=1" parent="1" vertex="1">
                         <mxGeometry x="370" y="310" width="140" height="70" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="o5pNKLtUBo9ttrAvuN4K-2" value="sdh-shortcut:P13 was death of" style="edgeStyle=none;html=1;" edge="1" parent="1" target="o5pNKLtUBo9ttrAvuN4K-3" source="o5pNKLtUBo9ttrAvuN4K-1">
+                <mxCell id="o5pNKLtUBo9ttrAvuN4K-2" value="sdh-shortcut:P13 was death of" style="edgeStyle=none;html=1;" parent="1" source="o5pNKLtUBo9ttrAvuN4K-1" target="o5pNKLtUBo9ttrAvuN4K-3" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="440" y="520" as="sourcePoint"/>
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <object label="&lt;span style=&quot;color: rgb(63, 63, 63); font-weight: 400;&quot;&gt;sdh-shortcut:C39 Standard Date-Time&lt;/span&gt;" id="o5pNKLtUBo9ttrAvuN4K-3">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
                         <mxGeometry x="370" y="440" width="140" height="70" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="o5pNKLtUBo9ttrAvuN4K-4" value="sdh-shortcut:P2 was birth of" style="edgeStyle=none;html=1;" edge="1" parent="1" target="o5pNKLtUBo9ttrAvuN4K-5" source="o5pNKLtUBo9ttrAvuN4K-1">
+                <mxCell id="o5pNKLtUBo9ttrAvuN4K-4" value="sdh-shortcut:P2 was birth of" style="edgeStyle=none;html=1;" parent="1" source="o5pNKLtUBo9ttrAvuN4K-1" target="o5pNKLtUBo9ttrAvuN4K-5" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="440" y="160" as="sourcePoint"/>
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <object label="&lt;span style=&quot;font-weight: normal;&quot;&gt;sdh-shortcut:C39 Standard Date-Time&lt;br&gt;&lt;/span&gt;" id="o5pNKLtUBo9ttrAvuN4K-5">
-                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" parent="1" vertex="1">
                         <mxGeometry x="370" y="180" width="140" height="70" as="geometry"/>
                     </mxCell>
                 </object>
@@ -35,7 +35,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="fRRxZp80krJElgsheU0C" name="Page-1">
-        <mxGraphModel dx="753" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="539" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
