@@ -15,6 +15,15 @@ where tmcu.sphere = 'Economique'
 limit 100;
 
 
+select tmcu.organe_clean_1, count(*) as num
+from elites_suisses.t_mandates_cleaning_up tmcu 
+--where tmcu.sphere = 'Economique'
+group by tmcu.organe_clean_1 
+order by num desc;
+limit 100;
+
+
+
 
 
 
@@ -80,7 +89,7 @@ order by num desc;
 
 
 /*
- * Directeur / CEO
+ * Directeur / CEO / Président
  */
 
 select tmcu.fonction, count(*) as num
@@ -99,6 +108,52 @@ order by num desc;
 --update elites_suisses.t_mandates_cleaning_up tmcu  set fonction_clean_1 = 'président'
 where tmcu.fonction_clean_1 is null or tmcu.fonction_clean_1 = ''
 and tmcu.fonction ~* '^pr.side.{0,5}$';
+
+select tmcu.*
+from elites_suisses.t_mandates_cleaning_up tmcu 
+where tmcu.fonction_clean_1  = 'président';
+
+-- updated 6755
+--update elites_suisses.t_mandates_cleaning_up set fk_fonction_1 = 10
+where fonction_clean_1  = 'président';
+
+
+
+
+
+
+
+select tmcu.fonction, count(*) as num
+from elites_suisses.t_mandates_cleaning_up tmcu 
+--where tmcu.organe ~* '^comit.{1,2}$'
+--where tmcu.organe ~* 'comit.*dir.{1,3}$'
+where true 
+--and tmcu.sphere = 'Académique'
+and tmcu.fonction_clean_1 is null or tmcu.fonction_clean_1 = ''
+and tmcu.fonction ~* '^direct.{0,5}$'
+and tmcu.fonction !~* 'directio'
+group by fonction 
+order by num desc;
+
+-- updated 1091
+--update elites_suisses.t_mandates_cleaning_up tmcu  set fonction_clean_1 = 'directeur'
+where tmcu.fonction_clean_1 is null or tmcu.fonction_clean_1 = ''
+and tmcu.fonction ~* '^direct.{0,5}$'
+and tmcu.fonction !~* 'directio';
+
+
+select tmcu.*
+from elites_suisses.t_mandates_cleaning_up tmcu 
+where tmcu.fonction_clean_1  = 'directeur';
+
+-- updated 1091
+--update elites_suisses.t_mandates_cleaning_up set fk_fonction_1 = 13
+where fonction_clean_1  = 'directeur';
+
+
+
+
+
 
 
 
@@ -143,7 +198,7 @@ select organe, entite, count(*) as num, e.nom
 from elites_suisses.v_sphere_economique vse
 	left join elites_suisses.entites e on e.id = vse.id_entity 
 --where "typeEntite" = 'Prix/Distinction'
-group by organe, entite
+group by organe, entite, nom
 order by organe, entite;
 
 
@@ -188,6 +243,71 @@ select tmcu.organe_clean_2, count(*) as num
 from elites_suisses.t_mandates_cleaning_up tmcu 
 where tmcu.organe ~* 'cda'
 group by organe_clean_2;
+
+
+
+/*
+ * Création conseils d'administration
+ */
+
+select *
+from elites_suisses.t_mandates_cleaning_up tmcu 
+where organe_clean_1 = 'conseil d''administration';
+
+
+select *
+from elites_suisses.t_group tg 
+limit 10;
+
+select distinct concat('Conseil d''administration de ', tg.name_standard) as label_organe, concat('Conseil d''administration de ', tg.name_standard) as label_standard, 
+'fr', 8, fk_group, '20260907_imp1'
+from elites_suisses.t_mandates_cleaning_up tmcu, 
+elites_suisses.t_group tg 
+where organe_clean_1 = 'conseil d''administration'
+and tg.pk_group = tmcu.fk_group 
+and tmcu.fk_group is not null
+order by label_organe;
+
+select name_french, name_standard, na_st_language, fk_group_type, fk_part_of, import_notes 
+from elites_suisses.t_group tg 
+limit 10;
+
+-- 479 inserts
+--insert into elites_suisses.t_group (name_french, name_standard, na_st_language, fk_group_type, fk_part_of, import_notes )
+select distinct concat('Conseil d''administration de ', tg.name_standard),
+concat('Conseil d''administration de ', tg.name_standard), 
+'fr', 8, fk_group, '20260907_imp1'
+from elites_suisses.t_mandates_cleaning_up tmcu, 
+elites_suisses.t_group tg 
+where organe_clean_1 = 'conseil d''administration'
+and tg.pk_group = tmcu.fk_group 
+and tmcu.fk_group is not null;
+
+
+select *
+from elites_suisses.t_group tg 
+where tg.import_notes = '20260907_imp1';
+
+
+select tg.pk_group, tg.name_standard, tg.fk_part_of, tmcu.*
+from elites_suisses.t_mandates_cleaning_up tmcu, 
+elites_suisses.t_group tg 
+where organe_clean_1 = 'conseil d''administration'
+and tg.fk_part_of = tmcu.fk_group 
+and tmcu.fk_group is not null;
+
+-- updated 12249
+--update elites_suisses.t_mandates_cleaning_up tmcu
+set fk_group_organe_clean_1 = tg.pk_group
+from elites_suisses.t_group tg 
+where organe_clean_1 = 'conseil d''administration'
+and fk_group_organe_clean_1 is null
+and tg.fk_part_of = tmcu.fk_group 
+and tmcu.fk_group is not null;
+
+
+
+
 
 
 /*

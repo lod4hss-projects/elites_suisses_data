@@ -39,6 +39,14 @@ order by m."idIdentite";
 select *
 from elites_suisses.v_membership;
 
+
+select vm.*, tg.*
+from elites_suisses.v_membership vm,
+elites_suisses.t_group tg 
+where tg.pk_group = fk_group 
+and tg.fk_group_type = 8;
+
+
 select *
 from elites_suisses.v_membership
 where "idIdentite" < 100000;
@@ -67,5 +75,16 @@ group by tmcu.fonction_clean_1 , tmcu.fk_fonction_1
 order by eff desc;
 
 
-
+-- prepare mandates as embodiments
+select 
+	-- should sometimes groups and not just organs be considered ?
+	fk_group_organe_clean_1,
+	tmcu.fk_fonction_1,
+	id
+from elites_suisses.t_mandates_cleaning_up tmcu
+where tmcu.fonction_clean_1 != 'membre'
+and fk_group_organe_clean_1 is not null
+and tmcu.fk_group is not null
+and tmcu.fk_fonction_1 in (10)
+order by fk_group_organe_clean_1;
 
