@@ -14,7 +14,7 @@ This page documents the available information on the educational background and 
 
 ## Description of the Data
 
-The complete dataset consists of 23 columns with 34321 rows containing information on individual educational track records. We ignore columns containing purely administrative data. 
+The education table consists of 23 columns with 34321 rows containing information on individual educational track records. We ignore columns containing purely administrative data. 
 
 In this table, **rows** represent educational phases (i.e., different segments of a person's educational career, including studies abroad, educational degrees and achievements).
 
@@ -188,3 +188,10 @@ The information is not standardised, but mostly of good enough quality to be cle
 Further notes:
 
 Is `THÈSE_NomDirecteur` and `THÈSE_Directeur_IdIdentité` congruent with identite table?
+
+
+&nbsp;
+
+---
+
+Go back to [Semantic Analysis and Mapping of the Database Tables](../available_information.md#original-tables)
