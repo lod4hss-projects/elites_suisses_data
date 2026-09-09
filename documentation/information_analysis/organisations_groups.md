@@ -1,3 +1,26 @@
+# New table: ***`t_group`***
+
+Info that t_group is the enhanced version of the original entites table that also contains entities found in the related education and mandat tables.
+
+Important aspects are the interrelation of entities in this table. Some are smaller units of a larger organisation, some are historical transformations. Case A, entering of the data directly in the table (due n:1? relation). An organizational subunit that has a partOf property pointing to a larger organization represents an n:1 (many-to-one) relationship. Many subunits can all point to the same single larger organization (e.g., the HR Department, IT Department, and Finance Department are each partOf Company X).From the perspective of the subunit's property, each individual subunit links back to one parent organization.
+Case B, entering the data in additional table t_group_follower (see documentation) due to a n:n relation
+
+## Related Documents
+
+* 
+* 
+
+## Structure of the Table
+
+## Initial Data Import
+
+
+## Data Cleaning and Enrichment
+
+u.a. reconciliation using OpenRefine
+
+
+
 # Group and related tables
 
 Documentation of the t_group, t_group_type, t_group_appellations, t_group_follower tables

@@ -20,14 +20,14 @@ In this table, **rows** represent educational phases (i.e., different segments o
 
 Relevant **columns** include the following information (if available):
 
-* educational path or educational level (`Formation niveau`),
-* degree obtained (`TITRE_Codé`),
-* discipline of study (`Catégorie`),
-* institution (`Institution`),
-* location, i.e. the place (`Lieu`), canton (`Canton`) and country (`Pays`),
-* time period (`Date`),
-* title of thesis (`THÈSE_Titre`, e.g., doctoral and habilitation thesis),
-* information on academic supervisorship (`THÈSE_NomDirecteur`), provided a supervisor is also registered as a person in the *Élites suisses* database.
+* Educational path or educational level (`Formation niveau`),
+* Degree obtained (`TITRE_Codé`),
+* Discipline of study (`Catégorie`),
+* Institution (`Institution`),
+* Location, i.e. the place (`Lieu`), canton (`Canton`) and country (`Pays`),
+* Time period (`Date`),
+* Title of thesis (`THÈSE_Titre`, e.g., doctoral and habilitation thesis),
+* Information on academic supervisorship (`THÈSE_NomDirecteur`), provided a supervisor is also registered as a person in the *Élites suisses* database.
 
 A few examples:
 
@@ -37,7 +37,7 @@ A more detailed description of the content in these columns can be found in the 
 
 &nbsp;
 
-## Table ***`education`***
+## The ***`education`*** Table
 
 | Column Name | Data Type |  Description | Mapping  |
 |-------------|-----------|------|------|
