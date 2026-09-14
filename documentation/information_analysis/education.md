@@ -194,4 +194,5 @@ Is `THÈSE_NomDirecteur` and `THÈSE_Directeur_IdIdentité` congruent with ident
 
 ---
 
-Go back to [Semantic Analysis and Mapping of the Database Tables](../available_information.md#original-tables)
+Go back to [Semantic Analysis and Mapping of the Database Tables](../available_information.md#original-tables)<br>
+Go back to [Organisations](organisations.md)

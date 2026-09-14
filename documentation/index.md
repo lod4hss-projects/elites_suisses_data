@@ -21,7 +21,9 @@ The following eight tables were delivered by the Élites suisses project:
 
 An overview of the available information in these tables can be found [on this page](available_information.md). From there, more detailed inspections of the various concepts and categories inside the Élites suisses database can be found.
 
-From these inspections, we found that there are many implicit entities stored as text data in these tables (e.g. gender, organisation type, type of education) that are necessary to transform the data into a knowledge graph. For this, new tables were created to describe the entities using a controlled vocabulary. Some tables, namely the ***`education`***, ***`mandat`*** and ***`entites`*** table, were recreated for further data cleaning (see [extended ERD](../documentation/graphics/ERD_with_new_tables.png) representing the original tables as well as [information on these tables](../documentation/graphics/ERD_with_new_tables.md)).
+We found that there are many implicit entities stored as textual values in these tables (e.g. gender, organisation type, type of education). To transform the relational database into a knowledge graph, these implicit entities need to be identified and represented as explicit, identifiable entities. For this purpose, new tables were created to define and describe these entities using controlled vocabularies. This allows textual values occurring in the source data to be mapped to consistent, well-defined entities. In addition, some existing tables, namely the ***`entites`***, ***`education`*** and ***`mandat`*** tables, were recreated to facilitate further data cleaning, mapping and conversion.
+
+We created an [extended ERD](../documentation/graphics/ERD_with_new_tables.png) that shows the original tables in relation to the newly created tables. The extended ERD is [described here in more detail](../documentation/graphics/ERD_with_new_tables.md)).
 
 &nbsp;
 
@@ -37,12 +39,13 @@ From these inspections, we found that there are many implicit entities stored as
 
 To clearly distinguish between different database objects, the following conventions are used throughout this documentation:
 
-* **Names of tables** are formatted as bold + italics + code,<br>e.g. ***`education`***
+* **Names of tables** are formatted as code + italic + bold,<br>e.g. ***`education`***
+* **Names of views** are formatted as code + italic,<br>e.g. *`education`*
 * **Names of columns** are formatted as code,<br>e.g. `Formation niveau`
 
-Some column names in the original tables contain uppercase letters or spaces. Throughout this documentation, the original table and column names are used exactly as they appear in the provided source tables.
+As can be seen in the example above, some column names in the original tables contain uppercase letters or spaces. Throughout this documentation, the original table and column names are used exactly as they appear in the provided source tables.
 
-For newly created tables and columns, only lowercase names are used. In addition, the names of newly created tables are prefixed with "t_" to distinguish them from the original source tables (e.g. ***`t_mandates_cleaning_up`***).
+In the newly created tables and columns, we only use lowercase names. In addition, the names of newly created tables are prefixed with "***`t_`***" to distinguish them from the original source tables (e.g. ***`t_mandates_cleaning_up`*** is the table we use for cleaning up the ***`mandat`*** table).
 
 ### Interlinkage
 

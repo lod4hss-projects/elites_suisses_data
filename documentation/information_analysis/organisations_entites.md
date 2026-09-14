@@ -2,9 +2,9 @@
 
 The ***`entites`*** table is the main table in the Élites suisses database, where information on organisations, institutions and other group-like entities are stored as entities.
 
-This table is referenced to via foreign key from other tables in the database, that is the ***`education`*** table (e.g. obtaining a study title from an educational institution) and the ***`mandat`*** table (e.g. holding a specific role position in a company, association or political party). For unknown reasons, two different keys are used for this purpose: `id`references to the ***`education`*** but not to the ***`mandat`*** table. Vice versa, `idEntite` references to the ***`mandat`*** table but not to ***`education`***.
+This table is referenced to via foreign key from other tables in the database, that is the ***`education`*** table (e.g. obtaining a study title from an educational institution) and the ***`mandat`*** table (e.g. holding a specific role position in a company, association or political party). For unknown reasons, two different keys were used for this purpose: `id`references to the ***`education`*** but not to the ***`mandat`*** table. Vice versa, `idEntite` references to the ***`mandat`*** table but not to ***`education`***.
 
-There are columns in other tables in the database that hold information on organisations, but store them as *strings* and not as *identified entities* (see [this page](organisations.md) for an overview). In many cases, a link to the ***`entites`*** table is not provided.
+There are columns in other tables in the database that hold information on organisations, but store them as *strings* and not as *identified entities*. In many cases, a link to the ***`entites`*** table is not provided (see also [overview page on organisations](organisations.md)).
 
 &nbsp;
 
@@ -13,7 +13,7 @@ There are columns in other tables in the database that hold information on organ
 * SQL script for data inspection, basic data cleaning and consistency check: [groups_entities_exploration.sql](../database_inspection/groups_entities_exploration.sql)
 * SQL script for inscpeting entity types (column `typeEntite`): [groups_entities_types.sql](../database_inspection/groups_entities_types.sql)
 * Documentation on name variants and language-specific variants of entities in the original [***`autresNomsEntites`***](organisations_autresNomsEntites.md) table
-* Documentation on the new [***`t_group`***](organisations_groups.md) table and on the additional tables [***`t_group_appellation`***](organisations_groups_appellations.md), [***`t_group_type`***](organisations_groups_types.md) and [***`t_group_follower`***](organisations_groups_follower_partof.md)
+* Documentation on the new [***`t_group`***](organisations_groups.md) table and on the additional tables [***`t_group_appellation`***](organisations_groups_appellations.md), [***`t_group_type`***](organisations_groups_types.md) and [***`t_group_follower`***](organisations_groups_follower.md)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Relevant columns include the following information for characterising an organis
 | `dateCreation` | character varying | Foundation year or date of an entity (organisation and institution) |  |
 | `dateDisparition` | character varying | Dissolution year or date of an entity (organisation and institution) |  |
 | `choixLogo` | character varying | Identifier probably to select different logo versions stored in the backend |  |
-| `DHS` | character varying | URL to the DHS/HLS <br><font color="red">Is there an indirect link to the identifier table, i.e. an overlap of URLs to DHS/HLS in this table and in the identifier table? Or apply the linked resources in the identifier only to persons?</font> |  |
+| `DHS` | character varying | URL to the DHS/HLS <br><font color="red">Is there an indirect link to the identifier table, i.e. an overlap of URLs to DHS/HLS in this table and in the identifier table? Or do the linked resources in the identifier table apply only to persons?</font> |  |
 | `DHS_versionAuteur` | character varying | <font color="red">Is empty? => check!</font> |  |
 | `affiliationSecteurType` | character varying | Depending on sphere and typeEntite denoting the economic sector or entity type | <font color="red">Needs to be analysed in cooccurrence with sphere, typeEntite and nom; there might be some implicit entities inside</font> |
 | `echelle` | character varying | The scope, level or reach of an entity's field of activity, i.e. national ("Fed"/"FED"), cantonal ("Cant"), municipal ("Comm") or international ("Int"/"Inter"). Some fields are emtpy. |  |
@@ -66,13 +66,13 @@ Relevant columns include the following information for characterising an organis
 
 ## Distribution of Spheres and Entity Types
 
-The distribution of spheres and entity types in this table shows the variety of entities to which persons in the Élites suisses database are associated. These are mostly independent organisations or sub-organisations of the academic, administrative, economic, political, philantrophic and sociability spheres.
+The distribution of spheres and entity types shows the variety of entities to which persons in the Élites suisses database are associated. These are mostly independent organisations or sub-organisations of the academic, administrative, economic, political, philantrophic and sociability spheres.
 
-The following table shows that the entity types, which are recorded as strings in the `typeEntite` column, are partly semantical concepts for differentiating various sub-fields of the respective sphere they are attributed to (e.g. an entity from the field of academic "Enseignement", an entity that operates within the field of "Recherche", a philantropic institution of the field "II. Vieillesse, maladie, accidents, hygiène", and so on). For transforming the database into LOD, the entities need to be attributed to actual organisation types, such as "Higher education institution", "Association", "Enterprise", "Academic society" and so on. Some entity types to already meet these requirements (e.g. a political party or a Federal Office). The original information in 'typeEntite`can be kept for reference or analysis purposes.
+The distribution table below shows that the entity types, which are recorded as strings in the `typeEntite` column, are partly semantical concepts for differentiating various sub-fields of the respective sphere they are attributed to (e.g. an entity from the field of academic "Enseignement", an entity that operates within the field of "Recherche", a philantropic institution of the field "II. Vieillesse, maladie, accidents, hygiène", and so on). For transforming the database into LOD, these entities need to be attributed to actual organisation types, such as "Higher education institution", "Association", "Enterprise", "Academic society" and so on. Some entity types do already meet these requirements (e.g. a political party or a Federal Office). The original information in 'typeEntite`should be kept for reference and analysis purposes.
 
-It is evident, that some entities may not be organisations in a narrower sense, such as the academic prizes (although also these have an organisation in the background). It will have to be decided, whether the fact that a person has won the Nobel Prize is modeled as "Receiving a prize" (with the entity in this table being the Nobel Prize itself) or as "Receiving a prize from the Nobel Foundation" (with the entity in this table being the Nobel Foundation).
+It is evident, that some entities may not be organisations in a narrower sense, such as the academic prizes (although also these have an organisation in the background). It will have to be decided, whether the fact that a person has won a prize (e.g. the Nobel Prize) should be modeled as "receiving a prize" (with the entity in this table being the Nobel Prize itself) or as "receiving a prize from the Nobel Foundation" (with the entity in this table then being the Nobel Foundation).
 
-Also evident from the glimpse in the data is that some data cleaning could to be done on the names (e.g. transform "BNS" to "Banque Nationale Suisse (BNS)" for better readability).
+Also evident from the distribution table below is that some data cleaning could to be done on the names (e.g. to transform "BNS" to "Banque Nationale Suisse (BNS)" for better readability).
 
 | `sphere` | `typeEntite` | `nom` (example/s) | N |
 |---|---|---|---:|
@@ -112,4 +112,9 @@ Also evident from the glimpse in the data is that some data cleaning could to be
 | Sociabilité | Lieux de sociabilité | Alliance de Sociétés Féminines Suisses; ASIN; Association Olympique Suisse; Automobile Club de Suisse (ACS); British Chamber of Commerce for Switzerland; Caritas; ... | 141 |
 |  |  |  |  |
 |  |  |  | **3554** |
+
 &nbsp;
+
+---
+
+Go back to [Organisations](organisations.md)

@@ -1,12 +1,12 @@
 # Semantic Analysis and Mapping of the Database Tables
 
-We recreated an ERD representing the original tables along with the new ones created as part of the LESSH project. It is [available here](../documentation/graphics/ERD_with_new_tables.png) and documented [in this file](../documentation/graphics/ERD_with_new_tables.md).
+We created an ERD representing the original tables along with the new ones created for the transformation of the Élites suisses database as part of the LESSH project. The diagram is [available here](../documentation/graphics/ERD_with_new_tables.png) and [described here in more detail](../documentation/graphics/ERD_with_new_tables.md).
 
 &nbsp;
 
 ## Original Tables
 
-The following tables were delivered by the Élites suisses project to be transformed as part of the LESSH project:
+The following tables were delivered by the Élites suisses project to be transformed:
 
 | Source Table | Concept | Content | Mapping | Documentation |
 |--------------|---------|---------|------------------|---------------|
@@ -15,37 +15,35 @@ The following tables were delivered by the Élites suisses project to be transfo
 | ***`filiations`*** | Parents | Rows represent relations to parents. |   | [Data inspection and structure](information_analysis/filiations.md) |
 | ***`mariage`*** | Marriage | Rows represent marriages. |   | [Data inspection and structure](information_analysis/marriage.md) |
 | ***`education`*** | Education | Rows represent educational phases (studies and degrees). |   | [Data inspection and structure](information_analysis/education.md) |
-| ***`entites`*** | Organisations | Rows represent organisations of different kinds. | Instances of the CIDOC CRM E74 Group class | [Data inspection and structure](information_analysis/organisations.md) |
-| ***`autresNomsEntites`*** | Organisations - Labels | Additional table to the organisations table, containing labels for the same organisations |  | See link above |
-| ***`mandat`*** | Mandates | Rows represent a bundle of different informations about social roles, memberships and prizes. | Instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data | This table demands a thorough inspection and discussion. This is **[the access page](information_analysis/mandates_general_inspection.md) to the whole documentation of this process** where we provide links to the sub-pages. |
+| ***`entites`*** | Organisations | Rows represent organisations of different kinds. | Instances of the CIDOC CRM E74 Group class | [Overview page to the documentation of entities (i.e., organisations)](information_analysis/organisations.md) |
+| ***`autresNomsEntites`*** | Organisations (name variants) | Additional table to the organisations table, containing labels for the same organisations |  | [Overview page to the documentation of entities (i.e., organisations)](information_analysis/organisations.md) |
+| ***`mandat`*** | Mandates | Rows represent a bundle of different informations about social roles, memberships and prizes. | Instances of the [C13 Social Role Embodiment](https://ontome.net/class/697) class, but also information about Memberships, Prizes, etc. is present in the data | [Overview page to the documentation of mandates](information_analysis/mandates_general_inspection.md) |
 
 &nbsp;
 
 ## New tables
 
-In addition to the original tables, new tables allow for creating additional entities and associating the original text values in the source tables to these entities.
+In addition to the original tables, new tables allow for creating additional entities and associating the original text values in the source tables to these entities. The names of these tables are prefixed with "***`t_`***" to distinguish them from the original tables.
 
 The following tables were newly created for transforming the database:
 
-* ***`t_education_cleaning_up`*** (Education - cleaned, replaces the former ***`education`*** table)
+* ***`t_education_cleaning_up`*** (Education - table for cleaning up the ***`education`*** table) <font color="red">--> the *t_education_cleaning_up* table needs to be created</font>
 * ***`t_gender`*** (Gender)
 * ***`t_geo_place`*** (Geographical Place)
 * ***`t_geo_place_kind`*** (...)
 * ***`t_geo_relation`*** (Relation of Person and Place)
-* ***`t_group`*** (Organisation/Group, replaces the former ***`entites`*** table)
-* ***`t_group_appellation`*** (Organisation/Group Naming Variant, replaces the former ***`autresNomsEntites`*** table)
+* ***`t_group`*** (Organisation/Group – replaces the ***`entites`*** table)
+* ***`t_group_appellation`*** (Organisation/Group Naming Variant – replaces the ***`autresNomsEntites`*** table)
 * ***`t_group_follower`*** (Following Organisation/Group)
 * ***`t_group_type`*** (Organisation/Group Type)
-* ***`t_mandates_cleaning_up`*** (Mandates - cleaned, replaces the former ***`mandat`*** table)
+* ***`t_mandates_cleaning_up`*** (Mandates - table for cleaning up the ***`mandat`*** table)
 * ***`t_person_place`*** (...)
 * ***`t_social_relationship_type`*** (Social Relationship Type)
 * ***`t_social_role`*** (Social Role)
 * ***`t_study_discipline`*** (Study Discipline)
 * ***`t_study_title`*** (Study Title/Degree)
 
-<font color="red">* maybe add links // t_education_cleaning_up needs to be created</font>
-
-See also the [extended ERD](../documentation/graphics/ERD_with_new_tables.png) for a conceptual representation as well as the [comment to it](../documentation/graphics/ERD_with_new_tables.md).
+The relations between these tables are documented in the extended ERD (see [diagram](../documentation/graphics/ERD_with_new_tables.png) and [description](../documentation/graphics/ERD_with_new_tables.md)).
 
  &nbsp;
 

@@ -1,6 +1,6 @@
 # Inspection of the Original Table: ***`autresNomsEntites`***
 
-This table contains language labels and naming variants of <font color="red">many / all / most?</font> identified entities in the ***`entites`*** table. It is linked to said table via `idEntite` as foreign key, which is also used as identifier to compose the URL for the entity page on the Élites suisses website (where these naming variants are also listed).
+This table contains language labels and naming variants of <font color="red">many / all / most?</font> identified entities in the ***`entites`*** table. It is linked to said table via `idEntite` as foreign key, which is also used as identifier to compose the URL for the entity page on the Élites suisses website (where these naming variants are also listed, see, for example: https://elitessuisses.unil.ch/e/entite2694).
 
 &nbsp;
 
@@ -9,15 +9,15 @@ This table contains language labels and naming variants of <font color="red">man
 * SQL script for data inspection: <font color="red">[none so far]</font>
 * Documentation on the [***`entites`***](organisations_entites.md) table to which this table is linked via a foreign key
 * Documentation on the new [***`t_group_appellation`***](organisations_groups_appellations.md) table derived from this table
-* See also [overview page](organisations.md) on organisations
+* See also [overview page on organisations](organisations.md)
 
 &nbsp;
 
 ## Description of the Data
 
-The table consists of 6374 rows, with each row representing a variant or alias of an entity's name. As with the ***`entites`*** table (described [here](organisations_entites.md)), the entities represented in this table are predominantly organisations.
+The table consists of 6374 rows, with each row representing a variant or an alias of an entity's name. As with the ***`entites`*** table (described [here](organisations_entites.md)), the entities represented in this table are predominantly organisations.
 
-The table is conceived as a simple vocabulary of entity names. It contains both name variants (i.e. aliases) and language-specific variants or labels for the same entity, as can be seen in the examples below.
+The table is conceived as a simple vocabulary of entity names (see [structure of the table](#the-autresnomsentites-table) below). It contains both name variants (i.e. aliases) and language-specific variants or labels for the same entity, as can be seen in the examples below.
 
 **Some examples:**
 
@@ -47,7 +47,7 @@ The table is conceived as a simple vocabulary of entity names. It contains both 
 
 For organisations in the "classical" sense, the content and structure of the table are quite straightforward and generally unproblematic.
 
-As the example of Zurich shows, different types of entities are sometimes conflated and associated with the same entity (cf. `idEntite`). In this case, "ZH" appears to refer to the canton of Zurich, while "Zurich" and "Zürich" are language-specific variants of – presumably – the municipality of Zurich. The same entity is also associated with the cantonal executive ("Conseil d'État") and legislative bodies ("Grand Conseil" or "Kantonsrat").
+However, as the example of Zurich shows, different types of entities are sometimes conflated and associated with the same entity (cf. `idEntite`). In this case, "ZH" appears to refer to the canton of Zurich, while "Zurich" and "Zürich" are language-specific variants of – presumably – the municipality of Zurich. The same entity is also associated with the cantonal executive ("Conseil d'État") and legislative bodies ("Grand Conseil" or "Kantonsrat").
 
 Some data cleaning is therefore required. It is expected, however, that most organisation types follow the straightforward principle of one `idEntite` per factual entity.
 
@@ -62,7 +62,7 @@ Some data cleaning is therefore required. It is expected, however, that most org
 | idEntite | character varying | Identifier that points to the entity in the ***`entites`*** table (foreign key). |   |
 | zkp | character varying | Unknown identifier in the format "NomEntite#" (e.g. NomEntite3301), whereby the attached number is not associated with any other identifier in the database |   |
 | modif | timestamp without time zone | Modification date (last modified) in format DD.MM.YYYY hh:mm |   |
-| entite_id | integer | The number used in the unknown `zkp` identifier. <br><font color="red">Was this already present in the original database?</font> |  |
+| entite_id | integer | The number used in the unknown `zkp` identifier. <br><font color="red">Was this already present in the original database? If not, do we need it?</font> |  |
 
 &nbsp;
 

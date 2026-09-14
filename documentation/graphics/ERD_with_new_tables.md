@@ -26,6 +26,14 @@ Relevant sql scripts files are:
 * [Create new tables for groups (crm_group, group_type, etc.)](database_inspection/groups_new_tables.sql)
 * [Feed the new tables](database_inspection/groups_entities_enrichment.sql)
 
+
+More detailed information is distributed across related tables:
+
+* ***`t_group_type`*** stores the classification of groups.
+* ***`t_group_appellation`*** stores alternative and language-specific names, including their periods of use.
+* ***`t_group_follower`*** stores relationships between groups that cannot appropriately be represented as a simple many-to-one relationship.
+
+
 ### Group Type (t_group_type)
 
 This table provides a refined controlled vocabulary for group types
