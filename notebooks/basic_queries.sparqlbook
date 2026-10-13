@@ -2,6 +2,12 @@
   {
     "kind": 2,
     "language": "sparql",
+    "value": "# number of triples in the repo\n\nSELECT (count(*) as ?n)\n# WHERE { graph ?g {?s ?p ?o} }\nWHERE {?s ?p ?o}\n",
+    "metadata": {}
+  },
+  {
+    "kind": 2,
+    "language": "sparql",
     "value": "SELECT ?g (count(*) as ?n)\nWHERE { graph ?g {?s ?p ?o} }\nGROUP BY ?g\norder by desc(?n)",
     "metadata": {}
   },
