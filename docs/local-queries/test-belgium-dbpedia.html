@@ -1,0 +1,16 @@
+<script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+<script language="JavaScript">
+  new Comunica.QueryEngine().queryBindings(`
+  SELECT * {
+    ?s ?p <http://dbpedia.org/resource/Belgium>.
+    ?s ?p ?o
+  } LIMIT 100
+`, {
+  sources: ['https://fragments.dbpedia.org/2015/en'],
+}).then(function (bindingsStream) {
+  bindingsStream.on('data', function (data) {
+    // Each variable binding is an RDFJS term
+    console.log(data.get('s').value + ' ' + data.get('p').value + ' ' + data.get('o').value);
+  });
+});
+</script>

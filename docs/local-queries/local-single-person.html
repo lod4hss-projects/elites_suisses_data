@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Just one person</title>
+
+  <script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+
+  <link rel="stylesheet" href="../base_style.css"></link>
+
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    .pagination { margin-top: 20px; }
+    .pagination button { margin: 0 5px; padding: 5px 10px; }
+  </style>
+</head>
+<body>
+  <h1>Get data about one person from Turtle file</h1>
+  <div id="results"></div>
+  <div class="pagination" id="pagination"></div>
+
+  <script>
+    const endpoint = 'https://elites-suisses.lod4hss.org/data/statements_20260130_wisski.ttl'; // your Turtle file URL
+    const pageSize = 10;
+    let currentPage = 1;
+    let totalResults = 0;
+
+   const allBindings = []; // Reset
+
+    async function runQuery(page = 1) {
+      const query = `
+        PREFIX ex: <http://example.org/>
+        SELECT ?s ?p ?o
+        WHERE {
+          BIND (URI('https://swiss-elites.lod4hss.cloud/resource/p53925') as ?s)
+          ?s ?p ?o .
+        }
+        # LIMIT ${pageSize}
+        OFFSET ${(page - 1) * pageSize}
+      `;
+      
+      try {
+        const myEngine = new Comunica.QueryEngine();
+        const result = await myEngine.queryBindings(query, {
+          sources: [endpoint],
+          // You can also add other sources or set default graph
+        })
+        
+      
+
+        result.on('data', (binding) => {
+          allBindings.push(binding);
+        });
+
+        result.on('end', () => {
+          console.log('Total results:', allBindings.length);
+          renderPage(currentPage);
+
+        });
+
+        result.on('error', (err) => {
+          document.getElementById('results').innerHTML = `<p style="color:red;">Error: ${err.message}</p>`;
+        });
+    }
+
+    catch (err) {
+        document.getElementById('results').innerHTML = `<p style="color:red;">Engine Error: ${err.message}</p>`;
+      }
+    }
+
+
+
+    function renderPage(page) {
+      const start = (page - 1) * pageSize;
+      const end = start + pageSize;
+      const pageBindings = allBindings.slice(start, end);
+
+
+      if (pageBindings.length === 0) {
+        document.getElementById('results').innerHTML = '<p>No results found.</p>';
+        document.getElementById('pagination').innerHTML = '';
+        return;
+      }
+
+      let html = '<table>';
+      html += '<thead><tr><th>Subject</th><th>Predicate</th><th>Object</th></tr></thead>';
+      html += '<tbody>';
+
+      pageBindings.forEach(binding => {
+        const s = binding.get('s')?.value || '';
+        console.log(s)
+        const p = binding.get('p')?.value || '';
+        const o = binding.get('o')?.value || '';
+        html += `<tr><td>${escapeHtml(s)}</td><td>${escapeHtml(p)}</td><td>${escapeHtml(o)}</td></tr>`;
+      });
+
+      html += '</tbody></table>';
+      document.getElementById('results').innerHTML = html;
+
+      renderPagination(page);
+    }
+
+    function renderPagination(currentPage) {
+      const totalPages = Math.ceil(allBindings.length / pageSize);
+      let html = '';
+
+      if (currentPage > 1) {
+        html += `<button onclick="renderPage(${currentPage - 1})">Previous</button>`;
+      } else {
+        html += `<button disabled>Previous</button>`;
+      }
+
+      html += `Page ${currentPage} of ${totalPages}`;
+
+      if (currentPage < totalPages) {
+        html += `<button onclick="renderPage(${currentPage + 1})">Next</button>`;
+      } else {
+        html += `<button disabled>Next</button>`;
+      }
+
+      document.getElementById('pagination').innerHTML = html;
+    }
+
+    // Helper: Escape HTML to prevent XSS
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // Run on load
+    runQuery();
+  </script>
+</body>
+</html>

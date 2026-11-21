@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB to LOD</title>
+    <link rel="stylesheet" href="../base_style.css">
+
+
+</head>
+
+<body>
+
+    <h1>From tables to Linked Open Data - The LESSH Project</h1>
+
+    <div>
+        <a href="./Beretta_LOD_for_research_LESSH.pdf" download>Slides of the seminar</a>
+        <p>Short link to this page <i>https://ouvaton.link/ILGWs4</i></p>
+        <br/>
+        <ul>
+            <li>Link to the <a href="https://elites-suisses.lod4hss.org"
+                 target="_blank">Experimental website</a></li>
+            <li>Lien vers le dépôt GitHub <a href="https://github.com/lod4hss-projects/elites_suisses_data"
+                 target="_blank">Elites suisses data</a></li>
+            <li>Lien vers le pad collaboratif: <a href="https://mypads.framapad.org/mypads/?/mypads/group/axe-savoirs-ym1coq74z/pad/view/lessh-745nk7p6"
+                 target="_blank">https://ouvaton.link/ruB0rp</a></li>
+        </ul>
+    </div>
+
+    <br />
+    <br />
+    <h2>Information as a table</h2>
+
+    <p>Exemple : <a href="https://elitessuisses.unil.ch/p/55864">Eugen Huber (1849-1923)</a></p>
+
+    <div>
+
+        <table>
+            <tr>
+                <th>name_forename</th>
+                <th>zkp_edu</th>
+                <th>ID_IDENTITE</th>
+                <th>Date</th>
+                <th>Formation niveau</th>
+                <th>Titre_stxt</th>
+                <th>TITRE_Codé</th>
+                <th>Institution</th>
+                <th>id_institution</th>
+                <th>THÈSE_Directeur_IdIdentité</th>
+                <th>Lieu</th>
+                <th>Canton</th>
+                <th>Pays</th>
+            </tr>
+            <tr class="odd">
+                <td>Huber, Eugen</td>
+                <td>OBEDU_25711</td>
+                <td>55,864</td>
+                <td>1871</td>
+                <td>Supérieure</td>
+                <td>&nbsp;</td>
+                <td>Licence</td>
+                <td></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Berlin</td>
+                <td></td>
+                <td>Allemagne</td>
+            </tr>
+            <tr>
+                <td>Huber, Eugen</td>
+                <td>OBEDU_28015</td>
+                <td>55,864</td>
+                <td></td>
+                <td>Complémentaire</td>
+                <td>&nbsp;</td>
+                <td></td>
+                <td></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Vienne</td>
+                <td></td>
+                <td>Autriche</td>
+            </tr>
+            <tr class="odd">
+                <td>Huber, Eugen</td>
+                <td>OBEDU_29243</td>
+                <td>55,864</td>
+                <td></td>
+                <td>Complémentaire</td>
+                <td>&nbsp;</td>
+                <td></td>
+                <td>UniGe</td>
+                <td>2,350</td>
+                <td>&nbsp;</td>
+                <td>Genève</td>
+                <td>GE</td>
+                <td>Suisse</td>
+            </tr>
+            <tr>
+                <td>Huber, Eugen</td>
+                <td>OBEDU_22660</td>
+                <td>55,864</td>
+                <td>1873</td>
+                <td>Doctorat</td>
+                <td>&nbsp;</td>
+                <td>Thèse d’habilitation</td>
+                <td>UniZh</td>
+                <td>2,352</td>
+                <td>&nbsp;</td>
+                <td>Zurich</td>
+                <td>ZH</td>
+                <td>Suisse</td>
+            </tr>
+            <tr class="odd">
+                <td>Huber, Eugen</td>
+                <td>OBEDU_5745</td>
+                <td>55,864</td>
+                <td>1868-1869</td>
+                <td>Supérieure</td>
+                <td>&nbsp;</td>
+                <td></td>
+                <td>UniZh</td>
+                <td>2,352</td>
+                <td>&nbsp;</td>
+                <td>Zurich</td>
+                <td>ZH</td>
+                <td>Suisse</td>
+            </tr>
+            <tr>
+                <td>Huber, Eugen</td>
+                <td>OBEDU_14221</td>
+                <td>55,864</td>
+                <td>1872</td>
+                <td>Doctorat</td>
+                <td>Dr. iur.</td>
+                <td>Doctorat</td>
+                <td>UniZh</td>
+                <td>2,352</td>
+                <td>82,143</td>
+                <td>Zurich</td>
+                <td>ZH</td>
+                <td>Suisse</td>
+            </tr>
+            <tr class="odd">
+                <td>Huber, Eugen</td>
+                <td>OBEDU_1403</td>
+                <td>55,864</td>
+                <td></td>
+                <td>Base</td>
+                <td>&nbsp;</td>
+                <td>Maturité</td>
+                <td></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Zürich</td>
+                <td>ZH</td>
+                <td>Suisse</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+<div>
+    <h2>Information as a graph</h2>
+    
+        <div>
+            <h3>SDHSS conceptual model for the classes <i>Study</i> and <i>Obtaining a Study Title</i></h3>
+            <br />
+            <img src="./education.png" width="100%" alt="Eugen Huber in Wisski">
+        </div>
+        <br />
+    <br />
+
+    <div>
+            <h3>The transformed data</h3>
+            <p><a href="https://elites-suisses.lod4hss.org/sparql-queries/instance-page.html?uri=https://elites-suisses.lod4hss.org/resource/p55864">Eugen Huber (1849-1923)</a></p>
+        </div>
+        <br/>
+        <br/>
+
+        <div>
+            <h3>Wisski Graphical User Interface</h3>
+            <br />
+            <img src="./wisski-eugen-huber.png" width="60%" alt="Eugen Huber in Wisski">
+        </div>
+</div>
+
+
+</body>
+
+</html>
