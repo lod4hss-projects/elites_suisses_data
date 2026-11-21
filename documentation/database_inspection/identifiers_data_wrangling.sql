@@ -26,15 +26,6 @@ where i."Identifier_code" ~* 'wikida'
 limit 10;
 
 
--- if needed add additional situations
-drop view elites_suisses.v_same_as ;
-create or replace view elites_suisses.v_same_as as (
-select i."zkf_ID_linked", concat('http://www.wikidata.org/entity/', i."Identifier") same_as
-from elites_suisses.identifier i
-where i."Identifier_code" ~* 'wikida'
-)
-
-
 select *
 from elites_suisses.v_same_as
 where "zkf_ID_linked" = 71142
@@ -46,12 +37,62 @@ from elites_suisses.identite i
 where i.id = 71142;
 
 
+
+
+
+
 /*
- * Further identifiers
+ * IdRef
+ */
+
+select * 
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'idRef'
+limit 10;
+
+
+select i."zkf_ID_linked", concat('http://www.idref.fr/', i."Identifier", '/id') 
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'idRef'
+limit 10;
+
+
+/*
+ * create view
  */
 
 
+select i."zkf_ID_linked", concat('http://www.wikidata.org/entity/', 
+i."Identifier") same_as
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'wikida'
+union
+select i."zkf_ID_linked", 
+concat('http://www.idref.fr/', i."Identifier", '/id') as same_as
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'idRef';
 
+
+-- if needed add additional identifiers
+
+CREATE OR REPLACE VIEW elites_suisses.v_same_as
+AS 
+select i."zkf_ID_linked", concat('http://www.wikidata.org/entity/', 
+i."Identifier") same_as
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'wikida'
+union
+select i."zkf_ID_linked", 
+concat('http://www.idref.fr/', i."Identifier", '/id') as same_as
+from elites_suisses.identifier i
+where i."Identifier_code" ~* 'idRef';
+
+
+
+
+/*
+ * Further identifiers
+ */
 
 
 SELECT *
