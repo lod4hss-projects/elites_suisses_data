@@ -44,11 +44,14 @@ function renderTerm(t, asClass, labels) {
   const lang = t['xml:lang'] ? ` <span class="lang">@${esc(t['xml:lang'])}</span>` : '';
   return `<span class="lit">${esc(t.value)}</span>${lang}`;
 }
-function box(title, rows, truncated, cols) {
+function box(title, rows, truncated, qhref, cols) {
   const body = rows.length
     ? `<table class="kv">${rows.map(cols).join('')}</table>`
     : '<p class="sub">No triples.</p>';
-  return `<section><h2>${title} (${rows.length}${truncated ? '+' : ''})</h2>${rows.length ? filterInput() : ''}${body}</section>`;
+  return `<section><div class="boxhead"><h2>${title} (${rows.length}${truncated ? '+' : ''})</h2>` +
+    `<a class="qbtn" href="${esc(qhref)}" target="_blank" rel="noopener" ` +
+    `title="Open the SPARQL query for these triples in matgui">SPARQL</a></div>` +
+    `${rows.length ? filterInput() : ''}${body}</section>`;
 }
 
 start(async () => {
@@ -58,10 +61,10 @@ start(async () => {
   const sel = currentSel();
   out.innerHTML = '<p class="sub">Loading…</p>';
   try {
-    const [outgoing, incoming] = await Promise.all([
-      select(`SELECT DISTINCT ?p ?o ?g WHERE { ${inGraphs(sel, `<${iri}> ?p ?o`)} } LIMIT ${LIMIT}`),
-      select(`SELECT DISTINCT ?s ?p ?g WHERE { ${inGraphs(sel, `?s ?p <${iri}>`)} } LIMIT ${LIMIT}`)
-    ]);
+    // The exact queries sent to the triplestore; each is also passed to matgui via the SPARQL button
+    const qOut = `SELECT DISTINCT ?p ?o ?g\nWHERE {\n  ${inGraphs(sel, `<${iri}> ?p ?o`)}\n}\nLIMIT ${LIMIT}`;
+    const qIn = `SELECT DISTINCT ?s ?p ?g\nWHERE {\n  ${inGraphs(sel, `?s ?p <${iri}>`)}\n}\nLIMIT ${LIMIT}`;
+    const [outgoing, incoming] = await Promise.all([select(qOut), select(qIn)]);
     const outRows = merge(outgoing, ['p', 'o']);
     const inRows = merge(incoming, ['s', 'p']);
     // Optional labels for the entity, all predicates, URI objects and subjects
@@ -73,9 +76,9 @@ start(async () => {
       <h1>${esc(label || iri)}</h1>
       <div class="sub">${label ? esc(iri) + ' · ' : ''}${esc(endpoint())}</div>
       <div class="grid">
-        ${box('Outgoing', outRows, outgoing.length >= LIMIT, r =>
+        ${box('Outgoing', outRows, outgoing.length >= LIMIT, matguiHref(qOut), r =>
           `<tr><td>${labeled(r.p.value, labels)}</td><td>${renderTerm(r.o, r.p.value === RDF_TYPE, labels)}${graphTag(r)}</td></tr>`)}
-        ${box('Incoming', inRows, incoming.length >= LIMIT, r =>
+        ${box('Incoming', inRows, incoming.length >= LIMIT, matguiHref(qIn), r =>
           `<tr><td>${labeled(r.s.value, labels, 'entity.html', true)}${graphTag(r)}</td><td>${labeled(r.p.value, labels)}</td></tr>`)}
       </div>`;
   } catch (e) {

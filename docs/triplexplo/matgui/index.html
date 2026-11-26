@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="MatGUI — a modern knowledge graph and SPARQL workbench for querying, exploring and visualising RDF and linked data. Formerly branded Yasgui." />
+  <meta name="keywords" content="MatGUI, SPARQL, SPARQL GUI, knowledge graph, linked data explorer, RDF, Yasgui, matdata" />
+  <meta property="og:title" content="MatGUI — A modern knowledge graph and SPARQL workbench" />
+  <meta property="og:description" content="More than just Another SPARQL GUI. Query, explore and visualise knowledge graphs and linked data in your browser." />
+  <meta property="og:type" content="website" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Matgui CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@matdata/yasgui@6.15.0/build/yasgui.min.css">
+
+  <!-- Matdata brand typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main site stylesheet -->
+  <link rel="stylesheet" href="main.css">
+
+  <title>MatGUI — A modern knowledge graph and SPARQL workbench</title>
+</head>
+
+<body>
+  <a href="#yasgui" class="skip-link">Skip to main content</a>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Matgui container -->
+  <main id="yasgui" role="main" aria-label="SPARQL Query Interface"></main>
+
+  <!-- Matgui JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@matdata/yasgui@6.15.0/build/yasgui.min.js"></script>
+
+  <!-- Footer toggle button -->
+  <button id="footer-toggle" aria-label="Toggle footer" aria-expanded="false">
+    <svg class="footer-toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="6" r="2" fill="currentColor" />
+      <path d="M9.5 10.5 H13 V18 M9.5 18 H16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="miter" />
+    </svg>
+  </button>
+
+  <div id="footer">
+    <a href="https://matdata.eu/" target="_blank" rel="noopener noreferrer" class="footer-left">
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 52" role="img" aria-label="MatData">
+        <g class="logo-mark" transform="translate(1 -15.25) scale(1.65)" fill="none" stroke-width="3.6" stroke-linejoin="round">
+          <path d="M9.1 32 H11.4" />
+          <path d="M24.6 32 H38.9" />
+          <path d="M22.67 27.33 L35 15 H38.9" />
+          <circle cx="5.5" cy="32" r="3.6" />
+          <circle cx="42.5" cy="32" r="3.6" />
+          <circle cx="42.5" cy="15" r="3.6" />
+          <circle cx="18" cy="32" r="6.6" />
+          <circle class="logo-dot" cx="18" cy="32" r="2.4" stroke="none" />
+        </g>
+        <g transform="translate(95.9 6)" fill="none" stroke-width="6" stroke-linejoin="miter" stroke-miterlimit="10" stroke-linecap="butt">
+          <g class="logo-ink">
+            <path d="M3.0 40 V3.0 L19 27 L35.0 3.0 V40" />
+            <path d="M50.0 40 L65.0 3.0 L80.0 40" />
+            <path d="M55.27 27 H74.73" />
+            <path d="M92 3.0 H124" />
+            <path d="M108 3.0 V40" />
+          </g>
+          <g class="logo-mark">
+            <path d="M146.0 3.0 H159 A17.0 17.0 0 0 1 159 37.0 H146.0 Z" />
+            <path d="M191.0 40 L206.0 3.0 L221.0 40" />
+            <path d="M196.27 27 H215.73" />
+            <path d="M233.0 3.0 H265.0" />
+            <path d="M249.0 3.0 V40" />
+            <path d="M277.0 40 L292.0 3.0 L307.0 40" />
+            <path d="M282.27 27 H301.73" />
+          </g>
+        </g>
+      </svg>
+    </a>
+    <nav class="footer-center" aria-label="Footer navigation">
+      <small>
+        <button id="demo-queries-btn" type="button" class="credits-link" aria-haspopup="dialog">Demo queries</button>
+        <span aria-hidden="true">|</span>
+        <a href="https://matgui-doc.matdata.eu/docs/" target="_blank" rel="noopener noreferrer">Documentation</a>
+        <span aria-hidden="true">|</span>
+        <a href="https://github.com/Matdata-eu/MatGUI" target="_blank" rel="noopener noreferrer">Source code</a>
+        <span aria-hidden="true">|</span>
+        <button id="credits-btn" type="button" class="credits-link" aria-haspopup="dialog">Credits</button>
+        <span aria-hidden="true">|</span>
+        <button id="privacy-btn" type="button" class="credits-link" aria-haspopup="dialog">Privacy</button>
+        <span aria-hidden="true">|</span>
+        <a href="https://github.com/Matdata-eu/Matgui/issues/new" target="_blank" rel="noopener noreferrer">Bugs or feature requests</a>
+      </small>
+    </nav>
+  </div>
+
+  <!-- Privacy Modal -->
+  <div id="privacy-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title" hidden>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="privacy-title">Privacy Statement</h2>
+        <button id="close-privacy-modal" type="button" class="close-button" aria-label="Close privacy dialog">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <section>
+          <h3>Data Collection</h3>
+          <p>
+            <strong>This website does not use tracking or analytics to monitor your browsing activity.</strong> However, if 
+            you use the URL shortener feature, the shortened links are generated and stored on infrastructure operated by 
+            Matdata, and the service can see the URLs that have been shortened.
+          </p>
+        </section>
+
+        <section>
+          <h3>Third-Party Services</h3>
+          <p>
+            This website relies on several third-party services, which may have their own data collection practices:
+          </p>
+          <ul>
+            <li>
+              <strong>Content Delivery Networks (CDNs):</strong> The JavaScript libraries and stylesheets used by this 
+              application are hosted on external CDNs (jsdelivr.net, cdnjs.cloudflare.com). These CDNs may collect 
+              anonymous usage statistics. Please refer to their respective privacy policies for more information.
+            </li>
+            <li>
+              <strong>Cloudflare DNS:</strong> The domain DNS is managed by Cloudflare. Some DNS traffic statistics may 
+              be collected for operational purposes. To our knowledge, these statistics are anonymous and do not contain 
+              personally identifiable information.
+            </li>
+            <li>
+              <strong>GitHub Pages:</strong> This website is hosted on GitHub Pages. GitHub does not collect or store 
+              HTTP access logs for GitHub Pages sites.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Local Storage</h3>
+          <p>
+            All application settings, including your queries, tabs, workspaces, and preferences, are stored locally in 
+            your browser's local storage. <strong>This data never leaves your device</strong> and is not transmitted to 
+            any server operated by Matdata.
+          </p>
+        </section>
+
+        <section>
+          <h3>URL Shortener</h3>
+          <p>
+            The URL shortener is hosted on Matdata-operated infrastructure. This means the operator of the shortener can 
+            see the full list of shortened URLs that have been generated. These URLs do not contain credentials themselves, 
+            but they do include the original URL, which may contain a SPARQL query. That query can potentially include 
+            credentials or other sensitive information embedded in the query string.
+          </p>
+        </section>
+
+        <section>
+          <h3>SPARQL Queries</h3>
+          <p>
+            When you execute a SPARQL query, it is sent directly from your browser to the SPARQL endpoint you have selected. 
+            <strong>Matdata does not see or log any of this traffic.</strong> The SPARQL endpoint you query may have its own 
+            logging and privacy policies. Please consult the documentation of the specific SPARQL endpoint for more information.
+          </p>
+        </section>
+
+        <section>
+          <h3>Tracking & Analytics</h3>
+          <p>
+            <strong>No tracking or analytics software has been intentionally added to this website.</strong> We do not use 
+            cookies, web beacons, or any other tracking mechanisms to monitor your activity.
+          </p>
+        </section>
+
+        <section>
+          <h3>Questions</h3>
+          <p>
+            If you have any questions or concerns about this privacy statement, please 
+            <a href="https://github.com/Matdata-eu/Matgui/issues/new" target="_blank" rel="noopener noreferrer">open an issue</a> 
+            on our GitHub repository or contact us at <a href="https://matdata.eu/" target="_blank" rel="noopener noreferrer">matdata.eu</a>.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Credits Modal -->
+  <div id="credits-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="credits-title" hidden>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="credits-title">Credits & Acknowledgments</h2>
+        <button id="close-modal" type="button" class="close-button" aria-label="Close credits dialog">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <section>
+          <h3>Core Dependencies</h3>
+          <ul>
+            <li>
+              <strong><a href="https://github.com/Matdata-eu/MatGUI" target="_blank" rel="noopener noreferrer">Matdata-eu/MatGUI</a></strong>
+              - SPARQL editor and results visualizer, based on forks from:
+              <ul>
+                <li><a href="https://github.com/rdfjs/yasgui" target="_blank" rel="noopener noreferrer">Rdfjs/Yasgui</a></li>
+                <li><a href="https://github.com/triplydb/Yasgui" target="_blank" rel="noopener noreferrer">TriplyDB/Yasgui</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong><a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a></strong> (v6.4.0)
+              - Icons library
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>Matgui Plugins</h3>
+          <ul>
+            <li>
+              <strong><a href="https://github.com/Matdata-eu/yasgui-table-plugin" target="_blank" rel="noopener noreferrer">yasgui-table-plugin</a></strong>
+              - Table visualization plugin by Matdata
+            </li>
+            <li>
+              <strong><a href="https://github.com/Matdata-eu/yasgui-geo-plugin" target="_blank" rel="noopener noreferrer">yasgui-geo-plugin</a></strong>
+              - Geographic data visualization plugin by Thib-G
+            </li>
+            <li>
+              <strong><a href="https://github.com/Matdata-eu/yasgui-graph-plugin" target="_blank" rel="noopener noreferrer">yasgui-graph-plugin</a></strong>
+              - Graph visualization plugin by Matdata
+            </li>
+            <li>
+              <strong><a href="https://github.com/Matdata-eu/yasgui-chart-plugin" target="_blank" rel="noopener noreferrer">yasgui-chart-plugin</a></strong>
+              - Chart visualization plugin by Matdata
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>Additional Technologies</h3>
+          <ul>
+            <li><strong>CodeMirror</strong> - Code editor component (used within MatGUI)</li>
+            <li><strong>Leaflet</strong> - Interactive maps library (for geo plugin)</li>
+            <li><strong>D3.js</strong> - Data visualization library (for graph visualizations)</li>
+            <li><strong>SPARQL.js</strong> - SPARQL query parser</li>
+            <li><strong>Tabulator</strong> - Table visualization library (for table plugin)</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>License</h3>
+          <p>This project is <a href="https://github.com/Matdata-eu/matgui-matdata" target="_blank" rel="noopener noreferrer">open source</a>. Please refer to individual package licenses for specific terms.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redirect notice modal (shown only when running on yasgui.matdata.eu) -->
+  <div id="redirect-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="redirect-title" hidden>
+    <div class="modal-content modal-content--compact">
+      <div class="modal-header">
+        <h2 id="redirect-title">This site has a new name</h2>
+        <button id="close-redirect-modal" type="button" class="close-button" aria-label="Close this notice">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <strong>Matgui has been renamed to MatGUI</strong> — <em>a modern knowledge graph and SPARQL workbench.</em>
+        </p>
+        <p style="margin-top: 12px;">
+          The new home of this application is
+          <a href="https://matgui.matdata.eu" target="_blank" rel="noopener noreferrer">matgui.matdata.eu</a>.
+          Your queries and settings are stored in this browser’s local storage, so they will <strong>not</strong> transfer automatically.
+          The
+          <a href="https://matgui-doc.matdata.eu/docs/user-guide#configuration-importexport" target="_blank" rel="noopener noreferrer">MatGUI User Guide</a>
+          explains how to export your configuration here and import it on the new site.
+        </p>
+      </div>
+      <label class="redirect-checkbox" for="redirect-remember-choice">
+        <input id="redirect-remember-choice" type="checkbox" />
+        <span>Remember my choice</span>
+      </label>
+      <div class="modal-actions">
+        <a href="https://matgui.matdata.eu" class="modal-btn modal-btn--primary">Go to MatGUI</a>
+        <button id="stay-redirect-modal" type="button" class="modal-btn modal-btn--secondary">Stay on this site</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main site script -->
+  <script src="main.js"></script>
+</body>
+
+</html>

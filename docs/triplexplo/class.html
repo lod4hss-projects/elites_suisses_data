@@ -43,16 +43,28 @@ start(async () => {
     `{ GRAPH ?lg { ?s ?lp ?l } } FILTER(CONTAINS(LCASE(STR(?l)), ${qs})) })` : '');
   out.innerHTML = '<p class="sub">Loading instances…</p>';
   try {
+    // Page query: instances with their number of outgoing / incoming triples (in the selected graphs),
+    // ordered by the sum of both. Also what the SPARQL button sends to matgui.
+    // The page is cut in the inner subselect; the label (any LABEL_PROPS property, any graph) is joined
+    // afterwards so that several labels cannot inflate the counts.
+    const qPage =
+      `SELECT ?s (SAMPLE(?l) AS ?label) ?nOut ?nIn ?total\nWHERE {\n` +
+      `  { SELECT ?s (COUNT(?x) AS ?nOut) (COUNT(?y) AS ?nIn) ((COUNT(?x) + COUNT(?y)) AS ?total)\n` +
+      `    WHERE {\n      { SELECT DISTINCT ?s WHERE { ${where} } }\n` +
+      `      { ${inGraphs(sel, '?s ?p1 ?x', 'g2')} }\n      UNION\n      { ${inGraphs(sel, '?y ?p2 ?s', 'g3')} }\n    }\n` +
+      `    GROUP BY ?s ORDER BY DESC(?total) ?s\n    LIMIT ${PAGE_SIZE} OFFSET ${(page - 1) * PAGE_SIZE}\n  }\n` +
+      `  OPTIONAL { ${labelValues()} { ?s ?lp ?l } UNION { GRAPH ?lg { ?s ?lp ?l } } }\n}\n` +
+      `GROUP BY ?s ?nOut ?nIn ?total\nORDER BY DESC(?total) ?s`;
     const [cnt, subs] = await Promise.all([
       select(`SELECT (COUNT(DISTINCT ?s) AS ?n) WHERE { ${where} }`),
-      select(`SELECT DISTINCT ?s WHERE { ${where} } ` +
-             `ORDER BY ?s LIMIT ${PAGE_SIZE} OFFSET ${(page - 1) * PAGE_SIZE}`)
+      select(qPage)
     ]);
     const total = Number(cnt[0] ? cnt[0].n.value : 0);
     const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
     if (page > pages) { goto({ page: pages }); return; }
 
     const subjects = subs.map(r => r.s.value);
+    const counts = new Map(subs.map(r => [r.s.value, r]));
     const [gRows, labels] = await Promise.all([
       subjects.length
         ? select(`SELECT DISTINCT ?s ?g WHERE { VALUES ?s { ${subjects.map(x => `<${x}>`).join(' ')} } ` +
@@ -72,23 +84,28 @@ start(async () => {
       <h1>${esc(label || cls)}</h1>
       <div class="sub">${label ? esc(cls) + ' · ' : ''}${esc(endpoint())}</div>
       <section>
+        <div class="boxhead"><h2>Instances</h2>
+          <a class="qbtn" href="${esc(matguiHref(qPage))}" target="_blank" rel="noopener"
+             title="Open the SPARQL query for this page in matgui">SPARQL</a></div>
         ${nav}
         <form class="qform"><input type="search" class="sfilter" name="q" value="${esc(q)}"
           placeholder="Filter all instances (IRI, label, graph) – press Enter" aria-label="Filter instances"></form>
         <table>
-          <thead><tr><th>Entity</th><th>Label</th><th>Named graph</th></tr></thead>
+          <thead><tr><th>Entity</th><th>Label</th><th>Named graph</th><th class="num" title="Triples with the entity as subject">Outgoing triples</th><th class="num" title="Triples with the entity as object">Incoming triples</th></tr></thead>
           <tbody>${subjects.map(s => `
             <tr>
               <td>${iriLink(s, s)}</td>
               <td>${esc(labels.get(s) || '')}</td>
               <td class="gname">${(graphsOf.get(s) || []).map(esc).join('<br/>')}</td>
+              <td class="num">${Number(counts.get(s).nOut.value).toLocaleString()}</td>
+              <td class="num">${Number(counts.get(s).nIn.value).toLocaleString()}</td>
             </tr>`).join('')}
           </tbody>
         </table>
         ${nav}
       </section>`;
   } catch (e) {
-    out.innerHTML = `<p class="err">Query failed: ${esc(e.message)}. Check the endpoint URL and its CORS headers.</p>`;
+    out.innerHTML = `<p class="err">Query failed: ${esc(e.message)}. Check the endpoint URL and its CORS headers. Counting the triples of every instance can be slow on very large classes.</p>`;
   }
 });
 $('out').addEventListener('submit', e => {

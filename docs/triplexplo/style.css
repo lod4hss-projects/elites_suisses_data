@@ -56,3 +56,8 @@ main > section { margin-bottom: 1rem; }
 .intro p { margin: .4rem 0; }
 .intro ul { margin: .4rem 0; padding-left: 1.2rem; }
 .intro li { margin: .2rem 0; }
+.boxhead { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin-bottom: .5rem; }
+.boxhead h2 { margin: 0; }
+.qbtn { font-size: .7rem; padding: .05rem .45rem; border: 1px solid var(--line); border-radius: 4px;
+        color: var(--muted); background: var(--bg); white-space: nowrap; }
+.qbtn:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }

@@ -6,7 +6,7 @@
 // false: the start page (index.html) shows an input for the triplestore URL. It is remembered in
 //        the browser (localStorage) while you navigate, and can be changed on the start page only.
 //        ENDPOINT below is then just the default value of that input.
-const FIXED_TRIPLESTORE_URL = true;
+const FIXED_TRIPLESTORE_URL = false;
 
 const ENDPOINT = 'https://swiss-elites.lod4hss.cloud/wisski/endpoint/default_wisski_distillery_adapter';  // SPARQL endpoint URL, e.g. 'http://localhost:9091/rdf4j-server/repositories/myrepo' (must allow CORS)
 
@@ -22,3 +22,9 @@ const LABEL_LANGS = ['en', 'fr', 'de', ''];
 
 // Rows per page on the instance list (class.html)
 const PAGE_SIZE = 50;
+
+// Link from the entity page to matgui: the "SPARQL" buttons open MATGUI_URL with the triplestore URL and
+// the query as URL parameters (parameter names below). Path is relative to entity.html.
+const MATGUI_URL = './matgui/index.html';
+const MATGUI_PARAM_TRIPLESTORE = 'endpoint';  // spelled as expected by matgui
+const MATGUI_PARAM_QUERY = 'query';

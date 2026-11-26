@@ -1,0 +1,550 @@
+// Show the rename notice when the app is still accessed via the old yasgui.matdata.eu hostname
+(function () {
+  var STORAGE_KEY = "matgui_redirect_notice_dismissed";
+
+  if (window.location.hostname !== "yasgui.matdata.eu") return;
+  if (localStorage.getItem(STORAGE_KEY) === "1") return;
+
+  var modal = document.getElementById("redirect-modal");
+  var closeBtn = document.getElementById("close-redirect-modal");
+  var stayBtn = document.getElementById("stay-redirect-modal");
+  var rememberCheckbox = document.getElementById("redirect-remember-choice");
+  if (!modal || !closeBtn || !stayBtn || !rememberCheckbox) return;
+
+  function getFocusable() {
+    return modal.querySelectorAll(
+      'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+  }
+
+  function closeModal() {
+    modal.setAttribute("hidden", "");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    modal.removeEventListener("keydown", trapFocus);
+
+    if (rememberCheckbox.checked) {
+      localStorage.setItem(STORAGE_KEY, "1");
+    }
+  }
+
+  function trapFocus(e) {
+    var els = getFocusable();
+    var first = els[0];
+    var last = els[els.length - 1];
+    if (e.key === "Escape") { closeModal(); return; }
+    if (e.key === "Tab") {
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    }
+  }
+
+  // Open
+  modal.removeAttribute("hidden");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  closeBtn.focus();
+  modal.addEventListener("keydown", trapFocus);
+
+  closeBtn.addEventListener("click", closeModal);
+  stayBtn.addEventListener("click", closeModal);
+  // Close on backdrop click
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) closeModal();
+  });
+})();
+
+// Footer toggle functionality for small screens
+(function () {
+  const footer = document.getElementById("footer");
+  const footerToggle = document.getElementById("footer-toggle");
+
+  if (!footer || !footerToggle) return;
+
+  // Toggle footer visibility
+  footerToggle.addEventListener("click", function () {
+    const isExpanded = footer.classList.contains("expanded");
+    footer.classList.toggle("expanded");
+    footerToggle.classList.toggle("hidden");
+    
+    // Update ARIA attribute
+    footerToggle.setAttribute("aria-expanded", !isExpanded);
+  });
+
+  // Close footer when clicking outside
+  document.addEventListener("click", function (event) {
+    const isClickInsideFooter = footer.contains(event.target);
+    const isClickOnToggle = footerToggle.contains(event.target);
+
+    // Only close if footer is expanded, click is outside, and not on toggle button
+    if (footer.classList.contains("expanded") && !isClickInsideFooter && !isClickOnToggle) {
+      footer.classList.remove("expanded");
+      footerToggle.classList.remove("hidden");
+      footerToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+})();
+
+// Credits modal functionality with WCAG compliance
+(function () {
+  const modal = document.getElementById("credits-modal");
+  const creditsBtn = document.getElementById("credits-btn");
+  const closeBtn = document.getElementById("close-modal");
+  let lastFocusedElement = null;
+
+  if (!modal || !creditsBtn || !closeBtn) return;
+
+  // Get all focusable elements within the modal
+  function getFocusableElements() {
+    return modal.querySelectorAll(
+      'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+  }
+
+  // Open modal
+  function openModal() {
+    lastFocusedElement = document.activeElement;
+    modal.removeAttribute("hidden");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+    
+    // Focus the close button
+    closeBtn.focus();
+
+    // Trap focus within modal
+    modal.addEventListener("keydown", trapFocus);
+  }
+
+  // Close modal
+  function closeModal() {
+    modal.setAttribute("hidden", "");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = ""; // Restore scrolling
+    
+    // Return focus to the element that opened the modal
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+
+    // Remove focus trap
+    modal.removeEventListener("keydown", trapFocus);
+  }
+
+  // Trap focus within modal
+  function trapFocus(e) {
+    const focusableElements = getFocusableElements();
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    // Close on Escape key
+    if (e.key === "Escape") {
+      closeModal();
+      return;
+    }
+
+    // Trap Tab key
+    if (e.key === "Tab") {
+      if (e.shiftKey) {
+        // Shift + Tab
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        }
+      } else {
+        // Tab
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
+        }
+      }
+    }
+  }
+
+  // Event listeners
+  creditsBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+  // Close modal when clicking outside the modal content
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+})();
+
+// Privacy modal functionality with WCAG compliance
+(function () {
+  const modal = document.getElementById("privacy-modal");
+  const privacyBtn = document.getElementById("privacy-btn");
+  const closeBtn = document.getElementById("close-privacy-modal");
+  let lastFocusedElement = null;
+
+  if (!modal || !privacyBtn || !closeBtn) return;
+
+  // Get all focusable elements within the modal
+  function getFocusableElements() {
+    return modal.querySelectorAll(
+      'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+  }
+
+  // Open modal
+  function openModal() {
+    lastFocusedElement = document.activeElement;
+    modal.removeAttribute("hidden");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+    
+    // Focus the close button
+    closeBtn.focus();
+
+    // Trap focus within modal
+    modal.addEventListener("keydown", trapFocus);
+  }
+
+  // Close modal
+  function closeModal() {
+    modal.setAttribute("hidden", "");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = ""; // Restore scrolling
+    
+    // Return focus to the element that opened the modal
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+
+    // Remove focus trap
+    modal.removeEventListener("keydown", trapFocus);
+  }
+
+  // Trap focus within modal
+  function trapFocus(e) {
+    const focusableElements = getFocusableElements();
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    // Close on Escape key
+    if (e.key === "Escape") {
+      closeModal();
+      return;
+    }
+
+    // Trap Tab key
+    if (e.key === "Tab") {
+      if (e.shiftKey) {
+        // Shift + Tab
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        }
+      } else {
+        // Tab
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
+        }
+      }
+    }
+  }
+
+  // Event listeners
+  privacyBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+  // Close modal when clicking outside the modal content
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+})();
+
+// Function to sync theme with body
+function syncThemeWithBody() {
+  const theme = document.documentElement.getAttribute("data-theme") || "light";
+  document.body.setAttribute("data-theme", theme);
+}
+
+// YASGUI is loaded via CDN in index.html and available as a global variable
+if (typeof Yasgui !== "undefined") {
+  // Set table plugin defaults before Yasgui init.
+  // Tab.initYasr() does not forward yasr.pluginsOptions from the Yasgui
+  // constructor config, so we must inject it via Yasr.defaults instead.
+  // Yasr constructor does: this.config = merge({}, Yasr.defaults, conf)
+  // TablePlugin constructor reads: (yasr.config as any)?.pluginsOptions?.['Table']
+  if (Yasgui.Yasr) {
+    Yasgui.Yasr.defaults.pluginsOptions = {
+      Table: {
+        displayConfig: {
+          uriDisplayMode: 'abbreviated',
+          showDatatypes: false,
+          ellipsisMode: true
+        },
+        persistenceEnabled: true
+      }
+    };
+  }
+
+  const yasgui = new Yasgui(document.getElementById("yasgui"), {
+    // Set the SPARQL endpoint
+    requestConfig: {
+      endpoint: "https://graph.data.era.europa.eu/repositories/rinf-plus",
+    },
+    // Set alternative SPARQL endpoint quick switch buttons
+    endpointButtons: [      
+      { endpoint: "https://graph.data.era.europa.eu/repositories/rinf-plus", label: "ERA" },
+      { endpoint: "https://rinf-ris-alignment.com/repositories/CRD", label: "CRD" },
+      { endpoint: "https://data.europa.eu/sparql", label: "EU Data" },
+      { endpoint: "https://publications.europa.eu/webapi/rdf/sparql", label: "EU Publications" },
+      { endpoint: "https://qlever.dev/api/osm-planet", label: "OSM" },
+      { endpoint: "https://query.wikidata.org/bigdata/namespace/wdq/sparql", label: "Wikidata" },
+      { endpoint: "https://dbpedia.org/sparql", label: "DBpedia" }
+    ],
+
+    // Allow resizing of the Yasqe editor
+    resizeable: true,
+
+    // Whether to autofocus on Yasqe on page load
+    autofocus: true,
+
+    // Use the default endpoint when a new tab is opened
+    copyEndpointOnNewTab: true,
+
+    // Configuring which endpoints appear in the endpoint catalogue list
+    endpointCatalogueOptions: {
+      getData: () => {
+        return [
+          //List of objects should contain the endpoint field
+          //Feel free to include any other fields (e.g. a description or icon
+          //that you'd like to use when rendering)
+          {
+            endpoint: "https://graph.data.era.europa.eu/repositories/rinf-plus",
+          },
+          {
+            endpoint: "https://rinf-ris-alignment.com/repositories/CRD",
+          },
+          {
+            endpoint: "https://data.europa.eu/sparql", 
+          },          
+          {
+            endpoint: "https://publications.europa.eu/webapi/rdf/sparql",
+          },
+          {
+            endpoint: "https://qlever.dev/api/osm-planet",
+          },
+          {
+            endpoint: "https://dbpedia.org/sparql",
+          },
+          {
+            endpoint: "https://query.wikidata.org/bigdata/namespace/wdq/sparql",
+          },
+          // ...
+        ];
+      },
+      //Data object keys that are used for filtering. The 'endpoint' key already used by default
+      keys: [],
+      //Data argument contains a `value` property for the matched data object
+      //Source argument is the suggestion DOM element to append your rendered item to
+      renderItem: (data, source) => {
+        const contentDiv = document.createElement("div");
+        contentDiv.innerText = data.value.endpoint;
+        source.appendChild(contentDiv);
+      },
+    },
+
+    yasqe: {
+      createShortLink: async (yasqe, longUrl) => {
+        const YOURLS_API_URL = 'https://shorter.matdata.eu/api.php';
+        
+        try {
+          const params = new URLSearchParams({
+            action: 'shorturl',
+            url: longUrl,
+            format: 'json',
+          });
+          
+          const response = await fetch(`${YOURLS_API_URL}?${params.toString()}`, {
+            method: 'GET'
+          });
+          
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          
+          // Get response as text first to handle potential PHP warnings
+          const responseText = await response.text();
+          
+          // Extract JSON object from response (ignore any PHP warnings/HTML before it)
+          const jsonMatch = responseText.match(/\{.*\}/s);
+          if (!jsonMatch) {
+            throw new Error('No JSON object found in response');
+          }
+          
+          const data = JSON.parse(jsonMatch[0]);
+          
+          if (data.status === 'fail') {
+            throw new Error(data.message || 'Failed to shorten URL');
+          }
+          
+          return data.shorturl;
+          
+        } catch (error) {
+          console.error('YOURLS shortening error:', error);
+          throw error;
+        }
+      },
+      snippets: [
+        { label: "SELECT", code: "SELECT * WHERE {\n  ?s ?p ?o .\n} LIMIT 10", group: "QUERY" },
+        { label: "CONSTRUCT", code: "CONSTRUCT {\n  ?s ?p ?o .\n} WHERE {\n  ?s ?p ?o .\n} LIMIT 10", group: "QUERY" },
+        { label: "ASK", code: "ASK {\n  ?s ?p ?o .\n}", group: "QUERY" },
+        { label: "DESCRIBE", code: "DESCRIBE ?s", group: "QUERY" },
+        { label: "UPDATE", code: "DELETE {\n  ?s ex:oldProperty ?oldValue .\n}\nINSERT {\n  ?s ex:newProperty ?newValue .\n}\nWHERE {\n  ?s ex:oldProperty ?oldValue .\n  BIND(CONCAT(?oldValue, \" updated\") AS ?newValue)\n}", group: "QUERY" },
+        { label: "UPDATE DATA", code: "INSERT DATA {\n  ex:subject ex:property \"new value\" .\n}", group: "QUERY" },
+        { label: "PREDICATE PATH", code: "?subject ex:property ?object", group: "PATH" },
+        { label: "INVERSE PATH", code: "?subject ^ex:property ?object", group: "PATH" },
+        { label: "SEQUENCE PATH", code: "?subject ex:property1/ex:property2 ?object", group: "PATH" },
+        { label: "ALTERNATIVE PATH", code: "?subject ex:property1|ex:property2 ?object", group: "PATH" },
+        { label: "ZERO OR MORE PATH", code: "?subject ex:property* ?object", group: "PATH" },
+        { label: "ONE OR MORE PATH", code: "?subject ex:property+ ?object", group: "PATH" },
+        { label: "ZERO OR ONE PATH", code: "?subject ex:property? ?object", group: "PATH" },
+        { label: "NEGATED PROPERTY SET", code: "?subject !ex:property ?object", group: "PATH" },
+        { label: "NEGATED PROPERTY SET (MULTI)", code: "?subject !(ex:property1|ex:property2) ?object", group: "PATH" },
+        { label: "OPTIONAL", code: "OPTIONAL {\n  ?s ?p ?o .\n}", group: "PATTERN" },
+        { label: "UNION", code: "{ ?s ?p ?o . } UNION { ?s ?p2 ?o2 . }", group: "PATTERN" },
+        { label: "BIND", code: "BIND(?var AS ?newVar)", group: "PATTERN" },
+        { label: "VALUES", code: "VALUES ?var { val1 val2 }", group: "PATTERN" },
+        { label: "VALUES (MULTI)", code: "VALUES (?varA ?varB) { (valA1 valB1) (valA2 valB2) }", group: "PATTERN" },
+        { label: "GRAPH", code: "GRAPH <http://example.org/graph> {\n  ?s ?p ?o .\n}", group: "DATASET" },
+        { label: "GRAPH VARIABLE", code: "GRAPH ?g {\n  ?s ?p ?o .\n}", group: "DATASET" },
+        { label: "FROM NAMED", code: "SELECT * FROM NAMED <http://example.org/graph> WHERE {\n  ?s ?p ?o .\n}", group: "DATASET" },
+        { label: "EQUALS", code: "FILTER (?var = \"value\")", group: "COMPARISON" },
+        { label: "NOT EQUALS", code: "FILTER (?var != \"value\")", group: "COMPARISON" },
+        { label: "LESS THAN", code: "FILTER (?var < 100)", group: "COMPARISON" },
+        { label: "LESS OR EQUAL", code: "FILTER (?var <= 100)", group: "COMPARISON" },
+        { label: "GREATER THAN", code: "FILTER (?var > 100)", group: "COMPARISON" },
+        { label: "GREATER OR EQUAL", code: "FILTER (?var >= 100)", group: "COMPARISON" },
+        { label: "IN", code: "FILTER (?var IN (\"value1\", \"value2\", \"value3\"))", group: "COMPARISON" },
+        { label: "NOT IN", code: "FILTER (?var NOT IN (\"value1\", \"value2\"))", group: "COMPARISON" },
+        { label: "REGEX", code: "FILTER REGEX(?var, \"pattern\", \"i\")", group: "STRING" },
+        { label: "CONTAINS", code: "FILTER CONTAINS(str(?var), \"text\")", group: "STRING" },
+        { label: "STRSTARTS", code: "FILTER (STRSTARTS(str(?var), \"prefix\"))", group: "STRING" },
+        { label: "STRENDS", code: "FILTER (STRENDS(str(?var), \"suffix\"))", group: "STRING" },
+        { label: "LANG", code: "FILTER (lang(?var) = \"en\")", group: "STRING" },
+        { label: "LANGMATCHES", code: "FILTER LANGMATCHES(lang(?var), \"en\")", group: "STRING" },
+        { label: "STR", code: "BIND(STR(?uri) AS ?string)", group: "STRING" },
+        { label: "STRLEN", code: "BIND(STRLEN(?string) AS ?length)", group: "STRING" },
+        { label: "SUBSTR", code: "BIND(SUBSTR(?string, 1, 5) AS ?substring)", group: "STRING" },
+        { label: "UCASE", code: "BIND(UCASE(?string) AS ?upper)", group: "STRING" },
+        { label: "LCASE", code: "BIND(LCASE(?string) AS ?lower)", group: "STRING" },
+        { label: "CONCAT", code: "BIND(CONCAT(?string1, \" \", ?string2) AS ?result)", group: "STRING" },
+        { label: "REPLACE", code: "BIND(REPLACE(?string, \"old\", \"new\") AS ?result)", group: "STRING" },
+        { label: "STRBEFORE", code: "BIND(STRBEFORE(?string, \"delimiter\") AS ?result)", group: "STRING" },
+        { label: "STRAFTER", code: "BIND(STRAFTER(?string, \"delimiter\") AS ?result)", group: "STRING" },
+        { label: "ENCODE_FOR_URI", code: "BIND(ENCODE_FOR_URI(?string) AS ?encoded)", group: "STRING" },
+        { label: "BOUND", code: "FILTER (BOUND(?var))", group: "CHECKS" },
+        { label: "NOT BOUND", code: "FILTER (!BOUND(?var))", group: "CHECKS" },
+        { label: "ISURI", code: "FILTER (ISURI(?var))", group: "CHECKS" },
+        { label: "ISLITERAL", code: "FILTER (ISLITERAL(?var))", group: "CHECKS" },
+        { label: "ISBLANK", code: "FILTER (ISBLANK(?var))", group: "CHECKS" },
+        { label: "EXISTS", code: "FILTER EXISTS {?var a ex:Person}", group: "CHECKS" },
+        { label: "LOGICAL AND/OR", code: "FILTER ((?var1 > 100 && ?var2 < 200) || ?var3 = 150)", group: "CHECKS" },
+        { label: "IF", code: "BIND(IF(?condition, \"true value\", \"false value\") AS ?result)", group: "CHECKS" },
+        { label: "COALESCE", code: "BIND(COALESCE(?var1, ?var2, \"default\") AS ?result)", group: "CHECKS" },
+        { label: "ABS", code: "BIND(ABS(?number) AS ?absolute)", group: "NUMERIC" },
+        { label: "ROUND", code: "BIND(ROUND(?number) AS ?rounded)", group: "NUMERIC" },
+        { label: "CEIL", code: "BIND(CEIL(?number) AS ?ceiling)", group: "NUMERIC" },
+        { label: "FLOOR", code: "BIND(FLOOR(?number) AS ?floor)", group: "NUMERIC" },
+        { label: "RAND", code: "BIND(RAND() AS ?random)", group: "NUMERIC" },
+        { label: "MIN", code: "SELECT (MIN(?var) AS ?minimum) WHERE { ?s ?p ?var }", group: "AGGREGATE" },
+        { label: "MAX", code: "SELECT (MAX(?var) AS ?maximum) WHERE { ?s ?p ?var }", group: "AGGREGATE" },
+        { label: "AVG", code: "SELECT (AVG(?var) AS ?average) WHERE { ?s ?p ?var }", group: "AGGREGATE" },
+        { label: "SUM", code: "SELECT (SUM(?var) AS ?total) WHERE { ?s ?p ?var }", group: "AGGREGATE" },
+        { label: "COUNT", code: "SELECT (COUNT(?var) AS ?count) WHERE { ?s ?p ?var }", group: "AGGREGATE" },
+        { label: "STRDT STRING", code: "BIND(STRDT(\"value\", xsd:string) AS ?result)", group: "DATATYPE" },
+        { label: "STRDT INTEGER", code: "BIND(STRDT(\"42\", xsd:integer) AS ?result)", group: "DATATYPE" },
+        { label: "STRDT DECIMAL", code: "BIND(STRDT(\"3.14\", xsd:decimal) AS ?result)", group: "DATATYPE" },
+        { label: "STRDT BOOLEAN", code: "BIND(STRDT(\"true\", xsd:boolean) AS ?result)", group: "DATATYPE" },
+        { label: "STRDT DATE", code: "BIND(STRDT(\"2024-01-01\", xsd:date) AS ?result)", group: "DATATYPE" },
+        { label: "STRDT DATETIME", code: "BIND(STRDT(\"2024-01-01T12:00:00\", xsd:dateTime) AS ?result)", group: "DATATYPE" },
+        { label: "NOW", code: "BIND(NOW() AS ?currentDateTime)", group: "DATE/TIME" },
+        { label: "YEAR", code: "BIND(YEAR(?date) AS ?year)", group: "DATE/TIME" },
+        { label: "MONTH", code: "BIND(MONTH(?date) AS ?month)", group: "DATE/TIME" },
+        { label: "DAY", code: "BIND(DAY(?date) AS ?day)", group: "DATE/TIME" },
+        { label: "HOURS", code: "BIND(HOURS(?dateTime) AS ?hours)", group: "DATE/TIME" },
+        { label: "MINUTES", code: "BIND(MINUTES(?dateTime) AS ?minutes)", group: "DATE/TIME" },
+        { label: "SECONDS", code: "BIND(SECONDS(?dateTime) AS ?seconds)", group: "DATE/TIME" },
+        { label: "TIMEZONE", code: "BIND(TIMEZONE(?dateTime) AS ?tz)", group: "DATE/TIME" },
+        { label: "TZ", code: "BIND(TZ(?dateTime) AS ?timezoneString)", group: "DATE/TIME" },
+        { label: "ORDER BY ASC", code: "ORDER BY asc(?var)", group: "MODIFIERS" },
+        { label: "ORDER BY DESC", code: "ORDER BY desc(?var)", group: "MODIFIERS" },
+        { label: "DISTINCT", code: "SELECT DISTINCT ?var WHERE {\n  ?s ?p ?var .\n}", group: "MODIFIERS" },
+        { label: "LIMIT", code: "LIMIT 10", group: "MODIFIERS" },
+        { label: "OFFSET", code: "OFFSET 10", group: "MODIFIERS" },
+        { label: "GROUP BY", code: "GROUP BY ?var", group: "MODIFIERS" },
+        { label: "HAVING", code: "HAVING (count(*)>1)", group: "MODIFIERS" },
+      ],
+    },
+
+  });
+
+  // Demo queries workspace (read-only SPARQL workspace, published from demo-queries/ by a GitHub workflow)
+  (function () {
+    var DEMO_WORKSPACE = {
+      id: "matgui-demo",
+      label: "MatGUI demo queries",
+      description: "Example queries for ERA RINF, EU Publications Office, data.europa.eu, GeoSPARQL, Wikidata and more",
+      type: "sparql",
+      endpoint: "https://jena.matdata.eu/matgui-demo/sparql",
+      workspaceIri: "https://matgui.matdata.eu/demo/workspace",
+      // Never offer to save (updates or new queries) to the demo workspace (MatGUI#187)
+      readOnly: true,
+    };
+    var REGISTERED_KEY = "matgui_demo_workspace_registered";
+    var config = yasgui.persistentConfig;
+    if (!config || typeof config.addOrUpdateWorkspace !== "function") return;
+
+    var existing = config.getWorkspace(DEMO_WORKSPACE.id);
+    var registeredBefore = false;
+    try { registeredBefore = localStorage.getItem(REGISTERED_KEY) === "1"; } catch (e) {}
+
+    // Add it once; keep it up to date afterwards, but respect users who removed it.
+    if (existing || !registeredBefore) {
+      config.addOrUpdateWorkspace(DEMO_WORKSPACE);
+      try { localStorage.setItem(REGISTERED_KEY, "1"); } catch (e) {}
+    }
+    if (!config.getActiveWorkspaceId()) {
+      config.setActiveWorkspaceId(DEMO_WORKSPACE.id);
+    }
+
+    var demoBtn = document.getElementById("demo-queries-btn");
+    if (!demoBtn || !yasgui.queryBrowser) return;
+    demoBtn.addEventListener("click", function () {
+      if (!config.getWorkspace(DEMO_WORKSPACE.id)) config.addOrUpdateWorkspace(DEMO_WORKSPACE);
+      config.setActiveWorkspaceId(DEMO_WORKSPACE.id);
+      // Make the query browser switch to the demo workspace if it was showing another one
+      yasgui.queryBrowser.selectedWorkspaceId = DEMO_WORKSPACE.id;
+      yasgui.queryBrowser.invalidateAndRefresh();
+      yasgui.queryBrowser.open(demoBtn);
+    });
+  })();
+
+  // Sync theme immediately after initialization
+  syncThemeWithBody();
+
+  // Watch for theme changes on document.documentElement
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === "attributes" && mutation.attributeName === "data-theme") {
+        syncThemeWithBody();
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"],
+  });
+}

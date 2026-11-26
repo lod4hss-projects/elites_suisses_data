@@ -101,9 +101,16 @@ async function select(query) {
 }
 
 // Restrict a triple pattern to the selected graphs (binds ?g)
-function inGraphs(sel, body) {
-  const values = sel ? `VALUES ?g { ${sel.map(g => `<${g}>`).join(' ')} }` : '';
-  return `${values} GRAPH ?g { ${body} }`;
+// gv: name of the graph variable (use another name when two graph patterns share one query)
+function inGraphs(sel, body, gv = 'g') {
+  const values = sel ? `VALUES ?${gv} { ${sel.map(g => `<${g}>`).join(' ')} }` : '';
+  return `${values} GRAPH ?${gv} { ${body} }`;
+}
+
+// URL of matgui (config.js) carrying the triplestore URL and a SPARQL query
+function matguiHref(query) {
+  return `${MATGUI_URL}?${MATGUI_PARAM_TRIPLESTORE}=${encodeURIComponent(endpoint())}` +
+         `&${MATGUI_PARAM_QUERY}=${encodeURIComponent(query)}`;
 }
 
 // Optional label for a set of IRIs (any property in LABEL_PROPS, any graph); one label per IRI:
