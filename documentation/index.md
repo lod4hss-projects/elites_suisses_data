@@ -1,8 +1,8 @@
 # Documentation
 
-We document here the analysis of the information available in the Élites suisses MySQL database as well as the process of data cleaning, mapping to the final ontology and data conversion to RDF as part of the LESSH project.
+We document here the analysis of the information available in the *Élites suisses* relational database as well as the process of data cleaning, mapping to the final ontology and data conversion to RDF as part of the LESSH (Linked Elites – ORD for the SSH) project.
 
-The MySQL database comprises the information published on the [Élites suisses website](https://elitessuisses.unil.ch/). It is, in fact, a selected and partly cleaned up portion of the information available in the original FileMaker database that was not directly usable given some technical issues and the partly confidential data it contains.
+The database comprises the information published on the [Élites suisses website](https://elitessuisses.unil.ch/). It is, in fact, a selected and partly cleaned up portion of the information available in the original FileMaker database that was not directly usable given some technical issues and the partly confidential data it contains.
 
 &nbsp;
 
@@ -19,9 +19,12 @@ The following eight tables were delivered by the Élites suisses project:
 * ***`autresNomsEntites`*** (Naming Variants of Organisations)
 * ***`mandat`*** (Mandates)
 
-An overview of the available information in these tables can be found [on this page](available_information.md). From there, more detailed inspections of the various concepts and categories inside the Élites suisses database can be found.
+An *overview of the available information* in these tables can be found **[on this page](available_information.md)**. <br/>
+From there, more detailed inspections of the different tables and information in the *Élites suisses* database can be found.
 
-We found that there are many implicit entities stored as textual values in these tables (e.g. gender, organisation type, type of education). To transform the relational database into a knowledge graph, these implicit entities need to be identified and represented as explicit, identifiable entities. For this purpose, new tables were created to define and describe these entities using controlled vocabularies. This allows textual values occurring in the source data to be mapped to consistent, well-defined entities. In addition, some existing tables, namely the ***`entites`***, ***`education`*** and ***`mandat`*** tables, were recreated to facilitate further data cleaning, mapping and conversion.
+In the original database many implicit entities are stored as textual values (e.g. gender, types of organisations, study titles). To transform the relational database into a knowledge graph, the entities mentioned in string in the columns of the different tables need to be transformed to well identified entities.
+
+For this purpose, new tables were created to define new controlled vocabularies. This allows textual values occurring in the source data to be mapped to consistent, well-defined entities. In addition, simplified and enriched versions  tables, namely the ***`entites`***, ***`education`*** and ***`mandat`*** tables, were recreated to facilitate further data cleaning, mapping and conversion.
 
 We created an [extended ERD](../documentation/graphics/ERD_with_new_tables.png) that shows the original tables in relation to the newly created tables. The extended ERD is [described here in more detail](../documentation/graphics/ERD_with_new_tables.md)).
 

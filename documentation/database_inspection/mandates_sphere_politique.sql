@@ -4,6 +4,7 @@ select *
 from elites_suisses.t_mandates_cleaning_up tmcu 
 where true 
 and tmcu.sphere = 'Politique'
+and tmcu."typeEntite" ~* 'parti'
 order by fonction;
 
 

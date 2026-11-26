@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix sdh-short: <https://sdhss.org/ontology/shortcuts/>.
+@prefix crm-sup: <https://sdhss.org/ontology/crm-supplement/>.
 @prefix sdh: <https://sdhss.org/ontology/core/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix swel: <https://elites-suisses.lod4hss.org/resource/>.
@@ -179,6 +180,28 @@
         rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/g-ty{fk_group_type}" ];
     ].
 
+<#group-type-1> a rr:TriplesMap;
+    rr:logicalTable [ rr:tableName "elites_suisses.t_group_type" ];
+    rr:subjectMap [
+        rr:template "https://elites-suisses.lod4hss.org/resource/g-ty{pk_group_type}";
+        rr:termType rr:IRI;
+        rr:class crm-sup:C9;
+    ];
+    rr:predicateObjectMap [
+    rr:predicate sdh-short:P9;
+    rr:objectMap [ rr:column "name" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sdh-short:P11;
+        rr:objectMap [ rr:column "description" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap [ 
+            rr:column "wikidata_uri";
+            rr:termType rr:IRI 
+        ];
+    ].
 
 <#study-discipline-1> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "elites_suisses.t_study_discipline" ];
@@ -247,7 +270,8 @@
         rr:objectMap [ rr:column "definition" ];
     ];
     rr:predicateObjectMap [
-        rr:predicate sdh:P99;
+        ## has geographical place kind
+        rr:predicate sdh:P20;
         rr:objectMap [ rr:template "https://elites-suisses.lod4hss.org/resource/gpk{fk_geo_place_kind}" ];
     ];
     rr:predicateObjectMap [

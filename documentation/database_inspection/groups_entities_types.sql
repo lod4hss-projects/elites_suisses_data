@@ -1,6 +1,6 @@
 
 
-
+-- group by domain of activity ('sphere') and type of entity
 select e."typeEntite", e.sphere , count(*) as num
 FROM elites_suisses.entites e 
 group by e."typeEntite", e.sphere 
@@ -48,10 +48,10 @@ order by n desc;
 
 
 -- misstakes corrected
-update elites_suisses.entites e set sphere = 'Economique'
+--update elites_suisses.entites e set sphere = 'Economique'
 where e.sphere = 'Economie';
 
-update elites_suisses.entites e set sphere = 'Economique'
+--update elites_suisses.entites e set sphere = 'Economique'
 where e.sphere = 'Eonomique';
 
 
@@ -66,7 +66,7 @@ from elites_suisses.mandat m
 where m."idEntite" = 'entite370';
 
 -- 'entite370' was modified to 'sociabilité' sphere, as it has no political function in the contemporary society
-update elites_suisses.entites e set sphere = 'Sociabilité'
+--update elites_suisses.entites e set sphere = 'Sociabilité'
 where e.sphere ~ 'que-So';
 
 
@@ -109,5 +109,62 @@ group by  e."typeEntite", m."typeEntite"
 order by  e."typeEntite", m."typeEntite";
 --order by n desc;
 order by n desc;
+
+
+/*
+ * Political parties
+ * 
+ * Add type pk 9 to political parties
+ */
+
+
+select e.nom, e."typeEntite", tmcu.*
+from elites_suisses.t_mandates_cleaning_up tmcu 
+ join elites_suisses.entites e on tmcu.id_entity = e.id 
+where true 
+-- tmcu.sphere = 'Politique'
+and tmcu."typeEntite" ~* 'parti'
+order by fonction;
+
+
+-- verify if types are consistent in mandates and entities
+select e.nom, e."typeEntite", tmcu.*
+from elites_suisses.t_mandates_cleaning_up tmcu 
+ join elites_suisses.entites e on tmcu.id_entity = e.id 
+where true 
+-- tmcu.sphere = 'Politique'
+--and tmcu."typeEntite" ~* 'parti'
+and e."typeEntite" ~* 'parti'
+and tmcu."typeEntite" != e."typeEntite"
+and tmcu.fonction_clean_1 = 'membre'
+order by fonction;
+
+
+-- get all political parties
+select e.nom, e."typeEntite", tg.*
+from elites_suisses.t_group tg
+ join elites_suisses.entites e on tg.fk_source_entity = e.id 
+where true 
+and e."typeEntite" ~* 'parti po';
+order by e."typeEntite" ;
+
+-- add type (25 November 2026: 99 updated)
+update elites_suisses.t_group tg set fk_group_type = 9
+from elites_suisses.entites e 
+where tg.fk_source_entity = e.id 
+and e."typeEntite" ~* 'parti po';
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
